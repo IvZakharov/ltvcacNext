@@ -1,0 +1,40 @@
+@import '../variables';
+
+.button {
+  padding: 16px 30px;
+  border-radius: 30px;
+  background-color: $third;
+  border: 2px solid $secondary;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary;
+  }
+
+  svg {
+    margin-right: 10px;
+    transform: translateY(1px);
+
+    path {
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+  }
+  
+  &--transparent {
+    background-color: transparent;
+  }
+
+}

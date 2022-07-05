@@ -1,0 +1,132 @@
+@import '/styles/variables';
+
+.focus {
+  position: relative;
+
+  @media (min-width: 1200px) {
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $primary;
+      background-image: url('./img/bg.jpg');
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .content {
+    padding-left: 90px;
+    padding-right: 20px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 0;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 100%;
+
+    }
+
+    .title, .subtitle {
+      @media (min-width: 768px) {
+        margin-left: 60px;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+
+    &:first-child:before {
+      content: '1';
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 70px;
+      /* identical to box height, or 170% */
+      letter-spacing: -0.055em;
+      color: $secondary;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      left: 20px;
+
+      @media (min-width: 768px) {
+        left: 0;
+      }
+
+      @media (min-width: 1200px) {
+        left: -70px;
+      }
+    }
+
+    &:last-child:before {
+      content: '2';
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 70px;
+      /* identical to box height, or 170% */
+      letter-spacing: -0.055em;
+      color: $secondary;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      left: 20px;
+
+      @media (min-width: 768px) {
+        left: 0;
+      }
+
+      @media (min-width: 1200px) {
+        left: -70px;
+      }
+    }
+  }
+
+  .titleBox {
+
+    @media (min-width: 1200px) {
+      background: transparent;
+    }
+
+    background-image: url('./img/bgMob.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: $fourth;
+  }
+
+  .listSubtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: $primary;
+  }
+
+  .listItem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $primary;
+  }
+}

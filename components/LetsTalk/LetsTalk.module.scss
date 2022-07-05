@@ -1,0 +1,62 @@
+@import '/styles/variables';
+
+.letsTalk {
+  position: relative;
+
+  .title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    /* identical to box height, or 116% */
+    text-align: left;
+    margin-bottom: 10px;
+    color: $primary;
+  }
+
+  .label {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: $secondary;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;;
+    color: white;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+   
+    transform: rotate(-20deg) translate(-70px, 0px);
+    z-index: -1;
+  }
+
+  .list {
+
+    li {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 5px;
+        border-radius: 50%;
+        height: 5px;
+        top: calc(50% - 2.5px);
+        background-color: #000;
+        left: 0;
+      }
+    }
+  }
+
+  .button {
+    display: block;
+  }
+}

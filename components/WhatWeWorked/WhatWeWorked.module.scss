@@ -1,0 +1,43 @@
+@import '/styles/variables';
+
+.whatWeWorked {
+
+  .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #C7D0FA;
+    border-radius: 8px;
+    padding: 23px 20px;
+    padding-right: 10px;
+  }
+
+  .icon {
+    margin-right: 30px;
+    line-height: 0;
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $primary;
+    margin-bottom: 5px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 3px;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: #514E4E;
+      transition: color .2s ease-in;
+    }
+  }
+}

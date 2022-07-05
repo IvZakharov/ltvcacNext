@@ -1,0 +1,44 @@
+@import '/styles/variables';
+
+.ticker {
+  background-color: #4361EE;
+  padding: 8px 0;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+
+
+  .list {
+
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+    align-items: center;
+    }
+   
+    li {
+      margin-right: 50px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+/* identical to box height, or 120% */
+    text-transform: uppercase;
+
+  color: #FFFFFF;
+  }
+
+  .icon {
+    line-height: 0;
+  }
+}
+
+

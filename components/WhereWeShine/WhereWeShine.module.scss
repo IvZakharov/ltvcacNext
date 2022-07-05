@@ -1,0 +1,50 @@
+@import '/styles/variables';
+
+.whereWeShine {
+  .item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (min-width: 1200px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #514E4E;
+    display: block;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 13px 80px;
+    text-transform: uppercase;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.005em;
+    color: $secondary;
+    transition: all .2s ease-in;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgba($secondary, .1);
+    border-radius: 30px;
+    border: 2px solid rgba($secondary, .5);
+    display: inline-block;
+
+    &:hover {
+      color: white;
+      background-color: $secondary
+    }
+  }
+}

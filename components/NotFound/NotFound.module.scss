@@ -1,0 +1,56 @@
+@import '/styles/variables';
+
+.notFound {
+  min-height: 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-image: url("./img/bgMob.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-image: url('./img/bg.jpg');
+  } 
+  
+
+ .title {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 180px;
+  text-align: center;
+  color: white;
+
+  @media (min-width: 768px) {
+    font-size: 160px;
+  }
+ }
+
+ .subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+ }
+
+ .button {
+   margin-bottom: 80px;
+ }
+
+ .img {
+   width: 100%;
+   height: auto;
+ }
+}

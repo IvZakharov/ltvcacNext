@@ -1,0 +1,27 @@
+@import '/styles/variables';
+
+.toTopBtn {
+ 
+  padding: 20px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+  bottom: 30px;
+  right: 30px;
+  background-color: $primary;
+  border-radius: 100%;
+  box-shadow: 0 0 7px 5px rgba( $primary,  .2);
+  opacity: 0;
+  animation: show .6s linear 1 forwards;
+  transition: background-color .2s ease-in-out;
+  
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+  }
+}

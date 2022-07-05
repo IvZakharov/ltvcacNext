@@ -1,0 +1,35 @@
+@import '/styles/variables';
+
+.ourToolkit {
+  .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    display: block;
+    margin-right: 10px;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 120% */
+    color: #3725A2;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    /* or 175% */
+    color: #514E4E;
+  }
+}
