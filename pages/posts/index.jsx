@@ -1,0 +1,49 @@
+import axios from 'axios';
+import urlBuilder from '../../lib/imageUrl';
+import Hero from '../../components/Hero/Hero';
+import Ticker from '../../components/Ticker/Ticker';
+import PostCard from '../../components/PostCard/PostCard';
+import { MainLayout } from '../../layouts/MainLayout';
+
+export default function Blog({ posts }) {
+  return (
+    <MainLayout
+      title={'Blog'}
+      description="Some of the projects we worked on. Feel free to request for more!">
+      <Hero
+        title={'Blog'}
+        subtitle={'Some of the projects we worked on. Feel free to request for more!'}
+        heroImg={'imgFourth'}
+      />
+      <Ticker />
+      <div className="blog-grid">
+        <div className="container p-0">
+          <div className="row">
+            {posts &&
+              posts.map((obj) => (
+                <div key={obj.id} className={'col-12 col-md-6 col-xl-4 p-4'}>
+                  <PostCard
+                    slug={obj.attributes.Slug}
+                    image={urlBuilder(obj.attributes.postImage.data.attributes.url)}
+                    title={obj.attributes.Title}
+                    subtitle={obj.attributes?.Subtitle}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
+    </MainLayout>
+  );
+}
+
+export async function getStaticProps() {
+  const res = await axios.get('http://localhost:1337/api/posts?populate=*');
+  const posts = await res.data.data;
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}

@@ -3,18 +3,31 @@
 .projectFull {
  
   .overview {
-    
-    li {
-      margin-bottom: 20px;
+    margin-bottom: 60px;
+    white-space: pre-line;
+    line-height: 1.2rem;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
 
-      &:last-child {
-        margin-bottom: 60px;
-      }
-    }
+
+color: #514E4E;
   }
 
   .delivered {
     margin-bottom: 60px;
+    white-space: pre-line;
+    line-height: 1.5rem;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+
+color: #514E4E;
   }
 
 }

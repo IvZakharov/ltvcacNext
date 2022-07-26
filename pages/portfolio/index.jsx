@@ -1,36 +1,49 @@
-import React from 'react';
-import Hero from '../../Components/Hero/Hero';
-import Ticker from '../../Components/Ticker/Ticker';
-import HeroAdvantages from '../../Components/HeroAdvantages/HeroAdvantages';
-import ProjectCard from './[id]';
-import {projects} from '../../data/projects';
+import axios from 'axios';
+import Hero from '../../components/Hero/Hero';
+import Ticker from '../../components/Ticker/Ticker';
+import HeroAdvantages from '../../components/HeroAdvantages/HeroAdvantages';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import { MainLayout } from '../../layouts/MainLayout';
 
-
-export const portfolio = () => {
+export default function Portfolio({ projects }) {
   return (
-    <>
-
-      <Hero title={'Our cases'} subtitle={'Some of the projects we worked on. Feel free to request for more!'}
-            heroImg={'imgFourths'}/>
-      <Ticker/>
-      <HeroAdvantages/>
+    <MainLayout
+      title={'Our cases'}
+      description="Some of the projects we worked on. Feel free to request for more!">
+      <Hero
+        title={'Our cases'}
+        subtitle={'Some of the projects we worked on. Feel free to request for more!'}
+        heroImg={'imgFourth'}
+      />
+      <Ticker />
+      <HeroAdvantages />
       <div className="portfolio-grid">
         <div className="container p-0">
           <div className="row">
-            {projects.map((obj) => (
-              <ProjectCard
-                key={obj.id}
-                id={obj.id}
-                title={obj.title}
-                subtitle={obj.subtitle}
-                tags={obj.tags}
-              />
-            ))}
+            {projects &&
+              projects.map((obj) => (
+                <ProjectCard
+                  slug={obj.attributes.slug}
+                  key={obj.id}
+                  title={obj.attributes.Title}
+                  subtitle={obj.attributes.Subtitle}
+                  tags={obj.attributes?.Tags}
+                />
+              ))}
           </div>
         </div>
       </div>
-    </>
+    </MainLayout>
   );
 }
 
+export async function getStaticProps() {
+  const res = await axios.get('http://localhost:1337/api/works');
+  const projects = await res.data.data;
 
+  return {
+    props: {
+      projects,
+    },
+  };
+}

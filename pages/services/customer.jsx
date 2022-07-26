@@ -1,10 +1,10 @@
-import Hero from '../../Components/Hero/Hero';
-import Ticker from '../../Components/Ticker/Ticker';
-import ListWithIcon from '../../Components/ListWithIcon/ListWithIcon';
-import LetsTalk from '../../Components/LetsTalk/LetsTalkReverse';
+import Hero from '../../components/Hero/Hero';
+import Ticker from '../../components/Ticker/Ticker';
+import ListWithIcon from '../../components/ListWithIcon/ListWithIcon';
+import LetsTalk from '../../components/LetsTalk/LetsTalkReverse';
+import { MainLayout } from '../../layouts/MainLayout';
 
-
-export const customer = () => {
+export default function customer() {
   const arr1 = [
     {
       title: 'Product potential for different markets',
@@ -29,21 +29,26 @@ export const customer = () => {
   ];
 
   return (
-    <>
-
-      <Hero title={'Customer Research'}
-            subtitle={'Identify your customers needs with data-driven solutions'}
-            heroImg={'imgThird'}/>
-      <Ticker/>
+    <MainLayout
+      title={'Qualitative and Quantitative research - LTV:CAC agency'}
+      description={
+        'We know how to find out the most important problems of your clients through qualitative and quantitative research, which will help you make a best product'
+      }>
+      <Hero
+        title={'Customer Research'}
+        subtitle={'Identify your customers needs with data-driven solutions'}
+        heroImg={'imgThird'}
+      />
+      <Ticker />
       <section className="section focus section--title-left-img1 mb-40 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 mb-40  mb-xl-0">
               <div className="section__title-box section__title-box--img1  pb-120 pt-120 pt-md-120 p-25">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
-                  CUSTOMER <br/>
-                  RESEARCH FOR <br/> OPTIMAL
-                  <br/> BUSINESS <br/> DECISIONS
+                  CUSTOMER <br />
+                  RESEARCH FOR <br /> OPTIMAL
+                  <br /> BUSINESS <br /> DECISIONS
                 </h2>
               </div>
             </div>
@@ -74,9 +79,9 @@ export const customer = () => {
           <div className="row">
             <div className="col-12 col-xl-8 m-auto">
               <p className="section__text ta-left ta-md-center">
-                Misidentifying your customers' critical tasks to perform (JTBD) or problems results
-                in your team working for weeks/months on problems that your customers aren't willing
-                to pay for - which is xx.xxx$.
+                Misidentifying your customers&apos; critical tasks to perform (JTBD) or problems
+                results in your team working for weeks/months on problems that your customers
+                aren&apos;t willing to pay for - which is xx.xxx$.
               </p>
             </div>
           </div>
@@ -90,11 +95,11 @@ export const customer = () => {
               <div className="section__title-box section__title-box--img2 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left">
                   WHAT
-                  <br/>
+                  <br />
                   QUESTIONS
-                  <br/>
+                  <br />
                   MUST BE
-                  <br/>
+                  <br />
                   ANSWERED?
                 </h2>
               </div>
@@ -152,8 +157,8 @@ export const customer = () => {
               <div className="section__title-box section__title-box--img3 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   WHAT YOU ARE
-                  <br/>
-                  GETTING AFTER <br/>
+                  <br />
+                  GETTING AFTER <br />
                   THE RESEARCH?
                 </h2>
               </div>
@@ -161,7 +166,7 @@ export const customer = () => {
 
             <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
-                <ListWithIcon arr={arr1}/>
+                <ListWithIcon arr={arr1} />
               </div>
             </div>
           </div>
@@ -175,9 +180,9 @@ export const customer = () => {
               <div className="section__title-box section__title-box--img2 p-20 pt-80 pb-80 pt-md-100">
                 <h2 className="section__title ta-left section__title--large">
                   HOW
-                  <br/>
+                  <br />
                   IT
-                  <br/>
+                  <br />
                   WORKS
                 </h2>
               </div>
@@ -219,7 +224,7 @@ export const customer = () => {
                   </p>
                   <p className="text text--dark italic mb-40">
                     Phone interviews usually last 30-60 mins.
-                    <br/>
+                    <br />
                     We never compensate the respondents to avoid biased responses.
                   </p>
 
@@ -243,9 +248,9 @@ export const customer = () => {
                       <p className="text text--dark">
                         We design an online survey using typeform.com and incorporate pain stories
                         in it. Respondents are suggested multiple-choice questions and should pick
-                        one that describes their case most accurately: <br/> - I miss opportunities
-                        or loose money due to X problem; <br/> - I had an X problem and solved it
-                        with Y - I didn't have an X problem, or it didn't bother me..
+                        one that describes their case most accurately: <br /> - I miss opportunities
+                        or loose money due to X problem; <br /> - I had an X problem and solved it
+                        with Y - I didn&apos;t have an X problem, or it didn&apos;t bother me..
                       </p>
                     </li>
                     <li className="mb-20">
@@ -299,20 +304,20 @@ export const customer = () => {
                 </ul>
                 <span className="line mb-25"></span>
                 <h3 className="text text--large text--primary text--fw-500 ml-50 mb-30">
-                  PROBLEM DISTRIBUTION <br/> FOR TARGET AUDIENCE
+                  PROBLEM DISTRIBUTION <br /> FOR TARGET AUDIENCE
                 </h3>
                 <div className="problems">
                   <div className="history">
                     <div className="history__item mb-20">
                       <i className="color color--pink"></i>
                       <p className="text text--dark">
-                        Audience regularly lose money <br/> and do not know how to solve it
+                        Audience regularly lose money <br /> and do not know how to solve it
                       </p>
                     </div>
                     <div className="history__item mb-20">
                       <i className="color color--primary"></i>
                       <p className="text text--dark">
-                        Know about such a problem but do not <br/>
+                        Know about such a problem but do not <br />
                         consider it necessary to solve it
                       </p>
                     </div>
@@ -353,9 +358,7 @@ export const customer = () => {
           </div>
         </div>
       </section>
-      <LetsTalk/>
-    </>
+      <LetsTalk />
+    </MainLayout>
   );
 }
-
-

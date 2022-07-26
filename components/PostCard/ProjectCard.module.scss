@@ -1,0 +1,43 @@
+@import '/styles/variables';
+
+.postCard {
+
+  .image {
+    cursor: pointer;
+  }
+
+ .title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.75em;
+ }
+
+ .shortText {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 1.125rem;
+ }
+
+ .readMore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      transform: translateX(5px);
+    }
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgb(80, 80, 80);
+    margin-right: 10px;
+  }
+
+  svg {
+    transition: transform .2s ease-in-out;
+  }
+ }
+}

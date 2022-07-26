@@ -1,48 +1,35 @@
 import styles from './ProjectFull.module.scss';
+import urlBuilder from '../../lib/imageUrl';
+import Image from 'next/image';
 
 function ProjectFull({ project }) {
+  const images = project.attributes?.gallery.data;
+  console.log(images);
+
   return (
     <section className={styles.projectFull}>
       <div className="container p-0">
         <div className="row">
           <div className="col-12 col-md-6 col-xl-4 pt-60 pb-60">
-            <div className="ph-20 ">
+            <div className="ph-20">
               <h3 className="h3 mb-20">Project overview</h3>
-              <ul className={styles.overview}>
-                {project.overview.map((item, i) => (
-                  <li key={i} className="text-large">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <pre className={styles.overview}>{project.attributes.Overview}</pre>
 
               <h3 className="h3 mb-20">What we delivered</h3>
-              <ul className={styles.delivered}>
-                {project.delivered.map((item, i) => (
-                  <li key={i} className="text-large">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <pre className={styles.delivered}>{project.attributes.Delivered}</pre>
             </div>
           </div>
           <div className="col-12 col-md-6 col-xl-7 offset-xl-1 lh-0 pt-xl-60 pb-xl-60">
-            {project.imagesUrl.map((obj, i) => (
-              <picture loading="lazy" key={i} className="lh-0">
-                <source
-                  loading="lazy"
-                  srcSet={`${obj.desk}, ${obj.desk2x} 2x`}
-                  media="(min-width: 1200px)"
+            {images &&
+              images.map((obj) => (
+                <Image
+                  key={obj.id}
+                  alt={obj.attributes.name}
+                  src={urlBuilder(obj.attributes.url)}
+                  width={obj.attributes.width}
+                  height={obj.attributes.height}
                 />
-                <img
-                  loading="lazy"
-                  src={obj.mob}
-                  className="img"
-                  alt=""
-                  srcSet={`${obj.mob2x} 2x`}
-                />
-              </picture>
-            ))}
+              ))}
           </div>
         </div>
       </div>

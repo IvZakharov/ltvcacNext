@@ -1,9 +1,9 @@
-import Hero from '../../Components/Hero/Hero';
-import Ticker from '../../Components/Ticker/Ticker';
-import LetsTalk from '../../Components/LetsTalk/LetsTalkReverse';
-import ListWithIcon from '../../Components/ListWithIcon/ListWithIcon';
-import MustHaveEvents from '../../Components/MustHaveEvents/MustHaveEvents';
-
+import Hero from '../../components/Hero/Hero';
+import Ticker from '../../components/Ticker/Ticker';
+import LetsTalk from '../../components/LetsTalk/LetsTalkReverse';
+import ListWithIcon from '../../components/ListWithIcon/ListWithIcon';
+import MustHaveEvents from '../../components/MustHaveEvents/MustHaveEvents';
+import { MainLayout } from '../../layouts/MainLayout';
 
 export default function analytics() {
   const arr1 = [
@@ -14,7 +14,7 @@ export default function analytics() {
     },
     {
       title: 'No user/client traction across the  funnel and inside the product',
-      text: 'Not possible to work with ‘visitor -&#62; client’ conversion rate. Delivering features in a ‘leap of faith’ mode: never know HOW new release impacts product',
+      text: 'Not possible to work with &apos;visitor -&#62; client&apos; conversion rate. Delivering features in a &apos;leap of faith&apos; mode: never know HOW new release impacts product',
       iconCheck: false,
     },
 
@@ -92,13 +92,15 @@ export default function analytics() {
   ];
 
   return (
-    <>
-
-
-      <Hero title={'Mobile & Web Tracking'}
-            subtitle={'Tracking system setup services for your project'}
-            heroImg={'imgSixth'}/>
-      <Ticker/>
+    <MainLayout
+      title={'Site and app Tracking system setup services - LTV:CAC agency'}
+      description="We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside sales funnel">
+      <Hero
+        title={'Mobile & Web Tracking'}
+        subtitle={'Tracking system setup services for your project'}
+        heroImg={'imgSixth'}
+      />
+      <Ticker />
 
       <section className="section section--title-left-img3">
         <div className="container p-0">
@@ -107,15 +109,14 @@ export default function analytics() {
               <div className="section__title-box pt-80 pt-md-120 p-25">
                 <h2 className="section__title section__title--small section__title-img3 ta-left">
                   TRACKING
-                  <br/>
+                  <br />
                   CLUSTER FOR
-                  <br/>
+                  <br />
                   BUSINESSES
                 </h2>
               </div>
             </div>
-            <div
-              className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
+            <div className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
               <div className="ph-20">
                 <h3 className="h3 mb-20">Why does your company need tracking?</h3>
                 <p className="text mb-20">
@@ -147,9 +148,9 @@ export default function analytics() {
               <div className="section__title-box section__title-box--img2 p-20 pt-80 pb-80 pt-md-100">
                 <h2 className="section__title ta-left section__title--large">
                   HOW
-                  <br/>
+                  <br />
                   IT
-                  <br/>
+                  <br />
                   WORKS
                 </h2>
               </div>
@@ -196,9 +197,9 @@ export default function analytics() {
               <div className="section__title-box section__title-box--img4 pl-70 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   WHAT CAN
-                  <br/>
+                  <br />
                   TRACKING HELP
-                  <br/>
+                  <br />
                   YOU WITH?
                 </h2>
               </div>
@@ -231,11 +232,11 @@ export default function analytics() {
               <div className="section__title-box section__title-box--img1 pl-70 pl-md-20 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left">
                   YOUR
-                  <br/>
+                  <br />
                   BUSINESS
-                  <br/>
+                  <br />
                   WITH NO
-                  <br/>
+                  <br />
                   TRACKING?
                 </h2>
               </div>
@@ -243,7 +244,7 @@ export default function analytics() {
 
             <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
-                <ListWithIcon arr={arr1}/>
+                <ListWithIcon arr={arr1} />
               </div>
             </div>
           </div>
@@ -257,11 +258,11 @@ export default function analytics() {
               <div className="section__title-box section__title-box--img3 pl-70 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   YOUR
-                  <br/>
+                  <br />
                   BUSINESS
-                  <br/>
+                  <br />
                   WITH
-                  <br/>
+                  <br />
                   TRACKING
                 </h2>
               </div>
@@ -269,14 +270,14 @@ export default function analytics() {
 
             <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
-                <ListWithIcon arr={arr2}/>
+                <ListWithIcon arr={arr2} />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <MustHaveEvents/>
+      <MustHaveEvents />
 
       <section className="section section--title-right-img1 mb-60 mb-md-0">
         <div className="container p-0">
@@ -285,11 +286,11 @@ export default function analytics() {
               <div className="section__title-box section__title-box--img1 pl-70 pl-md-20 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left">
                   HOW WE
-                  <br/>
+                  <br />
                   MAKE YOUR
-                  <br/>
+                  <br />
                   TRACKING
-                  <br/>
+                  <br />
                   EFFECTIVE?
                 </h2>
               </div>
@@ -297,15 +298,14 @@ export default function analytics() {
 
             <div className="col-12 col-md-6 col-xl-4 offset-xl-1  pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
-                <ListWithIcon arr={arr3}/>
+                <ListWithIcon arr={arr3} />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <LetsTalk/>
-    </>
+      <LetsTalk />
+    </MainLayout>
   );
 }
-

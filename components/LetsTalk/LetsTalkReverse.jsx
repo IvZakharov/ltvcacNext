@@ -8,7 +8,7 @@ function LetsTalkReverse() {
           <div className="col-12 col-md-6 mb-50 mb-md-0 order-md-0 col-xl-5 offset-xl-1">
             <div className="section__title-box section__title-box--img2 p-20 pt-120 pb-120 pt-md-100 pt-xl-280 pb-xl-280">
               <h2 className="section__title section__title--large ta-left">
-                LET'S
+                LET&apos;S
                 <br />
                 TALK
               </h2>

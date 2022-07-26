@@ -1,16 +1,20 @@
 import styles from './MobileMenu.module.scss';
 import logoSvg from './img/logo.svg';
-import Link from "next/link";
+import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export const MobileMenu = ({ onClickClose }) => {
   const [openSubmenu, setOpenSubmenu] = React.useState(false);
+  const router = useRouter();
 
   return (
     <div className={styles.mobileMenu}>
-      <Link onClick={() => onClickClose(false)} to="" className={styles.logo}>
-        <img src={logoSvg} alt="logo" />
+      <Link href="/" className={styles.logo}>
+        <a onClick={() => onClickClose(false)}>
+          <Image width={125} height={125} src={logoSvg} alt="logo" />
+        </a>
       </Link>
 
       {openSubmenu && (
@@ -61,68 +65,85 @@ export const MobileMenu = ({ onClickClose }) => {
       <nav className={styles.mainNav}>
         <ul>
           <li>
-            <Link
-              onClick={() => onClickClose(false)}
-              className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="">
-              About Us
+            <Link href="/">
+              <a
+                onClick={() => onClickClose(false)}
+                className={router.pathname == '/' ? styles.active : ''}>
+                {' '}
+                About Us
+              </a>
             </Link>
           </li>
           <li>
-            <Link
-              onClick={() => onClickClose(false)}
-              className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="/portfolio">
-              Portfolio
+            <Link href="/portfolio">
+              <a
+                onClick={() => onClickClose(false)}
+                className={router.pathname == '/portfolio' ? styles.active : ''}>
+                Portfolio
+              </a>
             </Link>
           </li>
           <li>
-            <Link className={styles.submenuLink} to="/services">
-              <span onClick={() => onClickClose(false)}>SERVICES</span>
-              <button onClick={() => setOpenSubmenu(!openSubmenu)} className={styles.submenuBtn}>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.26998 2.55611C7.97706 2.84912 7.8125 3.24648 7.8125 3.6608C7.8125 4.07512 7.97706 4.47247 8.26998 4.76549L16.0044 12.4999L8.26998 20.2342C7.98536 20.5289 7.82787 20.9236 7.83143 21.3333C7.83499 21.743 7.99931 22.1349 8.28901 22.4246C8.57871 22.7143 8.97061 22.8786 9.38029 22.8822C9.78997 22.8857 10.1847 22.7282 10.4794 22.4436L19.3184 13.6045C19.6113 13.3115 19.7759 12.9142 19.7759 12.4999C19.7759 12.0855 19.6113 11.6882 19.3184 11.3952L10.4794 2.55611C10.1863 2.26319 9.78899 2.09863 9.37467 2.09863C8.96035 2.09863 8.56299 2.26319 8.26998 2.55611V2.55611Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+            <Link href="/posts">
+              <a
+                onClick={() => onClickClose(false)}
+                className={router.pathname == '/posts' ? styles.active : ''}>
+                Blog
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.submenuLink} href="/services">
+              <a>
+                <span onClick={() => onClickClose(false)}>SERVICES</span>
+                <button onClick={() => setOpenSubmenu(!openSubmenu)} className={styles.submenuBtn}>
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.26998 2.55611C7.97706 2.84912 7.8125 3.24648 7.8125 3.6608C7.8125 4.07512 7.97706 4.47247 8.26998 4.76549L16.0044 12.4999L8.26998 20.2342C7.98536 20.5289 7.82787 20.9236 7.83143 21.3333C7.83499 21.743 7.99931 22.1349 8.28901 22.4246C8.57871 22.7143 8.97061 22.8786 9.38029 22.8822C9.78997 22.8857 10.1847 22.7282 10.4794 22.4436L19.3184 13.6045C19.6113 13.3115 19.7759 12.9142 19.7759 12.4999C19.7759 12.0855 19.6113 11.6882 19.3184 11.3952L10.4794 2.55611C10.1863 2.26319 9.78899 2.09863 9.37467 2.09863C8.96035 2.09863 8.56299 2.26319 8.26998 2.55611V2.55611Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </a>
             </Link>
             {openSubmenu && (
               <ul className={styles.submenu}>
                 <li>
-                  <Link
-                    onClick={() => onClickClose(false)}
-                    className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/customer">
-                    CUSTOMER
-                    <br />
-                    DEVELOPMENT
+                  <Link href="/services/customer">
+                    <a
+                      onClick={() => onClickClose(false)}
+                      className={router.pathname == '/services/customer' ? styles.active : ''}>
+                      CUSTOMER
+                      <br />
+                      DEVELOPMENT
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    onClick={() => onClickClose(false)}
-                    className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/analytics">
-                    ANALYTICS
-                    <br />
-                    SYSTEM SETUP
+                  <Link href="/services/analytics">
+                    <a
+                      onClick={() => onClickClose(false)}
+                      className={router.pathname == '/services/analytics' ? styles.active : ''}>
+                      ANALYTICS
+                      <br />
+                      SYSTEM SETUP
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    onClick={() => onClickClose(false)}
-                    className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/paid">
-                    LEAD
-                    <br />
-                    GENERATED
+                  <Link href="/services/paid">
+                    <a
+                      onClick={() => onClickClose(false)}
+                      className={router.pathname == '/services/paid' ? styles.active : ''}>
+                      LEAD
+                      <br />
+                      GENERATED
+                    </a>
                   </Link>
                 </li>
               </ul>
@@ -131,9 +152,9 @@ export const MobileMenu = ({ onClickClose }) => {
         </ul>
       </nav>
 
-      <Link to="https://tally.so/r/wkdaBd/" className="button button--secondary CTA">
+      <a href="https://tally.so/r/wkdaBd/" className="button button--secondary CTA">
         CONTACT US
-      </Link>
+      </a>
 
       <div className={styles.social}>
         <ul>
@@ -242,6 +263,6 @@ export const MobileMenu = ({ onClickClose }) => {
       </div>
     </div>
   );
-}
+};
 
 export default MobileMenu;

@@ -1,0 +1,55 @@
+.heroPost {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #595959;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;    
+    backdrop-filter: grayscale(100%);
+    background-color: rgba(#000, .5);
+  }
+
+  @media (min-width:768px) {
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+
+
+  .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.055em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+  }
+
+  .subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+  }
+}

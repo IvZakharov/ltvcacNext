@@ -1,7 +1,7 @@
 import styles from './Hero.module.scss';
-import Link from "next/link";
+import Link from 'next/link';
 
-export const Hero = ({title, subtitle, heroImg, tags}) => {
+export const Hero = ({ title, subtitle, heroImg, tags }) => {
   return (
     <section className={`${styles.hero} ${styles[heroImg]}`}>
       <div className="container">
@@ -17,8 +17,8 @@ export const Hero = ({title, subtitle, heroImg, tags}) => {
               </ul>
             )}
             <div className={styles.buttonWrap}>
-              <Link href="https://tally.so/r/wkdaBd/" className={`${styles.button} button CTA`}>
-                <a>TELL US ABOUT YOUR PROJECT</a>
+              <Link href="https://tally.so/r/wkdaBd/">
+                <a className={`${styles.button} button CTA`}>TELL US ABOUT YOUR PROJECT</a>
               </Link>
             </div>
           </div>
@@ -26,6 +26,6 @@ export const Hero = ({title, subtitle, heroImg, tags}) => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

@@ -1,6 +1,7 @@
 import styles from './ListWithIcon.module.scss';
 import checkIcon from './img/check.svg';
 import noCheckIcon from './img/noCheck.svg';
+import Image from 'next/image';
 
 function ListWithIcon({ arr }) {
   return (
@@ -9,9 +10,9 @@ function ListWithIcon({ arr }) {
         <li key={i} className={styles.item}>
           <i className={styles.icon}>
             {obj.iconCheck ? (
-              <img src={checkIcon} alt="Check icon" />
+              <Image width={32} height={32} src={checkIcon} alt="Check icon" />
             ) : (
-              <img src={noCheckIcon} alt="No check icon" />
+              <Image width={32} height={32} src={noCheckIcon} alt="No check icon" />
             )}
           </i>
           <div>

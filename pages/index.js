@@ -12,35 +12,6 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 import LetsTalk from "../components/LetsTalk/LetsTalk";
 import React from "react";
 
-const herosInfo = [
-
-  {
-    title: '',
-    subtitle: '',
-    heroImg: '',
-  },
-  {
-    title: '',
-    subtitle: '',
-    heroImg: '',
-  },
-  {
-    title: '',
-    subtitle: '',
-    heroImg: '',
-  },
-  {
-    title: '',
-    subtitle: '',
-    heroImg: '',
-  },
-  {
-    title: '',
-    subtitle: '',
-    heroImg: '',
-  },
-];
-
 export default function Home() {
   return (
     <MainLayout title={"High ROI Performance marketing services - LTV:CAC agency"}

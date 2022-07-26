@@ -1,6 +1,7 @@
 import styles from './MustHaveEvents.module.scss';
 import website from './img/website.svg';
 import apps from './img/apps.svg';
+import Image from 'next/image';
 
 function MustHaveEvents() {
   return (
@@ -19,7 +20,7 @@ function MustHaveEvents() {
             <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
                 <div className={styles.events}>
-                  <img src={website} alt="events" />
+                  <Image width={374} height={570} src={website} alt="events" />
                 </div>
               </div>
             </div>
@@ -41,7 +42,7 @@ function MustHaveEvents() {
             <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
               <div className="ph-20">
                 <div className={styles.events}>
-                  <img src={apps} alt="events" />
+                  <Image width={374} height={570} src={website} alt="events" />
                 </div>
               </div>
             </div>

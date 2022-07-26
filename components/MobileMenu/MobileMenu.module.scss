@@ -63,6 +63,11 @@
         position: relative;
       }
 
+      .active {
+        color: $secondary;
+        font-weight: 700;
+      }
+
       .submenuBtn {
         position: absolute;
         right: -60px;

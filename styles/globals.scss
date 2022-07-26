@@ -122,9 +122,11 @@ body {
 .w-70 {
   width: 70% !important;
 }
+
 .w-35 {
   width: 35% !important;
 }
+
 .w-30 {
   width: 30% !important;
 }
@@ -136,13 +138,14 @@ body {
 .w-15 {
   width: 15% !important;
 }
+
 .w-10 {
   width: 10% !important;
 }
+
 .w-5 {
   width: 5% !important;
 }
-
 
 
 .italic {
@@ -436,6 +439,7 @@ body {
 
   .diagram {
     display: flex;
+
     li {
       height: 30px;
       font-weight: 400;
@@ -452,6 +456,10 @@ body {
 
 .portfolio-grid {
   background-color: #616ab5;
+}
+
+.blog-grid {
+  padding: 50px 0;
 }
 
 .color {
@@ -530,7 +538,7 @@ body {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .ta-md-center {
     text-align: center;
   }
@@ -849,6 +857,10 @@ body {
 
   .pb-xl-280 {
     padding-bottom: 280px;
+  }
+
+  .blog-grid {
+    padding: 60px 120px;
   }
 
   .section {

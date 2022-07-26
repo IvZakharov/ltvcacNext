@@ -1,17 +1,22 @@
-import Hero from '../../Components/Hero/Hero';
-import Ticker from '../../Components/Ticker/Ticker';
-import MustHaveEvents from '../../Components/MustHaveEvents/MustHaveEvents';
-import LetsTalk from '../../Components/LetsTalk/LetsTalkReverse';
-import Steps from '../../Components/Steps/Steps';
-import OurToolkit from '../../Components/OurToolkit/OurToolkit';
+import Hero from '../../components/Hero/Hero';
+import Ticker from '../../components/Ticker/Ticker';
+import MustHaveEvents from '../../components/MustHaveEvents/MustHaveEvents';
+import LetsTalk from '../../components/LetsTalk/LetsTalkReverse';
+import Steps from '../../components/Steps/Steps';
+import OurToolkit from '../../components/OurToolkit/OurToolkit';
+import { MainLayout } from '../../layouts/MainLayout';
 
-
-export const paid = () => {
+export default function paid() {
   return (
-    <>
-      <Hero title={'Lead generated'} subtitle={'Data-driven digital marketing for your customer’s base growing'}
-            heroImg={'imgSecond'}/>
-      <Ticker/>
+    <MainLayout
+      title="Users Qcquisition from Digital channels - LTV:CAC agency"
+      description="Use our 10 + years expertise in digital channels and market trends to drive more customers to your products and back your old clients for buy again. ">
+      <Hero
+        title={'Lead generated'}
+        subtitle={'Data-driven digital marketing for your customer&apos;s base growing'}
+        heroImg={'imgSecond'}
+      />
+      <Ticker />
 
       <section className="section section--title-left-img3">
         <div className="container p-0">
@@ -20,17 +25,16 @@ export const paid = () => {
               <div className="section__title-box section__title-box--img3 pt-100 pb-100 pt-md-120 p-25">
                 <h2 className="section__title section__title--small ta-left">
                   MARKETING
-                  <br/>
+                  <br />
                   CHANNELS
-                  <br/>
+                  <br />
                   FOR
-                  <br/>
+                  <br />
                   BUSINESSES
                 </h2>
               </div>
             </div>
-            <div
-              className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
+            <div className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
               <div className="ph-20">
                 <h3 className="h3 mb-20">No signs of slowing down</h3>
                 <p className="text-large mb-20">
@@ -61,8 +65,8 @@ export const paid = () => {
             <div className="col-12 col-xl-8 m-auto">
               <p className="section__text ta-left ta-md-center">
                 Use our 10 + years expertise in digital channels and market trends to drive more
-                customers to your products and back your old clients for buy again. We'll help you
-                grow your revenue in no time!
+                customers to your products and back your old clients for buy again. We&apos;ll help
+                you grow your revenue in no time!
               </p>
             </div>
           </div>
@@ -76,11 +80,11 @@ export const paid = () => {
               <div className="section__title-box section__title-box--img1 pl-70 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   WHAT CAN
-                  <br/>
+                  <br />
                   ANALYTICS
-                  <br/>
+                  <br />
                   HELP YOU?
-                  <br/>
+                  <br />
                 </h2>
               </div>
             </div>
@@ -103,8 +107,9 @@ export const paid = () => {
                     Ad creatives for paid channels fool free jobs-to-be-done framework
                   </li>
                   <li className="text-large mb-20">
-                    Build a base for retargeting. You can 'catch up' with doubting/deleting/unpaid
-                    users so as this is usually cheaper than buying new ones
+                    Build a base for retargeting. You can &apos;catch up&apos; with
+                    doubting/deleting/unpaid users so as this is usually cheaper than buying new
+                    ones
                   </li>
                   <li className="text-large">
                     Weekly reporting and free recommendations for your marketing
@@ -123,9 +128,9 @@ export const paid = () => {
               <div className="section__title-box section__title-box--img2 p-20 pt-80 pb-80 pt-md-100">
                 <h2 className="section__title ta-left section__title--large">
                   HOW
-                  <br/>
+                  <br />
                   IT
-                  <br/>
+                  <br />
                   WORKS
                 </h2>
               </div>
@@ -136,9 +141,9 @@ export const paid = () => {
                 <p className="text-large mb-20">
                   We typically start with an in-depth analysis of your market, product, channels,
                   and business model. Then we deploy a performance-based attribution and set up
-                  analytics. We will elaborate on each ad campaign's data-driven architecture and
-                  produce only the best-suited creatives with the intel gathered. After the launch,
-                  we optimize ad campaigns on a daily and weekly basis.
+                  analytics. We will elaborate on each ad campaign&apos;s data-driven architecture
+                  and produce only the best-suited creatives with the intel gathered. After the
+                  launch, we optimize ad campaigns on a daily and weekly basis.
                 </p>
                 <p className="text-large">
                   Here’s how we lead your digital customer acquisition channel to a significant
@@ -163,14 +168,13 @@ export const paid = () => {
         </div>
       </div>
 
-      <Steps/>
+      <Steps />
 
-      <MustHaveEvents/>
+      <MustHaveEvents />
 
-      <OurToolkit/>
+      <OurToolkit />
 
-      <LetsTalk/>
-    </>
+      <LetsTalk />
+    </MainLayout>
   );
 }
-

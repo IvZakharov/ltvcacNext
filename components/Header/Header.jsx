@@ -3,9 +3,11 @@ import logoSvg from './img/logo.svg';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export const Header = ({ onClickMenu }) => {
   const [offset, setOffset] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -19,29 +21,36 @@ export const Header = ({ onClickMenu }) => {
       <div className="container">
         <div className={styles.inner}>
           <Link href="/" className={styles.logo}>
-            <Image src={logoSvg} width={125} height={125} alt="logo" />
+            <a>
+              <Image src={logoSvg} width={125} height={125} alt="logo" />
+            </a>
           </Link>
 
           <nav className={styles.mainNav}>
             <ul>
               <li>
                 <Link href="/">
-                  <a>About Us</a>
+                  <a className={router.pathname == '/' ? styles.active : ''}>About Us</a>
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio/">
-                  <a>Portfolio</a>
+                <Link href="/portfolio">
+                  <a className={router.pathname == '/portfolio' ? styles.active : ''}>Portfolio</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/posts">
+                  <a className={router.pathname == '/posts' ? styles.active : ''}>Blog</a>
                 </Link>
               </li>
               <li className={styles.submenu}>
-                <Link href="/services/">
-                  <a>Services</a>
+                <Link href="/services">
+                  <a className={router.pathname == '/services' ? styles.active : ''}>Services</a>
                 </Link>
                 <ul>
                   <li>
                     <Link href="/services/customer">
-                      <a>
+                      <a className={router.pathname == '/services/customer' ? styles.active : ''}>
                         CUSTOMER
                         <br />
                         DEVELOPMENT
@@ -50,7 +59,7 @@ export const Header = ({ onClickMenu }) => {
                   </li>
                   <li>
                     <Link href="/services/analytics">
-                      <a>
+                      <a className={router.pathname == '/services/analytics' ? styles.active : ''}>
                         ANALYTICS
                         <br />
                         SYSTEM SETUP
@@ -59,7 +68,7 @@ export const Header = ({ onClickMenu }) => {
                   </li>
                   <li>
                     <Link href="/services/paid">
-                      <a>
+                      <a className={router.pathname == '/services/paid' ? styles.active : ''}>
                         LEAD
                         <br />
                         GENERATED
@@ -74,7 +83,7 @@ export const Header = ({ onClickMenu }) => {
           <div className={styles.social}>
             <ul>
               <li>
-                <Link
+                <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.linkedin.com/company/ltvcac-agency/">
@@ -120,10 +129,10 @@ export const Header = ({ onClickMenu }) => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link target="_blank" rel="noreferrer" href="https://business.facebook.com/ltvcac/">
+                <a target="_blank" rel="noreferrer" href="https://business.facebook.com/ltvcac/">
                   <svg
                     width="30"
                     height="30"
@@ -138,13 +147,10 @@ export const Header = ({ onClickMenu }) => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.instagram.com/ltvcac.agency/">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ltvcac.agency/">
                   <svg
                     width="30"
                     height="30"
@@ -173,7 +179,7 @@ export const Header = ({ onClickMenu }) => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
