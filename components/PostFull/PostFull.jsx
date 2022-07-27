@@ -7,8 +7,6 @@ function PostFull({ content }) {
   const contentData = JSON.parse(content);
   const blocks = contentData.blocks;
 
-  console.log(blocks);
-
   const renderBlocks = (block) => {
     switch (block.type) {
       case 'header':
