@@ -33,7 +33,7 @@ export async function getStaticPaths() {
       fallback: false,
     };
   } catch (error) {
-    return console.log(error);
+    return { error };
   }
 }
 
@@ -50,6 +50,6 @@ export async function getStaticProps({ params }) {
       props: { post },
     };
   } catch (error) {
-    return console.log(error);
+    return { error };
   }
 }

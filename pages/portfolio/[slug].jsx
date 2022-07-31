@@ -27,6 +27,7 @@ export async function getStaticPaths() {
     const res = await axios.get('http://localhost:1337/api/works');
     const projects = await res.data.data;
     const paths = projects.map((project) => ({ params: { slug: project.attributes.slug } }));
+    console.log(paths);
 
     return {
       paths,
