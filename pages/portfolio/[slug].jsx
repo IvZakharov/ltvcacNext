@@ -38,9 +38,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { slug } = params;
-
   try {
+    const { slug } = params;
     const res = await axios.get(
       `http://localhost:1337/api/works?populate=*&filters\[Slug\]=${slug}`,
     );
