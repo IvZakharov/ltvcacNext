@@ -38,12 +38,16 @@ export default function Portfolio({ projects }) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get('http://localhost:1337/api/works');
-  const projects = await res.data.data;
+  try {
+    const res = await axios.get('http://localhost:1337/api/works');
+    const projects = await res.data.data;
 
-  return {
-    props: {
-      projects,
-    },
-  };
+    return {
+      props: {
+        projects,
+      },
+    };
+  } catch (error) {
+    return { error };
+  }
 }

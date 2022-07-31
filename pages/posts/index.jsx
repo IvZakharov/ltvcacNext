@@ -38,12 +38,16 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get('http://localhost:1337/api/posts?populate=*');
-  const posts = await res.data.data;
+  try {
+    const res = await axios.get('http://localhost:1337/api/posts?populate=*');
+    const posts = await res.data.data;
 
-  return {
-    props: {
-      posts,
-    },
-  };
+    return {
+      props: {
+        posts,
+      },
+    };
+  } catch (error) {
+    return { error };
+  }
 }
