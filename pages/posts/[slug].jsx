@@ -23,24 +23,34 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get('http://localhost:1337/api/posts');
-  const posts = await res.data.data;
-  const paths = posts.map((post) => ({ params: { slug: post.attributes.Slug } }));
+  try {
+    const res = await axios.get('http://localhost:1337/api/posts');
+    const posts = await res.data.data;
+    const paths = posts.map((post) => ({ params: { slug: post.attributes.Slug } }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+    return {
+      paths,
+      fallback: false,
+    };
+  } catch (error) {
+    return console.log(error);
+  }
 }
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const res = await axios.get(`http://localhost:1337/api/posts?populate=*&filters\[Slug\]=${slug}`);
-  const data = await res.data.data;
-  const post = data[0];
+  try {
+    const res = await axios.get(
+      `http://localhost:1337/api/posts?populate=*&filters\[Slug\]=${slug}`,
+    );
+    const data = await res.data.data;
+    const post = data[0];
 
-  return {
-    props: { post },
-  };
+    return {
+      props: { post },
+    };
+  } catch (error) {
+    return console.log(error);
+  }
 }

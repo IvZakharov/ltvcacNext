@@ -23,24 +23,34 @@ export default function Project({ project }) {
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get('http://localhost:1337/api/works');
-  const projects = await res.data.data;
-  const paths = projects.map((project) => ({ params: { slug: project.attributes.slug } }));
+  try {
+    const res = await axios.get('http://localhost:1337/api/works');
+    const projects = await res.data.data;
+    const paths = projects.map((project) => ({ params: { slug: project.attributes.slug } }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+    return {
+      paths,
+      fallback: false,
+    };
+  } catch (error) {
+    return { error };
+  }
 }
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const res = await axios.get(`http://localhost:1337/api/works?populate=*&filters\[Slug\]=${slug}`);
-  const data = await res.data.data;
-  const project = data[0];
+  try {
+    const res = await axios.get(
+      `http://localhost:1337/api/works?populate=*&filters\[Slug\]=${slug}`,
+    );
+    const data = await res.data.data;
+    const project = data[0];
 
-  return {
-    props: { project },
-  };
+    return {
+      props: { project },
+    };
+  } catch (error) {
+    return { error };
+  }
 }
