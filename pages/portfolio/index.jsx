@@ -39,7 +39,7 @@ export default function Portfolio({ projects }) {
 
 export async function getStaticProps() {
   try {
-    const res = await axios.get('http://localhost:1337/api/works');
+    const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/works');
     const projects = await res.data.data;
 
     return {

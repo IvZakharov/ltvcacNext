@@ -24,10 +24,10 @@ export default function Post({ post }) {
 
 export async function getStaticPaths() {
   try {
-    const res = await axios.get('http://localhost:1337/api/posts');
+    const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/posts');
     const posts = await res.data.data;
     const paths = posts.map((post) => ({ params: { slug: post.attributes.Slug } }));
-
+    console.log(paths);
     return {
       paths,
       fallback: false,
@@ -41,7 +41,7 @@ export async function getStaticProps({ params }) {
   try {
     const { slug } = params;
     const res = await axios.get(
-      `http://localhost:1337/api/posts?populate=*&filters\[Slug\]=${slug}`,
+      `https://murmuring-ocean-17174.herokuapp.com/api/posts?populate=*&filters\[Slug\]=${slug}`,
     );
     const data = await res.data.data;
     const post = data[0];

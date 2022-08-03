@@ -1,4 +1,4 @@
 {
-  "STRAPI_URL": "http://localhost:1337",
-  "STRAPI_DOMAIN": "localhost"
+  "STRAPI_URL": "https://murmuring-ocean-17174.herokuapp.com",
+  "STRAPI_DOMAIN": "murmuring-ocean-17174.herokuapp.com"
 }
