@@ -14,7 +14,7 @@ export default function Post({ post }) {
         <HeroPost
           title={post.attributes.Title}
           subtitle={post.attributes.Subtitle}
-          image={urlBuilder(post.attributes?.postImage?.data.attributes.url)}
+          image={urlBuilder(post.attributes?.postImage?.data?.attributes?.url)}
         />
       )}
       {post && <PostFull content={post.attributes.body} />}
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
     const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/posts');
     const posts = await res.data.data;
     const paths = posts.map((post) => ({ params: { slug: post.attributes.Slug } }));
-    console.log(paths);
+  
     return {
       paths,
       fallback: false,
@@ -45,6 +45,8 @@ export async function getStaticProps({ params }) {
     );
     const data = await res.data.data;
     const post = data[0];
+
+    console.log(data);
 
     return {
       props: { post },

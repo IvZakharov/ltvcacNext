@@ -24,7 +24,7 @@ export default function Blog({ posts }) {
                 <div key={obj.id} className={'col-12 col-md-6 col-xl-4 p-4'}>
                   <PostCard
                     slug={obj.attributes.Slug}
-                    image={urlBuilder(obj.attributes.postImage.data.attributes.url)}
+                    image={urlBuilder(obj.attributes.postImage?.data?.attributes?.url)}
                     title={obj.attributes.Title}
                     subtitle={obj.attributes?.Subtitle}
                   />

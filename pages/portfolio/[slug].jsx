@@ -27,8 +27,7 @@ export async function getStaticPaths() {
     const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/works');
     const projects = await res.data.data;
     const paths = projects.map((project) => ({ params: { slug: project.attributes.slug } }));
-    console.log(paths);
-
+    
     return {
       paths,
       fallback: false,
@@ -42,7 +41,7 @@ export async function getStaticProps({ params }) {
   try {
     const { slug } = params;
     const res = await axios.get(
-      `https://murmuring-ocean-17174.herokuapp.com/api/works?populate=*&filters\[Slug\]=${slug}`,
+      `https://murmuring-ocean-17174.herokuapp.com/api/works?populate=*&filters\[slug\]=${slug}`,
     );
     const data = await res.data.data;
     const project = data[0];
