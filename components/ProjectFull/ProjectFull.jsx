@@ -5,6 +5,8 @@ import Image from 'next/image';
 function ProjectFull({ project }) {
   const images = project.attributes?.gallery.data;
 
+  console.log(project);
+
   return (
     <section className={styles.projectFull}>
       <div className="container p-0">
