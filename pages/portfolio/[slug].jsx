@@ -30,14 +30,14 @@ export async function getStaticPaths() {
     
     return {
       paths,
-      fallback: false,
+      fallback: true,
     };
   } catch (error) {
     return { error };
   }
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   try {
     const { slug } = params;
     const res = await axios.get(

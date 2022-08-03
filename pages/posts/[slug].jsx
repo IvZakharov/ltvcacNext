@@ -38,7 +38,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   try {
     const { slug } = params;
     const res = await axios.get(
