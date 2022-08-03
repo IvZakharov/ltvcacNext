@@ -14,7 +14,8 @@ export default function Post({ post }) {
         <HeroPost
           title={post.attributes.Title}
           subtitle={post.attributes.Subtitle}
-          image={urlBuilder(post.attributes?.postImage?.data?.attributes?.url)}
+
+          image={post.attributes.postImage.data ? urlBuilder(post.attributes.postImage.data.attributes.url) : ''}
         />
       )}
       {post && <PostFull content={post.attributes.body} />}
