@@ -37,7 +37,7 @@ export default function Blog({ posts }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/posts?populate=*');
     const posts = await res.data.data;

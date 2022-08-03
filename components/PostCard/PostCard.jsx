@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 function PostCard({ slug, image, title, subtitle }) {
-
+  console.log(image);
   return (
     <article className={`${styles.postCard}`}>
       <Link href={'/posts/[slug]'} as={`/posts/${slug}`}>
