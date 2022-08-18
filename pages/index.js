@@ -137,7 +137,7 @@ export default function Home() {
                   OUR SERVICES
                 </h2>
                 <p className="section__text ta-left ta-md-center">
-                  During the past decade we have worked on >90 projects in industries like SaaS, Ecommerce, Online
+                  During the past decade we have worked on &gt; 90 projects in industries like SaaS, Ecommerce, Online
                   Gaming etc.
                 </p>
               </div>

@@ -14,7 +14,7 @@ function LetsTalk({contentSide}) {
               <div
                   className="section__title-box p-20 pt-120 pb-120 pt-md-100 pt-xl-280 pb-xl-280">
                 <h2 className="section__title section__title--large ta-left">
-                  LET'S
+                  LET&apos;S
                   <br/>
                   TALK
                 </h2>

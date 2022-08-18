@@ -169,7 +169,7 @@ export default function analytics() {
                 <div className="ph-20">
                   <h3 className="h3 mb-20">Why does your company need automation?</h3>
                   <p className="text mb-20">
-                    Airplane autopilot quite a familiar thing these days but it didn't exist once.
+                    Airplane autopilot quite a familiar thing these days but it didn&apos;t exist once.
                   </p>
                   <p className="text mb-20">
                     Nonetheless people successfully crossed oceans and flew around the globe without it.
@@ -225,7 +225,8 @@ export default function analytics() {
                     service quality, improve service delivery or contain costs.
                   </p>
                   <p className="text mb-20">
-                    Let’s say you want to send emails to your customers, instead of hiring a manager who sends those
+                    Let&apos;s say you want to send emails to your customers, instead of hiring a manager who sends
+                    those
                     emails manually we can set up a system that sends emails itself when your customers perform certain
                     actions.
                   </p>
@@ -289,7 +290,8 @@ export default function analytics() {
                     <span className="count">3</span>
                     <div className="text-large mb-40">
                       <h3 className='h3 mb-10'>You get healthier nervous system</h3>
-                      <p> Automated system doesn’t have days off, it doesn’t fall sick and it certainly doesn’t need
+                      <p> Automated system doesn&apos;t have days off, it doesn&apos;t fall sick and it certainly
+                        doesn&apos;t need
                         medical insurance.
                       </p>
                     </div>

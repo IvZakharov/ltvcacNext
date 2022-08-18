@@ -50,7 +50,7 @@ export default function services() {
                     <li>Snapchat +8%</li>
                   </ul>
                   <Link href="/services/paid">
-                    <a className="button button--secondary d-block">FIND OUT MORE ></a>
+                    <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function services() {
                     Tracking report is your dashboard that shows where and how your business is flying.
                   </p>
                   <p className="text-large mb-20">
-                    <span className='d-block'>Imagine you just got a seat on a jet plane. It’s time to take off and the pilot says:</span>
+                    <span className='d-block'>Imagine you just got a seat on a jet plane. I&apos;s time to take off and the pilot says:</span>
                     <span className='d-block'>- Sorry, our GPS is broken so I’m going to navigate using stars.</span>
                     <span className='d-block'>- WHAT?</span>
                     <span
@@ -116,7 +116,7 @@ export default function services() {
                 <div className="ph-20">
                   <h3 className="h3 mb-20 ta-center">Why does your company need automation?</h3>
                   <p className="text-large mb-20">
-                    Airplane autopilot quite a familiar thing these days but it didn't exist once.
+                    Airplane autopilot quite a familiar thing these days but it didn&apos;t exist once.
                   </p>
                   <p className="text-large mb-20">
                     Nonetheless people successfully crossed oceans and flew around the globe without it.

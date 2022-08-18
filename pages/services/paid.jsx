@@ -191,7 +191,7 @@ export default function paid() {
               <div className="col-12 col-xl-8 m-auto">
                 <p className="section__text ta-left ta-md-center">
                   Use our 10 + years expertise in digital channels and market trends to drive more customers to your
-                  products and back your old clients for buy again. We'll help you grow your revenue in no time!
+                  products and back your old clients for buy again. We&apos;ll help you grow your revenue in no time!
                 </p>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function paid() {
                   <div className="count-block w-100 mb-40 mb-md-0">
                     <span className="count">3</span>
                     <div className="text-large mb-20">
-                      <p> We will elaborate on each ad campaign's data-driven architecture and produce only the
+                      <p> We will elaborate on each ad campaigns data-driven architecture and produce only the
                         best-suited creatives with the intel gathered.
                       </p>
                     </div>
