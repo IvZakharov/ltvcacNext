@@ -3,6 +3,7 @@
 .focus {
   position: relative;
 
+
   @media (min-width: 1200px) {
     &:before {
       position: absolute;
@@ -18,6 +19,8 @@
       background-repeat: no-repeat;
       z-index: -1;
     }
+
+
   }
 
   .content {

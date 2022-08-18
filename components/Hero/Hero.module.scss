@@ -6,58 +6,11 @@
   background-repeat: no-repeat;
   background-color: #595959;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     padding-top: 230px;
     padding-bottom: 150px;
   }
 
-  &.imgFirst {
-    background-image: url('./img/bgMob.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg.jpg');
-    }
-  }
-
-  &.imgSecond {
-    background-image: url('./img/bgMob2.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg2.jpg');
-    }
-  }
-
-  &.imgThird {
-    background-image: url('./img/bgMob3.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg3.jpg');
-    }
-  }
-
-  &.imgFourth {
-    background-image: url('./img/bgMob4.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg4.jpg');
-    }
-  }
-
-  &.imgFifth {
-    background-image: url('./img/bgMob5.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg5.jpg');
-    }
-  }
-
-  &.imgSixth {
-    background-image: url('./img/bgMob6.jpg');
-
-    @media (min-width: 768px) {
-      background-image: url('./img/bg6.jpg');
-    }
-  }
 
   .tags {
     display: flex;
@@ -66,7 +19,7 @@
     max-width: 400px;
     justify-content: center;
     margin: 0 auto;
-    
+
     li {
       padding: 6px 8px;
       border-radius: 40px;
@@ -80,11 +33,11 @@
       text-transform: uppercase;
       letter-spacing: 0.005em;
       color: #FFFFFF;
-  
+
       &:first-child {
         margin-left: 0;
       }
-  
+
       &:last-child {
         margin-right: 0;
       }
@@ -103,7 +56,7 @@
 
     @media (min-width: 768px) {
       font-size: 60px;
-    line-height: 60px;
+      line-height: 60px;
     }
 
     &--small {

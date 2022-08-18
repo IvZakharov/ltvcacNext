@@ -11,14 +11,17 @@
   }
 
   .icon {
-    margin-right: 45px;
+    margin-right: 20px;
+    min-width: 32px;
+    min-height: 32px;
+
   }
 
   .title {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: $primary;
   }
 

@@ -67,6 +67,10 @@ body {
 
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
 .fw-700 {
   font-weight: 700 !important;
 }
@@ -165,10 +169,9 @@ body {
   font-size: 14px;
   line-height: 28px;
   /* or 200% */
-
-
-  color: $fourth;
+  color: #514E4E;
 }
+
 
 .small-text-grey {
   font-weight: 400;
@@ -179,6 +182,10 @@ body {
 
 .fs-italic {
   font-style: italic;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 
@@ -350,6 +357,10 @@ body {
   padding-bottom: 120px;
 }
 
+.pt-160 {
+  padding-top: 160px;
+}
+
 .pb-160 {
   padding-bottom: 160px;
 }
@@ -405,7 +416,7 @@ body {
   span {
     display: block;
     min-width: 50px;
-    margin-right: 30px;
+    margin-right: 20px;
     font-weight: 500;
     font-size: 80px;
     line-height: 80px;
@@ -433,9 +444,7 @@ body {
 }
 
 .problems {
-  @media (min-width: 1200px) {
-    padding-right: 120px;
-  }
+  
 
   .diagram {
     display: flex;
@@ -512,21 +521,54 @@ body {
     background-position: center;
 
     &--img1 {
-      background-image: url('../assets/img/section/mob1.jpg');
+      background-image: url("/img/section/1mob.jpg");
 
     }
 
     &--img2 {
-      background-image: url('../assets/img/section/mob2.jpg');
+      background-image: url("/img/section/2mob.jpg");
     }
 
     &--img3 {
-      background-image: url('../assets/img/section/mob3.jpg');
+      background-image: url("/img/section/3mob.jpg");
     }
 
     &--img4 {
-      background-image: url('../assets/img/section/mob4.jpg');
+      background-image: url("/img/section/4mob.jpg");
     }
+
+    &--img5 {
+      background-image: url("/img/section/5mob.jpg");
+    }
+
+    &--img6 {
+      background-image: url("/img/section/6mob.jpg");
+    }
+
+    &--img7 {
+      background-image: url("/img/section/7mob.jpg");
+    }
+
+    &--img8 {
+      background-image: url("/img/section/8mob.jpg");
+    }
+
+    &--img9 {
+      background-image: url("/img/section/9mob.jpg");
+    }
+
+    &--img10 {
+      background-image: url("/img/section/10mob.jpg");
+    }
+
+    &--img11 {
+      background-image: url("/img/section/11mob.jpg");
+    }
+
+    &--img12 {
+      background-image: url("/img/section/12mob.jpg");
+    }
+
   }
 
   &__text {
@@ -626,7 +668,7 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('../assets/img/section/1.jpg');
+        background-image: url('/img/section/1.jpg');
         background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
@@ -669,24 +711,7 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('../assets/img/section/1.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        top: 0;
-        left: 0;
-      }
-    }
-
-    &--title-left-img3 {
-      &:before {
-        content: '';
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        background-color: $primary;
-        background-image: url('../assets/img/section/3.jpg');
+        background-image: url('/img/section/1.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -703,7 +728,24 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('../assets/img/section/2.jpg');
+        background-image: url('/img/section/2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img3 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/3.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -720,7 +762,143 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('../assets/img/section/4.jpg');
+        background-image: url('/img/section/4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img5 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/5.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img6 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/6.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img7 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/7.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img8 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/8.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img9 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/9.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img10 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/10.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img11 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/11.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img12 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/12.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -737,7 +915,7 @@ body {
         width: 50%;
         height: 100%;
         background-color: #3D3D3D;
-        background-image: url('../assets/img/section/1.jpg');
+        background-image: url('/img/section/1.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -754,7 +932,160 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('../assets/img/section/2.jpg');
+        background-image: url('/img/section/2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img3 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #3D3D3D;
+        background-image: url('/img/section/3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img4 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img5 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #3D3D3D;
+        background-image: url('/img/section/5.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img6 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/6.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img7 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #3D3D3D;
+        background-image: url('/img/section/7.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img8 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/8.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img9 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #3D3D3D;
+        background-image: url('/img/section/9.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img10 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/10.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--title-right-img12 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #3D3D3D;
+        background-image: url('/img/section/12.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -768,7 +1099,14 @@ body {
       background-color: transparent;
     }
 
-
+    &__title-box--img12,
+    &__title-box--img11,
+    &__title-box--img10,
+    &__title-box--img9,
+    &__title-box--img8,
+    &__title-box--img7,
+    &__title-box--img6,
+    &__title-box--img5,
     &__title-box--img4,
     &__title-box--img3,
     &__title-box--img2,
@@ -785,6 +1123,10 @@ body {
 
   .mb-xl-40 {
     margin-bottom: 40px;
+  }
+
+  .mb-xl-160 {
+    margin-bottom: 160px;
   }
 
   .pl-xl-30 {

@@ -1,14 +1,18 @@
 @import '/styles/variables';
 
 .steps {
+  max-width: 800px;
+  margin: 0 auto;
+
   .item {
     background-color: $secondary;
     border-radius: 10px;
     padding-top: 20px;
     padding-bottom: 25px;
     text-align: center;
+    height: 100%;
   }
-  
+
   .title {
     font-weight: 500;
     font-size: 18px;

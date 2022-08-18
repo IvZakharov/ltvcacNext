@@ -1,0 +1,69 @@
+@import '/styles/variables';
+
+.ourServices {
+  .item {
+    border: 2px solid $primary;
+    height: 230px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      height: 320px;
+    }
+
+    &:hover {
+      background-color: $primary;
+
+      .title {
+        color: #fff;
+      }
+    }
+  }
+
+  .disable {
+    border: 2px solid #868686;
+    cursor: unset;
+
+    &:hover {
+      background-color: #fff;
+
+      .title {
+        color: #868686;
+      }
+    }
+
+    .title {
+      color: #868686;
+
+    }
+  }
+
+  .title {
+    color: $primary;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.125rem;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    text-align: center;
+    color: #514E4E;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+}
