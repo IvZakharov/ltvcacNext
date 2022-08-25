@@ -7,7 +7,7 @@ import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 function Subscribe() {
   const [calendlyOpen, setCalenlyOpen] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const body = document.querySelector('html');
     body.style.overflow = calendlyOpen ? 'hidden' : 'auto';
   }, [calendlyOpen]);
