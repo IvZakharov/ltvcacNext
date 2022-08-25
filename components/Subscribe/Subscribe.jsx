@@ -34,7 +34,7 @@ function Subscribe() {
     <section className={`section section--title-left mb-80 mb-md-0`}>
       <div className="container p-0">
         <div className="row">
-          <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-xl-2">
+          <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-xl-1">
             <div className="section__title-box p-20 pt-120 pb-120 pt-md-100 pt-xl-280 pb-xl-280">
               <h2 className="section__title section__title--small ta-left">
                 SUBSCRIBE
