@@ -7,7 +7,7 @@
   z-index: 100;
   top: 0;
   left: 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   .container {
     height: 100%;
@@ -18,10 +18,9 @@
     height: 75px;
     display: flex;
     justify-content: center;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     @media (min-width: 768px) {
-
       align-items: flex-start;
     }
   }
@@ -30,13 +29,12 @@
     z-index: 12;
     position: relative;
     line-height: 0;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
     cursor: pointer !important;
 
     img {
-      transition: transform .2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
       cursor: pointer;
-
 
       @media (min-width: 768px) {
         margin-left: 0;
@@ -65,16 +63,16 @@
       height: 100%;
 
       li {
-
-        a, span {
+        a,
+        span {
           border-right: 1px solid white;
           font-weight: 500;
           font-size: 16px;
           text-transform: uppercase;
           text-decoration: none;
           line-height: 24px;
-          color: #FFFFFF;
-          transition: color .2s ease-in-out;
+          color: #ffffff;
+          transition: color 0.2s ease-in-out;
           padding: 0 15px;
           cursor: pointer;
           position: relative;
@@ -86,11 +84,9 @@
         }
 
         &:last-child {
-
           a {
             border-right: 0;
           }
-
         }
       }
 
@@ -120,7 +116,7 @@
           left: 0;
           visibility: hidden;
           opacity: 0;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           height: auto;
 
           li {
@@ -144,6 +140,8 @@
 
   .social {
     margin-left: 20px;
+    position: relative;
+    z-index: 20;
 
     @media (min-width: 1200px) {
       margin-left: 50px;
@@ -182,7 +180,7 @@
     flex-direction: column;
     justify-content: center;
     transform: translateY(80px);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     @media (min-width: 768px) {
       display: none;
@@ -193,7 +191,7 @@
       height: 5px;
       margin: 5px 0;
       background-color: $secondary;
-      transition: all .2s ease-in;
+      transition: all 0.2s ease-in;
     }
 
     &--active {
@@ -211,17 +209,16 @@
 }
 
 .scroll {
-
   .inner {
     height: 50px;
   }
 
   .logo {
     img {
-      transform: scale(.6) translateY(-40px);
+      transform: scale(0.6) translateY(-40px);
 
       @media (min-width: 768px) {
-        transform: scale(.6) translateY(-40px) translateX(-40px);
+        transform: scale(0.6) translateY(-40px) translateX(-40px);
       }
     }
   }
