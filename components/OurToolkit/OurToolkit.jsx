@@ -8,10 +8,10 @@ function OurToolkit({itemsFirstColumn, itemsSecondColumns, imagePosition}) {
         <div className="container p-0">
           <div className="row">
             <div
-                className={`col-12 col-md-6 col-xl-5 offset-xl-1 ${imagePosition === 'right' ? 'order-md-2' : 'order-md-1'} mb-60 mb-md-0 pb-xl-50 d-xl-flex flex-column justify-content-between`}>
+                className={`col-12 col-md-6 col-xl-5  ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1'} mb-60 mb-md-0 pb-xl-50 d-xl-flex flex-column justify-content-between`}>
               <div
                   className="section__title-box section__title-box--img2 pl-20 pt-80 pb-80 pt-md-160 pt-md-100">
-                <h2 className="section__title ta-left">
+                <h2 className={`section__title ta-left ${imagePosition === 'left' ? 'ta-md-right' : ''}`}>
                   OUR
                   <br/>
                   TOOLKIT
@@ -19,7 +19,7 @@ function OurToolkit({itemsFirstColumn, itemsSecondColumns, imagePosition}) {
               </div>
             </div>
             <div
-                className={`col-12 col-md-6 col-xl-6 pt-md-50 order-md-1 pb-md-50 pt-xl-130 pb-xl-160`}>
+                className={`col-12 col-md-6 col-xl-6 pt-md-50 ${imagePosition === 'left' ? 'offset-xl-1' : ''}  order-md-1 pb-md-50 pt-xl-130 pb-xl-160`}>
               <div className={`${styles.ourToolkit} ph-20 row`}>
                 <div className="col-12 col-xl-6">
                   {itemsFirstColumn.map((obj, i) => (

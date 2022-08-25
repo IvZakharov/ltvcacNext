@@ -9,11 +9,11 @@ function HowItWorks() {
   ];
   
   return (
-      <section className="section section--title-left-img2 mb-60 mb-md-0">
+      <section className="section section--title-left mb-60 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 mb-60 mb-md-0 d-flex aligin-center">
-              <div className="section__title-box section__title-box--img2 p-20 pt-80 pb-80 pt-md-100">
+              <div className="section__title-box p-20 pt-80 pb-80 pt-md-100">
                 <h2 className="section__title ta-left section__title--large">
                   HOW
                   <br/>

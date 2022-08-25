@@ -33,7 +33,7 @@ function WhereWeShine() {
                     We analyze your key KPIs and optimize ad campaigns to cover ALL of your target audiences
                     efficiently.
                   </p>
-                  <Link href="/services/paid">
+                  <Link href="/services/paid-marketing-channels">
                     <a className='button button--secondary'> FIND OUT MORE &#62;</a>
                   
                   </Link>
@@ -43,7 +43,7 @@ function WhereWeShine() {
                   <p className={`${styles.text} mb-20`}>
                     We boost your sales and cut your losses with the optimized business operations.
                   </p>
-                  <Link href="/services/analytics">
+                  <Link href="/services/mobile-and-web-tracking">
                     <a className='button button--secondary'>FIND OUT MORE &#62;</a>
                   
                   </Link>
@@ -53,7 +53,7 @@ function WhereWeShine() {
                   <p className={`${styles.text} mb-20`}>
                     Automation of your routine manual processes for safe your time and your budget.
                   </p>
-                  <Link href="/services/customer">
+                  <Link href="/services/customer-research">
                     <a className='button button--secondary'> FIND OUT MORE &#62;</a>
                   
                   </Link>
@@ -64,7 +64,7 @@ function WhereWeShine() {
                     We estimate your product demand based on qualitative and quantitative data, then create your ideal
                     client profile. Finally, we optimize your product for target audience needs.
                   </p>
-                  <Link href="/services/customer">
+                  <Link href="/services/customer-research">
                     <a className='button button--secondary'> FIND OUT MORE &#62;</a>
                   
                   </Link>

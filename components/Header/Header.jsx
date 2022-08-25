@@ -45,13 +45,13 @@ export const Header = ({onClickMenu}) => {
                 </li>
                 
                 <li className={styles.submenu}>
-                  <Link href="/services">
+                  <Link href="/services/">
                     <a className={router.pathname == '/services' ? styles.active : ''}>Services</a>
                   </Link>
                   <ul>
                     <li>
-                      <Link href="/services/customer">
-                        <a className={router.pathname == '/services/customer' ? styles.active : ''}>
+                      <Link href="/services/customer-research">
+                        <a className={router.pathname == '/services/customer-research' ? styles.active : ''}>
                           CUSTOMER
                           <br/>
                           DEVELOPMENT
@@ -59,8 +59,8 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/analytics">
-                        <a className={router.pathname == '/services/analytics' ? styles.active : ''}>
+                      <Link href="/services/mobile-and-web-tracking/">
+                        <a className={router.pathname == '/services/mobile-and-web-tracking' ? styles.active : ''}>
                           ANALYTICS
                           <br/>
                           SYSTEM SETUP
@@ -68,18 +68,18 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/paid">
-                        <a className={router.pathname == '/services/paid' ? styles.active : ''}>
-                          LEAD
+                      <Link href="/services/paid-marketing-channels/">
+                        <a className={router.pathname == '/services/paid-marketing-channels' ? styles.active : ''}>
+                          PAID MARKETING
                           <br/>
-                          GENERATED
+                          CHANNELS
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/automatization">
-                        <a className={router.pathname == '/services/automatization' ? styles.active : ''}>
-                          automatization
+                      <Link href="/services/no-code-automation">
+                        <a className={router.pathname == '/services/no-code-automation' ? styles.active : ''}>
+                          NO code <br/> automation
                         </a>
                       </Link>
                     </li>

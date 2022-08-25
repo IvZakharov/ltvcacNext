@@ -1,15 +1,11 @@
-import styles from './LetsTalk.module.scss';
-import React, { useEffect } from 'react';
+import styles from './Subscribe.module.scss';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 
-function LetsTalk({ contentSide }) {
+function Subscribe() {
   const [calendlyOpen, setCalenlyOpen] = React.useState(false);
-
-  const showDialog = () => {
-    setCalenlyOpen(true);
-  };
 
   useEffect(() => {
     const body = document.querySelector('html');
@@ -25,7 +21,7 @@ function LetsTalk({ contentSide }) {
   } = useForm();
   const onSubmit = (data) =>
     axios
-      .post('https://hook.eu1.make.com/gnsrx5v9ojaht18h8pftfzj4qvihkslo', data)
+      .post('https://hook.eu1.make.com/2xc4g4d8f652ak1gtoxzhjkv25no7i8l', data)
       .then((response) => {
         reset();
         showDialog();
@@ -35,52 +31,40 @@ function LetsTalk({ contentSide }) {
       });
 
   return (
-    <section className={`section section--title-${contentSide} mb-80 mb-md-0`}>
+    <section className={`section section--title-left mb-80 mb-md-0`}>
       <div className="container p-0">
         <div className="row">
           <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-xl-2">
             <div className="section__title-box p-20 pt-120 pb-120 pt-md-100 pt-xl-280 pb-xl-280">
-              <h2 className="section__title section__title--large ta-left">
-                LET&apos;S
+              <h2 className="section__title section__title--small ta-left">
+                SUBSCRIBE
                 <br />
-                TALK
+                AND LEARN MORE
               </h2>
             </div>
           </div>
+
           <div
-            className={`col-10 col-md-5 col-xl-4 offset-1 offset-md-1 pt-md-60 pb-md-60 ${
-              contentSide === 'left' ? 'order-md-1' : ''
-            }  offset-xl-1 pt-xl-100`}>
-            <div className={`${styles.letsTalk} m-auto`}>
+            className={`col-10 col-md-5 col-xl-4 offset-1 offset-md-1 pt-md-60 pb-md-60 order-md-1  offset-xl-1 pt-xl-100`}>
+            <div className={`${styles.subscribe} m-auto`}>
               <h3 className={styles.title}>
-                Speak With <br /> Expert Team
+                Learn best <br /> practices from our <br />
+                team of experts
               </h3>
-              <span className={styles.label}>FREE!</span>
-              <h4 className="h3 mb-30">For $3k+ work budgets:</h4>
+
+              <h4 className="h3 mb-30 ta-center">For $3k+ work budgets:</h4>
               <ul className={`${styles.list} mb-50`}>
-                <li>Product audit</li>
-                <li>Customer & market research</li>
-                <li>Competitive analysis</li>
-                <li>Sales and ads channels audit</li>
-                <li>Business model optimization</li>
+                <li>Marketing & Analytics</li>
+                <li>Product life hacks</li>
+                <li>Customer & market research methods</li>
+                <li>Competitive audits</li>
+                <li>Sales and ads channels insights</li>
               </ul>
             </div>
             <div className={styles.form}>
               <form onSubmit={handleSubmit(onSubmit)}>
                 {/* register your input into the hook by invoking the "register" function */}
-                <div className={`${styles.field} ${errors.Name && styles.error}`}>
-                  <input placeholder="Your Name:" {...register('Name', { required: true })} />
-                </div>
-                <div className={`${styles.field} ${errors.PhoneNumber && styles.error}`}>
-                  <input
-                    placeholder="WhatsApp phone number:"
-                    type="tel"
-                    pattern="[0-9]*"
-                    {...register('PhoneNumber', {
-                      required: true,
-                    })}
-                  />
-                </div>
+
                 <div className={`${styles.field} ${errors.Email && styles.error}`}>
                   <input
                     placeholder="Your email:"
@@ -89,15 +73,18 @@ function LetsTalk({ contentSide }) {
                     })}
                   />
                 </div>
+
                 <div className={styles.submit}>
-                  <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT" />
+                  <input className="button CTA" type="submit" value="SUBSCRIBE" />
                 </div>
+
                 <p className={styles.copy}>
                   By submitting this form you agree <br /> with terms of privacy policy
                 </p>
               </form>
             </div>
           </div>
+
           {calendlyOpen && <CalendlyDialog closeModal={() => setCalenlyOpen(false)} />}
         </div>
       </div>
@@ -105,4 +92,4 @@ function LetsTalk({ contentSide }) {
   );
 }
 
-export default LetsTalk;
+export default Subscribe;

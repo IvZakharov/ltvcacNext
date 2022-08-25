@@ -1,12 +1,8 @@
 @import '/styles/variables';
 
-.letsTalk {
+.subscribe {
   position: relative;
-  padding: 0 30px;
 
-  @media (min-width: 768px) {
-    padding: 0 60px;
-  }
 
   .title {
     font-weight: 400;
@@ -54,7 +50,7 @@
         width: 5px;
         border-radius: 50%;
         height: 5px;
-        top: calc(50% - 2.5px);
+        top: 14px;
         background-color: #000;
         left: 0;
       }
@@ -65,7 +61,7 @@
 .form {
 
   @media (min-width: 768px) {
-    padding: 0 50px;
+    padding: 0 30px;
   }
 
   .field {
@@ -112,6 +108,8 @@
     font-size: 13px;
     line-height: 24px;
     /* or 185% */
+
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #514E4E;

@@ -28,7 +28,7 @@ export const Footer = () => {
             1054 Budapest, Honved utca 8. 1. em. 2<br/>
             SELLION Europe Kft. (HU29017043)
           </p>
-          <p className={styles.footerText}>LTV:CAC Agency © 2022</p>
+          <p className={styles.footerText}>Copyright © 2022 LTV:CAC Agency. All rights reserved.</p>
         </div>
       </footer>
   );

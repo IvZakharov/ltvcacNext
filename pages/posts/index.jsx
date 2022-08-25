@@ -4,6 +4,7 @@ import Hero from '../../components/Hero/Hero';
 import Ticker from '../../components/Ticker/Ticker';
 import PostCard from '../../components/PostCard/PostCard';
 import {MainLayout} from '../../layouts/MainLayout';
+import Subscribe from "../../components/Subscribe/Subscribe";
 
 export default function Blog({posts}) {
   return (
@@ -33,6 +34,7 @@ export default function Blog({posts}) {
             </div>
           </div>
         </div>
+        <Subscribe/>
       </MainLayout>
   );
 }

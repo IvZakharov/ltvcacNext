@@ -1,14 +1,19 @@
 import styles from './Hero.module.scss';
 import Link from 'next/link';
 import useMediaQuery from "../../lib/useMediaQuery";
+import {useState, useEffect} from "react";
 
 export const Hero = ({title, subtitle, imageUrls, tags}) => {
   const matches = useMediaQuery('(min-width: 768px)');
-  console.log(matches)
+  const [heroImage, setHeroImage] = useState(imageUrls.mobile);
+  
+  useEffect(() => {
+    matches ? setHeroImage(imageUrls.desktop) : setHeroImage(imageUrls.mobile)
+  }, [matches])
   
   return (
       <section className={styles.hero}
-               style={{backgroundImage: `url(${matches ? imageUrls.desktop : imageUrls.mobile})`}}>
+               style={{backgroundImage: `url(${heroImage})`}}>
         <div className="container">
           <div className="row">
             <div className="col-10 m-auto col-md-8 col-xl-8">

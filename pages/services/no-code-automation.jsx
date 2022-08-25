@@ -359,8 +359,8 @@ export default function analytics() {
           <div className="container p-0">
             <div className="row">
               
-              <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50 order-md-1">
-                <div className="section__title-box section__title-box--img9 pl-70 p-20 pt-120 pb-120">
+              <div className="col-12 col-md-6 col-xl-5 offset-xl-1 mb-60 mb-md-0 pb-xl-50 order-md-1">
+                <div className="section__title-box section__title-box--img9  p-20 pt-120 pb-120">
                   <h2 className="section__title section__title--small ta-left">
                     HOW DO WE
                     <br/>
@@ -373,7 +373,7 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6   pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
+              <div className="col-12 col-md-6 col-xl-6 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
                 <Steps stepsArr={stepsArr}/>
               </div>
             </div>

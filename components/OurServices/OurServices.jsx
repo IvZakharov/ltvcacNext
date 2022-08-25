@@ -7,7 +7,7 @@ function OurServices() {
         <div className="container">
           <div className="row">
             <div className='col-12 col-md-6 col-lg-4 mb-30 mb-md-50'>
-              <Link href='/services/paid'>
+              <Link href='/services/paid-marketing-channels'>
                 <a>
                   <div className={styles.item}>
                     <h3 className={styles.title}>Paid Marketing Channels</h3>
@@ -18,7 +18,7 @@ function OurServices() {
               </Link>
             </div>
             <div className='col-12 col-md-6 col-lg-4 mb-30 mb-md-50'>
-              <Link href='/services/analytics'>
+              <Link href='/services/mobile-and-web-tracking'>
                 <a>
                   <div className={styles.item}>
                     <h3 className={styles.title}>Mobile & Web tracking</h3>
@@ -29,7 +29,7 @@ function OurServices() {
               </Link>
             </div>
             <div className='col-12 col-md-6 col-lg-4 mb-30 mb-md-50'>
-              <Link href='/services/automatization'>
+              <Link href='/services/no-code-automation'>
                 <a>
                   <div className={styles.item}>
                     <h3 className={styles.title}>No-code Automation</h3>
@@ -40,7 +40,7 @@ function OurServices() {
               </Link>
             </div>
             <div className='col-12 col-md-6 col-lg-4 mb-30 mb-md-50'>
-              <Link href='/services/customer'>
+              <Link href='/services/customer-research'>
                 <a>
                   <div className={styles.item}>
                     <h3 className={styles.title}>Customer Research</h3>

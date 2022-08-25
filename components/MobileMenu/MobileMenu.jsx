@@ -114,7 +114,7 @@ export const MobileMenu = ({onClickClose}) => {
               {openSubmenu && (
                   <ul className={styles.submenu}>
                     <li>
-                      <Link href="/services/customer">
+                      <Link href="/services/customer-research">
                         <a
                             onClick={() => onClickClose(false)}
                             className={router.pathname == '/services/customer' ? styles.active : ''}>
@@ -125,7 +125,7 @@ export const MobileMenu = ({onClickClose}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/analytics">
+                      <Link href="/services/mobile-and-web-tracking">
                         <a
                             onClick={() => onClickClose(false)}
                             className={router.pathname == '/services/analytics' ? styles.active : ''}>
@@ -136,7 +136,7 @@ export const MobileMenu = ({onClickClose}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/paid">
+                      <Link href="/services/paid-marketing-channels">
                         <a
                             onClick={() => onClickClose(false)}
                             className={router.pathname == '/services/paid' ? styles.active : ''}>

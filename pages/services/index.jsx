@@ -49,7 +49,7 @@ export default function services() {
                     <li>YouTube +33%</li>
                     <li>Snapchat +8%</li>
                   </ul>
-                  <Link href="/services/paid">
+                  <Link href="/services/paid-marketing-channels">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
                 </div>
@@ -90,7 +90,7 @@ export default function services() {
                     The jet plane is your business. It can get you to the destination or it can crash.
                   </p>
                   
-                  <Link href="/services/analytics">
+                  <Link href="/services/mobile-and-web-tracking">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
                 </div>
@@ -132,7 +132,7 @@ export default function services() {
                   <p className="text-large mb-20">
                     Automation is your autopilot system.
                   </p>
-                  <Link href="/services/automatization">
+                  <Link href="/services/no-code-automation">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
                 </div>
@@ -162,7 +162,7 @@ export default function services() {
                     working for weeks/months on problems that your customers aren’t willing to pay for, which is $xxx.xx
                     spent in vain.
                   </p>
-                  <Link href="/services/customer">
+                  <Link href="/services/customer-research">
                     <a className="button button--secondary d-block ">FIND OUT MORE</a>
                   </Link>
                 </div>
