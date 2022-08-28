@@ -11,9 +11,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   // height: 100%;
-  overflow-x:hidden; 
-
-
+  overflow-x: hidden;
 }
 
 body {
@@ -21,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $text;
   // height: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 a,
@@ -40,6 +38,13 @@ button {
   border: none;
   background-color: transparent;
   outline: none;
+  -webkit-appearance: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 h1 {
@@ -52,7 +57,8 @@ h2 {
   line-height: 30px;
 }
 
-ul,ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -61,8 +67,6 @@ ul,ol {
 a {
   text-decoration: none;
 }
-
-
 
 @mixin noselect {
   -webkit-touch-callout: none; /* iOS Safari */

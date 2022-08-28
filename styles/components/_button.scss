@@ -10,10 +10,14 @@
   outline: none;
   text-align: center;
   text-decoration: none;
-  color: #FFFFFF;
-  transition: all .2s ease-in-out;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
   display: inline-block;
   cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   &:hover {
     background-color: darken($third, 15);
@@ -24,14 +28,14 @@
     transform: translateY(1px);
 
     path {
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
   }
 
   &--secondary {
     color: $secondary;
     border: 2px solid $secondary;
-    background-color: rgba($secondary, .05);
+    background-color: rgba($secondary, 0.05);
 
     &:hover {
       background-color: $secondary;
@@ -47,5 +51,4 @@
       background-color: $secondary;
     }
   }
-
 }

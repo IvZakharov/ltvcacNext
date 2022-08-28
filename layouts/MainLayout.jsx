@@ -31,6 +31,7 @@ export const MainLayout = ({ children, title, description, keywords }) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
 
       <Header onClickMenu={(bool) => setOpenedMenu(bool)} />
