@@ -10,7 +10,13 @@ export default function Post({ post }) {
       description={post.attributes?.Seo?.metaDescription}
       keywords={post.attributes?.Seo?.keywords}>
       {post && (
-        <HeroPost title={post.attributes.postName} subtitle={post.attributes.subtitle} image={''} />
+        <HeroPost
+          title={post.attributes.postName}
+          subtitle={post.attributes.subtitle}
+          image={
+            post.attributes.postImage.data ? post.attributes.postImage.data.attributes.url : ''
+          }
+        />
       )}
       {post && <PostFull content={post.attributes.content} />}
     </MainLayout>
