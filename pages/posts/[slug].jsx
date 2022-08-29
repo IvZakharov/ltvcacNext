@@ -4,20 +4,13 @@ import { MainLayout } from '../../layouts/MainLayout';
 import axios from 'axios';
 
 export default function Post({ post }) {
-  console.log(post);
   return (
     <MainLayout
       title={post.attributes?.Seo?.metaTitle}
       description={post.attributes?.Seo?.metaDescription}
       keywords={post.attributes?.Seo?.keywords}>
       {post && (
-        <HeroPost
-          title={post.attributes.postName}
-          subtitle={post.attributes.subtitle}
-          image={
-            post.attributes.postImage.data ? post.attributes.postImage.data.attributes.url : ''
-          }
-        />
+        <HeroPost title={post.attributes.postName} subtitle={post.attributes.subtitle} image={''} />
       )}
       {post && <PostFull content={post.attributes.content} />}
     </MainLayout>
