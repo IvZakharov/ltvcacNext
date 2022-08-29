@@ -1,19 +1,22 @@
 import styles from './ProjectCard.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import React from 'react';
+import placeholder from '../../assets/img/placeholder.svg';
 
 function PostCard({ slug, image, title, subtitle }) {
-  console.log(image);
   return (
     <article className={`${styles.postCard}`}>
       <Link href={'/posts/[slug]'} as={`/posts/${slug}`}>
         <a>
           <Image
             src={image}
-            alt=""
+            alt={title}
             width={1000}
             height={600}
             layout="responsive"
+            blurDataURL={placeholder}
+            placeholder="blur"
             className={styles.image}
           />
         </a>

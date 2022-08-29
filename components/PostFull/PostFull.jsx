@@ -1,7 +1,7 @@
 import styles from './PostFull.module.scss';
 
 import Image from 'next/image';
-
+import placeholder from '../../assets/img/placeholder.svg';
 const parse = require('html-react-parser');
 
 function PostFull({ content }) {
@@ -38,6 +38,8 @@ function PostFull({ content }) {
             src={block.data?.file?.url}
             width={block.data?.file?.width}
             height={block.data?.file?.height}
+            blurDataURL={placeholder}
+            placeholder="blur"
             alt={block.data?.file?.alt}
             className={styles.image}
           />

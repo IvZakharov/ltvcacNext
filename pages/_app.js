@@ -7,9 +7,8 @@ function MyApp({ Component, pageProps }) {
       <NextNProgress
         color="#25a5f0"
         startPosition={0.3}
-        stopDelayMs={200}
         height={3}
-        showOnShallow={true}
+        options={{ showSpinner: false }}
       />
       <Component {...pageProps} />;
     </>
