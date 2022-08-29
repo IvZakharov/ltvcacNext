@@ -6,7 +6,12 @@ const parse = require('html-react-parser');
 
 function PostFull({ content }) {
   const contentData = JSON.parse(content);
-  const blocks = contentData.blocks;
+  let blocks;
+  if (contentData) {
+    blocks = contentData.blocks;
+  } else {
+    blocks = false;
+  }
 
   const renderBlocks = (block) => {
     switch (block.type) {

@@ -46,7 +46,7 @@ export default function Blog({ posts }) {
 export async function getServerSideProps() {
   try {
     const res = await axios.get(
-      'https://ltvcac-admin-8hyn2.ondigitalocean.app/api/blogs?populate=*',
+      'https://ltvcac-admin-8hyn2.ondigitalocean.app/api/blogs?sort=createdAt:desc&populate=*',
     );
     const posts = await res.data.data;
 
