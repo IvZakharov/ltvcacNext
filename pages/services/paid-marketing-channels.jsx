@@ -1,6 +1,6 @@
 import Hero from '../../components/Hero/Hero';
 import Ticker from '../../components/Ticker/Ticker';
-import MustHaveEvents from '../../components/MustHaveEvents/MustHaveEvents';
+
 import LetsTalk from '../../components/LetsTalk/LetsTalk';
 import Steps from '../../components/Steps/Steps';
 import OurToolkit from '../../components/OurToolkit/OurToolkit';
@@ -9,8 +9,7 @@ import ListWithIcon from '../../components/ListWithIcon/ListWithIcon';
 import React from 'react';
 import styles from '../../components/MustHaveEvents/MustHaveEvents.module.scss';
 import Image from 'next/image';
-import website from '../../components/MustHaveEvents/img/website.svg';
-import ourToolkit from '../../components/OurToolkit/OurToolkit';
+
 import WhatWeWorked from '../../components/WhatWeWorked/WhatWeWorked';
 import icon1 from '../../components/WhatWeWorked/img/1.svg';
 import icon2 from '../../components/WhatWeWorked/img/2.svg';

@@ -1,6 +1,7 @@
 import styles from './PostFull.module.scss';
-import urlBuilder from '../../lib/imageUrl';
+
 import Image from 'next/image';
+
 const parse = require('html-react-parser');
 
 function PostFull({ content }) {
@@ -29,7 +30,7 @@ function PostFull({ content }) {
       case 'image':
         return (
           <Image
-            src={urlBuilder(block.data?.file?.url)}
+            src={block.data?.file?.url}
             width={block.data?.file?.width}
             height={block.data?.file?.height}
             alt={block.data?.file?.alt}

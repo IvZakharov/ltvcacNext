@@ -1,5 +1,5 @@
 import axios from 'axios';
-import urlBuilder from '../../lib/imageUrl';
+
 import Hero from '../../components/Hero/Hero';
 import Ticker from '../../components/Ticker/Ticker';
 import PostCard from '../../components/PostCard/PostCard';
@@ -24,14 +24,14 @@ export default function Blog({ posts }) {
               posts.map((obj) => (
                 <div key={obj.id} className={'col-12 col-md-6 col-xl-4 p-4'}>
                   <PostCard
-                    slug={obj.attributes.Slug}
+                    slug={obj.attributes.slug}
                     image={
                       obj.attributes.postImage.data
-                        ? urlBuilder(obj.attributes.postImage.data.attributes.url)
+                        ? obj.attributes.postImage.data.attributes.url
                         : '/img/placeholder.jpg'
                     }
-                    title={obj.attributes.Title}
-                    subtitle={obj.attributes?.Subtitle}
+                    title={obj.attributes.postName}
+                    subtitle={obj.attributes?.subtitle}
                   />
                 </div>
               ))}
@@ -45,7 +45,9 @@ export default function Blog({ posts }) {
 
 export async function getServerSideProps() {
   try {
-    const res = await axios.get('https://murmuring-ocean-17174.herokuapp.com/api/posts?populate=*');
+    const res = await axios.get(
+      'https://ltvcac-admin-8hyn2.ondigitalocean.app/api/blogs?populate=*',
+    );
     const posts = await res.data.data;
 
     return {

@@ -1,42 +1,43 @@
-import urlBuilder from '../../lib/imageUrl';
-import {HeroPost} from '../../components/HeroPost/HeroPost';
+import { HeroPost } from '../../components/HeroPost/HeroPost';
 import PostFull from '../../components/PostFull/PostFull';
-import {MainLayout} from '../../layouts/MainLayout';
+import { MainLayout } from '../../layouts/MainLayout';
 import axios from 'axios';
 
-export default function Post({post}) {
-    return (
-        <MainLayout
-            title={post.attributes?.Seo?.Title}
-            description={post.attributes?.Seo?.Description}
-            keywords={post.attributes?.Seo?.Keywords}>
-            {post && (
-                <HeroPost
-                    title={post.attributes.Title}
-                    subtitle={post.attributes.Subtitle}
-
-                    image={post.attributes.postImage.data ? urlBuilder(post.attributes.postImage.data.attributes.url) : ''}
-                />
-            )}
-            {post && <PostFull content={post.attributes.body}/>}
-        </MainLayout>
-    );
+export default function Post({ post }) {
+  console.log(post);
+  return (
+    <MainLayout
+      title={post.attributes?.Seo?.metaTitle}
+      description={post.attributes?.Seo?.metaDescription}
+      keywords={post.attributes?.Seo?.keywords}>
+      {post && (
+        <HeroPost
+          title={post.attributes.postName}
+          subtitle={post.attributes.subtitle}
+          image={
+            post.attributes.postImage.data ? post.attributes.postImage.data.attributes.url : ''
+          }
+        />
+      )}
+      {post && <PostFull content={post.attributes.content} />}
+    </MainLayout>
+  );
 }
 
+export async function getServerSideProps({ params }) {
+  try {
+    const { slug } = params;
+    const res = await axios.get(
+      `https://ltvcac-admin-8hyn2.ondigitalocean.app/api/blogs?populate=*&filters\[slug\]=${slug}`,
+    );
 
-export async function getServerSideProps({params}) {
-    try {
-        const {slug} = params;
-        const res = await axios.get(
-            `https://murmuring-ocean-17174.herokuapp.com/api/posts?populate=*&filters\[Slug\]=${slug}`,
-        );
-        const data = await res.data.data;
-        const post = data[0];
+    const data = await res.data.data;
+    const post = data[0];
 
-        return {
-            props: {post},
-        };
-    } catch (error) {
-        return {error};
-    }
+    return {
+      props: { post },
+    };
+  } catch (error) {
+    return { error };
+  }
 }
