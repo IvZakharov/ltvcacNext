@@ -14,7 +14,9 @@ export default function Post({ post }) {
           title={post.attributes.postName}
           subtitle={post.attributes.subtitle}
           image={
-            post.attributes.postImage.data ? post.attributes.postImage.data.attributes.url : ''
+            post.attributes.postImage.data
+              ? post.attributes.postImage.data.attributes.formats.large.url
+              : ''
           }
         />
       )}
