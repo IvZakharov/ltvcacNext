@@ -28,9 +28,8 @@ export default function Post({ post }) {
 export async function getServerSideProps({ params }) {
   try {
     const { slug } = params;
-    const res = await axios.get(
-      `https://ltvcac-admin-8hyn2.ondigitalocean.app/api/blogs?populate=*&filters\[slug\]=${slug}`,
-    );
+    console.log(process.env.API_URL);
+    const res = await axios.get(`${process.env.API_URL}/blogs?populate=*&filters\[slug\]=${slug}`);
 
     const data = await res.data.data;
     const post = data[0];

@@ -41,9 +41,7 @@ export default function Portfolio({ projects }) {
 
 export async function getServerSideProps() {
   try {
-    const res = await axios.get(
-      'https://ltvcac-admin-8hyn2.ondigitalocean.app/api/portfolios?populate=*',
-    );
+    const res = await axios.get(`${process.env.API_URL}/portfolios?populate=*`);
     const projects = await res.data.data;
 
     return {

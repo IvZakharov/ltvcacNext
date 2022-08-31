@@ -16,7 +16,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -0.055em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .h3 {
@@ -41,7 +41,7 @@ body {
     display: flex;
 
     &:before {
-      content: "•";
+      content: '•';
       color: #000;
       padding-right: 10px;
       display: inline-block;
@@ -50,21 +50,17 @@ body {
 }
 
 .list-grey {
-
-
   li {
     position: relative;
     display: flex;
 
     &:before {
-      content: "•";
-      color: #514E4E;
+      content: '•';
+      color: #514e4e;
       padding-right: 10px;
       display: inline-block;
     }
   }
-
-
 }
 
 .gap-30 {
@@ -90,7 +86,7 @@ body {
   }
 
   &--dark {
-    color: #514E4E;
+    color: #514e4e;
   }
 
   &--white {
@@ -117,7 +113,6 @@ body {
 .w-100 {
   width: 100% !important;
 }
-
 
 .w-80 {
   width: 80% !important;
@@ -151,7 +146,6 @@ body {
   width: 5% !important;
 }
 
-
 .italic {
   font-style: italic;
 }
@@ -164,20 +158,18 @@ body {
 }
 
 .text-grey {
-
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
   /* or 200% */
-  color: #514E4E;
+  color: #514e4e;
 }
-
 
 .small-text-grey {
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  color: #514E4E;
+  color: #514e4e;
 }
 
 .fs-italic {
@@ -187,7 +179,6 @@ body {
 .fs-20 {
   font-size: 20px;
 }
-
 
 .p-relative {
   position: relative;
@@ -215,7 +206,6 @@ body {
 .ta-left {
   text-align: left;
 }
-
 
 .tt-upper {
   text-transform: uppercase;
@@ -365,6 +355,14 @@ body {
   padding-bottom: 160px;
 }
 
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-200 {
+  padding-bottom: 200px;
+}
+
 .ph-20 {
   padding: 0 20px;
 }
@@ -389,9 +387,7 @@ body {
   height: 100%;
 }
 
-
 .App {
-
   scroll-behavior: smooth;
 
   @media (min-width: 768px) {
@@ -425,7 +421,6 @@ body {
     letter-spacing: -0.055em;
 
     color: rgba(35, 166, 240, 0.5);
-
   }
 }
 
@@ -444,7 +439,6 @@ body {
 }
 
 .problems {
-
   .diagram {
     display: flex;
 
@@ -455,9 +449,7 @@ body {
       line-height: 30px;
       /* identical to box height */
 
-
-      color: #FFFFFF;
-
+      color: #ffffff;
     }
   }
 }
@@ -476,7 +468,7 @@ body {
   }
 
   &--pink {
-    background-color: #F72585;
+    background-color: #f72585;
   }
 
   &--secondary {
@@ -492,7 +484,7 @@ body {
     font-size: 80px;
     line-height: 80px;
     letter-spacing: -0.055em;
-    color: #FFFFFF;
+    color: #ffffff;
 
     &--small {
       font-weight: 500;
@@ -510,7 +502,6 @@ body {
       text-align: center;
       letter-spacing: -0.055em;
     }
-
   }
 
   &__title-box {
@@ -520,54 +511,52 @@ body {
     background-position: center;
 
     &--img1 {
-      background-image: url("/img/section/1mob.jpg");
-
+      background-image: url('/img/section/1mob.jpg');
     }
 
     &--img2 {
-      background-image: url("/img/section/2mob.jpg");
+      background-image: url('/img/section/2mob.jpg');
     }
 
     &--img3 {
-      background-image: url("/img/section/3mob.jpg");
+      background-image: url('/img/section/3mob.jpg');
     }
 
     &--img4 {
-      background-image: url("/img/section/4mob.jpg");
+      background-image: url('/img/section/4mob.jpg');
     }
 
     &--img5 {
-      background-image: url("/img/section/5mob.jpg");
+      background-image: url('/img/section/5mob.jpg');
     }
 
     &--img6 {
-      background-image: url("/img/section/6mob.jpg");
+      background-image: url('/img/section/6mob.jpg');
     }
 
     &--img7 {
-      background-image: url("/img/section/7mob.jpg");
+      background-image: url('/img/section/7mob.jpg');
     }
 
     &--img8 {
-      background-image: url("/img/section/8mob.jpg");
+      background-image: url('/img/section/8mob.jpg');
     }
 
     &--img9 {
-      background-image: url("/img/section/9mob.jpg");
+      background-image: url('/img/section/9mob.jpg');
     }
 
     &--img10 {
-      background-image: url("/img/section/10mob.jpg");
+      background-image: url('/img/section/10mob.jpg');
     }
 
     &--img11 {
-      background-image: url("/img/section/11mob.jpg");
+      background-image: url('/img/section/11mob.jpg');
     }
 
     &--img12 {
-      background-image: url("/img/section/12mob.jpg");
+      background-image: url('/img/section/12mob.jpg');
     }
-
   }
 
   &__text {
@@ -575,7 +564,6 @@ body {
     font-size: 40px;
     line-height: 46px;
     color: $primary;
-
   }
 }
 
@@ -641,9 +629,7 @@ body {
   }
 
   .section {
-
     position: relative;
-
 
     &__title {
       &--small {
@@ -656,7 +642,6 @@ body {
         font-size: 80px;
         line-height: 100px;
         /* or 114% */
-
       }
     }
 
@@ -913,7 +898,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/1.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -947,7 +932,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/3.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -981,7 +966,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/5.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -1015,7 +1000,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/7.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -1049,7 +1034,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/9.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -1083,7 +1068,7 @@ body {
         position: absolute;
         width: 50%;
         height: 100%;
-        background-color: #3D3D3D;
+        background-color: #3d3d3d;
         background-image: url('/img/section/12.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -1223,4 +1208,3 @@ body {
     }
   }
 }
-

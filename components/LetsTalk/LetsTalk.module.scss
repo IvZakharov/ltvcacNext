@@ -27,7 +27,7 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    text-align: center;;
+    text-align: center;
     color: white;
     justify-content: center;
     border-radius: 50%;
@@ -39,7 +39,6 @@
   }
 
   .list {
-
     li {
       font-weight: 400;
       font-size: 20px;
@@ -59,62 +58,5 @@
         left: 0;
       }
     }
-  }
-}
-
-.form {
-
-  @media (min-width: 768px) {
-    padding: 0 50px;
-  }
-
-  .field {
-    width: 100%;
-    margin-bottom: 20px;
-
-    input {
-      width: 100%;
-      padding: 15px;
-      font-size: 14px;
-      border: 2px solid $secondary;
-      border-radius: 10px;
-      background-color: rgba($secondary, .05);
-      transition: background-color .2s ease-in-out;
-
-      &:active, &:focus {
-        background-color: rgba($secondary, .25);
-      }
-    }
-  }
-
-  .error {
-    input {
-      border-color: #dc3545;
-    }
-
-  }
-
-  input[type=submit] {
-    border: none;
-  }
-
-  .submit {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .copy {
-    text-align: center;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 24px;
-    /* or 185% */
-    letter-spacing: 0.005em;
-
-    color: #514E4E;
-
   }
 }

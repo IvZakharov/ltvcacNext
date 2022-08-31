@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "editorjs-react-renderer": "^3.2.0",
+    "google-map-react": "^2.2.0",
     "html-react-parser": "^3.0.1",
     "next": "12.2.0",
     "nextjs-progressbar": "^0.0.14",

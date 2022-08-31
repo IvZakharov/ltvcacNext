@@ -31,7 +31,7 @@ export async function getServerSideProps({ params }) {
   try {
     const { slug } = params;
     const res = await axios.get(
-      `https://ltvcac-admin-8hyn2.ondigitalocean.app/api/portfolios?populate=*&filters\[slug\]=${slug}`,
+      `${process.env.API_URL}/portfolios?populate=*&filters\[slug\]=${slug}`,
     );
     const data = await res.data.data;
     const project = data[0];
