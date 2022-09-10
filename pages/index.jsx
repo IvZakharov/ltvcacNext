@@ -1,4 +1,4 @@
-import { MainLayout } from '../layouts/MainLayout';
+import {MainLayout} from '../layouts/MainLayout';
 import Hero from '../components/Hero/Hero';
 import Ticker from '../components/Ticker/Ticker';
 import HeroAdvantages from '../components/HeroAdvantages/HeroAdvantages';
@@ -26,9 +26,6 @@ export default function Home() {
       title: 'Landing pages and forms',
       text: 'Typeform, Tilda, Bitrix, Custom (Web, Android, iOS)',
     },
-  ];
-
-  const ourToolkitArr2 = [
     {
       title: 'Paid search & RTB',
       text: 'Google AdWords, Baidu, Bing, AppleSearchAds',
@@ -38,7 +35,8 @@ export default function Home() {
       text: 'Google Speed Insight, CrossBrowserTesting',
     },
   ];
-
+  
+  
   const whatWeWorkedArr = [
     {
       title: 'Real Estate',
@@ -73,69 +71,69 @@ export default function Home() {
       links: ['Togezzer,', 'Mix Cart,', 'Grabbly,', 'DDHA'],
       svgIcon: icon5,
     },
-
+    
     {
       title: 'Platforms',
       links: ['Uber,', 'Chummy App,', 'Guvera,', 'City Life'],
       svgIcon: icon6,
     },
   ];
-
+  
   return (
-    <MainLayout
-      title={'High ROI Performance marketing services - LTV:CAC agency'}
-      description={
-        'We help startups and property businesses grow digital marketing from idea to xx.xxx customers with help digital channels, data analysis and customer research'
-      }>
-      <Hero
-        title={'Hungry for your growth'}
-        subtitle={'Performance digital marketing agency with focus on the US and Asia'}
-        imageUrls={{ desktop: '/img/hero/1.jpg', mobile: '/img/hero/1mob.jpg' }}
-      />
-      <Ticker />
-      <HeroAdvantages />
-      <ClientFocus />
-
-      <div className="pt-60 pb-80 pt-xl-190 pb-xl-190">
-        <div className="container ph-20">
-          <div className="row">
-            <div className="col-12 col-xl-8 m-auto">
-              <h2 className="section__title section__title--primary mb-30">
-                ROI&#62;0 if LTV&#62;CAC
-              </h2>
-              <p className="section__text ta-left ta-md-center">
-                We assist startups and property businesses in growing digital marketing from an idea
-                to xx.xxx customers with digital channels, data analysis and customer research.
-              </p>
+      <MainLayout
+          title={'High ROI Performance marketing services - LTV:CAC agency'}
+          description={
+            'We help startups and property businesses grow digital marketing from idea to xx.xxx customers with help digital channels, data analysis and customer research'
+          }>
+        <Hero
+            title={'Hungry for your growth'}
+            subtitle={'Performance digital marketing agency with focus on the US and Asia'}
+            imageUrls={{desktop: '/img/hero/1.jpg', mobile: '/img/hero/1mob.jpg'}}
+        />
+        <Ticker/>
+        <HeroAdvantages/>
+        <ClientFocus/>
+        
+        <div className="pt-60 pb-80 pt-xl-190 pb-xl-190">
+          <div className="container ph-20">
+            <div className="row">
+              <div className="col-12 col-xl-8 m-auto">
+                <h2 className="section__title section__title--primary mb-30">
+                  ROI&#62;0 if LTV&#62;CAC
+                </h2>
+                <p className="section__text ta-left ta-md-center">
+                  We assist startups and property businesses in growing digital marketing from an idea
+                  to xx.xxx customers with digital channels, data analysis and customer research.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <WhatWeWorked itemsArr={whatWeWorkedArr} />
-
-      <div className="mb-80 pb-80 mb-md-0 pt-xl-190 pb-xl-190">
-        <div className="container ph-20">
-          <div className="row">
-            <div className="col-12 col-xl-8 m-auto">
-              <h2 className="section__title section__title--primary mb-30">OUR SERVICES</h2>
-              <p className="section__text ta-left ta-md-center">
-                During the past decade we have worked on &gt; 90 projects in industries like SaaS,
-                Ecommerce, Online Gaming etc.
-              </p>
+        
+        <WhatWeWorked itemsArr={whatWeWorkedArr}/>
+        
+        <div className="mb-80 pb-80 mb-md-0 pt-xl-190 pb-xl-190">
+          <div className="container ph-20">
+            <div className="row">
+              <div className="col-12 col-xl-8 m-auto">
+                <h2 className="section__title section__title--primary mb-30">OUR SERVICES</h2>
+                <p className="section__text ta-left ta-md-center">
+                  During the past decade we have worked on &gt; 90 projects in industries like SaaS,
+                  Ecommerce, Online Gaming etc.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <OurServices />
-      <OurToolkit
-        itemsFirstColumn={ourToolkitArr}
-        itemsSecondColumns={ourToolkitArr2}
-        imagePosition={'right'}
-      />
-      <HowItWorks />
-      <LetsTalk contentSide={'right'} />
-    </MainLayout>
+        
+        <OurServices/>
+        <OurToolkit
+            arr={ourToolkitArr}
+            
+            imagePosition={'right'}
+        />
+        <HowItWorks/>
+        <LetsTalk contentSide={'right'}/>
+      </MainLayout>
   );
 }

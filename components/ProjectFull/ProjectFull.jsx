@@ -25,6 +25,8 @@ function ProjectFull({ project }) {
                   src={obj.attributes.url}
                   width={obj.attributes.width}
                   height={obj.attributes.height}
+                  layout="responsive"
+                  objectFit="contain"
                 />
               ))}
           </div>
