@@ -31,6 +31,6 @@ export const Footer = () => {
           <p className={styles.footerText}>Copyright © 2022 LTV:CAC Agency. All rights reserved.</p>
         </div>
       </footer>
-  );
+  )
 }
 
