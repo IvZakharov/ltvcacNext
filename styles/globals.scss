@@ -1083,6 +1083,18 @@ body {
       background-color: transparent;
     }
 
+    &--background-left{
+      &:before{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 85%;
+        background-color: #3725A2;
+        bottom: 44px;
+        left: 0;
+      }
+    }
+
     &__title-box--img12,
     &__title-box--img11,
     &__title-box--img10,
@@ -1098,6 +1110,7 @@ body {
       background-image: none;
     }
   }
+
 }
 
 @media (min-width: 1200px) {
