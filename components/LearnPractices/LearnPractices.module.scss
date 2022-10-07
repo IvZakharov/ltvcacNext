@@ -1,0 +1,49 @@
+.text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;    
+    letter-spacing: 0.005em;
+    color: #3725A2;
+    max-width: 460px;
+    height: 81px;
+    margin-left: 0.5em;
+}
+.email{
+    border: 1.19069px solid #3725A2;
+    border-radius: 9.9844px 0px 0px 9.9844px;
+    width: 68%;
+    height: 70.89px;
+    
+}
+.input{
+    height: 69px;
+    border: none;
+    font-size: 18px;
+    &::placeholder{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color:#3725A2;
+        text-align: center;
+    }
+}
+.btnsubmit{
+    width: 25%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.8603px;
+    line-height: 19px;
+    /* or 107% */
+
+    text-align: center;
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+    background: #F72585;
+    border-radius: 0px 9.9844px 9.9844px 0px;
+}

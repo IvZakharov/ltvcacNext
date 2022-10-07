@@ -54,3 +54,27 @@
     color: #514e4e;
   }
 }
+
+.contactform{
+  background: #3725A2;
+
+  .divfree{
+    position: relative;
+  }
+
+  .free{
+    color: #fff;
+    position: absolute;
+  }
+
+  .text_free{
+    position: absolute;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 42px;
+    left:2.3em
+  }
+
+}

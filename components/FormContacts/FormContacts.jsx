@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form';
 import axios from 'axios';
 import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 import telMask from '../../utils/telMask';
+import Image from 'next/image';
 
 function FormContacts() {
   const {
@@ -41,35 +42,55 @@ function FormContacts() {
   }, [calendlyOpen]);
   
   return (
-      <div className={styles.form}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          {/* register your input into the hook by invoking the "register" function */}
-          <div className={`${styles.field} ${errors.Name && styles.error}`}>
-            <input placeholder="Your Name:" {...register('Name')} />
+    <section className={`section ${styles.contactform}`}>
+    <div className="container">
+      <div className="row">
+          <div className="col-12 col-md-6">
+            <div className={`col-12 col-md-6 aling-self-center ${styles.divfree}`}>
+              <Image src="/img/contacts/free.svg"
+                width={90}
+                height={90}
+                layout="fixed"
+                className={styles.free}
+                />
+                <span className={styles.text_free}>Speak With Expert Team</span>
+            </div>
           </div>
-          <div className={`${styles.field} ${errors.PhoneNumber && styles.error}`}>
-            <input
-                placeholder="WhatsApp phone number:"
-                required={true}
-                {...rest}
-                ref={(e) => {
-                  ref(e);
-                  telInputRef.current = e; // you can still assign to ref
-                }}
-            />
+          <div className="col-12 col-md-6 mb-60">
+                <div className={styles.form}>
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                    {/* register your input into the hook by invoking the "register" function */}
+                    <div className={`${styles.field} ${errors.Name && styles.error}`}>
+                      <input placeholder="Your Name:" {...register('Name')} />
+                    </div>
+                    <div className={`${styles.field} ${errors.PhoneNumber && styles.error}`}>
+                      <input
+                          placeholder="WhatsApp phone number:"
+                          required={true}
+                          {...rest}
+                          ref={(e) => {
+                            ref(e);
+                            telInputRef.current = e; // you can still assign to ref
+                          }}
+                      />
+                    </div>
+                    <div className={`${styles.field} ${errors.Email && styles.error}`}>
+                      <input placeholder="Your email:" {...register('Email')} />
+                    </div>
+                    <div className={styles.submit}>
+                      <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT"/>
+                    </div>
+                    <p className={styles.copy}>
+                      By submitting this form you agree <br/> with terms of privacy policy
+                    </p>
+                  </form>
+              {calendlyOpen && <CalendlyDialog closeModal={() => setCalenlyOpen(false)}/>}
+            </div>
           </div>
-          <div className={`${styles.field} ${errors.Email && styles.error}`}>
-            <input placeholder="Your email:" {...register('Email')} />
-          </div>
-          <div className={styles.submit}>
-            <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT"/>
-          </div>
-          <p className={styles.copy}>
-            By submitting this form you agree <br/> with terms of privacy policy
-          </p>
-        </form>
-        {calendlyOpen && <CalendlyDialog closeModal={() => setCalenlyOpen(false)}/>}
-      </div>
+        </div>
+    </div>
+  </section>
+     
   );
 }
 

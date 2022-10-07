@@ -11,28 +11,28 @@ export const Social = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-5 align-self-center">
+                    <div className="col-4 align-self-center">
                         <div className="d-flex flex-row justify-content-between">
                             <a href="https://www.linkedin.com/company/ltvcac-agency" className={styles.socials}>
                                 <Image src="/img/contacts/linkidin_big.png"
-                                       width={115}
-                                       height={114}
+                                       width={81}
+                                       height={80}
                                        layout="fixed"
                                 />
                                 <span>Linkedin</span>
                             </a>
                             <a href="https://www.facebook.com/ltvcac/" className={styles.socials}>
                                 <Image src="/img/contacts/facebook.png"
-                                       width={115}
-                                       height={114}
+                                       width={81}
+                                       height={80}
                                        layout="fixed"
                                 />
                                 <span>Facebook</span>
                             </a>
                             <a href="https://www.instagram.com/ltvcac.agency/?igshid=YmMyMTA2M2Y%3D" className={styles.socials}>
                                 <Image src="/img/contacts/instagram.png"
-                                       width={115}
-                                       height={114}
+                                       width={81}
+                                       height={80}
                                        layout="fixed"
                                 />
                                 <span>Instagram</span>

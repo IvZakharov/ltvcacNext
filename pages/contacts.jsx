@@ -9,6 +9,7 @@ import Image from "next/image";
 import SalesManager from "../components/SalesManager/SalesManager";
 import Social from "../components/Social/Social";
 import FormContacts from "../components/FormContacts/FormContacts";
+import LearnPractices from '../components/LearnPractices/LearnPractices';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Contacts() {
@@ -34,19 +35,18 @@ export default function Contacts() {
       />
       <Ticker />
       <SalesManager />
+      <FormContacts />
+      <Social />
 
+      <LearnPractices />
 
       <section className="section pt-200 pb-200">
         <div className="container">
 
 
-          <div className="row">
-            <div className="col-12 col-md-6 mb-60">
-              <FormContacts />
-            </div>
-            <div className="col-12 col-md-6"></div>
-          </div>
-            <Social />
+          
+            
+
             <div className="row mt-3 mb-4">
 
             </div>
