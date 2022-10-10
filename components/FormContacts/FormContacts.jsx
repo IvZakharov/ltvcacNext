@@ -42,11 +42,11 @@ function FormContacts() {
   }, [calendlyOpen]);
   
   return (
-    <section className={`section ${styles.contactform}`}>
+    <section className={`section ${styles.contactform} `}>
     <div className="container">
-      <div className="row">
-          <div className="col-12 col-md-6">
-            <div className={`col-12 col-md-6 aling-self-center ${styles.divfree}`}>
+      <div className={`row ${styles.block_height}`}>
+          <div className="col-12 col-md-6 my-auto">
+            <div className={`col-12 col-md-6 mx-auto my-auto ${styles.divfree}`}>
               <Image src="/img/contacts/free.svg"
                 width={90}
                 height={90}
@@ -54,9 +54,19 @@ function FormContacts() {
                 className={styles.free}
                 />
                 <span className={styles.text_free}>Speak With Expert Team</span>
+              <div>
+                <span className={styles.label_list}>For $3k+ work budgets:</span>
+                <ul className={styles.list}>
+                  <li>Product audit</li>
+                  <li>Customer & market audit</li>
+                  <li>Competitive audit</li>
+                  <li>Sales and ads channels audit</li>
+                  <li>Business model audit</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 mb-60">
+          <div className="col-12 col-md-6 my-auto">
                 <div className={styles.form}>
                   <form onSubmit={handleSubmit(onSubmit)}>
                     {/* register your input into the hook by invoking the "register" function */}
@@ -78,10 +88,10 @@ function FormContacts() {
                       <input placeholder="Your email:" {...register('Email')} />
                     </div>
                     <div className={styles.submit}>
-                      <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT"/>
+                      <input className="button CTA" type="submit" value="DISCUSS YOUR PROJECT"/>
                     </div>
                     <p className={styles.copy}>
-                      By submitting this form you agree <br/> with terms of privacy policy
+                      By submitting this form you agree with terms of privacy policy
                     </p>
                   </form>
               {calendlyOpen && <CalendlyDialog closeModal={() => setCalenlyOpen(false)}/>}

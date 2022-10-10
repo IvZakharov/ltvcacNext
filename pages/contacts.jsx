@@ -40,25 +40,29 @@ export default function Contacts() {
 
       <LearnPractices />
 
-      <section className="section pt-200 pb-200">
+      <section className="section pt-100 pb-100">
         <div className="container">
+            <div className="row">
+                <div className="col-12 d-flex">
+                  <div style={{ height: '400px', width: '50%', marginRight: '2em' }}>
+                      <GoogleMapReact
+                          bootstrapURLKeys={{ key: '' }}
+                          defaultCenter={defaultProps.center}
+                          defaultZoom={defaultProps.zoom}>
+                          <AnyReactComponent lat={5.051701} lng={97.318123} text="My Marker" />
+                      </GoogleMapReact>
+                  </div>
 
-
-          
-            
-
-            <div className="row mt-3 mb-4">
-
+                  <div style={{ height: '400px', width: '50%' }}>
+                    <GoogleMapReact
+                      bootstrapURLKeys={{ key: '' }}
+                      defaultCenter={defaultProps.center}
+                      defaultZoom={defaultProps.zoom}>
+                      <AnyReactComponent lat={5.051701} lng={97.318123} text="My Marker" />
+                    </GoogleMapReact>
+                  </div>
+                </div>
             </div>
-
-          <div style={{ height: '400px', width: '100%' }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: '' }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}>
-              <AnyReactComponent lat={5.051701} lng={97.318123} text="My Marker" />
-            </GoogleMapReact>
-          </div>
         </div>
       </section>
     </MainLayout>

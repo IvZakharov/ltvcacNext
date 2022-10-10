@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Social = () => {
     return(
-        <section className="section mb-4">
+        <section className="section mb-4 mt-5">
             <div className="container">
                 <div className="row justify-content-center mb-4">
                     <div className="col-2">

@@ -6,21 +6,27 @@
   }
 
   .field {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 65%;
+    margin-bottom: 10px;
 
     input {
       width: 100%;
       padding: 15px;
       font-size: 14px;
-      border: 2px solid $secondary;
-      border-radius: 10px;
-      background-color: rgba($secondary, 0.05);
+      border: 2px solid $primary;
+      border-radius: 14px;
+      background-color: #fff;
       transition: background-color 0.2s ease-in-out;
+      height: 44.8px;
 
       &:active,
       &:focus {
-        background-color: rgba($secondary, 0.25);
+        background-color: $text-white;
+      }
+      &::placeholder{
+        color: $primary;
+        font-weight: 500;
+
       }
     }
   }
@@ -36,30 +42,39 @@
   }
 
   .submit {
-    margin-top: 5px;
-    margin-bottom: 30px;
+    width: 65%;
+    margin-top: 22px;
+    margin-bottom: 22px;
     display: flex;
     align-content: center;
     justify-content: center;
   }
 
   .copy {
+    width: 65%;
     text-align: center;
     font-weight: 300;
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 15px;
     /* or 185% */
     letter-spacing: 0.005em;
-
-    color: #514e4e;
+    padding-left: 6em;
+    padding-right: 7em;
+    color: $text-white;
   }
 }
-
+.block_height{
+  height: $height;
+}
 .contactform{
   background: #3725A2;
+  color: #fff;
+
 
   .divfree{
     position: relative;
+    margin: 10% auto;
+    float: right;
   }
 
   .free{
@@ -72,9 +87,30 @@
     color: #fff;
     font-family: 'Inter';
     font-style: normal;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 42px;
-    left:2.3em
+    left:1.8em;
+    letter-spacing: 0.07em;
   }
+  .label_list{
+    display: block;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.5068px;
+    line-height: 22px;
+    margin-bottom: 0.5em;
+    margin-top: 1.8em;
+
+  }
+  .list{
+    padding-left: 1em;
+  }
+  .list li{
+    list-style: disc!important;
+  }
+
+
 
 }
