@@ -10,16 +10,25 @@ import SalesManager from "../components/SalesManager/SalesManager";
 import Social from "../components/Social/Social";
 import FormContacts from "../components/FormContacts/FormContacts";
 import LearnPractices from '../components/LearnPractices/LearnPractices';
+import styles from "../components/FormContacts/FormContacts.module.scss";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Contacts() {
   const defaultProps = {
     center: {
-      lat: 5.051701,
-      lng: 97.318123,
+      lat: 47.50654193198983,
+      lng: 19.04973876567707,
     },
 
-    zoom: 7,
+    zoom: 15,
+  };
+  const NY = {
+    center: {
+        lat:40.74313548821765,
+        lng: -73.9904050648658
+    },
+
+    zoom: 15,
   };
 
   return (
@@ -47,10 +56,19 @@ export default function Contacts() {
                   <div style={{ height: '400px', width: '50%', marginRight: '2em' }}>
                       <GoogleMapReact
                           bootstrapURLKeys={{ key: '' }}
-                          defaultCenter={defaultProps.center}
-                          defaultZoom={defaultProps.zoom}>
-                          <AnyReactComponent lat={5.051701} lng={97.318123} text="My Marker" />
+                          defaultCenter={NY.center}
+                          defaultZoom={NY.zoom}>
+                          <AnyReactComponent lat={40.74313548821765} lng={-73.9904050648658} text="My Marker" />
                       </GoogleMapReact>
+
+                      <div className="d-flex justify-content-center" style={{marginTop: '26px'}}>
+                          <Image src="/img/contacts/maps.svg"
+                                 width={23}
+                                 height={33}
+                                 layout="fixed"
+                          />
+                          <span style={{ fontSize: '14px', fontWeight: '400', lineHeight: '21px', fontFamily: 'Inter', marginLeft: '17px', color: '#000' }} className="col-5">19 W 24th Street, New York NY 10010, United States</span>
+                      </div>
                   </div>
 
                   <div style={{ height: '400px', width: '50%' }}>
@@ -58,8 +76,16 @@ export default function Contacts() {
                       bootstrapURLKeys={{ key: '' }}
                       defaultCenter={defaultProps.center}
                       defaultZoom={defaultProps.zoom}>
-                      <AnyReactComponent lat={5.051701} lng={97.318123} text="My Marker" />
+                      <AnyReactComponent lat={47.50654193198983} lng={19.04973876567707} text="My Marker" />
                     </GoogleMapReact>
+                      <div className="d-flex justify-content-center" style={{marginTop: '26px'}}>
+                          <Image src="/img/contacts/maps.svg"
+                                 width={23}
+                                 height={33}
+                                 layout="fixed"
+                          />
+                          <span style={{ fontSize: '14px', fontWeight: '400', lineHeight: '21px', fontFamily: 'Inter', marginLeft: '17px', color: '#000' }} className="col-5">1054 Budapest, Honved utca 8. 1. em. 2 SELLION Europe Kft. (HU29017043)</span>
+                      </div>
                   </div>
                 </div>
             </div>
