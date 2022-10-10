@@ -6,13 +6,13 @@ export const Social = () => {
         <section className="section mb-4 mt-5">
             <div className="container">
                 <div className="row justify-content-center mb-4">
-                    <div className="col-2">
+                    <div className="col-12">
                         <span className={styles.header}> Social: </span>
                     </div>
                 </div>
-                <div className="row justify-content-center">
-                    <div className="col-4 align-self-center">
-                        <div className="d-flex flex-row justify-content-between">
+                <div className="row">
+                    <div className="col-12">
+                        <div className={`d-flex flex-row ${styles.socialsBlock}`}>
                             <a href="https://www.linkedin.com/company/ltvcac-agency" className={styles.socials}>
                                 <Image src="/img/contacts/linkidin_big.png"
                                        width={81}

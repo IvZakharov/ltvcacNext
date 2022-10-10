@@ -8,6 +8,9 @@
   .field {
     width: 65%;
     margin-bottom: 10px;
+    @media (max-width: 430px) {
+      margin: 0 auto 15px;
+    }
 
     input {
       width: 100%;
@@ -48,6 +51,9 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    @media (max-width: 430px) {
+      margin: 22px auto ;
+    }
   }
 
   .copy {
@@ -61,10 +67,14 @@
     padding-left: 6em;
     padding-right: 7em;
     color: $text-white;
+    @media (max-width: 430px) {
+      margin: 22px auto ;
+      padding: unset;
+    }
   }
 }
 .block_height{
-  height: $height;
+  min-height: $height;
 }
 .contactform{
   background: #3725A2;
@@ -73,7 +83,6 @@
 
   .divfree{
     position: relative;
-    margin: 10% auto;
     float: right;
   }
 
@@ -81,36 +90,49 @@
     color: #fff;
     position: absolute;
   }
+  .block_img{
+    @media (max-width: 430px) {
+      margin: 1em auto 0 3em;
+    }
 
-  .text_free{
-    position: absolute;
-    color: #fff;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 35px;
-    line-height: 42px;
-    left:1.8em;
-    letter-spacing: 0.07em;
+
+    .text_free{
+      position: absolute;
+      color: #fff;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 35px;
+      line-height: 42px;
+      left:1.8em;
+      letter-spacing: 0.07em;
+      @media (max-width: 430px) {
+        left:30%;
+      }
+    }
   }
-  .label_list{
-    display: block;
-    color: #fff;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21.5068px;
-    line-height: 22px;
-    margin-bottom: 0.5em;
-    margin-top: 1.8em;
+  .list_label{
+    @media (max-width: 430px) {
+      width: 70%;
+      margin: 0 auto 2em;
+    }
+    .label_list{
+      display: block;
+      color: #fff;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 21.5068px;
+      line-height: 22px;
+      margin-bottom: 0.5em;
+      margin-top: 1.8em;
+
+    }
+    .list{
+      padding-left: 1em;
+    }
+    .list li{
+      list-style: disc!important;
+    }
 
   }
-  .list{
-    padding-left: 1em;
-  }
-  .list li{
-    list-style: disc!important;
-  }
-
-
-
 }

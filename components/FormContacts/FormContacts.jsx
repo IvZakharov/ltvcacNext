@@ -47,14 +47,16 @@ function FormContacts() {
       <div className={`row ${styles.block_height}`}>
           <div className="col-12 col-md-6 my-auto">
             <div className={`col-12 col-md-6 mx-auto my-auto ${styles.divfree}`}>
+              <div className={`col-8 ${styles.block_img}`}>
               <Image src="/img/contacts/free.svg"
                 width={90}
                 height={90}
                 layout="fixed"
                 className={styles.free}
                 />
-                <span className={styles.text_free}>Speak With Expert Team</span>
-              <div>
+                <span className={`${styles.text_free} col-8`}>Speak With Expert Team</span>
+              </div>
+              <div className={styles.list_label}>
                 <span className={styles.label_list}>For $3k+ work budgets:</span>
                 <ul className={styles.list}>
                   <li>Product audit</li>

@@ -3,19 +3,33 @@
   font-weight: 600;
   color: #000000;
   font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
 }
-.socials{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1em;
-  >span{
-    text-align: center;
-    color: #3725A2;
-    font-size: 20px;
-    line-height: 52px;
-    font-weight: 400;
-    font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+.socialsBlock{
+  width: fit-content;
+  margin: 0 auto;
+
+  .socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.7em;
+    @media (max-width: 430px) {
+      margin-right: 1em;
+    }
+    &:last-child{
+      margin-right: unset;
+    }
+    >span{
+      text-align: center;
+      color: #3725A2;
+      font-size: 20px;
+      line-height: 52px;
+      font-weight: 400;
+      font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+    }
   }
 }

@@ -8,18 +8,16 @@ export const SalesManager = () =>{
         <section className="section"  >
             <div className="container">
                 <div className="row">
-                    <div className="col-6 col-md-7 ml-50 mb-40 mb-xl-0">
-                        <div className="d-flex justify-content-center">
+                    <div className="col-12 col-md-7 mb-40 mb-xl-0 float-right">
                             <div className={styles.img}>
                             <Image src="/img/contacts/Ruslan.png"
                                    width={539}
                                    height={699}
-                                   layout="fixed"
+                                   layout="responsive"
                             />
                             </div>
-                        </div>
                     </div>
-                    <div className="col-6 col-md-4 mb-40 mb-xl-0 align-self-center">
+                    <div className="col-12 col-md-4 mb-40 mb-xl-0 align-self-center">
                         <div className="row justify-content-center">
                             <div className="col-12 align-self-center">
                                 <span className={styles.color}>RUSLAN AKHANOV</span>
