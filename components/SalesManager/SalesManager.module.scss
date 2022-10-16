@@ -1,4 +1,8 @@
 .SalesManager{
+  @media (max-width: 760px) {
+    text-align: center;
+    display: block;
+  }
   @media (max-width: 430px) {
     text-align: center;
     display: block;
@@ -13,11 +17,23 @@
 .SalesManager span{
   margin-right: 0.4em!important;
 }
+.SM{
+  margin-bottom: 5em;
+  @media screen and (max-width: 1200px) and (min-width: 1000px) {
+    margin-bottom: 2em;
+  }
+  @media screen and (max-width: 999px) and (min-width: 7698px) {
+    margin-bottom: unset;
+  }
+  @media (max-width: 760px){
+    margin-bottom: 2em;
+  }
+}
 .img{
   position: relative;
   width: 75%;
   float: right;
-  @media (max-width: 430px) {
+  @media (max-width: 560px) {
     float: none;
     margin: 10% auto 0 18%;
   }
@@ -30,6 +46,10 @@
       bottom: 0;
       border-radius: 3em;
       right: 0;
+      @media (max-width: 1200px) {
+        right: -0.2em;
+        border-radius: 2em;
+      }
       @media (max-width: 430px) {
         right: -0.2em;
         border-radius: 1em;
@@ -42,6 +62,10 @@
   line-height: 36px;
   color: #000000;
   font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+  @media (max-width: 760px) {
+    text-align: center;
+    display: block;
+  }
   @media (max-width: 430px) {
     text-align: center;
     display: block;
@@ -52,6 +76,10 @@
   font-size: 60px;
   font-weight: 500;
   font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+  @media (max-width: 760px) {
+    text-align: center;
+    display: block;
+  }
   @media (max-width: 430px) {
     text-align: center;
     display: block;
@@ -66,6 +94,9 @@
   color: #3725A2;
   margin: 5px 0;
   font-family: 'Inter', Roboto, system-ui, Tahoma, sans-serif;
+  @media (max-width: 760px) {
+    margin-left: 3em;
+  }
   @media (max-width: 430px) {
     margin-left: 3em;
   }

@@ -8,9 +8,22 @@
   .field {
     width: 65%;
     margin-bottom: 10px;
+    @media (max-width: 1200px) {
+      width: 70%;
+      margin: 0 auto 10px;
+    }
+    @media (max-width: 999px) {
+      width: 100%;
+      margin: 0 auto 10px;
+    }
+    @media (max-width: 760px) {
+      width: 70%;
+      margin: 0 auto 15px;
+    }
     @media (max-width: 430px) {
       margin: 0 auto 15px;
     }
+
 
     input {
       width: 100%;
@@ -51,6 +64,17 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    @media (max-width: 1200px) {
+      width: 70%;
+      margin: 0 auto 10px;
+    }
+    @media (max-width: 999px) {
+      width: 100%;
+      margin: 0 auto 10px;
+    }
+    @media (max-width: 760px) {
+      margin: 22px auto ;
+    }
     @media (max-width: 430px) {
       margin: 22px auto ;
     }
@@ -59,14 +83,23 @@
   .copy {
     width: 65%;
     text-align: center;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
-    /* or 185% */
-    letter-spacing: 0.005em;
-    padding-left: 6em;
-    padding-right: 7em;
-    color: $text-white;
+    .text{
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      /* or 185% */
+      letter-spacing: 0.005em;
+      color: $text-white;
+    }
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 760px) {
+      margin: 22px auto ;
+      padding: unset;
+    }
     @media (max-width: 430px) {
       margin: 22px auto ;
       padding: unset;
@@ -91,6 +124,9 @@
     position: absolute;
   }
   .block_img{
+    @media (max-width: 760px) {
+      margin: 1em auto 0;
+    }
     @media (max-width: 430px) {
       margin: 1em auto 0 3em;
     }
@@ -105,12 +141,20 @@
       line-height: 42px;
       left:1.8em;
       letter-spacing: 0.07em;
+      @media (max-width: 760px) {
+        left:29%;
+        width: 50%;
+      }
       @media (max-width: 430px) {
         left:30%;
       }
     }
   }
   .list_label{
+    @media (max-width: 760px) {
+      width: 70%;
+      margin: 0 auto 2em;
+    }
     @media (max-width: 430px) {
       width: 70%;
       margin: 0 auto 2em;

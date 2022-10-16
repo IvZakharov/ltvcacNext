@@ -9,6 +9,13 @@
     max-width: 400px;
     height: 81px;
     margin-left: 0.5em;
+    @media (max-width: 540px) {
+        font-size: 29px;
+        line-height: 24px;
+        width: 60%;
+        margin: auto 15px auto;
+        height: fit-content;
+    }
     @media (max-width: 430px) {
         font-size: 20px;
         line-height: 24px;
@@ -26,6 +33,10 @@
     }
 }
 .form{
+    @media (max-width: 560px) {
+        flex-direction: column;
+        align-items: center;
+    }
     @media (max-width: 430px) {
        flex-direction: column;
        align-items: center;
@@ -35,7 +46,7 @@
         border-radius: 9.9844px 0px 0px 9.9844px;
         width: 68%;
         height: 70.89px;
-        @media (max-width: 430px) {
+        @media (max-width: 560px) {
             width: 100%;
             border-radius: 15px;
         }
@@ -43,7 +54,7 @@
             height: 100%;
             border: none;
             font-size: 18px;
-            @media (max-width: 430px) {
+            @media (max-width: 560px) {
                 width: 100%;
                 border-radius: 15px;
             }
@@ -72,7 +83,7 @@
         color: #FFFFFF;
         background: #F72585;
         border-radius: 0px 9.9844px 9.9844px 0px;
-        @media (max-width: 430px) {
+        @media (max-width: 560px) {
             width: 80%;
             border-radius: 15px;
             height: 50px;

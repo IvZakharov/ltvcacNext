@@ -69,7 +69,7 @@ export default function Contacts() {
                                      layout="responsive"
                               />
                           </div>
-                          <span className={`col-5 ${styles.address}`}>19 W 24th Street, New York NY 10010, United States</span>
+                          <span className={`col-8 col-md-8 col-xl-5 ${styles.address}`}>19 W 24th Street, New York NY 10010, United States</span>
                       </div>
                   </div>
 
@@ -90,7 +90,7 @@ export default function Contacts() {
                                      layout="responsive"
                               />
                           </div>
-                          <span className={`col-5 ${styles.address}`}>1054 Budapest, Honved utca 8. 1. em. 2 SELLION Europe Kft. (HU29017043)</span>
+                          <span className={`col-8 col-md-8 col-xl-5 ${styles.address}`}>1054 Budapest, Honved utca 8. 1. em. 2 SELLION Europe Kft. (HU29017043)</span>
                       </div>
                   </div>
                 </div>

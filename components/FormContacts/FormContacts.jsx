@@ -46,15 +46,15 @@ function FormContacts() {
     <div className="container">
       <div className={`row ${styles.block_height}`}>
           <div className="col-12 col-md-6 my-auto">
-            <div className={`col-12 col-md-6 mx-auto my-auto ${styles.divfree}`}>
-              <div className={`col-8 ${styles.block_img}`}>
+            <div className={`col-12 col-md-10 col-lg-8 col-xl-6 mx-auto my-auto ${styles.divfree}`}>
+              <div className={`col-8 col-md-12 ${styles.block_img}`}>
               <Image src="/img/contacts/free.svg"
                 width={90}
                 height={90}
                 layout="fixed"
                 className={styles.free}
                 />
-                <span className={`${styles.text_free} col-8`}>Speak With Expert Team</span>
+                <span className={`${styles.text_free} col`}>Speak With Expert Team</span>
               </div>
               <div className={styles.list_label}>
                 <span className={styles.label_list}>For $3k+ work budgets:</span>
@@ -92,9 +92,11 @@ function FormContacts() {
                     <div className={styles.submit}>
                       <input className="button CTA" type="submit" value="DISCUSS YOUR PROJECT"/>
                     </div>
-                    <p className={styles.copy}>
-                      By submitting this form you agree with terms of privacy policy
-                    </p>
+                    <div className={styles.copy}>
+                      <span className={styles.text}>
+                       By submitting this form you agree<br /> with terms of privacy policy
+                      </span>
+                    </div>
                   </form>
               {calendlyOpen && <CalendlyDialog closeModal={() => setCalenlyOpen(false)}/>}
             </div>
