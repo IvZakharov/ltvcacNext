@@ -13,7 +13,7 @@ export default function FourOhFour(){
                     <div className="row">
                         <div className="col-5 col-xl-5 m-auto">
                             <h1 className="mb-4">404 - Page Not Found</h1>
-                            <p className="mt-3" style={{ fontSize: '1.5em'}}>Whoops! Looks like the page you are looking for doesn't exist.</p>
+                            <p className="mt-3" style={{ fontSize: '1.5em'}}>Whoops! Looks like the page you are looking for doesn&apos;t exist.</p>
                         </div>
                     </div>
                 </div>
