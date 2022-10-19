@@ -19,11 +19,11 @@ export const SalesManager = () =>{
                     </div>
                     <div className="col-12 col-md-5 mb-40 mb-xl-0 align-self-center">
                         <div className="row justify-content-center">
-                            <div className="col-12 align-self-center">
+                            <div className="col-12 col-md-12 col-lg-10 col-xl-10 align-self-center">
                                 <span className={styles.color}>RUSLAN AKHANOV</span>
                             </div>
                             <div className="w-100"></div>
-                            <div className={`col-12 mt-3 align-self-center ${styles.SM}`}>
+                            <div className={`col-12 mt-3 col-md-12 col-lg-10 col-xl-10 align-self-center ${styles.SM}`}>
                                 <span className={styles.SalesManager}>
                                   <Image src="/img/contacts/sales.svg"
                                          width={25}
