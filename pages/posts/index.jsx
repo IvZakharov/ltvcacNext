@@ -44,16 +44,16 @@ export default function Blog({ posts }) {
 }
 
 export async function getServerSideProps() {
-  try {
-    const res = await axios.get(`${process.env.API_URL}/blogs?sort=createdAt:desc&populate=*`);
-    const posts = await res.data.data;
+    try {
+        const res = await axios.get(`${process.env.API_URL}/blogs?sort=createdAt:desc&populate=*`);
+        const posts = await res.data.data;
 
-    return {
-      props: {
-        posts,
-      },
-    };
-  } catch (error) {
-    return { error };
-  }
+        return {
+            props: {
+                posts,
+            },
+        };
+    } catch (error) {
+        return {error};
+    }
 }

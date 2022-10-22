@@ -1,11 +1,9 @@
 import {MainLayout} from "../layouts/MainLayout";
 import styles from "/styles/thankyou.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Image from "next/image";
 
 export const thankyou = () =>{
-    const router = useRouter();
 
     return(
         <MainLayout
