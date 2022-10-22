@@ -28,7 +28,7 @@ export default function Post({ post }) {
 export async function getServerSideProps({ params }) {
   try {
     const { slug } = params;
-    console.log(process.env.API_URL);
+
     const res = await axios.get(`${process.env.API_URL}/blogs?populate=*&filters\[slug\]=${slug}`);
 
     const data = await res.data.data;
