@@ -5,6 +5,7 @@ import React from 'react';
 import {useForm} from "react-hook-form";
 import axios from "axios";
 import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
+import { useRouter } from "next/router";
 
 
 export const LearnPractices = () =>{
@@ -33,6 +34,9 @@ export const LearnPractices = () =>{
                 console.log(error);
             });
     const [email, setEmail] = useState('')
+    var router = useRouter();
+
+    const page = router.pathname.split('/').pop();
 /*    const subscribeEmail = (e) =>{
         e.preventDefault();
         console.log(email);

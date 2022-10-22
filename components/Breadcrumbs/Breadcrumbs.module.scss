@@ -1,0 +1,29 @@
+.breadcrumbs{
+  margin-left: 0.8em;
+  background: rgba(58, 40, 162, 0.05);
+  height: 34px;
+  padding: 5px 2em;
+  border-radius: 6px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  .allLinks{
+    display: flex;
+
+
+    .arrow{
+      display: flex;
+      align-items: center;
+      margin-right: 0.7em;
+      margin-left: 0.4em;
+    }
+
+    .links{
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}

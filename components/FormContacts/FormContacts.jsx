@@ -5,6 +5,7 @@ import axios from 'axios';
 import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 import telMask from '../../utils/telMask';
 import Image from 'next/image';
+import { useRouter } from "next/router";
 
 function FormContacts() {
   const {
@@ -18,6 +19,7 @@ function FormContacts() {
       axios
           .post('https://hook.eu1.make.com/gnsrx5v9ojaht18h8pftfzj4qvihkslo', data)
           .then(() => {
+            console.log(data)
             reset();
             showDialog();
           })
@@ -35,6 +37,10 @@ function FormContacts() {
   const showDialog = () => {
     setCalenlyOpen(true);
   };
+  const router = useRouter();
+  const  { utm_medium, utm_source, utm_term,  utm_content, utm_campaign } = router.query
+
+  const page = router.pathname.split('/').pop();
   
   React.useEffect(() => {
     const body = document.querySelector('html');
@@ -88,6 +94,13 @@ function FormContacts() {
                     </div>
                     <div className={`${styles.field} ${errors.Email && styles.error}`}>
                       <input placeholder="Your email:" {...register('Email')} />
+                      <input type="hidden" value={page} name="page" {...register('Page')}/>
+                      <input type="hidden" name="utm_medium" value={utm_medium} {...register('utm_medium')}/>
+                      <input type="hidden" name="utm_source" value={utm_source} {...register('utm_source')}/>
+                      <input type="hidden" name="utm_term" value={utm_term} {...register('utm_term')}/>
+                      <input type="hidden" name="utm_content" value={utm_content} {...register('utm_content')}/>
+                      <input type="hidden" name="utm_campaign" value={utm_campaign} {...register('utm_campaign')}/>
+
                     </div>
                     <div className={styles.submit}>
                       <input className="button CTA" type="submit" value="DISCUSS YOUR PROJECT"/>

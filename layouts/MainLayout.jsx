@@ -7,7 +7,7 @@ import { ToTopBtn } from '../components/ToTopBtn/ToTopBtn';
 import { useEffect, useState } from 'react';
 import TagManager from 'react-gtm-module';
 
-export const MainLayout = ({ children, title, description, keywords }) => {
+export const MainLayout = ({ children, title, description, keywords, color }) => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const [offset, setOffset] = useState(0);
 
