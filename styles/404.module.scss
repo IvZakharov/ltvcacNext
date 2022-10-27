@@ -1,0 +1,57 @@
+.errorPage{
+  font-size: 19px;
+  h1{
+    color: #3725A2;
+    font-size: 100px;
+    letter-spacing: -5.5%;
+    line-height: 85px;
+  }
+  .message{
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+  }
+  .helpBlock{
+    width: 53%;
+    margin-top: 3em;
+
+    .helpText{
+      display: block;
+      font-weight: bold;
+      color: black;
+      letter-spacing: 0.015em;
+      margin-bottom: 1em;
+    }
+
+    .linksBlock{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 30px;
+        background: #3725A2;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 0.6em;
+      }
+    }
+
+  }
+  .errorCode{
+    margin-top: 2em;
+    color: #CE0707;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
