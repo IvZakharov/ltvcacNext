@@ -454,6 +454,10 @@ body {
   }
 }
 
+.portfolio-left{
+  flex-direction: row-reverse;
+}
+
 .portfolio-grid {
   background-color: #616ab5;
 }
@@ -566,6 +570,7 @@ body {
     color: $primary;
   }
 }
+
 
 @media (min-width: 768px) {
   .ta-md-center {

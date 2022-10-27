@@ -2,8 +2,10 @@ import {MainLayout} from "../layouts/MainLayout";
 import styles from "/styles/thankyou.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-export const thankyou = () =>{
+export const Thankyou = () =>{
+    const Router = useRouter()
 
     return(
         <MainLayout
@@ -23,7 +25,7 @@ export const thankyou = () =>{
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <Image src="/img/ThankYou/Thanks.png"
+                                <Image src="/img/Thankyou/Thanks.png"
                                     width={577}
                                     height={402}
                                 />
@@ -37,4 +39,4 @@ export const thankyou = () =>{
     );
 }
 
-export default thankyou;
+export default Thankyou;

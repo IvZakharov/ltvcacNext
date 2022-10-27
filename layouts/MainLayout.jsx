@@ -32,6 +32,7 @@ export const MainLayout = ({ children, title, description, keywords, color }) =>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <meta name="facebook-domain-verification" content="1yko0pr5s3tuwq9dl4iokow2q6yb1j" />
       </Head>
 
       <Header onClickMenu={(bool) => setOpenedMenu(bool)} />

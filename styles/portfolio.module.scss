@@ -1,0 +1,235 @@
+.container{
+  @media screen and (max-width: 580px){
+
+  }
+
+}
+.card{
+  background: #3B2AA3;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 18.9926px;
+  padding: 3em 4em;
+  margin-bottom: 2em;
+  @media screen and (max-width: 1024px) {
+    padding: 2em 2em;
+  }
+  @media screen and (max-width: 580px){
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em;
+    width: 90%!important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .projectCard{
+    width: 436px;
+    height: 100%;
+    @media screen and (max-width: 1024px) {
+      width: 49%;
+    }
+    @media screen and (max-width: 580px){
+      width: 100%;
+    }
+    .text{
+        max-width: 437px;
+        @media screen and (max-width: 580px){
+          max-width: 100%;
+        }
+        .title{
+          color: white;
+          text-transform: uppercase;
+          font-weight: 500;
+          line-height: 61px;
+          font-size: 50px;
+          margin-bottom: 20px;
+
+        }
+        .subtitle{
+          color: white;
+          font-weight: 500;
+          line-height: 22px;
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+    }
+
+    .tags{
+      display: flex;
+      flex-direction: row;
+      max-width: 335px;
+      @media screen and (max-width: 580px){
+        max-width: 100%;
+      }
+      flex-wrap: wrap;
+      color: #3B2AA3;
+
+      li{
+        background: white;
+        width: fit-content;
+        border-radius: 11px;
+        padding: 5px 9px;
+        margin-right: 0.9em;
+        margin-bottom: 1.1em;
+        @media screen and (max-width: 1024px) {
+          padding: 5px 9px;
+          margin-right: 0.5em;
+          margin-bottom: 0.7em;
+        }
+      }
+    }
+
+    .button{
+      margin-top: 2em;
+      background: #F72585;
+      border-radius: 25px;
+      width: 300px;
+      height: 60px;
+      color: white;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+
+      @media screen and (max-width: 820px) {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .imgBlock{
+    width: 49%;
+    height: 100%;
+    position: relative;
+
+    @media screen and (max-width: 1290px){
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    @media screen and (max-width: 580px){
+      width: 100%;
+    }
+
+    .light{
+      position: absolute;
+      width: 454px;
+      height: 454px;
+      background: rgba(35, 166, 240, 0.3);
+      filter: blur(52px);
+      border-radius: 3em;
+      top: 0;
+      right: 20%;
+      @media screen and (max-width: 1290px){
+        width: 100%;
+        height: 100%;
+        right: 0;
+      }
+      @media screen and (max-width: 820px){
+        width: 100%;
+        height: 100%;
+        right: 0;
+      }
+      @media screen and (max-width: 580px){
+        height: 80%;
+        width: 80%;
+        top: 10%;
+      }
+    }
+
+  }
+
+}
+.medium{
+  width: 49%;
+  @media screen and (max-width: 580px){
+    width: 100%;
+  }
+  .projectCard{
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  .card{
+    @media screen and (max-width: 1024px) {
+      padding: 1em 1em;
+    }
+
+  }
+}
+.small{
+  width: 32%;
+  @media screen and (max-width: 580px) {
+    width: 100%;
+  }
+  .card{
+    padding: 2em 3em;
+    @media screen and (max-width: 1024px) {
+      padding: 1em 1em;
+    }
+  }
+  .projectCard{
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+    .text{
+      .title{
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+      }
+      .subtitle{
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 20px;
+      }
+    }
+    .tags{
+      li{
+        margin-right: 0.5em;
+        margin-bottom: 0.7em;
+        font-size: .7em;
+      }
+    }
+    .button{
+      margin-top: 2em;
+      border-radius: 16px;
+      width: 230px;
+      height: 41px;
+      color: white;
+      font-size: 13px;
+      line-height: 14px;
+      font-weight: 500;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+}
+.colors{
+  div:nth-child(even){
+    .card{
+      border: 2px solid #3B2AA3;
+      background: white;
+
+      .text{
+        .title, .subtitle {
+          color: #3B2AA3;
+        }
+      }
+      .tags{
+        color: white;
+
+        li{
+          background: #3B2AA3;
+        }
+      }
+    }
+  }
+}
+
