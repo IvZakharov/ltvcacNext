@@ -12,7 +12,7 @@ export default function FourOhFour(){
             'Error code: 404\n'
         }
     >
-        <div className="pt-160 pb-120 pb-md-100 pt-md-180 pt-xl-190 pb-xl-190">
+        <div className="pt-160 pb-100 pb-sm-120 pb-md-170 pt-md-180 pt-xl-190 pb-xl-170">
             <div className={`container ph-20 ${style.errorPage}`}>
                 <div className={`row ${style.errorContainer}`}>
                     <div className="col-12 col-sm-12 col-md-6 col-xl-6 m-auto">
