@@ -6,10 +6,16 @@ import { MobileMenu } from '../components/MobileMenu/MobileMenu';
 import { ToTopBtn } from '../components/ToTopBtn/ToTopBtn';
 import { useEffect, useState } from 'react';
 import TagManager from 'react-gtm-module';
+import CookieAlert from "../components/CookieAlert/CookieAlert";
+import {useRouter} from "next/router";
 
 export const MainLayout = ({ children, title, description, keywords, color }) => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const [offset, setOffset] = useState(0);
+  const [Cookie, setAlert] = useState(true);
+  const router = useRouter();
+
+  console.log(router.asPath)
 
   useEffect(() => {
     const onScroll = () => setOffset(window.scrollY);
@@ -41,6 +47,7 @@ export const MainLayout = ({ children, title, description, keywords, color }) =>
 
       {openedMenu && <MobileMenu onClickClose={(bool) => setOpenedMenu(bool)} />}
       {offset > 100 ? <ToTopBtn /> : null}
+      {Cookie && <CookieAlert onClickClose={(bool) => setAlert(bool)} />}
       <Footer />
     </>
   );

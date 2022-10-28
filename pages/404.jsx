@@ -12,10 +12,10 @@ export default function FourOhFour(){
             'Error code: 404\n'
         }
     >
-        <div className="pt-140 pb-120 pb-md-100 pt-md-100 pt-xl-190 pb-xl-190">
+        <div className="pt-160 pb-120 pb-md-100 pt-md-180 pt-xl-190 pb-xl-190">
             <div className={`container ph-20 ${style.errorPage}`}>
-                <div className="row">
-                    <div className="col-6 col-md-6 col-xl-6 m-auto">
+                <div className={`row ${style.errorContainer}`}>
+                    <div className="col-12 col-sm-12 col-md-6 col-xl-6 m-auto">
                         <h1 className="mb-4">Oops!</h1>
                         <p className={style.message}>We can&apos;t seem to find the page you&apos;re looking for.<br />
                             Error code: 404</p>
@@ -38,7 +38,7 @@ export default function FourOhFour(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-12 col-sm-12 col-md-6">
                         <Image src="/img/404.png"
                             width={575}
                             height={244}

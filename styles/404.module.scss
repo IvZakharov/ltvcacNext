@@ -1,19 +1,49 @@
 .errorPage{
   font-size: 19px;
+  @media screen and (max-width: 767px){
+    height: 660px;
+    position: relative;
+  }
+
   h1{
     color: #3725A2;
     font-size: 100px;
     letter-spacing: -5.5%;
     line-height: 85px;
+    @media screen and (max-width: 767px){
+      text-align: center;
+    }
   }
   .message{
     font-weight: 400;
     line-height: 24px;
     color: black;
+    @media screen and (max-width: 767px){
+      text-align: center;
+      margin-bottom: 2em;
+    }
   }
   .helpBlock{
-    width: 53%;
+    width: 335px;
     margin-top: 3em;
+    @media screen and (max-width: 1280px){
+      margin-top: 2em;
+    }
+    @media screen and (max-width: 767px){
+      position: absolute;
+      bottom: 0;
+      left: 100px;
+    }
+    @media screen and (max-width: 520px){
+      left: 80px;
+    }
+    @media screen and (max-width: 490px){
+      left: 3em;
+    }
+    @media screen and (max-width: 414px){
+      left: 1em;
+    }
+
 
     .helpText{
       display: block;
@@ -21,6 +51,9 @@
       color: black;
       letter-spacing: 0.015em;
       margin-bottom: 1em;
+      @media screen and (max-width: 767px){
+        text-align: center;
+      }
     }
 
     .linksBlock{
@@ -54,4 +87,10 @@
     font-weight: 600;
     text-align: center;
   }
+}
+.errorContainer{
+  @media screen and (max-width: 590px){
+    flex-direction: column;
+  }
+
 }

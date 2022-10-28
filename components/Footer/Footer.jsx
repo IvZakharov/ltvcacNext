@@ -2,10 +2,14 @@ import styles from './Footer.module.scss';
 import logoSvg from './img/logo.svg';
 import Image from "next/image";
 import Link from "next/link";
+import CookieAlert from "../CookieAlert/CookieAlert";
+import {useState} from "react";
 
 export const Footer = () => {
+
   return (
       <footer className={styles.footer}>
+
         <div className="container">
           <div className={`${styles.logo} mb-60 d-md-none`}>
             <Image src={logoSvg} width={125} height={125} alt="logo"/>

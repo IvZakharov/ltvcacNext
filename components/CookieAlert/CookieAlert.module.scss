@@ -1,0 +1,66 @@
+.cookie{
+  background: #3725A2;
+  width: 100%;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  @media screen and (max-width: 590px){
+    width: 100%;
+    height: 150px;
+  }
+
+
+  .textBlock{
+    width: 33%;
+    @media screen and (max-width: 1280px){
+      width: 38%;
+    }
+    @media screen and (max-width: 1180px){
+      width: 45%;
+    }
+    @media screen and (max-width: 988px){
+      width: 60%;
+    }
+    @media screen and (max-width: 767px){
+      width: 80%;
+    }
+    @media screen and (max-width: 590px){
+      width: 90%;
+    }
+
+    p{
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+
+  .buttonBlock{
+    width: 20%;
+    @media screen and (max-width: 590px){
+      width: 90%;
+    }
+
+    button{
+      width: 128px;
+      height: 38px;
+      background: #F72585;
+      border-radius: 78px;
+      color: white;
+      font-size: 15px;
+      @media screen and (max-width: 590px){
+        display: block;
+        width: 90%;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
