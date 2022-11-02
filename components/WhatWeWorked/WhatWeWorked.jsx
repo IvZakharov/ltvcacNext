@@ -7,29 +7,15 @@ import icon4 from './img/4.svg';
 import icon5 from './img/5.svg';
 import icon6 from './img/6.svg';
 
-function WhatWeWorked({itemsArr}) {
+function WhatWeWorked({itemsArr, contentSide}) {
   
   
   return (
-      <section className="section mb-80 mb-md-0 mb-xl-0 section--title-left">
+      <section className={`section mb-80 mb-md-0 mb-xl-0 section--title-${contentSide === 'left'? 'left': 'right1'}`}>
         <div className="container p-0">
-          <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0">
-              <div className="section__title-box p-20 pt-40 pb-40 pt-md-100">
-                <h2 className="section__title ta-left ta-md-right">
-                  WHAT
-                  <br/>
-                  WE
-                  <br/>
-                  WORKED
-                  <br/>
-                  ON
-                </h2>
-              </div>
-            </div>
-            
-            <div className="col-12 col-md-6 col-xl-4 offset-xl-2 m-auto">
-              <div className={`${styles.whatWeWorked} ph-20 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100`}>
+          <div className={`row ${contentSide === 'left' ? styles.left : ''}`}>
+            <div className="col-12 col-md-6 col-xl-6">
+              <div className={`${styles.whatWeWorked} pt-2 pb-2`}>
                 <ul className={styles.list}>
                   {itemsArr.map((obj, i) => (
                       <li key={i} className={`${styles.item} mb-10`}>
@@ -47,6 +33,19 @@ function WhatWeWorked({itemsArr}) {
                       </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+            <div className={`col-12 col-md-6 col-xl-6 my-auto pl-md-60`}>
+              <div className="section__title-box p-40 pt-40 pb-40 pt-md-100">
+                <h2 className={`section__title ta-left ta-md-left ${styles.h1title}`}>
+                  WHAT
+                  <br/>
+                  WE
+                  <br/>
+                  WORKED
+                  <br/>
+                  ON
+                </h2>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import style from './CookieAlert.module.scss';
 
 function CookieAlert({ onClickClose }){
     return(
-        <section className={style.cookie} id="CookieAler">
+        <div className={style.cookie} id="CookieAler">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className={style.textBlock}>
@@ -18,7 +18,7 @@ function CookieAlert({ onClickClose }){
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

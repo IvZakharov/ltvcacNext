@@ -9,8 +9,8 @@ import LetsTalk from '../../components/LetsTalk/LetsTalk';
 export default function Portfolio({ projects }) {
   return (
     <MainLayout
-      title={'Our cases'}
-      description="Some of the projects we worked on. Feel free to request for more!">
+      title={'Our case studies - portfolio with the cases we had | LTV:CAC'}
+      description="Study some of the most interesting projects in our portfolio.">
       <Hero
         title={'Our cases'}
         subtitle={'Some of the projects we worked on. Feel free to request for more!'}

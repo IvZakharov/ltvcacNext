@@ -7,6 +7,10 @@ const nextConfig = {
     loader: 'default',
     domains: [configs.STRAPI_DOMAIN],
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 };
 
 module.exports = nextConfig;

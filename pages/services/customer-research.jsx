@@ -183,7 +183,7 @@ export default function customer() {
         </div>
       </div>
 
-      <WhatWeWorked itemsArr={whatWeWorkedArr} />
+      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
 
       <section className="section section--title-right-img8 mb-40 mb-md-0">
         <div className="container p-0">

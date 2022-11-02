@@ -150,8 +150,8 @@ export default function analytics() {
   
   return (
       <MainLayout
-          title={'Site and app Tracking system setup services - LTV:CAC agency'}
-          description="We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside sales funnel">
+          title={'Mobile and Website data tracking | LTV:CAC'}
+          description="Track the essential data for your business, get meaningful insights and learn your customers journey with data tracking.">
         <Hero
             title={'Mobile & Web Tracking'}
             subtitle={'Tracking system setup services for your project'}
@@ -201,7 +201,7 @@ export default function analytics() {
           </div>
         </section>
         
-        <WhatWeWorked itemsArr={whatWeWorkedArr}/>
+        <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
         
         <section className="section section--title-right-img8 mb-40 mb-md-0">
           <div className="container p-0">

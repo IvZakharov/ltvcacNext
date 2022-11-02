@@ -9,12 +9,13 @@ import HowItWorks from '../components/HowItWorks/HowItWorks';
 import LetsTalk from '../components/LetsTalk/LetsTalk';
 import React from 'react';
 import OurServices from '../components/OurServices/OurServices';
-import icon1 from '../components/WhatWeWorked/img/1.svg';
-import icon2 from '../components/WhatWeWorked/img/2.svg';
+import icon1 from '../components/WhatWeWorked/img/1.png';
+import icon2 from '../components/WhatWeWorked/img/2.png';
 import icon3 from '../components/WhatWeWorked/img/3.svg';
-import icon4 from '../components/WhatWeWorked/img/4.svg';
-import icon5 from '../components/WhatWeWorked/img/5.svg';
-import icon6 from '../components/WhatWeWorked/img/6.svg';
+import icon4 from '../components/WhatWeWorked/img/4.png';
+import icon5 from '../components/WhatWeWorked/img/5.png';
+import icon6 from '../components/WhatWeWorked/img/6.png';
+import style from "/styles/index.module.scss"
 
 export default function Home() {
   const ourToolkitArr = [
@@ -59,7 +60,7 @@ export default function Home() {
         'GO Keyboard,',
         'UC Browser',
       ],
-      svgIcon: icon3,
+      svgIcon: icon1,
     },
     {
       title: 'Video Games',
@@ -94,10 +95,10 @@ export default function Home() {
         <HeroAdvantages/>
         <ClientFocus/>
         
-        <div className="pt-60 pb-80 pt-xl-190 pb-xl-190">
+        <div className="pb-80 pb-xl-120">
           <div className="container ph-20">
             <div className="row">
-              <div className="col-12 col-xl-8 m-auto">
+              <div className="col-12 col-xl-9 m-auto">
                 <h2 className="section__title section__title--primary mb-30">
                   ROI&#62;0 if LTV&#62;CAC
                 </h2>
@@ -112,11 +113,11 @@ export default function Home() {
         
         <WhatWeWorked itemsArr={whatWeWorkedArr}/>
         
-        <div className="mb-80 pb-80 mb-md-0 pt-xl-190 pb-xl-190">
+        <div className="mb-80 pb-80 mb-md-0 pt-xl-120 pb-xl-120">
           <div className="container ph-20">
             <div className="row">
-              <div className="col-12 col-xl-8 m-auto">
-                <h2 className="section__title section__title--primary mb-30">OUR SERVICES</h2>
+              <div className="col-12 col-xl-9 m-auto">
+                <h2 className="section__title--primary section__title mb-30">OUR SERVICES</h2>
                 <p className="section__text ta-left ta-md-center">
                   During the past decade we have worked on &gt; 90 projects in industries like SaaS,
                   Ecommerce, Online Gaming etc.
@@ -130,10 +131,10 @@ export default function Home() {
         <OurToolkit
             arr={ourToolkitArr}
             
-            imagePosition={'right'}
+            imagePosition={'left'}
         />
         <HowItWorks/>
-        <LetsTalk contentSide={'right'}/>
+        <LetsTalk contentSide={'left'}/>
       </MainLayout>
   );
 }

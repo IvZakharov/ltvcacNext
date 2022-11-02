@@ -31,7 +31,7 @@ function Subscribe() {
       });
 
   return (
-    <section className={`section section--title-left mb-80 mb-md-0`}>
+    <section className={`section section--title-left1 mb-80 mb-md-0`}>
       <div className="container p-0">
         <div className="row">
           <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-xl-1">

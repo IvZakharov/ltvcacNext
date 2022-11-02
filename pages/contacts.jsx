@@ -58,7 +58,7 @@ export default function Contacts() {
                               bootstrapURLKeys={{ key: '' }}
                               defaultCenter={NY.center}
                               defaultZoom={NY.zoom}>
-                              <AnyReactComponent lat={40.74313548821765} lng={-73.9904050648658} text="My Marker" />
+                              <AnyReactComponent lat={NY.center.lat} lng={NY.center.lng} text="My Marker" />
                           </GoogleMapReact>
                       </div>
                       <div className={`d-flex justify-content-center ${styles.label}`}>
@@ -79,7 +79,7 @@ export default function Contacts() {
                           bootstrapURLKeys={{ key: '' }}
                           defaultCenter={defaultProps.center}
                           defaultZoom={defaultProps.zoom}>
-                          <AnyReactComponent lat={47.50654193198983} lng={19.04973876567707} text="My Marker" />
+                          <AnyReactComponent lat={defaultProps.center.lat} lng={defaultProps.center.lng} text="OUR Office" />
                         </GoogleMapReact>
                       </div>
                       <div className={`d-flex justify-content-center ${styles.label}`}>

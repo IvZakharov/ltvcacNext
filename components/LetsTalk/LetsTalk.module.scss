@@ -3,19 +3,31 @@
 .letsTalk {
   position: relative;
   padding: 0 30px;
-
-  @media (min-width: 768px) {
-    padding: 0 60px;
+  @media (max-width: 1200px) {
+    padding: unset;
+    width: fit-content;
+    padding-left: 3em;
+  }
+  @media (max-width: 820px) {
+    padding-left: 3.5em;
   }
 
+
   .title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 40px;
-    line-height: 46px;
-    /* identical to box height, or 116% */
-    text-align: center;
-    color: $primary;
-    margin-bottom: 40px;
+    line-height: 48px;
+    color: black;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+
+  .h3{
+    color: $secondary;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
   }
 
   .label {
@@ -32,31 +44,50 @@
     justify-content: center;
     border-radius: 50%;
     position: absolute;
-    top: 50px;
-    left: -30px;
+    top: 0;
+    left: -70px;
     transform: rotate(-20deg);
     z-index: -1;
+    @media (max-width: 1200px) {
+      left: -40px;
+    }
+    @media (max-width: 1024px) {
+      left: -10px;
+    }
   }
 
   .list {
+    margin-bottom: 25px;
     li {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 25px;
       line-height: 30px;
       color: #000000;
       position: relative;
-      padding-left: 15px;
 
       &:before {
         position: absolute;
         content: '';
-        width: 5px;
+        width: 7px;
         border-radius: 50%;
-        height: 5px;
+        height: 7px;
         top: calc(50% - 2.5px);
         background-color: #000;
-        left: 0;
+        left: -20px;
       }
     }
+  }
+}
+.h1title{
+  font-size: 100px;
+  line-height: 121px;
+  letter-spacing: 0.03em;
+  width: fit-content;
+  margin: 0 auto;
+  @media (max-width: 820px) {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.005em;
+    padding-right: 20px;
   }
 }

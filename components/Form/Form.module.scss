@@ -1,26 +1,39 @@
 @import '/styles/variables';
 
 .form {
-  @media (min-width: 768px) {
-    padding: 0 50px;
+
+  form{
+    width: 76%;
+    margin-left: .8em;
+    @media (max-width: 1200px) {
+      padding-left: 2em;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    @media (max-width: 820px) {
+      width: 90%;
+      padding-left: 3em;
+    }
   }
 
   .field {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
 
     input {
       width: 100%;
       padding: 15px;
       font-size: 14px;
-      border: 2px solid $secondary;
+      border: 2px solid $primary;
       border-radius: 10px;
-      background-color: rgba($secondary, 0.05);
-      transition: background-color 0.2s ease-in-out;
 
       &:active,
       &:focus {
         background-color: rgba($secondary, 0.25);
+      }
+      &::placeholder{
+        color: $primary;
+        font-weight: 500;
       }
     }
   }
@@ -41,16 +54,17 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    height: 54px;
   }
 
   .copy {
     text-align: center;
     font-weight: 300;
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     /* or 185% */
     letter-spacing: 0.005em;
 
-    color: #514e4e;
+    color: black;
   }
 }

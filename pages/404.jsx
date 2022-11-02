@@ -42,6 +42,7 @@ export default function FourOhFour(){
                         <Image src="/img/404.png"
                             width={575}
                             height={244}
+                               alt={"404 not found"}
                         />
                         <span className={style.errorCode}>Error code: 404</span>
                     </div>

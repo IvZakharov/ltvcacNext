@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 
 function FormContacts() {
   const router = useRouter();
-  const  { utm_medium, utm_source, utm_term,  utm_content, utm_campaign } = router.query
   const {
     register,
     handleSubmit,
@@ -17,6 +16,7 @@ function FormContacts() {
     reset,
     formState: {errors},
   } = useForm();
+
   const onSubmit = (data) =>
       axios
           .post('https://hook.eu1.make.com/gnsrx5v9ojaht18h8pftfzj4qvihkslo', data)
@@ -31,6 +31,19 @@ function FormContacts() {
   const [calendlyOpen, setCalenlyOpen] = React.useState(false);
   const telInputRef = React.useRef(null);
   const {ref, ...rest} = register('phoneNumber');
+
+  React.useEffect(() =>{
+    const { utm_medium, utm_source, utm_term, utm_content, utm_campaign} = router.query
+
+    if(router.isReady){
+      register('utm_medium', {value:utm_medium})
+      register('utm_source', {value: utm_source})
+      register('utm_term', {value:utm_term})
+      register('utm_content', {value: utm_content})
+      register('utm_campaign', {value:utm_campaign})
+    }
+  })
+
   
   React.useEffect(() => {
     telMask(telInputRef);
@@ -39,6 +52,7 @@ function FormContacts() {
   const showDialog = () => {
     setCalenlyOpen(true);
   };
+
 
 
   const page = router.pathname.split('/').pop();
@@ -96,11 +110,6 @@ function FormContacts() {
                     <div className={`${styles.field} ${errors.Email && styles.error}`}>
                       <input placeholder="Your email:" {...register('Email')} />
                       <input type="hidden" value={page} name="page" {...register('Page')}/>
-                      <input type="hidden" name="utm_medium" {...register('utm_medium',{value: utm_medium })}/>
-                      <input type="hidden" name="utm_source"  {...register('utm_source', {value: utm_source})}/>
-                      <input type="hidden" name="utm_term" {...register('utm_term', {value: utm_term})}/>
-                      <input type="hidden" name="utm_content" {...register('utm_content', {value: utm_content})}/>
-                      <input type="hidden" name="utm_campaign" {...register('utm_campaign', {value: utm_campaign})}/>
 
                     </div>
                     <div className={styles.submit}>

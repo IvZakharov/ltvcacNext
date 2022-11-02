@@ -118,7 +118,7 @@ export const Header = ({onClickMenu}) => {
                 <li>
                   <a
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noreferrer nofollow"
                       href="https://www.linkedin.com/company/ltvcac-agency/">
                     <svg
                         width="30"
@@ -165,7 +165,7 @@ export const Header = ({onClickMenu}) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer" href="https://business.facebook.com/ltvcac/">
+                  <a target="_blank" rel="noreferrer nofollow" href="https://business.facebook.com/ltvcac/">
                     <svg
                         width="30"
                         height="30"
@@ -183,7 +183,7 @@ export const Header = ({onClickMenu}) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ltvcac.agency/">
+                  <a target="_blank" rel="noreferrer nofollow" href="https://www.instagram.com/ltvcac.agency/">
                     <svg
                         width="30"
                         height="30"

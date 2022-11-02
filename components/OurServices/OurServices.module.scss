@@ -3,7 +3,7 @@
 .ourServices {
   .item {
     border: 2px solid $primary;
-    height: 230px;
+    height: 200px;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -13,6 +13,7 @@
     transition: all .2s ease-in-out;
     margin-bottom: 20px;
     text-transform: uppercase;
+    border-radius: 20px;
 
     @media (min-width: 768px) {
       height: 320px;
@@ -60,7 +61,7 @@
     line-height: 21px;
     /* or 150% */
     text-align: center;
-    color: #514E4E;
+    color: black;
 
     @media (min-width: 768px) {
       font-size: 1.125rem;

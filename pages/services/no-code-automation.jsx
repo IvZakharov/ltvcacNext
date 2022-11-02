@@ -133,8 +133,8 @@ export default function analytics() {
   
   return (
       <MainLayout
-          title={'Site and app Tracking system setup services - LTV:CAC agency'}
-          description="We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside sales funnel">
+          title={'No-code automation of your routine business processes | LTV:CAC'}
+          description="Automate your business processes performance, save time and money, free up human resources of your company and let automation do all the boring work for you.">
         <Hero
             title={'No-Code Automation'}
             subtitle={'Automation of routine manual processes'}

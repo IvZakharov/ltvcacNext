@@ -565,9 +565,9 @@ body {
 
   &__text {
     font-weight: 400;
-    font-size: 40px;
-    line-height: 46px;
-    color: $primary;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
   }
 }
 
@@ -632,6 +632,9 @@ body {
   .mb-md-100 {
     margin-bottom: 100px;
   }
+  .mb-md-120 {
+    margin-bottom: 120px;
+  }
 
   .section {
     position: relative;
@@ -679,6 +682,19 @@ body {
         left: 0;
       }
     }
+    &--title-left1{
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 0px 40px 40px 0px;
+      }
+    }
 
     &--title-right {
       &:before {
@@ -690,6 +706,19 @@ body {
         z-index: -1;
         top: 0;
         right: 0;
+      }
+    }
+    &--title-right1 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        border-radius: 40px 0px 0px 40px;
       }
     }
 
@@ -717,13 +746,10 @@ body {
         width: 50%;
         height: 100%;
         background-color: $primary;
-        background-image: url('/img/section/2.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         z-index: -1;
         top: 0;
         left: 0;
+        border-radius: 0px 40px 40px 0px;
       }
     }
 
@@ -1150,7 +1176,6 @@ body {
   .pb-xl-60 {
     padding-bottom: 60px;
   }
-
   .pt-xl-60 {
     padding-top: 60px;
   }
@@ -1209,8 +1234,8 @@ body {
 
   .section {
     &__title {
-      font-size: 100px;
-      line-height: 100px;
+      font-size: 80px;
+      line-height: 97px;
       font-weight: 500;
 
       &--small {

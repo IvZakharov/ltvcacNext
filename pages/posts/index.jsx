@@ -9,8 +9,8 @@ import Subscribe from '../../components/Subscribe/Subscribe';
 export default function Blog({ posts }) {
   return (
     <MainLayout
-      title={'Blog'}
-      description="Some of the projects we worked on. Feel free to request for more!">
+      title={'Our blog - read content on web development, design and more | LTV:CAC'}
+      description="Here you can find experts sharing their knowledge and experience in designing and developing websites, automating business processes, analyzing data, optimizing apps in stores and best practices in paid advertising channels. ">
       <Hero
         title={'Blog'}
         subtitle={'Our blog features only expert content from our team of experts.'}

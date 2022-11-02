@@ -15,6 +15,7 @@ export const breadcrumbs = ({img, lable, link}) => {
                                     <Image src="/img/breadcrumbs/home.svg"
                                            width={18}
                                            height={16}
+                                           alt={"home"}
                                     />
                                     <span className="m-lg-1">Home</span>
                                 </a>
@@ -23,6 +24,7 @@ export const breadcrumbs = ({img, lable, link}) => {
                                 <Image src="/img/breadcrumbs/arrow.svg"
                                        width={9}
                                        height={8}
+                                       alt={"arrow"}
                                 />
                             </span>
                             <Link href={link}>
@@ -30,6 +32,7 @@ export const breadcrumbs = ({img, lable, link}) => {
                                     <Image src={img}
                                            width={17}
                                            height={14}
+                                           alt={lable}
                                     />
                                     <span className="m-lg-1">{lable}</span>
                                 </a>

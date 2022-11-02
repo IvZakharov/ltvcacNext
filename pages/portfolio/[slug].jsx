@@ -13,9 +13,9 @@ export default function Project({ project }) {
 
   return (
     <MainLayout
-      title={project.attributes?.Seo?.metaTitle}
-      description={project.attributes?.Seo?.metaDescription}
-      keywords={project.attributes?.Seo?.keywords}>
+      title={project.attributes?.Seo[0]?.metaTitle}
+      description={project.attributes?.Seo[0]?.metaDescription}
+      keywords={project.attributes?.Seo[0]?.keywords}>
       <Hero
         title={project.attributes?.projectName}
         subtitle={project.attributes?.subtitle}

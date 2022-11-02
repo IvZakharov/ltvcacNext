@@ -2,9 +2,9 @@
 
 .focus {
   position: relative;
+  margin: 68px 0;
 
 
-  @media (min-width: 1200px) {
     &:before {
       position: absolute;
       content: '';
@@ -13,15 +13,19 @@
       width: 50%;
       height: 100%;
       background-color: $primary;
-      background-image: url('./img/bg.jpg');
       background-position: 50% 50%;
-      background-size: cover;
-      background-repeat: no-repeat;
+      border-radius: 0px 40px 40px 0px;
       z-index: -1;
+      @media (max-width: 1024px){
+        width: 100%;
+        height: 50%;
+        border-radius: 40px 40px 40px 40px;
+      }
+      @media (max-width: 540px) {
+        height: 30%;
+      }
     }
 
-
-  }
 
   .content {
     padding-left: 90px;
@@ -41,7 +45,12 @@
       width: 100%;
 
     }
-
+    .title{
+      margin-bottom: 2px;
+    }
+    .subtitle{
+      margin-bottom: 23px;
+    }
     .title, .subtitle {
       @media (min-width: 768px) {
         margin-left: 60px;
@@ -54,13 +63,12 @@
 
     &:first-child:before {
       content: '1';
-      font-weight: 500;
-      font-size: 80px;
+      font-weight: 600;
+      font-size: 72px;
       line-height: 70px;
       /* identical to box height, or 170% */
       letter-spacing: -0.055em;
       color: $secondary;
-      opacity: .5;
       position: absolute;
       top: 0;
       left: 20px;
@@ -70,19 +78,18 @@
       }
 
       @media (min-width: 1200px) {
-        left: -70px;
+        left: -50px;
       }
     }
 
     &:last-child:before {
       content: '2';
-      font-weight: 500;
-      font-size: 80px;
+      font-weight: 600;
+      font-size: 72px;
       line-height: 70px;
       /* identical to box height, or 170% */
       letter-spacing: -0.055em;
       color: $secondary;
-      opacity: .5;
       position: absolute;
       top: 0;
       left: 20px;
@@ -92,23 +99,22 @@
       }
 
       @media (min-width: 1200px) {
-        left: -70px;
+        left: -50px;
       }
     }
   }
 
   .titleBox {
+    display: flex;
+    justify-content: space-around;
 
     @media (min-width: 1200px) {
       background: transparent;
     }
-
-    background-image: url('./img/bgMob.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 150px;
+    @media (max-width: 1024px) {
+      height: 280px;
+      align-items: center;
+    }
   }
 
   .subtitle {
@@ -123,13 +129,13 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    color: $primary;
+    color: black;
   }
 
   .listItem {
     font-weight: 400;
     font-size: 14px;
-    line-height: 28px;
-    color: $primary;
+    line-height: 17px;
+    color: black;
   }
 }

@@ -6,9 +6,9 @@ import axios from 'axios';
 export default function Post({ post }) {
   return (
     <MainLayout
-      title={post.attributes?.Seo?.metaTitle}
-      description={post.attributes?.Seo?.metaDescription}
-      keywords={post.attributes?.Seo?.keywords}>
+      title={post.attributes?.Seo[0]?.metaTitle}
+      description={post.attributes?.Seo[0]?.metaDescription}
+      keywords={post.attributes?.Seo[0]?.keywords}>
       {post && (
         <HeroPost
           title={post.attributes.postName}
