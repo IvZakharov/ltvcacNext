@@ -134,12 +134,12 @@
     .text_free{
       position: absolute;
       color: #fff;
-      font-family: 'Inter';
       font-style: normal;
       font-size: 35px;
-      line-height: 42px;
-      left:1.8em;
+      line-height: 36px;
+      left:1.9em;
       letter-spacing: 0.07em;
+      top: 3px;
       @media (max-width: 760px) {
         left:29%;
         width: 50%;
@@ -165,9 +165,8 @@
     .label_list{
       display: block;
       color: #fff;
-      font-family: 'Inter';
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 21.5068px;
       line-height: 22px;
       margin-bottom: 0.5em;
@@ -176,6 +175,7 @@
     }
     .list{
       padding-left: 1em;
+      font-weight: 100;
     }
     .list li{
       list-style: disc!important;
