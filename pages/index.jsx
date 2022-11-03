@@ -82,7 +82,7 @@ export default function Home() {
   
   return (
       <MainLayout
-          title={'High ROI Performance marketing services - LTV:CAC agency'}
+          title={'High ROI Performance marketing services - LTV:CAC agency test'}
           description={
             'We help startups and property businesses grow digital marketing from idea to xx.xxx customers with help digital channels, data analysis and customer research'
           }>
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">
                 <h2 className="section__title section__title--primary mb-30">
-                  ROI&#62;0 if LTV&#62;CAC
+                  ROI&#62;0 if LTV&#62;CAC test
                 </h2>
                 <p className="section__text ta-left ta-md-center">
                   We assist startups and property businesses in growing digital marketing from an idea
