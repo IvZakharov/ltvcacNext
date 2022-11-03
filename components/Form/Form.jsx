@@ -4,8 +4,10 @@ import {useForm} from 'react-hook-form';
 import axios from 'axios';
 import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 import telMask from '../../utils/telMask';
+import {useRouter} from "next/router";
 
 function Form() {
+  const router = useRouter()
   const {
     register,
     handleSubmit,
@@ -17,6 +19,7 @@ function Form() {
       axios
           .post('https://hook.eu1.make.com/gnsrx5v9ojaht18h8pftfzj4qvihkslo', data)
           .then(() => {
+              console.log(data)
             reset();
             showDialog();
           })
@@ -26,6 +29,21 @@ function Form() {
   const [calendlyOpen, setCalenlyOpen] = React.useState(false);
   const telInputRef = React.useRef(null);
   const {ref, ...rest} = register('phoneNumber');
+    const page = router.pathname.split('/').pop();
+
+    React.useEffect(() =>{
+        const { utm_medium, utm_source, utm_term, utm_content, utm_campaign} = router.query
+
+        if(router.isReady){
+            register('utm_medium', {value:utm_medium})
+            register('utm_source', {value: utm_source})
+            register('utm_term', {value:utm_term})
+            register('utm_content', {value: utm_content})
+            register('utm_campaign', {value:utm_campaign})
+            register('Page', {value: (!page) ? 'home' : page})
+        }
+    })
+
   
   React.useEffect(() => {
     telMask(telInputRef);

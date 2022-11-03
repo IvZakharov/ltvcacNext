@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 
 function LetsTalk({ contentSide }) {
   return (
-    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mb-80 mb-md-60`}>
+    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mb-80 mb-md-60`} id="contact">
       <div className="container p-0">
         <div className="row">
           <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-md-1 offset-xl-2 mx-auto">
