@@ -21,7 +21,6 @@ function FormContacts() {
       axios
           .post('https://hook.eu1.make.com/gnsrx5v9ojaht18h8pftfzj4qvihkslo', data)
           .then(() => {
-            console.log(data)
             reset();
             showDialog();
           })
