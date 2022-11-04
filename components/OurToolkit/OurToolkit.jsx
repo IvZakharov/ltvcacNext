@@ -21,7 +21,7 @@ function OurToolkit({arr, imagePosition}) {
                 className={`col-12 col-md-6 col-xl-6 pt-5 pb-3 ${imagePosition === 'left' ? 'offset-xl-1' : ''}  order-md-1 `}>
               <div className={`${styles.ourToolkit} ph-20 row align-items-center`}>
                 {arr.map((obj, i) => (
-                    <div key={i} className={`${styles.item} col-12 col-md-7`}>
+                    <div key={i} className={`${styles.item} col-12 col-md-10`}>
                       <i className={styles.icon}>
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect y="0.194824" width="27.6078" height="27.61" rx="3" fill="#3725A2"/>
@@ -29,7 +29,7 @@ function OurToolkit({arr, imagePosition}) {
                         </svg>
                       </i>
                       <div>
-                        <h3 className="h3 mb-10">{obj.title}</h3>
+                        <h3 className={`h3 mb-10 ${styles.h3}`}>{obj.title}</h3>
                         <p className={styles.text}>{obj.text}</p>
                       </div>
                     </div>
