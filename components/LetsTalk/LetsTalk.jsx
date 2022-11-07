@@ -22,9 +22,6 @@ function LetsTalk({ contentSide }) {
               contentSide === 'left' ? 'order-md-1' : 'pt-md-60 pb-md-60 pt-xl-100'
             } `}>
             <div className={`${styles.letsTalk} ml-120`}>
-              <h3 className={styles.title}>
-                Speak With <br /> Expert Team
-              </h3>
               <div className={styles.block}>
                 <span className={styles.label}>FREE!
                 <Image src="/img/contacts/emojione-monotone_fire.svg"
