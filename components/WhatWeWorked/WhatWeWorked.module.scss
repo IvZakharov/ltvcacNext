@@ -4,6 +4,12 @@
   width: 461px;
   float: right;
   margin: 22px 120px 22px 0;
+  @media (max-width: 1200px) {
+    margin: 22px 90px 22px 0;
+  }
+  @media (max-width: 1125px) {
+    margin: 22px 70px 22px 0;
+  }
   @media (max-width: 820px) {
     width: 100%;
   }
@@ -68,8 +74,11 @@
   justify-content: flex-start;
   margin-left: 150px;
 
-  @media (min-width: 1200px) {
-    background: transparent;
+  @media (max-width: 1200px) {
+    margin-left: 120px;
+  }
+  @media (max-width: 1200px) {
+    margin-left: 100px;
   }
   @media (max-width: 1024px) {
     height: 280px;

@@ -113,7 +113,7 @@ export default function Home() {
         
         <WhatWeWorked itemsArr={whatWeWorkedArr}/>
         
-        <div className="section pb-68 pt-68">
+        <div className="section pb-20 pt-20">
           <div className="container ph-20">
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">

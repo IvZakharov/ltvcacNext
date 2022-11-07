@@ -28,6 +28,7 @@
   .content {
     position: relative;
     margin-left: 160px;
+    width: 518px;
     &:first-child {
       margin-top: 20px;
       margin-bottom: 23px;
@@ -36,8 +37,13 @@
       margin-bottom: 20px;
     }
 
-
-    @media (min-width: 768px) {
+    @media (max-width: 1200px) {
+      margin-left: 100px;
+    }
+    @media (max-width: 1125px) {
+      margin-left: 80px;
+    }
+    @media (max-width: 768px) {
       width: 50%;
       padding: 0;
 
@@ -100,8 +106,11 @@
     justify-content: flex-end;
     margin-right: 150px;
 
-    @media (min-width: 1200px) {
-      background: transparent;
+    @media (max-width: 1200px) {
+      margin-right: 120px;
+    }
+    @media (max-width: 1125px) {
+      margin-right: 100px;
     }
     @media (max-width: 1024px) {
       height: 280px;

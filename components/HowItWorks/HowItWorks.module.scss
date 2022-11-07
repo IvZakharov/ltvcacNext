@@ -4,6 +4,12 @@
   width: fit-content;
   float: right;
   margin-right: 120px;
+  @media (max-width: 1200px) {
+    margin-right: 90px;
+  }
+  @media (max-width: 1125px) {
+    margin-right: 70px;
+  }
   .list {
     padding-bottom: 50px;
     padding-top: 23px;
@@ -71,6 +77,12 @@
   margin-left: 150px;
   color: white;
   font-weight: 500;
+  @media (max-width: 1200px) {
+    margin-left: 120px;
+  }
+  @media (max-width: 1125px) {
+    margin-left: 100px;
+  }
   @media (max-width: 820px) {
     font-size: 80px;
     line-height: 80px;

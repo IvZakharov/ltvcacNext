@@ -5,7 +5,7 @@ function ClientFocus() {
       <section className={`${styles.focus} section mt-68 mb-68`}>
         <div className="container p-0">
           <div className="row">
-            <div className="col-12 col-xl-6 my-auto p-0">
+            <div className="col-12 col-md-6 col-xl-6 my-auto p-0">
               <div className={styles.titleBox}>
                 <h2 className={`${styles.h1title}`}>
                   CLIENT
@@ -14,7 +14,7 @@ function ClientFocus() {
                 </h2>
               </div>
             </div>
-            <div className="col-12 col-xl-6 p-0">
+            <div className="col-12 col-md-6 col-xl-6 p-0">
               <div className={styles.content}>
                 <h3 className={`${styles.title} h3`}>Online startups</h3>
                 <p className={`${styles.subtitle}`}>SaaS, Mobile Apps, E-commerce</p>
