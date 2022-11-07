@@ -4,24 +4,22 @@ function OurToolkit({arr, imagePosition}) {
   
   
   return (
-      <section className={`section section--title-${imagePosition}-img2 mb-60 mb-md-120`}>
+      <section className={`section section--title-${imagePosition}-img2 mb-68 mt-68`}>
         <div className="container p-0">
           <div className="row">
             <div
-                className={`col-12 col-md-6 col-xl-5  ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1'} mb-60 mb-md-0  d-flex justify-content-center align-items-center`}>
-              <div className="section__title-box pl-20">
+                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1'} my-auto p-0`}>
                 <h2 className={`section__title ta-left ${imagePosition === 'left' ? 'ta-md-right' : ''} ${styles.h1title}`}>
                   OUR
                   <br/>
                   TOOLKIT
                 </h2>
-              </div>
             </div>
             <div
-                className={`col-12 col-md-6 col-xl-6 pt-5 pb-3 ${imagePosition === 'left' ? 'offset-xl-1' : ''}  order-md-1 `}>
-              <div className={`${styles.ourToolkit} ph-20 row align-items-center`}>
+                className={`col-12 col-md-6 col-xl-6  ${imagePosition === 'left' ? 'p-0' : 'offset-xl-1 pt-5 pb-3'}  order-md-1 `}>
+              <div className={`${styles.ourToolkit}`}>
                 {arr.map((obj, i) => (
-                    <div key={i} className={`${styles.item} col-12 col-md-10`}>
+                    <div key={i} className={`${styles.item}`}>
                       <i className={styles.icon}>
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect y="0.194824" width="27.6078" height="27.61" rx="3" fill="#3725A2"/>
@@ -29,7 +27,7 @@ function OurToolkit({arr, imagePosition}) {
                         </svg>
                       </i>
                       <div>
-                        <h3 className={`h3 mb-10 ${styles.h3}`}>{obj.title}</h3>
+                        <h3 className={styles.title}>{obj.title}</h3>
                         <p className={styles.text}>{obj.text}</p>
                       </div>
                     </div>

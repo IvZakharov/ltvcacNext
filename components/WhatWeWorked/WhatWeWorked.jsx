@@ -11,14 +11,14 @@ function WhatWeWorked({itemsArr, contentSide}) {
   
   
   return (
-      <section className={`section mb-80 mb-md-0 mb-xl-0 section--title-${contentSide === 'left'? 'left': 'right1'}`}>
+      <section className={`section mb-68 mt-68 section--title-${contentSide === 'left'? 'left': 'right1'}`}>
         <div className="container p-0">
           <div className={`row ${contentSide === 'left' ? styles.left : ''}`}>
-            <div className="col-12 col-md-6 col-xl-6">
-              <div className={`${styles.whatWeWorked} pt-2 pb-2`}>
+            <div className="col-12 col-md-6 col-xl-6 p-0">
+              <div className={styles.whatWeWorked}>
                 <ul className={styles.list}>
                   {itemsArr.map((obj, i) => (
-                      <li key={i} className={`${styles.item} mb-10`}>
+                      <li key={i} className={styles.item}>
                         <i className={styles.icon}>
                           <Image src={obj.svgIcon} alt={obj.title} width={48} height={48}/>
                         </i>
@@ -35,9 +35,9 @@ function WhatWeWorked({itemsArr, contentSide}) {
                 </ul>
               </div>
             </div>
-            <div className={`col-12 col-md-6 col-xl-6 my-auto pl-md-60`}>
-              <div className="section__title-box p-40 pt-40 pb-40 pt-md-100">
-                <h2 className={`section__title ta-left ta-md-left ${styles.h1title}`}>
+            <div className={`col-12 col-md-6 col-xl-6 my-auto p-0`}>
+              <div className={styles.titleBox}>
+                <h2 className={` ${styles.h1title}`}>
                   WHAT
                   <br/>
                   WE

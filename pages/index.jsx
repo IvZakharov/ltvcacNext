@@ -95,11 +95,11 @@ export default function Home() {
         <HeroAdvantages/>
         <ClientFocus/>
         
-        <div className="pb-80 pb-xl-120">
+        <div className="section" style={{paddingBottom:'68px', paddingTop: '68px'}}>
           <div className="container ph-20">
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">
-                <h2 className="section__title section__title--primary mb-30">
+                <h2 className="section__title section__title--primary" style={{marginBottom: '10px'}}>
                   ROI&#62;0 if LTV&#62;CAC
                 </h2>
                 <p className="section__text ta-left ta-md-center">
@@ -113,11 +113,11 @@ export default function Home() {
         
         <WhatWeWorked itemsArr={whatWeWorkedArr}/>
         
-        <div className="mb-80 pb-80 mb-md-0 pt-xl-120 pb-xl-120">
+        <div className="section pb-68 pt-68">
           <div className="container ph-20">
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">
-                <h2 className="section__title--primary section__title mb-30">OUR SERVICES</h2>
+                <h2 className="section__title--primary section__title mb-10">OUR SERVICES</h2>
                 <p className="section__text ta-left ta-md-center">
                   During the past decade we have worked on &gt; 90 projects in industries like SaaS,
                   Ecommerce, Online Gaming etc.

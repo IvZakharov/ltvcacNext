@@ -58,7 +58,7 @@ function Form() {
   }, [calendlyOpen]);
   
   return (
-      <div className={styles.form}>
+      <div className={`${styles.form} ml-120`}>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
           <div className={`${styles.field} ${errors.Name && styles.error}`}>

@@ -2,17 +2,24 @@
 
 .ourToolkit {
   flex-direction: column;
-  
+  width: 427px;
+  margin-left: 120px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+
   .item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     border: 1px solid $primary;
     border-radius: 15px;
     padding: 15px;
 
     @media (min-width: 768px) {
       margin-bottom: 22px;
+    }
+    &:last-child{
+      margin-bottom: unset;
     }
     @media (max-width: 820px) {
       width: 90%!important;
@@ -22,22 +29,23 @@
   .icon {
 
     display: block;
-    margin-right: 2em;
+    margin-right: 13px;
   }
 
   .title {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    /* or 120% */
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
     color: #3725A2;
+    margin-bottom: 5px;
   }
 
   .text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    /* or 175% */
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
     color: black;
   }
 }
@@ -47,6 +55,7 @@
   letter-spacing: 0.03em;
   width: fit-content;
   float: right;
+  margin-right: 150px;
   @media (max-width: 820px) {
     font-size: 80px;
     line-height: 80px;
