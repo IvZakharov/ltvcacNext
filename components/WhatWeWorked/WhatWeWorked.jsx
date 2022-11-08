@@ -15,7 +15,7 @@ function WhatWeWorked({itemsArr, contentSide}) {
         <div className="container p-0">
           <div className={`row ${contentSide === 'left' ? styles.left : ''}`}>
             <div className="col-12 col-md-6 col-xl-6 p-0">
-              <div className={styles.whatWeWorked}>
+              <div className={`${styles.whatWeWorked} mr-120`}>
                 <ul className={styles.list}>
                   {itemsArr.map((obj, i) => (
                       <li key={i} className={styles.item}>
@@ -26,7 +26,7 @@ function WhatWeWorked({itemsArr, contentSide}) {
                           <h4 className={styles.title}>{obj.title}</h4>
                           <ul className={styles.links}>
                             {obj.links.map((item, i) => (
-                                <li key={i}>{item}</li>
+                                <li key={i} className="textFonts">{item}</li>
                             ))}
                           </ul>
                         </div>
@@ -36,8 +36,8 @@ function WhatWeWorked({itemsArr, contentSide}) {
               </div>
             </div>
             <div className={`col-12 col-md-6 col-xl-6 my-auto p-0`}>
-              <div className={styles.titleBox}>
-                <h2 className={` ${styles.h1title}`}>
+              <div className="marginHomeRight">
+                <h2 className="h1title">
                   WHAT
                   <br/>
                   WE

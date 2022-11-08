@@ -10,7 +10,7 @@ function LetsTalk({ contentSide }) {
         <div className="row">
           <div className="col-12 col-md-6 my-auto p-0">
             <div className="section__title-box">
-              <h2 className={`section__title section__title--large ta-left ${styles.h1title}`}>
+              <h2 className={`ta-left ${contentSide === 'left'? 'h1title marginHomeLeft': ''}`}>
                 LET&apos;S
                 <br />
                 TALK

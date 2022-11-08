@@ -13,24 +13,24 @@ function HowItWorks() {
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 p-0">
-              <div className={styles.howItWorks}>
+              <div className={`${styles.howItWorks} mr-120`}>
                 <ul className={styles.list}>
                   {items.map((item, i) => (
                       <li key={i} className={styles.item}>
                         <span className={styles.count}>{i + 1}</span>
-                        <p className={styles.text}>{item}</p>
+                        <p className={`${styles.text} textFonts`}>{item}</p>
                       </li>
                   ))}
                 </ul>
                 <span className={styles.line}></span>
-                <p className={styles.textAfter}>
+                <p className={`${styles.textAfter} textFonts`}>
                   We optimize your digital customer acquisition channels and you get revenue boost.
                 </p>
               </div>
             </div>
             <div className="col-12 col-md-6 my-auto p-0">
               <div className="section__title-box">
-                <h2 className={styles.h1title}>
+                <h2 className="marginHomeRight h1title">
                   HOW
                   <br/>
                   IT

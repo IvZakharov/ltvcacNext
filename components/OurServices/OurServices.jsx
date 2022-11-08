@@ -12,7 +12,7 @@ function OurServices() {
                   <div className={styles.item}>
                     <h3 className={styles.title}>Paid Marketing Channels</h3>
                   </div>
-                  <p className={styles.text}>
+                  <p className={`${styles.text} textFonts`}>
                     We analyze your key KPIs and optimize ad campaigns to cover ALL of your target
                     audiences efficiently.
                   </p>
@@ -25,7 +25,7 @@ function OurServices() {
                   <div className={styles.item}>
                     <h3 className={styles.title}>Mobile & Web tracking</h3>
                   </div>
-                  <p className={styles.text}>
+                  <p className={`${styles.text} textFonts`}>
                     We boost your sales and cut your losses with the optimized business operations.
                   </p>
                 </a>
@@ -37,7 +37,7 @@ function OurServices() {
                   <div className={styles.item}>
                     <h3 className={styles.title}>No-code Automation</h3>
                   </div>
-                  <p className={styles.text}>
+                  <p className={`${styles.text} textFonts`}>
                     Automation of your routine manual processes to save your time and budget.
                   </p>
                 </a>
@@ -49,7 +49,7 @@ function OurServices() {
                   <div className={styles.item}>
                     <h3 className={styles.title}>Customer Research</h3>
                   </div>
-                  <p className={styles.text}>
+                  <p className={`${styles.text} textFonts`}>
                     We estimate your product demand based on qualitative and quantitative data, then
                     create your ideal client profile. Finally, we optimize your product for target
                     audience needs.
@@ -63,7 +63,7 @@ function OurServices() {
                   <div className={styles.item}>
                     <h3 className={styles.title}>App Store Optimization</h3>
                   </div>
-                  <p className={styles.text}>
+                  <p className={`${styles.text} textFonts`}>
                     Optimize your mobile app to get more installations from the App Store and Google Play.
                   </p>
                 </a>
@@ -74,7 +74,7 @@ function OurServices() {
               <div className={`${styles.item} ${styles.disable}`}>
                 <h3 className={styles.title}>Web development</h3>
               </div>
-              <p className={styles.text}>
+              <p className={`${styles.text} textFonts`}>
                 We develop high-conversion landing pages and e-commerce website from an idea to
                 readiness for advertising campaigns.
               </p>

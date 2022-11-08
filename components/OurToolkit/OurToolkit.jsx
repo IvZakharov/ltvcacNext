@@ -8,8 +8,8 @@ function OurToolkit({arr, imagePosition}) {
         <div className="container p-0">
           <div className="row">
             <div
-                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1'} my-auto p-0`}>
-                <h2 className={`section__title ta-left ${imagePosition === 'left' ? 'ta-md-right' : ''} ${styles.h1title}`}>
+                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1 '} my-auto p-0`}>
+                <h2 className={` ${imagePosition === 'left' ? 'ta-md-right marginHomeLeft h1title' : ''} ta-left`}>
                   OUR
                   <br/>
                   TOOLKIT
@@ -17,7 +17,7 @@ function OurToolkit({arr, imagePosition}) {
             </div>
             <div
                 className={`col-12 col-md-6 col-xl-6  ${imagePosition === 'left' ? 'p-0' : 'offset-xl-1 pt-5 pb-3'}  order-md-1 `}>
-              <div className={`${styles.ourToolkit}`}>
+              <div className={`${styles.ourToolkit} ml-120`}>
                 {arr.map((obj, i) => (
                     <div key={i} className={`${styles.item}`}>
                       <i className={styles.icon}>
@@ -28,7 +28,7 @@ function OurToolkit({arr, imagePosition}) {
                       </i>
                       <div>
                         <h3 className={styles.title}>{obj.title}</h3>
-                        <p className={styles.text}>{obj.text}</p>
+                        <p className={`${styles.text} textFonts`}>{obj.text}</p>
                       </div>
                     </div>
                 ))}
