@@ -2,15 +2,18 @@
 
 .form {
   margin-bottom: 22px;
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-left: unset;
   }
 
   form{
     width: 333px;
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       margin-left: auto;
       margin-right: auto;
+    }
+    @media (max-width: 379px) {
+      width: 100%;
     }
   }
 
@@ -30,7 +33,7 @@
       &:active,
       &:focus {
         background-color: rgba($secondary, 0.25);
-        @media (min-width: 380px) and (max-width: 767px) {
+        @media (max-width: 767px) {
           background-color: rgba(#fff, 0.85);
         }
       }
@@ -69,7 +72,7 @@
     font-size: 14px;
     line-height: 17px;
     color: black;
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       color: white;
     }
   }

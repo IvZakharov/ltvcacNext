@@ -1,6 +1,6 @@
 @import '/styles/variables';
 .forMob{
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 }
@@ -11,8 +11,8 @@
     width: 80%;
     margin-left: 1em;
   }
-  @media (min-width: 380px) and (max-width: 767px){
-    width: 346px;
+  @media (max-width: 768px){
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     float: unset;
@@ -27,7 +27,8 @@
     max-width: 419px;
     float: right;
     border-bottom: 1px solid $primary;
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 768px) {
+      max-width: 100%;
       padding-top: unset;
       padding-bottom: 30px;
       margin-bottom: 30px;
@@ -45,7 +46,7 @@
     &:last-child{
       margin-bottom: unset;
     }
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 15.5px;
       height: 70px;
     }
@@ -62,7 +63,7 @@
     line-height: 61px;
     letter-spacing: 0.005em;
     color: $primary;
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: 41px;
       line-height: 50px;
     }
@@ -79,7 +80,7 @@
       width: 100%;
       margin-left: 1em;
     }
-    @media (min-width: 380px) and (max-width: 767px) {
+    @media (max-width: 768px) {
       border: .5px solid #3725A2;
       border-radius: 10px;
       padding: 9px 12px;

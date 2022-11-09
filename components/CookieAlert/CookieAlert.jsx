@@ -4,7 +4,7 @@ function CookieAlert({ onClickClose }){
     return(
         <div className={style.cookie} id="CookieAler">
             <div className="container">
-                <div className="row justify-content-center">
+                <div className={`row justify-content-center ${style.mob}`}>
                     <div className={style.textBlock}>
                         <p>
                             We use cookies to improve your experience on the website.

@@ -28,14 +28,14 @@ body {
   color: $primary;
 }
 .homeText{
-  @media (min-width: 380px) and (max-width: 767px){
+  @media (max-width: 767px){
     width: 92%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .lineHome{
-  @media (min-width: 380px) and (max-width: 767px){
+  @media (max-width: 767px){
     border-top: 0.5px solid rgba(0, 0, 0, 0.15);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
   }
@@ -110,7 +110,7 @@ body {
   }
 }
 .mbOS{
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-bottom: 4px!important;
   }
 }
@@ -129,7 +129,7 @@ body {
     line-height: 80px;
     letter-spacing: 0.005em;
   }
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 768px) {
     font-size: 50px;
     line-height: 61px;
     letter-spacing: 0.005em;
@@ -411,7 +411,7 @@ mbh-10{
   @media (max-width: 768px) and (min-width: 590px) {
     margin-bottom: 50px;
   }
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-bottom: 40px;
   }
 }
@@ -420,13 +420,13 @@ mbh-10{
   @media (max-width: 768px) and (min-width: 590px){
     margin-top: 50px;
   }
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-top: 40px;
   }
 }
 .mt-136 {
   margin-top: 136px;
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-top: 40px;
   }
 }
@@ -489,7 +489,7 @@ mbh-10{
   @media (max-width: 768px) and (min-width: 590px){
     padding-top: 29px;
   }
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding-top: 40px;
   }
 }
@@ -498,7 +498,7 @@ mbh-10{
   @media (max-width: 768px) and (min-width: 590px) {
     padding-bottom: 29px;
   }
-  @media (min-width: 380px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding-bottom: 40px;
   }
 }

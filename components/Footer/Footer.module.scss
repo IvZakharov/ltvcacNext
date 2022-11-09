@@ -12,14 +12,29 @@
   .address{
     display: flex;
     justify-content: center;
+    @media (max-width: 768px){
+      flex-direction: column;
+      align-items: center;
+    }
 
     .footerText {
+
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
       color: white;
+      @media (max-width: 768px){
+        width: 100%;
+        text-align: center;
+      }
       &:first-child{
         margin-right: 30px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        @media (max-width: 768px){
+          margin-right: unset;
+        }
       }
     }
     @media (min-width: 768px) {
