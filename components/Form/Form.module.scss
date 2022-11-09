@@ -2,6 +2,9 @@
 
 .form {
   margin-bottom: 22px;
+  @media (min-width: 380px) and (max-width: 680px) {
+    margin-left: unset;
+  }
 
   form{
     width: 333px;
@@ -59,5 +62,8 @@
     font-size: 14px;
     line-height: 17px;
     color: black;
+    @media (min-width: 380px) and (max-width: 680px) {
+      color: white;
+    }
   }
 }

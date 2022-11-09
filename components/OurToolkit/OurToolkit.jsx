@@ -5,18 +5,21 @@ function OurToolkit({arr, imagePosition}) {
   
   return (
       <section className={`section section--title-${imagePosition}-img2 mb-68 mt-68`}>
-        <div className="container p-0">
+        <div className="container">
           <div className="row">
             <div
-                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1 '} my-auto p-0`}>
-                <h2 className={` ${imagePosition === 'left' ? 'ta-md-right marginHomeLeft h1title' : ''} ta-left`}>
-                  OUR
-                  <br/>
-                  TOOLKIT
-                </h2>
+                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1 '} my-auto`}>
+                <div className={`${imagePosition === 'left' ? 'marginHomeLeft' : ''}`}>
+                    <h2 className={` ${imagePosition === 'left' ? 'ta-md-right h1title' : ''} ta-left`}>
+                        OUR
+                        <br/>
+                        TOOLKIT
+                    </h2>
+                </div>
+
             </div>
             <div
-                className={`col-12 col-md-6 col-xl-6  ${imagePosition === 'left' ? 'p-0' : 'offset-xl-1 pt-5 pb-3'}  order-md-1 `}>
+                className={`col-12 col-md-6 col-xl-6  ${imagePosition === 'left' ? '' : 'offset-xl-1 pt-5 pb-3'}  order-md-1 `}>
               <div className={`${styles.ourToolkit} ml-120`}>
                 {arr.map((obj, i) => (
                     <div key={i} className={`${styles.item}`}>

@@ -10,9 +10,9 @@ function HowItWorks() {
   
   return (
       <section className="section section--title-right1 mt-136 mb-68">
-        <div className="container p-0">
-          <div className="row">
-            <div className="col-12 col-md-6 p-0">
+        <div className="container">
+          <div className={`row ${styles.forMob}`}>
+            <div className="col-12 col-md-6">
               <div className={`${styles.howItWorks} mr-120`}>
                 <ul className={styles.list}>
                   {items.map((item, i) => (
@@ -22,15 +22,14 @@ function HowItWorks() {
                       </li>
                   ))}
                 </ul>
-                <span className={styles.line}></span>
                 <p className={`${styles.textAfter} textFonts`}>
                   We optimize your digital customer acquisition channels and you get revenue boost.
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 my-auto p-0">
-              <div className="section__title-box">
-                <h2 className="marginHomeRight h1title">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h1title">
                   HOW
                   <br/>
                   IT

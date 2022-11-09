@@ -1,11 +1,23 @@
 @import '/styles/variables';
 
 .ourServices {
+  @media (min-width: 380px) and (max-width: 680px) {
+    padding-bottom: unset;
+  }
   .columns{
     width: 346px;
     padding: 0;
     margin-right: 30px;
     margin-bottom: 19px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: 380px) and (max-width: 680px) {
+      margin-right: unset;
+      &:last-child{
+        margin-bottom: unset;
+      }
+    }
   }
   .item {
     border: 2px solid $primary;
@@ -21,6 +33,11 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     border-radius: 20px;
+    @media (max-width: 768px) {
+      padding: 30px 15px;
+      height: 108px;
+      margin-bottom: 10px;
+    }
 
     &:hover {
       background-color: $primary;
@@ -55,6 +72,10 @@
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0.005em;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .text {

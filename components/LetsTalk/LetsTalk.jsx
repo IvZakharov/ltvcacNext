@@ -5,12 +5,12 @@ import Image from "next/image";
 
 function LetsTalk({ contentSide }) {
   return (
-    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mt-136 mb-68`} id="contact">
-      <div className="container p-0">
-        <div className="row">
-          <div className="col-12 col-md-6 my-auto p-0">
-            <div className="section__title-box">
-              <h2 className={`ta-left ${contentSide === 'left'? 'h1title marginHomeLeft': ''}`}>
+    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mt-136 mb-68 `} id="contact">
+      <div className="container">
+        <div className={`row ${styles.forMob}`}>
+          <div className={`col-12 col-md-6 my-auto ${styles.h1title}`}>
+            <div className="marginHomeLeft">
+              <h2 className={`ta-left ${contentSide === 'left'? 'h1title': ''}`}>
                 LET&apos;S
                 <br />
                 TALK
@@ -18,10 +18,10 @@ function LetsTalk({ contentSide }) {
             </div>
           </div>
           <div
-            className={`col-12 col-md-6 p-0 ${
+            className={`col-12 col-md-6 ${
               contentSide === 'left' ? 'order-md-1' : 'pt-md-60 pb-md-60 pt-xl-100'
             } `}>
-            <div className={`${styles.letsTalk} ml-120`}>
+            <div className={`${styles.letsTalk}  ml-120`}>
               <div className={styles.block}>
                 <span className={styles.label}>FREE!
                 <Image src="/img/contacts/emojione-monotone_fire.svg"

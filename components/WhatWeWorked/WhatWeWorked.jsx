@@ -12,9 +12,9 @@ function WhatWeWorked({itemsArr, contentSide}) {
   
   return (
       <section className={`section mb-68 mt-68 section--title-${contentSide === 'left'? 'left': 'right1'}`}>
-        <div className="container p-0">
-          <div className={`row ${contentSide === 'left' ? styles.left : ''}`}>
-            <div className="col-12 col-md-6 col-xl-6 p-0">
+        <div className="container">
+          <div className={`row ${styles.mob} ${contentSide === 'left' ? styles.left : ''}`}>
+            <div className="col-12 col-md-6 col-xl-6">
               <div className={`${styles.whatWeWorked} mr-120`}>
                 <ul className={styles.list}>
                   {itemsArr.map((obj, i) => (
@@ -35,16 +35,10 @@ function WhatWeWorked({itemsArr, contentSide}) {
                 </ul>
               </div>
             </div>
-            <div className={`col-12 col-md-6 col-xl-6 my-auto p-0`}>
+            <div className={`col-12 col-md-6 col-xl-6 my-auto`}>
               <div className="marginHomeRight">
                 <h2 className="h1title">
-                  WHAT
-                  <br/>
-                  WE
-                  <br/>
-                  WORKED
-                  <br/>
-                  ON
+                  WHAT WE WORKED ON
                 </h2>
               </div>
             </div>
