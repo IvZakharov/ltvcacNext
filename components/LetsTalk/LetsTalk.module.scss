@@ -1,6 +1,6 @@
 @import '/styles/variables';
 .forMob{
-  @media (min-width: 380px) and (max-width: 680px) {
+  @media (min-width: 380px) and (max-width: 767px) {
     background: #3725A2;
     border-radius: 20px;
     margin-left: .1px;
@@ -13,7 +13,7 @@
   margin-top: 22px;
   margin-bottom: 22px;
 
-  @media (min-width: 380px) and (max-width: 680px) {
+  @media (min-width: 380px) and (max-width: 767px) {
     margin-top: 27px;
     margin-left: .4em;
     margin-right: auto;
@@ -23,6 +23,10 @@
     width: 323px;
     height: 249px;
     padding: 29px 37.05px 35.6px 33.3px;
+    @media (min-width: 380px) and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
     .h4{
       width: 153px;
       color: black;
@@ -64,7 +68,7 @@
 
 }
 .h1title{
-@media (min-width: 380px) and (max-width: 680px) {
-  display: none;
-}
+  @media (min-width: 380px) and (max-width: 767px) {
+    display: none;
+  }
 }

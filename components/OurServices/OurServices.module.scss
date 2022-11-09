@@ -1,7 +1,7 @@
 @import '/styles/variables';
 
 .ourServices {
-  @media (min-width: 380px) and (max-width: 680px) {
+  @media (min-width: 380px) and (max-width: 767px) {
     padding-bottom: unset;
   }
   .columns{
@@ -9,11 +9,9 @@
     padding: 0;
     margin-right: 30px;
     margin-bottom: 19px;
-    @media (max-width: 768px) {
-      margin-bottom: 30px;
-    }
-    @media (min-width: 380px) and (max-width: 680px) {
+    @media (min-width: 380px) and (max-width: 767px) {
       margin-right: unset;
+      margin-bottom: 30px;
       &:last-child{
         margin-bottom: unset;
       }

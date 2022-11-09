@@ -1,5 +1,5 @@
 import styles from './Header.module.scss';
-import logoSvg from './img/logo.svg';
+import logoSvg from './img/logonew.svg';
 import Link from 'next/link';
 import {useState, useEffect} from 'react';
 import Image from 'next/image';
@@ -19,8 +19,8 @@ export const Header = ({onClickMenu}) => {
       <header className={`${styles.header} ${offset > 30 ? styles.scroll : ''}`}>
         <div className="container">
           <div className={styles.inner}>
-            <Link href="/" className={styles.logo}>
-              <a>
+            <Link href="/" >
+              <a className={styles.logo}>
                 <Image src={logoSvg} width={125} height={125} alt="logo"/>
               </a>
             </Link>
