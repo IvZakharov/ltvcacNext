@@ -107,7 +107,10 @@ function FormContacts() {
                       />
                     </div>
                     <div className={`${styles.field} ${errors.Email && styles.error}`}>
-                      <input placeholder="Your email:" {...register('Email')} />
+                      <input placeholder="Your email:"
+                             required={true}
+                             type="email"
+                             {...register('Email')} />
                       <input type="hidden" value={page} name="page" {...register('Page')}/>
 
                     </div>

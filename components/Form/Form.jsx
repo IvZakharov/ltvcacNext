@@ -76,7 +76,10 @@ function Form() {
             />
           </div>
           <div className={`${styles.field} ${errors.Email && styles.error}`}>
-            <input placeholder="Your email:" {...register('Email')} />
+            <input placeholder="Your email:"
+                   required={true}
+                   type="email"
+                   {...register('Email')} />
           </div>
           <div className={styles.submit}>
             <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT"/>

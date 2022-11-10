@@ -29,10 +29,10 @@
       }
       &:first-child{
         margin-right: 30px;
-        border-bottom: 1px solid #fff;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
         @media (max-width: 768px){
+          border-bottom: 1px solid #fff;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
           margin-right: unset;
         }
       }

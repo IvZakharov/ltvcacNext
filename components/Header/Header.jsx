@@ -61,30 +61,14 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/mobile-and-web-tracking/">
+                      <Link href="/services/web-development">
                         <a
                             className={
-                              router.pathname == '/services/mobile-and-web-tracking'
-                                  ? styles.active
-                                  : ''
+                              router.pathname == '/services/web-development' ? styles.active : ''
                             }>
-                          ANALYTICS
+                          WEB
                           <br/>
-                          SYSTEM SETUP
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/paid-marketing-channels/">
-                        <a
-                            className={
-                              router.pathname == '/services/paid-marketing-channels'
-                                  ? styles.active
-                                  : ''
-                            }>
-                          PAID MARKETING
-                          <br/>
-                          CHANNELS
+                          DEVELOPMENT
                         </a>
                       </Link>
                     </li>
@@ -99,12 +83,40 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/services/mobile-and-web-tracking/">
+                        <a
+                            className={
+                              router.pathname == '/services/mobile-and-web-tracking'
+                                  ? styles.active
+                                  : ''
+                            }>
+                          ANALYTICS
+                          <br/>
+                          SYSTEM SETUP
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/services/app-store-optimization">
                         <a
                             className={
                               router.pathname == '/services/app-store-optimization' ? styles.active : ''
                             }>
                           app store<br/> optimization
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/paid-marketing-channels/">
+                        <a
+                            className={
+                              router.pathname == '/services/paid-marketing-channels'
+                                  ? styles.active
+                                  : ''
+                            }>
+                          PAID MARKETING
+                          <br/>
+                          CHANNELS
                         </a>
                       </Link>
                     </li>
