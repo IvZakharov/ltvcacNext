@@ -40,6 +40,7 @@ body {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
   }
 }
+.offsetr-xl-2{padding-right:140px}
 .marginHomeLeft{
   margin-right: 150px;
   float: right;
@@ -120,6 +121,7 @@ body {
   font-weight: 500;
   width: fit-content;
   color: #ffffff;
+  white-space: pre-line;
   @media (max-width: 1279px) {
     font-size: 90px;
     line-height: 111px;
@@ -135,6 +137,7 @@ body {
     letter-spacing: 0.005em;
     width: 309px;
     text-align: center!important;
+    white-space: normal;
   }
 
 }
@@ -849,6 +852,7 @@ mbh-10{
     position: relative;
 
     &__title {
+      white-space: pre-line;
       &--small {
         font-weight: 500;
         font-size: 48px;
@@ -948,6 +952,22 @@ mbh-10{
       }
     }
 
+    &--title-left-img2p {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('/img/section/2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
     &--title-left-img2 {
       &:before {
         content: '';

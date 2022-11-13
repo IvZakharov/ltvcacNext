@@ -1,10 +1,11 @@
 import styles from './OurToolkit.module.scss';
+import {useRouter} from "next/router";
 
 function OurToolkit({arr, imagePosition}) {
-  
+  const router=useRouter()
   
   return (
-      <section className={`section section--title-${imagePosition}-img2 mb-68 mt-68`}>
+      <section className={`section section--title-${imagePosition}-img2${router.pathname != '/' ? 'p' :' mb-68 mt-68'}`}>
         <div className="container">
           <div className="row">
             <div

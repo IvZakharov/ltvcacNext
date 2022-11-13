@@ -5,12 +5,12 @@ import Image from "next/image";
 
 function LetsTalk({ contentSide }) {
   return (
-    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mt-136 mb-68 `} id="contact">
+    <section className={`section section--title-${contentSide === 'left'? contentSide+'1 mt-136 mb-68': contentSide+' mb-60'} `} id="contact">
       <div className="container">
         <div className={`row ${styles.forMob}`}>
-          <div className={`col-12 col-md-6 my-auto ${styles.h1title}`}>
-            <div className="marginHomeLeft">
-              <h2 className={`ta-left ${contentSide === 'left'? 'h1title': ''}`}>
+          <div className={`col-12 col-md-6 my-auto ${styles.h1title} ${contentSide === 'right'? 'order-1': ''}`}>
+            <div className={contentSide === 'left'? 'marginHomeLeft': 'marginHomeRight'}>
+              <h2 className={`ta-left ${contentSide === 'left'? 'h1title': 'section__title section__title--small ta-md-right'}`}>
                 LET&apos;S
                 <br />
                 TALK

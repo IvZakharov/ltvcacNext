@@ -1,4 +1,5 @@
 import styles from './HowItWorks.module.scss';
+import {useRouter} from "next/router";
 
 function HowItWorks() {
   const items = [
@@ -7,7 +8,7 @@ function HowItWorks() {
     'Data-driven creative solutions: development and implementation',
     'Product launch and ad campaigns optimization (weekly and monthly)',
   ];
-  
+  const router = useRouter()
   return (
       <section className="section section--title-right1 mt-136 mb-68">
         <div className="container">
