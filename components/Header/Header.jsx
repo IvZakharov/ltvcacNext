@@ -61,7 +61,7 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/web-development">
+                      <Link href="#">
                         <a
                             className={
                               router.pathname == '/services/web-development' ? styles.active : ''
@@ -97,16 +97,6 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/app-store-optimization">
-                        <a
-                            className={
-                              router.pathname == '/services/app-store-optimization' ? styles.active : ''
-                            }>
-                          app store<br/> optimization
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
                       <Link href="/services/paid-marketing-channels/">
                         <a
                             className={
@@ -117,6 +107,16 @@ export const Header = ({onClickMenu}) => {
                           PAID MARKETING
                           <br/>
                           CHANNELS
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/app-store-optimization">
+                        <a
+                            className={
+                              router.pathname == '/services/app-store-optimization' ? styles.active : ''
+                            }>
+                          app store<br/> optimization
                         </a>
                       </Link>
                     </li>
@@ -177,7 +177,7 @@ export const Header = ({onClickMenu}) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer nofollow" href="https://business.facebook.com/ltvcac/">
+                  <a target="_blank" rel="noreferrer nofollow" href="https://www.facebook.com/ltvcac/">
                     <svg
                         width="30"
                         height="30"

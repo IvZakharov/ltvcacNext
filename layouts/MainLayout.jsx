@@ -8,12 +8,14 @@ import { useEffect, useState } from 'react';
 import TagManager from 'react-gtm-module';
 import CookieAlert from "../components/CookieAlert/CookieAlert";
 import {useRouter} from "next/router";
+import Cookies from 'js-cookie'
 
 export const MainLayout = ({ children, title, description, keywords, color, date }) => {
   const [openedMenu, setOpenedMenu] = useState(false);
   const [offset, setOffset] = useState(0);
   const [Cookie, setAlert] = useState(true);
   const router = useRouter()
+
 
   useEffect(() => {
     const onScroll = () => setOffset(window.scrollY);
@@ -28,6 +30,9 @@ export const MainLayout = ({ children, title, description, keywords, color, date
     };
 
     TagManager.initialize(tagManagerArgs);
+    if(Cookies.get('Cookies')){
+      setAlert(false)
+    }
   }, []);
 
   return (

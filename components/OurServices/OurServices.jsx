@@ -51,18 +51,6 @@ function OurServices() {
               </Link>
             </div>
             <div className={styles.columns}>
-              <Link href="/services/app-store-optimization">
-                <a>
-                  <div className={styles.item}>
-                    <h3 className={styles.title}>App Store Optimization</h3>
-                  </div>
-                  <p className={`${styles.text} textFonts`}>
-                    Optimize your mobile app to get more installations from the stores.
-                  </p>
-                </a>
-              </Link>
-            </div>
-            <div className={styles.columns}>
               <Link href="/services/paid-marketing-channels">
                 <a>
                   <div className={styles.item}>
@@ -70,6 +58,18 @@ function OurServices() {
                   </div>
                   <p className={`${styles.text} textFonts`}>
                     We analyze your key KPIs and optimize ad campaigns to cover ALL of your target audiences efficiently.
+                  </p>
+                </a>
+              </Link>
+            </div>
+            <div className={styles.columns}>
+              <Link href="/services/app-store-optimization">
+                <a>
+                  <div className={styles.item}>
+                    <h3 className={styles.title}>App Store Optimization</h3>
+                  </div>
+                  <p className={`${styles.text} textFonts`}>
+                    Optimize your mobile app to get more installations from the stores.
                   </p>
                 </a>
               </Link>

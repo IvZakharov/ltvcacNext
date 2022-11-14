@@ -1,6 +1,12 @@
 import style from './CookieAlert.module.scss';
+import Cookies from 'js-cookie'
+
 
 function CookieAlert({ onClickClose }){
+    function setOff(){
+        Cookies.set('Cookies', 'true')
+        onClickClose(false)
+    }
     return(
         <div className={style.cookie} id="CookieAler">
             <div className="container">
@@ -12,7 +18,7 @@ function CookieAlert({ onClickClose }){
                         </p>
                     </div>
                     <div className={style.buttonBlock}>
-                        <button onClick={() => onClickClose(false)}>
+                        <button onClick={() => setOff()}>
                             Good
                         </button>
                     </div>
@@ -21,5 +27,6 @@ function CookieAlert({ onClickClose }){
         </div>
     )
 }
+
 
 export default CookieAlert;
