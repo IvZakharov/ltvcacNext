@@ -1,153 +1,81 @@
 @import '/styles/variables';
-
-.letsTalk {
-  position: relative;
-  padding: 0 30px;
-  @media (max-width: 1200px) {
-    padding: unset;
-    width: fit-content;
-    padding-left: 3em;
-  }
-  @media (max-width: 820px) {
-    padding-left: 3.5em;
-  }
-  @media (max-width: 540px) {
-    padding-left: 1em;
-  }
-
-  .title {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-    color: black;
-    margin-bottom: 24px;
-    margin-left: 20px;
-    @media (max-width: 540px) {
-      margin-left: 70px;
-    }
-  }
-
-  .h3 {
-    color: $secondary;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-
-  .label {
-    width: 100px;
-    height: 100px;
-    background-color: $secondary;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: -70px;
-    transform: rotate(-20deg);
+.forMob{
+  @media (max-width: 768px) {
+    background: #3725A2;
+    border-radius: 20px;
+    margin-left: .1px;
+    margin-right: .1px;
     z-index: -1;
-    @media (max-width: 1200px) {
-      left: -40px;
+  }
+
+}
+.letsTalk {
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  @media (max-width: 768px) {
+    margin-top: 27px;
+    margin-left: .4em;
+    margin-right: auto;
+  }
+  @media (max-width: 379px) {
+    margin-left: auto;
+  }
+  .block{
+    background: url("/img/contacts/back.svg") no-repeat;
+    width: 323px;
+    height: 249px;
+    padding: 29px 37.05px 35.6px 33.3px;
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
     }
-    @media (max-width: 1024px) {
-      left: -10px;
+    @media (max-width: 379px) {
+      width: 320px;
+      transform: scale(0.97);
     }
-    @media (max-width: 540px) {
-      left: 0;
+    .h4{
+      width: 153px;
+      color: black;
+      font-size: 30px;
+      line-height: 29px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      span{
+        color:#F72585;
+      }
     }
-
-    .forMob {
-      @media (max-width: 768px) {
-        background: #3725A2;
-        border-radius: 20px;
-        margin-left: .1px;
-        margin-right: .1px;
-        z-index: -1;
-      }
-
+    .label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: white;
+      justify-content: space-between;
+      margin-bottom: 5px;
     }
-
-    .letsTalk {
-      margin-top: 22px;
-      margin-bottom: 22px;
-
-      @media (max-width: 768px) {
-        margin-top: 27px;
-        margin-left: .4em;
-        margin-right: auto;
+    .list {
+      margin-left: 1em;
+      li {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        position: relative;
+        list-style: circle;
       }
-      @media (max-width: 379px) {
-        margin-left: auto;
-      }
-
-      .block {
-        background: url("/img/contacts/back.svg") no-repeat;
-        width: 323px;
-        height: 249px;
-        padding: 29px 37.05px 35.6px 33.3px;
-        @media (max-width: 768px) {
-          margin-left: auto;
-          margin-right: auto;
-        }
-        @media (max-width: 379px) {
-          width: 320px;
-          transform: scale(0.97);
-        }
-
-        .h4 {
-          width: 153px;
-          color: black;
-          font-size: 30px;
-          line-height: 29px;
-          font-weight: 600;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-
-          span {
-            color: #F72585;
-          }
-        }
-
-        .label {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          font-weight: 700;
-          font-size: 30px;
-          line-height: 36px;
-          color: white;
-          justify-content: space-between;
-          margin-bottom: 5px;
-        }
-
-        .list {
-          margin-left: 1em;
-
-          li {
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 16px;
-            color: #000000;
-            position: relative;
-            list-style: circle;
-          }
-        }
-      }
-
-
     }
   }
+
+
+
+
 }
-.ht1title {
+.h1title{
   @media (max-width: 768px) {
     display: none;
   }
 }
-
