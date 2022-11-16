@@ -26,6 +26,7 @@
   }
 
   .logo {
+    margin-top: 10px!important;
     z-index: 12;
     position: relative;
     line-height: 0;
@@ -190,7 +191,7 @@
       width: 50px;
       height: 5px;
       margin: 5px 0;
-      background-color: $secondary;
+      background-color: white;
       transition: all 0.2s ease-in;
     }
 
@@ -214,7 +215,12 @@
   }
 
   .logo {
+    margin-top: unset!important;
+    span{
+      transform: scale(0.6) translateY(-40px);
+    }
     img {
+
       transform: scale(0.6) translateY(-40px);
 
       @media (min-width: 768px) {

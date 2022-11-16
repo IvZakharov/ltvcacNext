@@ -1,5 +1,5 @@
 import styles from './MobileMenu.module.scss';
-import logoSvg from './img/logo.svg';
+import logoSvg from './img/logonew.svg';
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
@@ -15,8 +15,8 @@ export const MobileMenu = ({ onClickClose }) => {
 
   return (
     <div className={styles.mobileMenu}>
-      <Link href="/" className={styles.logo}>
-        <a onClick={() => onClickClose(false)}>
+      <Link href="/">
+        <a onClick={() => onClickClose(false)} className={styles.logo}>
           <Image width={125} height={125} src={logoSvg} alt="logo" />
         </a>
       </Link>

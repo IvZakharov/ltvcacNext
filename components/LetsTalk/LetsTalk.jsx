@@ -1,15 +1,16 @@
 import styles from './LetsTalk.module.scss';
 import React from 'react';
 import Form from '../Form/Form';
+import Image from "next/image";
 
 function LetsTalk({ contentSide }) {
   return (
-    <section className={`section section--title-${contentSide === 'left'? contentSide+'1': contentSide} mb-80 mb-md-60`} id="contact">
-      <div className="container p-0">
-        <div className="row">
-          <div className="col-12 col-md-5 mb-50 mb-md-0 order-md-1 col-xl-5 offset-md-1 offset-xl-2 mx-auto">
-            <div className="section__title-box p-20 pt-120 pb-120 pt-md-100 pt-xl-280 pb-xl-280">
-              <h2 className={`section__title section__title--large ta-left ${styles.h1title}`}>
+    <section className={`section section--title-${contentSide === 'left'? contentSide+'1 mt-136 mb-68': contentSide+' mb-60'} `} id="contact">
+      <div className="container">
+        <div className={`row ${styles.forMob}`}>
+          <div className={`col-12 col-md-6 my-auto ${styles.h1title} ${contentSide === 'right'? 'order-1': ''}`}>
+            <div className={contentSide === 'left'? 'marginHomeLeft': 'marginHomeRight'}>
+              <h2 className={`ta-left ${contentSide === 'left'? 'h1title': 'section__title section__title--small ta-md-right'}`}>
                 LET&apos;S
                 <br />
                 TALK
@@ -17,22 +18,25 @@ function LetsTalk({ contentSide }) {
             </div>
           </div>
           <div
-            className={`col-12 col-md-6 col-xl-5 pt-md-60 pb-md-60 ${
-              contentSide === 'left' ? 'order-md-1' : ''
-            } pt-xl-100`}>
-            <div className={`${styles.letsTalk} m-auto`}>
-              <h3 className={styles.title}>
-                Speak With <br /> Expert Team
-              </h3>
-              <span className={styles.label}>FREE!</span>
-              <h4 className={styles.h3}>For $3k+ work budgets:</h4>
-              <ul className={styles.list}>
-                <li>Product audit</li>
-                <li>Customer & market research</li>
-                <li>Competitive analysis</li>
-                <li>Sales and ads channels audit</li>
-                <li>Business model optimization</li>
-              </ul>
+            className={`col-12 col-md-6 ${
+              contentSide === 'left' ? 'order-md-1' : 'pt-md-60 pb-md-60 pt-xl-100'
+            } `}>
+            <div className={`${styles.letsTalk}  ml-120`}>
+              <div className={styles.block}>
+                <span className={styles.label}>FREE!
+                <Image src="/img/contacts/emojione-monotone_fire.svg"
+                       width={28}
+                       height={28}
+                       alt="emojione monotone fire"
+                />
+                </span>
+                <h4 className={styles.h4}>For <span>$3k+</span> work budgets:</h4>
+                <ul className={styles.list}>
+                  <li>Product audit</li>
+                  <li>Customer & market audit</li>
+                  <li>Competitive audit</li>
+                </ul>
+              </div>
             </div>
             <Form />
           </div>

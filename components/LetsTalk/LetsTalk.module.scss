@@ -1,4 +1,5 @@
 @import '/styles/variables';
+<<<<<<< HEAD
 
 .letsTalk {
   position: relative;
@@ -62,40 +63,85 @@
     @media (max-width: 540px) {
       left: 0;
     }
+=======
+.forMob{
+  @media (max-width: 768px) {
+    background: #3725A2;
+    border-radius: 20px;
+    margin-left: .1px;
+    margin-right: .1px;
+    z-index: -1;
+>>>>>>> test
   }
 
-  .list {
-    margin-bottom: 25px;
-    li {
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 30px;
-      color: #000000;
-      position: relative;
+}
+.letsTalk {
+  margin-top: 22px;
+  margin-bottom: 22px;
 
-      &:before {
-        position: absolute;
-        content: '';
-        width: 7px;
-        border-radius: 50%;
-        height: 7px;
-        top: calc(50% - 2.5px);
-        background-color: #000;
-        left: -20px;
+  @media (max-width: 768px) {
+    margin-top: 27px;
+    margin-left: .4em;
+    margin-right: auto;
+  }
+  @media (max-width: 379px) {
+    margin-left: auto;
+  }
+  .block{
+    background: url("/img/contacts/back.svg") no-repeat;
+    width: 323px;
+    height: 249px;
+    padding: 29px 37.05px 35.6px 33.3px;
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 379px) {
+      width: 320px;
+      transform: scale(0.97);
+    }
+    .h4{
+      width: 153px;
+      color: black;
+      font-size: 30px;
+      line-height: 29px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      span{
+        color:#F72585;
+      }
+    }
+    .label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: white;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .list {
+      margin-left: 1em;
+      li {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        position: relative;
+        list-style: circle;
       }
     }
   }
+
+
+
+
 }
 .h1title{
-  font-size: 100px;
-  line-height: 121px;
-  letter-spacing: 0.03em;
-  width: fit-content;
-  margin: 0 auto;
-  @media (max-width: 820px) {
-    font-size: 80px;
-    line-height: 80px;
-    letter-spacing: 0.005em;
-    padding-right: 20px;
+  @media (max-width: 768px) {
+    display: none;
   }
 }

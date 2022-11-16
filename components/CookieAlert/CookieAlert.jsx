@@ -1,10 +1,16 @@
 import style from './CookieAlert.module.scss';
+import Cookies from 'js-cookie'
+
 
 function CookieAlert({ onClickClose }){
+    function setOff(){
+        Cookies.set('Cookies', 'true')
+        onClickClose(false)
+    }
     return(
         <div className={style.cookie} id="CookieAler">
             <div className="container">
-                <div className="row justify-content-center">
+                <div className={`row justify-content-center ${style.mob}`}>
                     <div className={style.textBlock}>
                         <p>
                             We use cookies to improve your experience on the website.
@@ -12,7 +18,7 @@ function CookieAlert({ onClickClose }){
                         </p>
                     </div>
                     <div className={style.buttonBlock}>
-                        <button onClick={() => onClickClose(false)}>
+                        <button onClick={() => setOff()}>
                             Good
                         </button>
                     </div>
@@ -21,5 +27,6 @@ function CookieAlert({ onClickClose }){
         </div>
     )
 }
+
 
 export default CookieAlert;

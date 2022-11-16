@@ -37,17 +37,6 @@ export const LearnPractices = () =>{
     var router = useRouter();
 
     const page = router.pathname.split('/').pop();
-/*    const subscribeEmail = (e) =>{
-        e.preventDefault();
-        console.log(email);
-    }
-
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            subscribeEmail(event);
-        }
-      }*/
 
     return(
         <section className="section mb-4 mt-4 pt-100">

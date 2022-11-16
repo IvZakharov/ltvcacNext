@@ -2,9 +2,10 @@
 
 .focus {
   position: relative;
-  margin: 68px 0;
-
-
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 767px) {
     &:before {
       position: absolute;
       content: '';
@@ -16,126 +17,134 @@
       background-position: 50% 50%;
       border-radius: 0px 40px 40px 0px;
       z-index: -1;
-      @media (max-width: 1024px){
-        width: 100%;
-        height: 50%;
-        border-radius: 40px 40px 40px 40px;
-      }
-      @media (max-width: 540px) {
-        height: 30%;
-      }
     }
+  }
 
 
   .content {
-    padding-left: 90px;
-    padding-right: 20px;
     position: relative;
-
-    @media (min-width: 768px) {
-      width: 50%;
-      padding: 0;
-
-      &:first-child {
-        margin-right: 20px;
+    margin-left: 160px;
+    width: 518px;
+    &:first-child {
+      margin-top: 20px;
+      margin-bottom: 23px;
+    }
+    &:last-child{
+      margin-bottom: 20px;
+    }
+    ul{
+      @media (min-width: 1024px) {
+        margin-left: 55px;
       }
+    }
+    @media (max-width: 1279px) {
+      margin-left: 100px;
+    }
+    @media (max-width: 1023px) {
+      margin-left: 20.5%;
+      padding-right: 1em;
+      width: 90%;
     }
 
     @media (min-width: 1200px) {
       width: 100%;
 
     }
+    @media (max-width: 767px) {
+      &:first-child {
+        margin-top: unset;
+        margin-bottom: 46px;
+      }
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      &:last-child{
+        margin-bottom: unset;
+      }
+    }
     .title{
       margin-bottom: 2px;
+      font-size: 28px;
+      line-height: 34px;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
-    .subtitle{
+    .contentTitle{
+      display: flex;
       margin-bottom: 23px;
+      @media (max-width: 767px) {
+        margin-bottom: 19px;
+      }
+      .number{
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 70px;
+        letter-spacing: 0.005em;
+        color: $secondary;
+        margin-right: 14px;
+        @media (max-width: 767px) {
+          font-size: 60px;
+          line-height: 47px;
+        }
+      }
+      .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
     }
-    .title, .subtitle {
-      @media (min-width: 768px) {
-        margin-left: 60px;
-      }
-
-      @media (min-width: 1200px) {
-        margin-left: 0;
-      }
-    }
-
-    &:first-child:before {
-      content: '1';
-      font-weight: 600;
-      font-size: 72px;
-      line-height: 70px;
-      /* identical to box height, or 170% */
-      letter-spacing: -0.055em;
-      color: $secondary;
-      position: absolute;
-      top: 0;
-      left: 20px;
-
-      @media (min-width: 768px) {
-        left: 0;
-      }
-
-      @media (min-width: 1200px) {
-        left: -50px;
-      }
-    }
-
-    &:last-child:before {
-      content: '2';
-      font-weight: 600;
-      font-size: 72px;
-      line-height: 70px;
-      /* identical to box height, or 170% */
-      letter-spacing: -0.055em;
-      color: $secondary;
-      position: absolute;
-      top: 0;
-      left: 20px;
-
-      @media (min-width: 768px) {
-        left: 0;
-      }
-
-      @media (min-width: 1200px) {
-        left: -50px;
-      }
-    }
+    //&:first-child:before, &:last-child:before {
+    //  font-weight: 600;
+    //  font-size: 72px;
+    //  line-height: 70px;
+    //  /* identical to box height, or 170% */
+    //  letter-spacing: 0.005em;
+    //  color: $secondary;
+    //  position: absolute;
+    //  top: -9px;
+    //  left: -52px;
+    //  @media (max-width: 1023px) {
+    //    left: -45px;
+    //  }
+    //  @media (max-width: 768px) {
+    //    top:-3px;
+    //    font-size: 60px;
+    //    line-height: 47px;
+    //    left: -20px;
+    //  }
+    //}
+    //&:first-child:before{
+    //  content: '1';
+    //}
+    //&:last-child:before {
+    //  content: '2';
+    //}
   }
 
-  .titleBox {
-    display: flex;
-    justify-content: space-around;
-
-    @media (min-width: 1200px) {
-      background: transparent;
-    }
-    @media (max-width: 1024px) {
-      height: 280px;
-      align-items: center;
-    }
-  }
 
   .subtitle {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 19px;
     color: $fourth;
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   .listSubtitle {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: black;
+    letter-spacing: unset;
+    @media (max-width: 767px) {
+      margin-bottom: 8px;
+    }
   }
 
   .listItem {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: black;
+    letter-spacing: unset;
   }
 }

@@ -1,5 +1,5 @@
 import styles from './Header.module.scss';
-import logoSvg from './img/logo.svg';
+import logoSvg from './img/logonew.svg';
 import Link from 'next/link';
 import {useState, useEffect} from 'react';
 import Image from 'next/image';
@@ -19,8 +19,8 @@ export const Header = ({onClickMenu}) => {
       <header className={`${styles.header} ${offset > 30 ? styles.scroll : ''}`}>
         <div className="container">
           <div className={styles.inner}>
-            <Link href="/" className={styles.logo}>
-              <a>
+            <Link href="/" >
+              <a className={styles.logo}>
                 <Image src={logoSvg} width={125} height={125} alt="logo"/>
               </a>
             </Link>
@@ -61,6 +61,28 @@ export const Header = ({onClickMenu}) => {
                       </Link>
                     </li>
                     <li>
+                      <Link href="#">
+                        <a
+                            className={
+                              router.pathname == '/services/web-development' ? styles.active : ''
+                            }>
+                          WEB
+                          <br/>
+                          DEVELOPMENT
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/no-code-automation">
+                        <a
+                            className={
+                              router.pathname == '/services/no-code-automation' ? styles.active : ''
+                            }>
+                          NO code <br/> automation
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/services/mobile-and-web-tracking/">
                         <a
                             className={
@@ -85,16 +107,6 @@ export const Header = ({onClickMenu}) => {
                           PAID MARKETING
                           <br/>
                           CHANNELS
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/no-code-automation">
-                        <a
-                            className={
-                              router.pathname == '/services/no-code-automation' ? styles.active : ''
-                            }>
-                          NO code <br/> automation
                         </a>
                       </Link>
                     </li>
@@ -165,7 +177,7 @@ export const Header = ({onClickMenu}) => {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer nofollow" href="https://business.facebook.com/ltvcac/">
+                  <a target="_blank" rel="noreferrer nofollow" href="https://www.facebook.com/ltvcac/">
                     <svg
                         width="30"
                         height="30"

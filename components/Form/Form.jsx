@@ -58,7 +58,7 @@ function Form() {
   }, [calendlyOpen]);
   
   return (
-      <div className={styles.form}>
+      <div className={`${styles.form} ml-120`}>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
           <div className={`${styles.field} ${errors.Name && styles.error}`}>
@@ -76,7 +76,10 @@ function Form() {
             />
           </div>
           <div className={`${styles.field} ${errors.Email && styles.error}`}>
-            <input placeholder="Your email:" {...register('Email')} />
+            <input placeholder="Your email:"
+                   required={true}
+                   type="email"
+                   {...register('Email')} />
           </div>
           <div className={styles.submit}>
             <input className="button CTA" type="submit" value="TELL US ABOUT YOUR PROJECT"/>

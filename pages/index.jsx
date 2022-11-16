@@ -95,14 +95,14 @@ export default function Home() {
         <HeroAdvantages/>
         <ClientFocus/>
         
-        <div className="pb-80 pb-xl-120">
-          <div className="container ph-20">
+        <div className="section pt-68 pb-68 lineHome">
+          <div className="container">
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">
-                <h2 className="section__title section__title--primary mb-30">
+                <h2 className="section__title section__title--primary mb-10">
                   ROI&#62;0 if LTV&#62;CAC
                 </h2>
-                <p className="section__text ta-left ta-md-center">
+                <p className="section__text1 ta-center ta-md-center homeText">
                   We assist startups and property businesses in growing digital marketing from an idea
                   to xx.xxx customers with digital channels, data analysis and customer research.
                 </p>
@@ -113,12 +113,12 @@ export default function Home() {
         
         <WhatWeWorked itemsArr={whatWeWorkedArr}/>
         
-        <div className="mb-80 pb-80 mb-md-0 pt-xl-120 pb-xl-120">
-          <div className="container ph-20">
+        <div className="section pb-20 pt-20 lineHome">
+          <div className="container">
             <div className="row">
               <div className="col-12 col-xl-9 m-auto">
-                <h2 className="section__title--primary section__title mb-30">OUR SERVICES</h2>
-                <p className="section__text ta-left ta-md-center">
+                <h2 className="section__title--primary section__title mb-10 mbOS">OUR SERVICES</h2>
+                <p className="section__text1 ta-center ta-md-center homeText">
                   During the past decade we have worked on &gt; 90 projects in industries like SaaS,
                   Ecommerce, Online Gaming etc.
                 </p>

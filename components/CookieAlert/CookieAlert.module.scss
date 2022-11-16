@@ -9,9 +9,9 @@
   position: fixed;
   bottom: 0;
   z-index: 11;
-  @media screen and (max-width: 590px){
+  @media screen and (max-width: 767px){
     width: 100%;
-    height: 150px;
+    height: 120px;
   }
 
 
@@ -27,9 +27,6 @@
       width: 60%;
     }
     @media screen and (max-width: 767px){
-      width: 80%;
-    }
-    @media screen and (max-width: 590px){
       width: 90%;
     }
 
@@ -43,7 +40,7 @@
 
   .buttonBlock{
     width: 20%;
-    @media screen and (max-width: 590px){
+    @media screen and (max-width: 767px){
       width: 90%;
     }
 
@@ -55,10 +52,11 @@
       border-radius: 78px;
       color: white;
       font-size: 15px;
-      @media screen and (max-width: 590px){
+      cursor: pointer;
+      @media screen and (max-width: 767px){
         display: block;
         width: 90%;
-        margin-top: 2em;
+        margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
       }

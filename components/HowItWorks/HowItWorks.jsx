@@ -1,4 +1,5 @@
 import styles from './HowItWorks.module.scss';
+import {useRouter} from "next/router";
 
 function HowItWorks() {
   const items = [
@@ -7,29 +8,29 @@ function HowItWorks() {
     'Data-driven creative solutions: development and implementation',
     'Product launch and ad campaigns optimization (weekly and monthly)',
   ];
-  
+  const router = useRouter()
   return (
-      <section className="section section--title-right1 mb-60 mb-md-120">
-        <div className="container p-0">
-          <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 offset-xl-1 pb-5 pt-5">
-              <div className={`${styles.howItWorks} ph-20`}>
+      <section className="section section--title-right1 mt-136 mb-68">
+        <div className="container">
+          <div className={`row ${styles.forMob}`}>
+            <div className="col-12 col-md-6">
+              <div className={`${styles.howItWorks} mr-120`}>
                 <ul className={styles.list}>
                   {items.map((item, i) => (
                       <li key={i} className={styles.item}>
                         <span className={styles.count}>{i + 1}</span>
-                        <p className={styles.text}>{item}</p>
+                        <p className={`${styles.text} textFonts`}>{item}</p>
                       </li>
                   ))}
                 </ul>
-                <p className={styles.textAfter}>
+                <p className={`${styles.textAfter} textFonts`}>
                   We optimize your digital customer acquisition channels and you get revenue boost.
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 my-auto pl-md-60">
-              <div className="section__title-box p-40 pt-40 pb-40 pt-md-100">
-                <h2 className={`section__title ta-left ta-md-left ${styles.h1title}`}>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h1title">
                   HOW
                   <br/>
                   IT
