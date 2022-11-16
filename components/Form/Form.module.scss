@@ -20,6 +20,7 @@
   .field {
     width: 100%;
     margin-bottom: 11px;
+    background: $background;
 
     input {
       width: 100%;
@@ -29,12 +30,13 @@
       line-height: 15px;
       border: 1px solid $primary;
       border-radius: 10px;
+      background: $background;
 
       &:active,
       &:focus {
         background-color: rgba($secondary, 0.25);
         @media (max-width: 767px) {
-          background-color: rgba(#fff, 0.85);
+          background-color: rgba(#f6f6f6, 0.85);
         }
       }
       &::placeholder{
