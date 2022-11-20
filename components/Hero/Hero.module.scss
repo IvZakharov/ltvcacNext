@@ -57,6 +57,7 @@
     @media (min-width: 768px) {
       font-size: 60px;
       line-height: 60px;
+      white-space: break-spaces;
     }
 
     &--small {
@@ -83,5 +84,6 @@
     letter-spacing: 0.015em;
     color: #FFFFFF;
     margin-bottom: 60px;
+    white-space: break-spaces;
   }
 }
