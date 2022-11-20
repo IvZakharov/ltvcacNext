@@ -93,7 +93,7 @@ const WebDevelopment = () => {
                         <div className={style.sectionText}>
                             <div className={style.text}>
                                 <p>
-                                    Web development is all about building and maintaining websites; it’s the work done
+                                    Web development is all about building and maintaining websites; it`&apos;s the work done
                                     behind the scenes to make a website look great, work fast and perform well with a
                                     seamless user experience.
                                 </p>
@@ -110,7 +110,7 @@ const WebDevelopment = () => {
                             <div className={style.little}>
                                 <p>
                                     Since 80% of internet advertising is mobile device users, 1% of website load speed
-                                    is 1% of company's revenue.
+                                    is 1% of company`&apos;s revenue.
                                 </p>
                             </div>
                         </div>
