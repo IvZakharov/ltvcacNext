@@ -408,39 +408,111 @@
         svg path{
           fill: #D0D0D0;
         }
-        &:hover{
-          svg path{
-            fill: -moz-default-color;
-          }
-        }
       }
       .nextjs{
         right: 1px;
         top: 90px;
+        &:hover{
+          svg path{
+            fill: black;
+          }
+        }
       }
       .ui{
         top: 0;
         right: 43px;
+        &:hover{
+          svg path{
+            fill: $primary;
+          }
+        }
       }
       .html{
         top: 11px;
         left: 178px;
+        &:hover{
+          svg path{
+            &:nth-child(1){
+              fill: #E44D26;
+            }
+            &:nth-child(2){
+              fill: #F16529;
+            }
+            &:nth-child(3){
+              fill: #EBEBEB;
+            }
+            &:nth-child(4){
+              fill: black;
+            }
+            &:nth-child(5){
+              fill: white;
+            }
+          }
+        }
       }
       .figma{
         top: 9px;
         left: 0.2px;
+        &:hover{
+          svg path{
+            &:nth-child(1){
+              fill: #0ACF83;
+            }
+            &:nth-child(2){
+              fill: #A259FF;
+            }
+            &:nth-child(3){
+              fill: #F24E1E;
+            }
+            &:nth-child(4){
+              fill: #FF7262;
+            }
+            &:nth-child(5){
+              fill: #1ABCFE;
+            }
+          }
+        }
       }
       .css{
         bottom: 29px;
         left: 35px;
+        &:hover{
+          svg path{
+            &:nth-child(1){
+              fill: #264DE4;
+            }
+            &:nth-child(2){
+              fill: #2965F1;
+            }
+            &:nth-child(3){
+              fill: #EBEBEB;
+            }
+            &:nth-child(4){
+              fill: black;
+            }
+            &:nth-child(5){
+              fill: white;
+            }
+          }
+        }
       }
       .ux{
         bottom: 0.5px;
         left: 147px;
+        &:hover{
+          svg path{
+            fill: $primary;
+          }
+        }
       }
       .php{
         bottom: 0.6px;
         right: 26px;
+        &:hover{
+          svg path{
+            fill: #0079FE;
+          }
+        }
       }
     }
 
