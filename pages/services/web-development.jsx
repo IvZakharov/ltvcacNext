@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Hero from "../../components/Hero/Hero";
 import Ticker from "../../components/Ticker/Ticker";
 import { MainLayout } from "../../layouts/MainLayout";
@@ -93,6 +93,12 @@ const WebDevelopment = () => {
                             </div>
                         </div>
                         <div className={style.sectionText}>
+                            <div className={style.little}>
+                                <p>
+                                    Since 80% of internet advertising is mobile device users, 1% of website load speed
+                                    is 1% of company&apos;s revenue.
+                                </p>
+                            </div>
                             <div className={style.text}>
                                 <p>
                                     Web development is all about building and maintaining websites; it&apos;s the work done
@@ -109,12 +115,7 @@ const WebDevelopment = () => {
                                     mobile-friendly website achieves maximum exposure and co nversions.
                                 </p>
                             </div>
-                            <div className={style.little}>
-                                <p>
-                                    Since 80% of internet advertising is mobile device users, 1% of website load speed
-                                    is 1% of company&apos;s revenue.
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -143,13 +144,13 @@ const WebDevelopment = () => {
                                 benefits<br /> of adaptive<br /> web development
                             </h2>
                             <div className={style.loadingBlock}>
-                                <div className={style.percent}>
-                                    0%
+                                <div className={style.percent} >
+                                    <span id="percent">0</span>%
                                 </div>
                                 <div className={style.percent}>
                                     loading
                                 </div>
-                                <div className={style.loading}>
+                                <div className={style.loading} id="load">
 
                                 </div>
 
@@ -366,11 +367,6 @@ const WebDevelopment = () => {
                                             <rect x="344" y="293.126" width="27" height="27" rx="13.5" fill="white"/>
                                         </clipPath>
                                     </defs>
-                                </svg>
-                            </div>
-                            <div className={style.play}>
-                                <svg width="106" height="107" viewBox="0 0 106 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M48.0622 39.1274L48.061 39.1265C47.5593 38.7693 46.969 38.5571 46.3547 38.5131C45.7405 38.4691 45.126 38.595 44.5785 38.877C44.031 39.1591 43.5718 39.5864 43.251 40.1121C42.9303 40.6378 42.7604 41.2416 42.76 41.8575V41.8581V65.4085V65.4091C42.7604 66.025 42.9303 66.6288 43.251 67.1545C43.5718 67.6802 44.031 68.1075 44.5785 68.3896C45.1259 68.6716 45.7405 68.7975 46.3547 68.7535C46.969 68.7095 47.5593 68.4973 48.061 68.1401L48.0622 68.1392L64.5471 56.3643C64.5473 56.3642 64.5474 56.3641 64.5475 56.364C64.9823 56.0537 65.3366 55.6441 65.5811 55.1692C65.8257 54.6942 65.9534 54.1676 65.9534 53.6333C65.9534 53.099 65.8257 52.5724 65.5811 52.0974C65.3366 51.6225 64.9823 51.2129 64.5475 50.9026C64.5474 50.9025 64.5473 50.9024 64.5471 50.9023L48.0622 39.1274ZM89.8608 53.6333C89.8608 63.3616 85.9963 72.6915 79.1173 79.5704C72.2384 86.4494 62.9085 90.314 53.1802 90.314C43.4519 90.314 34.122 86.4494 27.243 79.5704C20.3641 72.6915 16.4995 63.3616 16.4995 53.6333C16.4995 43.905 20.3641 34.5751 27.243 27.6962C34.122 20.8172 43.4519 16.9526 53.1802 16.9526C62.9085 16.9526 72.2384 20.8172 79.1173 27.6962C85.9963 34.5751 89.8608 43.905 89.8608 53.6333Z" stroke="#3725A2" strokeWidth="2"/>
                                 </svg>
                             </div>
                         </div>
