@@ -240,18 +240,19 @@
         color: white;
       }
       &:hover{
+        transition: background 2s;
         background: unset;
         border: 1px solid $primary;
         svg path{
-          transition: fill 2s;
+          transition: fill .5s;
           fill: $primary;
         }
         p{
-          transition: color 2s;
+          transition: color .5s;
           color: $primary;
         }
         button{
-          transition: border 2s, color 2s;
+          transition: border .5s, color .5s;
           border: 0.673373px solid $primary;
           color: $primary;
         }
