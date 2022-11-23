@@ -240,7 +240,7 @@
         color: white;
       }
       &:hover{
-        transition: background 2s;
+        transition: background 1s;
         background: unset;
         border: 1px solid $primary;
         svg path{
@@ -426,8 +426,13 @@
         }
       }
       .html{
-        top: 11px;
+        top: -8px;
         left: 178px;
+        svg path{
+          &:nth-child(3){
+            fill: #EBEBEB;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -474,8 +479,13 @@
         }
       }
       .css{
-        bottom: 29px;
-        left: 35px;
+        bottom: 21px;
+        left: 34px;
+        svg path{
+          &:nth-child(3){
+            fill: #EBEBEB;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
