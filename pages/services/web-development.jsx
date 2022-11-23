@@ -10,6 +10,40 @@ import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Image from "next/image";
 
 const WebDevelopment = () => {
+    const [count, setCount] = useState(0)
+
+    useEffect(()=>{
+        let percentBar;
+
+        let chargUp = setTimeout(function run() {
+            percentBar = document.getElementById("sample-percent").value;
+            let percentBar2 = percentBar.substr(0, percentBar.length - 1);
+            if (percentBar2 < 100) {
+                if(percentBar2 < 10) {
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 150)
+                }else if(percentBar2 < 30){
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 130)
+                }else if(percentBar2 < 50){
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 90)
+                }else{
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 70)
+                }
+
+            } else {
+                document.getElementById("sample-percent").value = 0 + '%';
+                setTimeout(run, 90)
+            }
+        });
+    }, [])
+
     return (
         <MainLayout
             title={"Web development - LTV:CAC agency"}
@@ -145,13 +179,13 @@ const WebDevelopment = () => {
                             </h2>
                             <div className={style.loadingBlock}>
                                 <div className={style.percent} >
-                                    <span id="percent">0</span>%
+                                    <input className={style.percent} id="sample-percent" defaultValue={'0%'} disabled={true}></input>
                                 </div>
-                                <div className={style.percent}>
+                                <div className={style.percentLoad}>
                                     loading
                                 </div>
                                 <div className={style.loading} id="load">
-
+                                        <div className={style.charge}></div>
                                 </div>
 
                             </div>
