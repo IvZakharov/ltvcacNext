@@ -209,6 +209,15 @@
         }
 
       }
+      .loading2{
+        width: 100%;
+        height: 40px;
+        border: 4px solid $primary;
+        border-radius: 20px;
+        display: flex;
+        padding-left: 9px;
+        padding-right: 8px;
+      }
 
 
     }

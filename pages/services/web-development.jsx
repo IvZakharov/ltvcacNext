@@ -14,10 +14,13 @@ const WebDevelopment = () => {
 
     useEffect(()=>{
         let percentBar;
+        let element = document.createElement('div')
+        element.className = 'owner'
 
         let chargUp = setTimeout(function run() {
             percentBar = document.getElementById("sample-percent").value;
             let percentBar2 = percentBar.substr(0, percentBar.length - 1);
+            let inther = document.getElementById("load2")
             if (percentBar2 < 100) {
                 if(percentBar2 < 10) {
                     percentBar2++;
@@ -31,15 +34,24 @@ const WebDevelopment = () => {
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
                     setTimeout(run, 90)
+                }else if(percentBar2 == 99){
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 30000)
                 }else{
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
                     setTimeout(run, 70)
                 }
+                if(percentBar2 % 2 == 0){
+                   document.getElementById("load2").insertAdjacentHTML("beforeend", '<div class="loadin-part"><div class="loading-white"></div><div class="loading-color"></div> </div>')
+                }
+
 
             } else {
                 document.getElementById("sample-percent").value = 0 + '%';
-                setTimeout(run, 90)
+                setTimeout(run, 1000)
+                document.getElementById("load2").innerHTML = ''
             }
         });
     }, [])
@@ -186,6 +198,9 @@ const WebDevelopment = () => {
                                 </div>
                                 <div className={style.loading} id="load">
                                         <div className={style.charge}></div>
+                                </div>
+                                <div className={style.loading2} id="load2">
+                                    <div></div>
                                 </div>
 
                             </div>
