@@ -194,32 +194,11 @@
           height: 28px;
           max-width: 477px;
           margin: 2px 8px;
-          //padding: 2px 30px;
           background: repeating-linear-gradient(90deg, #F6F6F6, #F6F6F6 5px, $primary 1px, $primary 9px);
-          animation: charge 9.74s ease-in 0s infinite;
-        }
-        @keyframes charge {
-          0% {
-            width: 0%;
-          }
-
-          100% {
-            width: 100%;
-          }
+          animation: 3s ease-in 0s infinite;
         }
 
       }
-      .loading2{
-        width: 100%;
-        height: 40px;
-        border: 4px solid $primary;
-        border-radius: 20px;
-        display: flex;
-        padding-left: 9px;
-        padding-right: 8px;
-      }
-
-
     }
 
 

@@ -14,44 +14,40 @@ const WebDevelopment = () => {
 
     useEffect(()=>{
         let percentBar;
-        let element = document.createElement('div')
-        element.className = 'owner'
-
+        let x = 0;
         let chargUp = setTimeout(function run() {
             percentBar = document.getElementById("sample-percent").value;
             let percentBar2 = percentBar.substr(0, percentBar.length - 1);
-            let inther = document.getElementById("load2")
+
             if (percentBar2 < 100) {
+                x = x + 1.01;
+                document.getElementById('load').style.width = x+'%';
                 if(percentBar2 < 10) {
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
-                    setTimeout(run, 150)
-                }else if(percentBar2 < 30){
-                    percentBar2++;
-                    document.getElementById("sample-percent").value = percentBar2 + '%';
-                    setTimeout(run, 130)
-                }else if(percentBar2 < 50){
+                    setTimeout(run, 180)
+                }else if(percentBar2 < 20){
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
                     setTimeout(run, 90)
-                }else if(percentBar2 == 99){
+                }else if(percentBar2 < 80){
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
-                    setTimeout(run, 30000)
+                    setTimeout(run, 10)
+                }else if(percentBar2 < 99){
+                    percentBar2++;
+                    document.getElementById("sample-percent").value = percentBar2 + '%';
+                    setTimeout(run, 80)
                 }else{
                     percentBar2++;
                     document.getElementById("sample-percent").value = percentBar2 + '%';
                     setTimeout(run, 70)
                 }
-                if(percentBar2 % 2 == 0){
-                   document.getElementById("load2").insertAdjacentHTML("beforeend", '<div class="loadin-part"><div class="loading-white"></div><div class="loading-color"></div> </div>')
-                }
-
-
             } else {
                 document.getElementById("sample-percent").value = 0 + '%';
-                setTimeout(run, 1000)
-                document.getElementById("load2").innerHTML = ''
+                setTimeout(run, 150)
+                x = 0;
+                document.getElementById('load').style.width = x+'px';
             }
         });
     }, [])
@@ -196,11 +192,8 @@ const WebDevelopment = () => {
                                 <div className={style.percentLoad}>
                                     loading
                                 </div>
-                                <div className={style.loading} id="load">
-                                        <div className={style.charge}></div>
-                                </div>
-                                <div className={style.loading2} id="load2">
-                                    <div></div>
+                                <div className={style.loading}>
+                                    <div className={style.charge} id="load"></div>
                                 </div>
 
                             </div>
