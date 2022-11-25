@@ -3,14 +3,36 @@
 
   .sectionH2{
     width: 498px;
+    @media (max-width: 1399px) {
+      width: 495px;
+    }
+    @media (max-width: 1199px) {
+      width: 450px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-left: 17px!important;
+      padding-right: 17px!important;
+    }
 
     .h2{
       margin-bottom: 44px;
       text-align: right;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
     .version{
       position: relative;
       width: 100%;
+      @media (max-width: 767px) {
+        width: 346px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 380px) {
+        width: 315px;
+      }
 
       .arrowLeft, .arrowRight{
         position: absolute;
@@ -22,7 +44,7 @@
       .arrowLeft{
         margin-right: 5px;
         top:6.2px;
-        left:12px;
+        left:0;
       }
       .arrowRight{
         margin-left: 5px;
@@ -31,12 +53,24 @@
       }
       .line{
         position: absolute;
-        width: 452px;
+        width: 465px;
         height: 7px;
         background: $primary;
         border-radius: 20px;
         top:11px;
         right: 17px;
+        @media (max-width: 1399px) {
+          width: 461px
+        }
+        @media (max-width: 1199px) {
+          width: 416px;
+        }
+        @media (max-width: 767px) {
+          width: 312px;
+        }
+        @media (max-width: 380px) {
+          width: 282px;
+        }
       }
       .versions{
         display: flex;
@@ -91,11 +125,25 @@
         color: $primary;
         margin-right: auto;
         margin-left: auto;
+        @media (max-width: 767px) {
+          margin-bottom: 50px;
+        }
       }
     }
   }
   .sectionText{
     width: 702px;
+    @media (max-width: 1399px) {
+      width: 525px;
+    }
+    @media (max-width: 1199px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+    }
     .text{
       margin-top: 20px;
       p{
@@ -115,6 +163,12 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
+        @media (max-width: 1199px) {
+          width: 400px;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
       }
     }
 
@@ -122,8 +176,24 @@
 
 }
 .benefitsAdaptive{
+  .mob{
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
   .sectionText{
     width: 693px;
+    @media (max-width: 1399px) {
+      width: 525px;
+    }
+    @media (max-width: 1199px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-left: 17px!important;
+      padding-right: 17px!important;
+    }
     h3{
       font-weight: 700;
       font-size: 24px;
@@ -133,16 +203,23 @@
     }
     p{
       width: 640px;
+      @media (max-width: 1399px) {
+        width: 100%;
+      }
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       color: black;
-      margin-bottom: 50px;
-      &:last-child{
-        margin-bottom: 40px;
-      }
+      margin-bottom: 30px;
       b{
         color: black;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 50px;
+        &:last-child{
+          margin-bottom: 40px;
+        }
       }
     }
     button{
@@ -157,12 +234,31 @@
       letter-spacing: 0.005em;
       text-transform: uppercase;
       color: white;
+      @media (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
     }
   }
   .sectionH2{
     width: 507px;
+    @media (max-width: 1399px) {
+      width: 495px;
+    }
+    @media (max-width: 1199px) {
+      width: 460px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+    }
     h2{
       margin-bottom: 14px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
     .loadingBlock{
 
@@ -184,6 +280,10 @@
         text-align: center;
         font-size: 35px;
         cursor: text;
+        @media (max-width: 767px) {
+          width: 100%;
+          margin: unset;
+        }
       }
       .loading{
         width: 100%;
@@ -196,8 +296,30 @@
           margin: 2px 8px;
           background: repeating-linear-gradient(90deg, #F6F6F6, #F6F6F6 5px, $primary 1px, $primary 9px);
           animation: 3s ease-in 0s infinite;
+          @media (max-width: 1399px) {
+            max-width: 467px;
+          }
+          @media (max-width: 1199px) {
+            max-width: 435px;
+          }
+          @media (max-width: 767px) {
+            max-width: 315px;
+            background: repeating-linear-gradient(90deg, #F6F6F6, #F6F6F6 3px, $primary 1px, $primary 7px);
+          }
+          @media (max-width: 380px) {
+            max-width: 295px;
+          }
         }
 
+      }
+      @media (max-width: 767px) {
+        width: 346px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 380px) {
+        width: 320px;
       }
     }
 
@@ -207,8 +329,16 @@
 .HowItWorks{
   .sectionH2{
     width: 650px;
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-left: 17px!important;
+      padding-right: 17px!important;
+    }
     h2{
       margin-bottom: 15px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
     p{
       font-weight: 400;
@@ -220,6 +350,19 @@
     }
   }
   .Blocks{
+    @media (max-width: 1399px) {
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 360px;
+      padding-left: 6px!important;
+      padding-right: 6px!important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 380px) {
+      width: 346px;
+    }
     .Block{
       width: 250px;
       height: 300px;
@@ -231,12 +374,35 @@
       flex-direction: column;
       justify-content: center;
       margin-right: 17px;
-    // margin-bottom: 16px;
+      @media (max-width: 1399px) {
+        margin-bottom: 16px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 7.88253px 9.85316px;
+        border-radius: 9.85316px;
+        width: 164px;
+        height: 280px;
+        margin-right: unset;
+        &:nth-child(even){
+          margin-left: 18px;
+        }
+        @media (max-width: 380px) {
+          width: 158px;
+          padding: 6.88253px 8.85316px;
+        }
+
+      }
       &:last-child{
         margin-right: unset;
       }
       svg{
         margin-bottom: 30px;
+        @media (max-width: 767px) {
+          width: 40px;
+          height: 52px;
+          margin-bottom: 20px;
+        }
       }
       p{
         font-weight: 400;
@@ -247,6 +413,16 @@
         width: 198px;
         height: 85px;
         margin-bottom: 30px;
+
+        @media (max-width: 767px) {
+          width: 132px;
+          height: 120px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 380px) {
+          width: 100%;
+        }
+
       }
       button{
         padding: 10.1006px 8.08048px;
@@ -282,29 +458,58 @@
 }
 .WDS{
   .sectionH2{
+    @media (max-width: 767px) {
+      padding-left: 17px!important;
+      padding-right: 17px!important;
+    }
     h2{
       width: 617px;
       float: right;
       text-align: right;
+      @media (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   .lineSection{
     display: flex;
     position: relative;
+    @media (max-width: 767px) {
+      flex-direction: column;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .block{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-left: 34px;
+      @media (max-width: 767px) {
+        margin-left: 86px;
+        align-items: unset;
+        margin-bottom: 34px;
+        position: relative;
+      }
       &:nth-child(1){
         width: 196px;
-        margin-left: unset
+        margin-left: unset;
+        @media (max-width: 767px) {
+          margin-left: 86px;
+        }
       }
       &:nth-child(2){
         width: 225px;
         p{
           width: 200px;
+        }
+        @media (max-width: 1199px) {
+          width: 200px;
+          p{
+            width: 160px;
+          }
         }
       }
       &:nth-child(3){
@@ -329,6 +534,12 @@
       }
       svg{
         margin-bottom: 9px;
+        @media (max-width: 767px) {
+          transform: rotate(90deg);
+          position: absolute;
+          left: -41px;
+          top: 127px;
+        }
       }
       p{
         font-weight: 600;
@@ -338,6 +549,16 @@
         color:$primary;
         height: 91px;
         margin-bottom: 15px;
+        @media (max-width: 1399px) {
+          height: 109px;
+        }
+        @media (max-width: 1199px) {
+          height: 140px;
+        }
+        @media (max-width: 767px) {
+          text-align: left;
+          height: auto;
+        }
       }
       .time{
         padding: 5px;
@@ -348,6 +569,9 @@
         line-height: 17px;
         text-align: center;
         color: $primary;
+        @media (max-width: 767px) {
+          width: fit-content;
+        }
       }
     }
     .line{
@@ -357,15 +581,39 @@
       border-radius: 20px;
       position: absolute;
       top:114px;
+      @media (max-width: 767px) {
+        width: 1491px;
+        transform: rotate(90deg);
+        top: 823px;
+        left: -700px;
+      }
     }
   }
 
 }
 .AdminPanel{
+  @media (max-width: 767px) {
+    position: relative;
+  }
   .sectionH2{
     width: 624px;
+    @media (max-width: 1399px) {
+      width: 525px;
+    }
+    @media (max-width: 1199px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+    }
     h2{
       margin-bottom: 30px;
+      @media (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 365px;
+      }
     }
     p{
       font-weight: 400;
@@ -378,6 +626,9 @@
       width: 521px;
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
 
       .planks{
         padding: 10px 15px;
@@ -394,14 +645,152 @@
   }
   .panelAnim{
     width: 575px;
+    @media (max-width: 1399px) {
+      width: 495px;
+    }
+    @media (max-width: 1199px) {
+      width: 460px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-left: 17px!important;
+      padding-right: 17px!important;
+      position: absolute;
+      top: 214px;
+      margin-bottom: 30px;
+      height: fit-content;
+    }
+    .webpage{
+      @media (max-width: 1399px) {
+        svg{
+          width: 495px;
+          height: auto;
+        }
+      }
+      @media (max-width: 1199px) {
+        width: 460px;
+      }
+      @media (max-width: 767px) {
+        svg{
+          width: 356px;
+        }
+      }
+
+      .background{
+          height: 340px;
+          animation: background 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes background {
+        0% {
+          height: 340px;
+        }
+        10% {
+          height: 340px;
+        }
+        90% {
+          height: 501px;
+        }
+        100% {
+          height: 501px;
+        }
+      }
+      .newBlock{
+        opacity: 0%;
+        animation: Blocks 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes Blocks {
+        0%{
+          opacity: 0%;
+        }
+        10%{
+          opacity: 0%;
+        }
+        90%{
+          opacity: 100%;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
+      .Brect{
+        y: 286.237;
+        animation: brect 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes brect {
+        0%{
+          y: 286.237;
+          fill:rgb(126, 114, 192);
+        }
+        10%{
+          y: 286.237;
+          fill:none;
+        }
+        90%{
+          y: 368.104;
+          fill: none;
+        }
+        100%{
+          y: 368.104;
+          fill:rgb(126, 114, 192);
+        }
+      }
+      .Plus{
+        y:290;
+        animation: Plus 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes Plus {
+        0%{
+          y:293.126;
+        }
+        100%{
+          y:374.993;
+        }
+      }
+      .lineBottom{
+
+        animation: lineBottom 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes lineBottom {
+        0%{
+          opacity: 0;
+          y: 330.104;
+        }
+        10%{
+          opacity: 0;
+          y: 330.104;
+        }
+        90%{
+          y:490.104;
+        }
+        100%{
+          y:490.104;
+        }
+      }
+
+
+    }
 
   }
 }
 .OurToolkit{
   .sectionH2{
     width: 651px;
+    @media (max-width: 1399px) {
+      width: 525px;
+    }
+    @media (max-width: 1199px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+    }
     h2{
       margin-bottom: 30px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
     p{
       font-weight: 400;
@@ -415,10 +804,26 @@
     width: 549px;
     display: flex;
     justify-content: center;
+    @media (max-width: 1399px) {
+      width: 495px;
+    }
+    @media (max-width: 1199px) {
+      width: 460px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 50px;
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+    }
     .cloud{
       width: 393px;
       height: 251px;
       position: relative;
+      @media (max-width: 767px) {
+        width: 246px;
+        height: 158px;
+      }
       .items{
         position: absolute;
         svg path{
@@ -428,6 +833,14 @@
       .nextjs{
         right: 1px;
         top: 90px;
+        @media (max-width: 767px) {
+          right: 0;
+          top:57px;
+          svg{
+            width: 189px;
+            height: 39px;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -438,6 +851,13 @@
       .ui{
         top: 0;
         right: 43px;
+        @media (max-width: 767px) {
+          right: 27px;
+          svg{
+            width: 26px;
+            height: 33px;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -448,6 +868,14 @@
       .html{
         top: -8px;
         left: 178px;
+        @media (max-width: 767px) {
+          top: 7px;
+          left: 111.64px;
+          svg{
+            width: 20px;
+            height: 28px;
+          }
+        }
         svg path{
           &:nth-child(3){
             fill: #EBEBEB;
@@ -477,6 +905,13 @@
       .figma{
         top: 9px;
         left: 0.2px;
+        @media (max-width: 767px) {
+          top:5px;
+          svg{
+            width: 42px;
+            height: 63px;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -501,6 +936,14 @@
       .css{
         bottom: 21px;
         left: 34px;
+        @media (max-width: 767px) {
+          left: 22px;
+          bottom: 19px;
+          svg{
+            width: 20px;
+            height: 28px;
+          }
+        }
         svg path{
           &:nth-child(3){
             fill: #EBEBEB;
@@ -530,6 +973,14 @@
       .ux{
         bottom: 0.5px;
         left: 147px;
+        @media (max-width: 767px) {
+          bottom: 1px;
+          left: 92px;
+          svg{
+            width: 35px;
+            height: 33px;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -540,6 +991,13 @@
       .php{
         bottom: 0.6px;
         right: 26px;
+        @media (max-width: 767px) {
+          right: 16px;
+          svg{
+            width: 63px;
+            height: 32px;
+          }
+        }
         &:hover{
           svg path{
             transition: fill 2s;
@@ -552,16 +1010,48 @@
   }
 }
 .indust{
+  .mob{
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
   .imgBlock{
     width: 642px;
+    @media (max-width: 1399px) {
+      width: 495px;
+    }
+    @media (max-width: 1199px) {
+      width: 460px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
   .sectionH2{
     width: 556px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 1399px) {
+      width: 525px;
+    }
+    @media (max-width: 1199px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 17px!important;
+      padding-left: 17px!important;
+      margin-bottom: 53px;
+    }
     h2{
       margin-bottom: 30px;
+      @media (max-width: 767px) {
+        text-align: center;
+        width: 316px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     p{
       width: 483px;
@@ -569,6 +1059,9 @@
       font-size: 16px;
       line-height: 19px;
       color: black;
+      @media (max-width: 1399px) {
+        width: 100%;
+      }
     }
   }
 }

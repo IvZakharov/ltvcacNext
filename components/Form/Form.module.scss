@@ -24,6 +24,9 @@
     width: 100%;
     margin-bottom: 11px;
     background: $background;
+    @media (max-width: 767px) {
+      border-radius:11px;
+    }
 
     input {
       width: 100%;
