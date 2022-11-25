@@ -255,7 +255,7 @@
       padding-left: 17px!important;
     }
     h2{
-      margin-bottom: 14px;
+      margin-bottom: 20px;
       @media (max-width: 767px) {
         text-align: center;
       }
@@ -379,10 +379,10 @@
       }
 
       @media (max-width: 767px) {
-        padding: 7.88253px 9.85316px;
+        padding: 9.85316px 7.88253px;
         border-radius: 9.85316px;
         width: 164px;
-        height: 280px;
+        height: 232px;
         margin-right: unset;
         &:nth-child(even){
           margin-left: 18px;
@@ -415,6 +415,8 @@
         margin-bottom: 30px;
 
         @media (max-width: 767px) {
+          font-size: 12px;
+          line-height: 15px;
           width: 132px;
           height: 120px;
           margin-bottom: 20px;
@@ -477,9 +479,9 @@
     position: relative;
     @media (max-width: 767px) {
       flex-direction: column;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 346px;
     }
     .block{
       display: flex;
@@ -511,15 +513,31 @@
             width: 160px;
           }
         }
+        @media (max-width: 767px) {
+          width: 225px;
+          p{
+            width: 90%;
+          }
+        }
       }
       &:nth-child(3){
         width: 203px;
+        @media (max-width: 767px) {
+          svg{
+            top: 135px;
+          }
+        }
       }
       &:nth-child(4){
         width: 173px;
       }
       &:nth-child(5){
         width: 129px;
+        @media (max-width: 767px) {
+          svg{
+            top: 120px;
+          }
+        }
       }
       &:nth-child(6){
         width: 218px;
@@ -582,10 +600,10 @@
       position: absolute;
       top:114px;
       @media (max-width: 767px) {
-        width: 1491px;
+        width: 1407px;
         transform: rotate(90deg);
-        top: 823px;
-        left: -700px;
+        top: 768px;
+        left: -657px;
       }
     }
   }
@@ -612,8 +630,9 @@
       margin-bottom: 30px;
       @media (max-width: 767px) {
         text-align: center;
-        margin-bottom: 365px;
+        margin-bottom: 377px;
       }
+
     }
     p{
       font-weight: 400;
@@ -652,13 +671,16 @@
       width: 460px;
     }
     @media (max-width: 767px) {
-      width: 100%;
+      width: 540px;
       padding-left: 17px!important;
       padding-right: 17px!important;
       position: absolute;
-      top: 214px;
+      top: 167px;
       margin-bottom: 30px;
       height: fit-content;
+    }
+    @media (max-width: 533px) {
+      top: 215px;
     }
     .webpage{
       @media (max-width: 1399px) {
@@ -671,6 +693,9 @@
         width: 460px;
       }
       @media (max-width: 767px) {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
         svg{
           width: 356px;
         }
