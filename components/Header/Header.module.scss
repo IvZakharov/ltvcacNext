@@ -30,7 +30,7 @@
     z-index: 12;
     position: relative;
     line-height: 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.45s ease-in;
     cursor: pointer !important;
 
     img {
@@ -217,17 +217,19 @@
   .logo {
     margin-top: unset!important;
     span{
-      transform: scale(0.6) translateY(-40px);
+      transform: scale(0.7) translateY(-40px);
     }
+
     img {
 
       transform: scale(0.6) translateY(-40px);
 
       @media (min-width: 768px) {
-        transform: scale(0.6) translateY(-40px) translateX(-40px);
+        transform: scale(0.5) translateY(-30px) translateX(-40px);
       }
     }
   }
+
 
   .menuBtn {
     transform: translateY(0) !important;
