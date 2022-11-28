@@ -52,6 +52,20 @@ const WebDevelopment = () => {
         });
     }, [])
 
+    const bread = [
+        {
+            img:'/img/breadcrumbs/blog.svg',
+            lable:'Blog',
+            link:'/posts/test/blog',
+        },
+
+        {
+            img:'',
+            lable:'Web Development',
+            link:'/services/web-development',
+        }
+    ]
+
     return (
         <MainLayout
             title={"Web development - LTV:CAC agency"}
@@ -70,9 +84,7 @@ const WebDevelopment = () => {
             <Ticker />
             <HeroAdvantages/>
             <Breadcrumbs
-                img={'/img/breadcrumbs/blog.svg'}
-                lable={'Blog'}
-                link={'/posts/test/blog'}
+                links={bread}
             />
             <StepByStep />
             <section className={`pt-68 pb-68 ${style.adaptiveWebsite}`}>

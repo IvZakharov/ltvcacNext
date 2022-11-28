@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.005em;
   text-transform: uppercase;
   color:$primary;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 40px;
     line-height: 48px;
   }
@@ -435,6 +435,9 @@ mbh-10{
   @media (max-width: 1199px) {
     margin-right: 9%;
   }
+  @media (max-width: 1023px) {
+    margin-right: 1%;
+  }
 }
 .mb-60 {
   margin-bottom: 60px;
@@ -504,11 +507,17 @@ mbh-10{
 .pt-20 {
   padding-top: 20px;
 }
+.pt-34{
+  padding-top: 34px;
+}
 .pt-40 {
   padding-top: 40px;
 }
 .pb-20 {
   padding-bottom: 20px;
+}
+.pb-34{
+  padding-bottom: 34px;
 }
 .pb-40 {
   padding-bottom: 40px;
