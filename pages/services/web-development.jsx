@@ -414,8 +414,8 @@ const WebDevelopment = () => {
                                     <path className={style.newBlock} d="M180.5 285.83C180.5 276.868 187.765 269.604 196.726 269.604H518.274C527.235 269.604 534.5 276.868 534.5 285.83V321.377C534.5 330.339 527.235 337.604 518.274 337.604H196.726C187.765 337.604 180.5 330.339 180.5 321.377V285.83Z" fill="#F3F3F3"/>
                                     <rect className={style.newBlock} x="289.5" y="278.49" width="136" height="51" rx="12" fill="#D0D0D0"/>
                                     <rect className={style.Brect} x="337.11" y="368.104" width="40.7792" height="40.7792" rx="6.88959" stroke="#7E72C0" strokeWidth="3"/>
-                                    <rect className={style.PlusHors} x="344" y="388" width="27" height="3" rx="7" fill="#7E72C0"/>
-                                    <rect className={style.PlusVert} x="379.11" y="-356.104" width="27" height="3" rx="6" transform="rotate(90 3.5 0)" fill="#7E72C0"/>
+                                    <rect className={style.PlusHors} x="344" y="388" width="27" height="3" rx="1.5" fill="#7E72C0"/>
+                                    <rect className={style.PlusVert} x="379.11" y="-356.104" width="27" height="3" rx="1.5" transform="rotate(90 3.5 0)" fill="#7E72C0"/>
                                     <rect className={style.lineBottom} x="290.11" y="490.104" width="136" height="12" rx="6" fill="#7E72C0"/>
                                 </svg>
 
