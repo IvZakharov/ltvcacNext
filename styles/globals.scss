@@ -52,6 +52,18 @@ body {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
   }
 }
+.actCol{
+  color: $primary!important;
+  transition: color 2s;
+}
+.actBack{
+  background: $primary!important;
+  transition: background 2s;
+}
+.actBor{
+  border: 1px solid $primary!important;
+  transition: border 2s;
+}
 .offsetr-xl-2{padding-right:140px}
 .marginHomeLeft{
   margin-right: 150px;

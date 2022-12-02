@@ -74,7 +74,7 @@ const WebDevelopment = () => {
             <Hero
                 title={"Adaptive mobile-friendly \n Web Development"}
                 subtitle={
-                    "Your website is the face of your company. Everything from how it looks \n to its speed tells a customer about your company."
+                    "Your website is the face of your company. Everything from the looks and feels to its speed tells a customer about your company."
                 }
                 imageUrls={{
                     desktop: "/img/hero/11.jpg",
@@ -86,7 +86,7 @@ const WebDevelopment = () => {
             <Breadcrumbs
                 links={bread}
             />
-            <StepByStep />
+            <StepByStep active={2} />
             <section className={`pt-68 pb-68 ${style.adaptiveWebsite}`}>
                 <div className="container">
                     <div className="row">
@@ -166,7 +166,7 @@ const WebDevelopment = () => {
                                 <p>
                                     We offer full range of internet marketing services, unlike many other web
                                     developers. Our knowledge of SEO, UX and CRO ensures that your brand-new,
-                                    mobile-friendly website achieves maximum exposure and co nversions.
+                                    mobile-friendly website achieves maximum exposure and conversions.
                                 </p>
                             </div>
 
@@ -350,7 +350,7 @@ const WebDevelopment = () => {
                                     <rect y="0.59375" width="2" height="28" rx="1" fill="#3725A2"/>
                                 </svg>
                                 <p>
-                                    Delivering and presenting the completed solution. Maintaining and supporting the system the first month
+                                    Delivering and presenting a completed solution. Maintaining and supporting the system for the first month.
                                 </p>
                                 <div className={style.time}>
                                     1-2 days
@@ -413,7 +413,6 @@ const WebDevelopment = () => {
                                     <path d="M419.5 231.104C419.5 228.066 421.962 225.604 425 225.604H523C526.038 225.604 528.5 228.066 528.5 231.104C528.5 234.141 526.038 236.604 523 236.604H425C421.962 236.604 419.5 234.141 419.5 231.104Z" fill="#D0D0D0"/>
                                     <path className={style.newBlock} d="M180.5 285.83C180.5 276.868 187.765 269.604 196.726 269.604H518.274C527.235 269.604 534.5 276.868 534.5 285.83V321.377C534.5 330.339 527.235 337.604 518.274 337.604H196.726C187.765 337.604 180.5 330.339 180.5 321.377V285.83Z" fill="#F3F3F3"/>
                                     <rect className={style.newBlock} x="289.5" y="278.49" width="136" height="51" rx="12" fill="#D0D0D0"/>
-
                                     <rect className={style.Brect} x="337.11" y="368.104" width="40.7792" height="40.7792" rx="6.88959" stroke="#7E72C0" strokeWidth="3"/>
                                     <rect className={style.lineBottom} x="290.11" y="490.104" width="136" height="12" rx="6" fill="#7E72C0"/>
                                 </svg>
@@ -434,7 +433,7 @@ const WebDevelopment = () => {
                                 to make your site look and work according to modern quality standards.
                             </p>
                             <p>
-                                Also,using the most popular development tools makes it easy
+                                Also, using the most popular development tools makes it easy
                                 to find specialists when they are needed.
                             </p>
                         </div>
