@@ -967,11 +967,13 @@
       @keyframes brect {
         0%{
           y: 286.237;
-          fill:rgb(126, 114, 192);
+        }
+        7%{
+          y: 286.237;
         }
         10%{
           y: 286.237;
-          fill:none;
+          fill:rgb(126, 114, 192);;
         }
         90%{
           y: 368.104;
@@ -982,16 +984,69 @@
           fill:rgb(126, 114, 192);
         }
       }
-      .Plus{
-        offset-path: ('M344.119 388.86C344.119 388.032 344.791 387.36 345.619 387.36H372.619C373.448 387.36 374.119 388.032 374.119 388.86C374.119 389.689 373.448 390.36 372.619 390.36H345.619C344.791 390.36 344.119 389.689 344.119 388.86Z');
-        animation: Plus 5s alternate-reverse 2ms infinite;
+      .PlusVert{
+        animation: PlusVert 5s alternate-reverse 2ms infinite;
       }
-      @keyframes Plus {
+      @keyframes PlusVert {
         0%{
-          y:0;
+          x: 297;
+          fill: #7E72C0;
+        }
+        4%{
+          x: 297;
+          fill: #7E72C0;
+        }
+        5%{
+          x: 297;
+          fill: white;
+        }
+        10%{
+          x: 297;
+        }
+        35%{
+          fill: none;
+        }
+        90%{
+          x: 379.11;
+          //fill:none;
         }
         100%{
-          y:374.993;
+          x: 379.11;
+          fill:none;
+        }
+      }
+      .PlusHors{
+        animation: PlusHors 5s alternate-reverse 2ms infinite;
+      }
+      @keyframes PlusHors {
+        0%{
+          y:305;
+          fill: #7E72C0;
+        }
+        4%{
+          y:305;
+          fill: #7E72C0;
+        }
+        5%{
+          y:305;
+          fill: white;
+        }
+        10%{
+          y:305;
+        }
+        15%{
+          fill: white;
+        }
+        85%{
+          fill: #7E72C0;
+        }
+        94%{
+          fill: white;
+          y: 388;
+        }
+        100%{
+          y: 388;
+          fill: white
         }
       }
       .lineBottom{
