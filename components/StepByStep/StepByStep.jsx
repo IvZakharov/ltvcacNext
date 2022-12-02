@@ -135,13 +135,13 @@ const StepByStep = ({active}) => {
                             <p className={`${active==4 ? style.act : ''}`}>We provide analytics services for you to learn your customers behavior</p>
                         </a>
                     </Link>
-                    <Link href={'#'}>
-                        <a className={`p-0 ${style.ASO}`} id="Traffic/ASO">
-                            <div className={`${style.textPoints} ${active==5 ? style.act : ''}`}>Traffic/ASO</div>
+                    <Link href={'/services/paid-marketing-channels'}>
+                        <a className={`p-0 ${style.ASO}`}>
+                            <div className={`${style.textPoints} ${active==5 ? style.act : ''}`}>Traffic</div>
                             <div className={`p-0 ${style.fulldot}`}>
                                 <div className={style.inDots}></div>
                             </div>
-                            <p className={`${active==5 ? style.act : ''}`}>We optimize your mobile app to get more installations and visibility in App Store and Google Play Market</p>
+                            <p className={`${active==5 ? style.act : ''}`}>We create and manage advertising campaigns for you to get the best outcome.</p>
                         </a>
                     </Link>
                 </div>
