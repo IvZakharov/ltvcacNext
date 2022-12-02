@@ -16,8 +16,8 @@ const WebDevelopment = () => {
         let percentBar;
         let x = 0;
         let chargUp = setTimeout(function run() {
-            percentBar = document.getElementById("sample-percent").value;
-            let percentBar2 = percentBar.substr(0, percentBar.length - 1);
+            percentBar = document.getElementById("sample-percent")?.value;
+            let percentBar2 = percentBar?.substr(0, percentBar.length - 1);
 
             if (percentBar2 < 100) {
                 x = x + 1.01;

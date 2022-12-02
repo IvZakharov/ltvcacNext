@@ -90,7 +90,7 @@ const StepByStep = ({active}) => {
         <section className={`pt-68 pb-68 ${style.mob}`}>
             <div className={`container ${style.Steps}`}>
                 <div className={`row ${style.Text}`}>
-                    <Link href={'#'}>
+                    <Link href={'/services/customer-research'}>
                         <a className={`p-0`} id="Customer">
                             <div className={`${style.textPoints} ${active==1 && active!=5 ? style.act : ''}`}> Customer<br />Research</div>
                             <div className={`p-0 ${style.dots}  ${style.dots} ${active>=1 && active!=5 ? style.active : ''}`}>
@@ -99,7 +99,7 @@ const StepByStep = ({active}) => {
                             <p className={`${active==1 && active!=5 ? style.act : ''}`}>We identify your customer needs for you to make data-driven decisions</p>
                         </a>
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'/services/web-development'}>
                         <a className={`p-0`} id="WebDev">
                             <div className={`${style.textPoints} ${active==2 && active!=5 ? style.act : ''}`}>Web<br />Development</div>
                             <div className={`p-0 ${style.dots} ${active>=2 && active!=5 ? style.active : ''}`}>
@@ -111,7 +111,7 @@ const StepByStep = ({active}) => {
                             <p className={`${active==2 && active!=5 ? style.act : ''}`}>We build and maintain custom websites that work fast and increase conversion rates</p>
                         </a>
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'/services/no-code-automation'}>
                         <a className={`p-0`} id="Automation">
                             <div className={`${style.textPoints} ${active==3 && active!=5 ? style.act : ''}`}>Automation</div>
                             <div className={`p-0 ${style.dots} ${active>=3 && active!=5 ? style.active : ''}`}>
@@ -123,7 +123,7 @@ const StepByStep = ({active}) => {
                             <p className={`${active==3 && active!=5 ? style.act : ''}`}> We automate your routine business processes to free up your time, money and energy</p>
                         </a>
                     </Link>
-                    <Link href={'#'}>
+                    <Link href={'/services/mobile-and-web-tracking'}>
                         <a className={`p-0`} id="Analytics">
                             <div className={`${style.textPoints} ${active==4 && active!=5 ? style.act : ''}`}>Analytics</div>
                             <div className={`p-0 ${style.dots} ${active>=4 && active!=5 ? style.active : ''}`}>
