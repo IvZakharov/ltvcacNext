@@ -72,7 +72,7 @@ const WebDevelopment = () => {
             description="We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside sales funnel"
         >
             <Hero
-                title={"Adaptive mobile-friendly \n Web Development"}
+                title={"Adaptive \n mobile-friendly \n Web Development"}
                 subtitle={
                     "Your website is the face of your company. Everything from the looks and feels to its speed tells a customer about your company."
                 }
@@ -189,9 +189,9 @@ const WebDevelopment = () => {
                                 <b> uniquely adapted</b> to the <b>individual requirements</b> for each type of mobile device.
                                 The user experience is at the <b>heart of all design decisions</b>, from image size and
                                 resolution to layout and structure.</p>
-                            <button>
+                            <a href={'#contact'}>
                                 I want the same
-                            </button>
+                            </a>
                         </div>
                         <div className={`${style.sectionH2} p-0`}>
                             <h2 className={`title`}>
@@ -286,7 +286,7 @@ const WebDevelopment = () => {
                                     Researching a client&apos;s project with an industry and geolocation of target audience of interest
                                 </p>
                                 <div className={style.time}>
-                                    3-4 days
+                                    5-7 days
                                 </div>
                             </div>
                             <div className={style.block}>
@@ -313,7 +313,7 @@ const WebDevelopment = () => {
                                     taken into account
                                 </p>
                                 <div className={style.time}>
-                                    5 days
+                                    7-21 days
                                 </div>
                             </div>
                             <div className={style.block}>
@@ -327,7 +327,7 @@ const WebDevelopment = () => {
                                     the admin panel
                                 </p>
                                 <div className={style.time}>
-                                    3-5 days
+                                    5-10 days
                                 </div>
                             </div>
                             <div className={style.block}>

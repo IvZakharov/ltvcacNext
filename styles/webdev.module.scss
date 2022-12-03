@@ -289,7 +289,10 @@
         }
       }
     }
-    button{
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: #F72585;
       border-radius: 89.7516px;
       width: 280px;
@@ -307,14 +310,12 @@
         line-height: 12px;
         margin-right: auto;
         margin-left: auto;
-        display: block;
       }
       @media (max-width: 767px) {
         font-size: 16px;
         line-height: 14px;
         margin-right: auto;
         margin-left: auto;
-        display: block;
       }
     }
   }
