@@ -19,12 +19,16 @@ function OurServices() {
               </Link>
             </div>
             <div className={styles.columns}>
-              <div className={`${styles.item} ${styles.disable}`}>
-                <h3 className={styles.title}>Web development</h3>
-              </div>
-              <p className={`${styles.text} textFonts`}>
-                We develop high-conversion landing pages and e-commerce website from an idea to readiness for advertising campaigns.
-              </p>
+              <Link href="/services/web-development">
+                <a>
+                  <div className={styles.item}>
+                    <h3 className={styles.title}>Web development</h3>
+                  </div>
+                  <p className={`${styles.text} textFonts`}>
+                    We develop high-conversion landing pages and e-commerce website from an idea to readiness for advertising campaigns.
+                  </p>
+                </a>
+              </Link>
             </div>
             <div className={styles.columns}>
               <Link href="/services/no-code-automation">
