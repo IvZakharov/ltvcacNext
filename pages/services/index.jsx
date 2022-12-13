@@ -19,20 +19,20 @@ export default function services() {
             imageUrls={{desktop: '/img/hero/2.jpg', mobile: '/img/hero/2mob.jpg'}}
         />
         <Ticker/>
-        <section className="section section--title-left-img4">
-          <div className="container p-0">
+        <section className="section section--title-left-img4 mt-68 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 mb-xl-0">
-                <div className="section__title-box section__title-box--img4 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title section__title--small ta-center tt-upper">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft ta-center">
+                  <h2 className="h1title">
                     Paid Marketing
                     <br/>
                     Channels
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-60 pb-60 d-md-flex d-xl-block pt-xl-120 pb-xl-120">
-                <div className="ph-20">
+              <div className="col-12 col-md-6 col-xl-6">
+                <div className="ph-20 ml-120 mt-22 mb-22">
                   <h3 className="h3 mb-20 ta-center">
                     Data-driven digital marketing for your customer’s base growing
                   </h3>
@@ -59,12 +59,12 @@ export default function services() {
             </div>
           </div>
         </section>
-        <section className="section section--title-right-img5">
-          <div className="container p-0">
+        <section className="section section--title-right-img5 mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 order-md-1 mb-xl-0 offset-xl-1">
-                <div className="section__title-box section__title-box--img5 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title section__title--small ta-center">
+              <div className="col-12 col-md-6 order-md-1 my-auto">
+                <div className="marginHomeRight ta-center">
+                  <h2 className="h1title">
                     MOBILE &
                     <br/>
                     WEBSITE
@@ -73,7 +73,7 @@ export default function services() {
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-60 pb-60 order-md-0 d-md-flex d-xl-block  pt-xl-120 pb-xl-120">
+              <div className="col-12 col-md-6 col-xl-4 mt-22 mb-22 mr-120">
                 <div className="ph-20">
                   <h3 className="h3 mb-20 ta-center">Why does your company need tracking?</h3>
                   <p className="text-large mb-20">
@@ -106,19 +106,19 @@ export default function services() {
           </div>
         </section>
         
-        <section className="section section--title-left-img12">
-          <div className="container p-0">
+        <section className="section section--title-left-img12 mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 mb-xl-0">
-                <div className="section__title-box section__title-box--img12 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title section__title--small ta-center">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft ta-center">
+                  <h2 className="h1title">
                     NO-CODE
                     <br/>
                     AUTOMATION
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-60 pb-60 d-md-flex d-xl-block pt-xl-120 pb-xl-120">
+              <div className="col-12 col-md-6 col-xl-4 mb-22 mt-22 ml-120">
                 <div className="ph-20">
                   <h3 className="h3 mb-20 ta-center">Why does your company need automation?</h3>
                   <p className="text-large mb-20">
@@ -147,19 +147,19 @@ export default function services() {
           </div>
         </section>
         
-        <section className="section section--title-right-img6">
-          <div className="container p-0">
+        <section className="section section--title-right-img6 mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 order-md-1 mb-xl-0 offset-xl-1">
-                <div className="section__title-box section__title-box--img6 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title section__title--small ta-center">
+              <div className="col-12 col-md-6 order-md-1 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title">
                     CUSTOMER
                     <br/>
                     RESEARCH
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-60 pb-60 order-md-0 d-md-flex d-xl-block  pt-xl-120 pb-xl-120">
+              <div className="col-12 col-md-6 col-xl-4 mt-22 mb-22 mr-120">
                 <div className="ph-20">
                   <h3 className="h3 mb-20 ta-center">
                     Why does your company need customer research?
@@ -177,19 +177,19 @@ export default function services() {
             </div>
           </div>
         </section>
-        <section className="section section--title-left-img7">
-          <div className="container p-0">
+        <section className="section section--title-left-img7 mt-136 mb-136">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 mb-xl-0 ">
-                <div className="section__title-box section__title-box--img7 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title section__title--small tt-upper ta-center">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft ta-center">
+                  <h2 className="h1title">
                     App Store
                     <br/>
                     Optimization
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-60 pb-60 order-md-0 d-md-flex d-xl-block pt-xl-120 pb-xl-120">
+              <div className="col-12 col-md-6 col-xl-4 mt-22 mb-22 ml-120">
                 <div className="ph-20">
                   <h3 className="h3 mb-20 ta-center">
                     Site and app Tracking system setup services
