@@ -32,7 +32,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-xl-6">
-                <div className="ph-20 ml-120 mt-22 mb-22">
+                <div className="ml-120 mt-22 mb-22">
                   <h3 className="h3 mb-20">
                     Data-driven digital marketing for your customer’s base growing
                   </h3>
@@ -74,22 +74,22 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="ph-20 mt-22 mb-22 mr-120" style={{width:"60%"}}>
-                  <h3 className="h3 mb-20" style={{textAlign: "right"}}>Why does your company need tracking?</h3>
+                <div className="mt-22 mb-22 mr-120" style={{width:"60%", marginLeft: "auto"}}>
+                  <h3 className="h3 mb-20 ta-left">Why does your company need tracking?</h3>
                   <p className="textFonts mb-20">
                     Tracking report is your dashboard that shows where and how your business is
                     flying.
                   </p>
                   <p className="textFonts mb-20">
-                  <span className="d-block">
+                  <span className="textFonts d-block">
                     Imagine you just got a seat on a jet plane. I&apos;s time to take off and the
                     pilot says:
                   </span>
-                    <span className="d-block">
+                    <span className="textFonts d-block">
                     - Sorry, our GPS is broken so I’m going to navigate using stars.
                   </span>
-                    <span className="d-block">- WHAT?</span>
-                    <span className="d-block">
+                    <span className="textFonts d-block">- WHAT?</span>
+                    <span className="textFonts d-block">
                     - Yeah, it’s okay. We might miss the right city but I’ll get us…somewhere.
                   </span>
                   </p>
@@ -119,7 +119,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="ph-20 mb-22 mt-22 ml-120" style={{width:"60%"}}>
+                <div className="mb-22 mt-22 ml-120" style={{width:"60%"}}>
                   <h3 className="h3 mb-20 ta-left">Why does your company need automation?</h3>
                   <p className="textFonts mb-20">
                     Airplane autopilot quite a familiar thing these days but it didn&apos;t exist
@@ -160,8 +160,8 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="ph-20 mt-22 mb-22 mr-120"  style={{width:"60%"}}>
-                  <h3 className="h3 mb-20" style={{textAlign:'right'}}>
+                <div className="mt-22 mb-22 mr-120"  style={{width:"60%", marginLeft: "auto"}}>
+                  <h3 className="h3 mb-20 ta-left">
                     Why does your company need customer research?
                   </h3>
                   <p className="textFonts mb-20">
@@ -177,7 +177,7 @@ export default function services() {
             </div>
           </div>
         </section>
-        <section className="section section--title-left-img7 mt-136 mb-136">
+        <section className="section section--title-left-img7 mt-136 mb-68">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
@@ -190,7 +190,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6">
-                <div className="ph-20 mt-22 mb-22 ml-120" style={{width:"60%"}}>
+                <div className="mt-22 mb-22 ml-120" style={{width:"60%"}}>
                   <h3 className="h3 mb-20 ta-left">
                     Site and app Tracking system setup services
                   </h3>
