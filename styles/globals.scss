@@ -163,8 +163,8 @@ body {
     text-align: center!important;
     white-space: normal;
   }
-
 }
+
 .textFonts{
   font-weight: 400;
   font-size: 16px;
@@ -279,7 +279,12 @@ mbh-10{
 .w-70 {
   width: 70% !important;
 }
-
+.w-60{
+  width: 60%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
 .w-35 {
   width: 35% !important;
 }
@@ -364,6 +369,9 @@ mbh-10{
 .ta-left {
   text-align: left;
 }
+.ta-right{
+  text-align: right;
+}
 
 .tt-upper {
   text-transform: uppercase;
@@ -426,6 +434,9 @@ mbh-10{
   @media (max-width: 1023px) {
     margin-left: 12%;
   }
+  @media (max-width: 767px) {
+    margin-left: unset;
+  }
 }
 .mlw-120 {
   margin-left: 120px;
@@ -443,6 +454,9 @@ mbh-10{
   }
   @media (max-width: 1125px) {
     margin-right: 12%;
+  }
+  @media (max-width: 767px) {
+    margin-right: unset;
   }
 }
 .mrw-120 {

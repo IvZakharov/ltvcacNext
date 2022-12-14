@@ -23,8 +23,8 @@ export default function services() {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft" style={{textAlign:"right", textTransform:"uppercase"}}>
-                  <h2 className="h1title">
+                <div className="marginHomeLeft ta-right">
+                  <h2 className="h1title tt-upper">
                     Paid Marketing
                     <br/>
                     Channels
@@ -32,7 +32,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-xl-6">
-                <div className="ml-120 mt-22 mb-22">
+                <div className="ml-120 mt-22 mb-22 w-60">
                   <h3 className="h3 mb-20">
                     Data-driven digital marketing for your customer’s base growing
                   </h3>
@@ -64,7 +64,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 order-md-1 my-auto">
                 <div className="marginHomeRight ta-center">
-                  <h2 className="h1title" style={{textAlign:'left'}}>
+                  <h2 className="h1title tt-upper ta-left">
                     MOBILE &
                     <br/>
                     WEBSITE
@@ -74,7 +74,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120" style={{width:"60%", marginLeft: "auto"}}>
+                <div className="mt-22 mb-22 mr-120 w-60" style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">Why does your company need tracking?</h3>
                   <p className="textFonts mb-20">
                     Tracking report is your dashboard that shows where and how your business is
@@ -110,8 +110,8 @@ export default function services() {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft" style={{textAlign:'right'}}>
-                  <h2 className="h1title">
+                <div className="marginHomeLeft ta-right">
+                  <h2 className="h1title tt-upper">
                     NO-CODE
                     <br/>
                     AUTOMATION
@@ -119,7 +119,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mb-22 mt-22 ml-120" style={{width:"60%"}}>
+                <div className="mb-22 mt-22 ml-120 w-60">
                   <h3 className="h3 mb-20 ta-left">Why does your company need automation?</h3>
                   <p className="textFonts mb-20">
                     Airplane autopilot quite a familiar thing these days but it didn&apos;t exist
@@ -152,7 +152,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 order-md-1 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title">
+                  <h2 className="h1title tt-upper">
                     CUSTOMER
                     <br/>
                     RESEARCH
@@ -160,7 +160,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120"  style={{width:"60%", marginLeft: "auto"}}>
+                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">
                     Why does your company need customer research?
                   </h3>
@@ -181,8 +181,8 @@ export default function services() {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft" style={{textAlign:'right'}}>
-                  <h2 className="h1title">
+                <div className="marginHomeLeft ta-right">
+                  <h2 className="h1title tt-upper">
                     App Store
                     <br/>
                     Optimization
@@ -190,7 +190,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6">
-                <div className="mt-22 mb-22 ml-120" style={{width:"60%"}}>
+                <div className="mt-22 mb-22 ml-120 w-60">
                   <h3 className="h3 mb-20 ta-left">
                     Site and app Tracking system setup services
                   </h3>
