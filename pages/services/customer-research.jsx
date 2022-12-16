@@ -227,7 +227,7 @@ export default function customer() {
                   </div>
                 </div>
 
-                <div className="count-block w-100 mb-40">
+                <div className="count-block w-100">
                   <span className="count">3</span>
                   <div className="textFonts mb-20">
                     <h3 className="h3 mb-20">Expansion to new territories</h3>
@@ -236,7 +236,7 @@ export default function customer() {
                     </p>
                     <p className="mb-10 textFonts">How to build communication with the client?</p>
                     <p className="mb-10 textFonts">What are the features your users need right now?</p>
-                    <p className="mb-10 textFonts">How can we increase sales/reduce CAC?</p>
+                    <p className="textFonts">How can we increase sales/reduce CAC?</p>
                   </div>
                 </div>
               </div>
