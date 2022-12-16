@@ -4,7 +4,7 @@ function Steps({stepsArr}) {
   
   
   return (
-      <section className={`${styles.steps} sectiin mb-80 mb-md-100`}>
+      <section className={`${styles.steps} sectiin mr-120`}>
         <div className="container ph-20">
           <div className="row align-items-stretch">
             {stepsArr.map((obj, index) => (

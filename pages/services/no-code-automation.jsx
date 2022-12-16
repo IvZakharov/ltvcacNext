@@ -142,12 +142,12 @@ export default function analytics() {
         />
         <Ticker/>
         
-        <section className="section section--title-left-img7">
-          <div className="container p-0">
+        <section className="section section--title-left mt-68 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 mb-40 mb-xl-0">
-                <div className="section__title-box section__title-box--img7 pt-80 pb-80 pt-md-120 pb-160 p-25">
-                  <h2 className="section__title section__title--small ta-left">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right mt-22 mb-22">
                     WHY YOU NEED
                     <br/>
                     BUSINESS
@@ -159,35 +159,35 @@ export default function analytics() {
                 </div>
               </div>
               <div
-                  className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
-                  <p className="text mb-20">
+                  className="col-12 col-md-6 my-auto">
+                <div className="ph-20 ml-120">
+                  <p className="textFonts mb-20">
                     Airplane autopilot is quite a familiar thing these days but it didn&apos;t exist
                     once.
                   </p>
-                  <p className="text mb-20">
+                  <p className="textFonts mb-20">
                     Nonetheless people successfully crossed oceans and flew around the globe without
                     it.
                   </p>
-                  <p className="text mb-20">
+                  <p className="textFonts mb-20">
                     Over time, the autopilot system was invented, which greatly facilitated the life
                     of line pilots and reduced airline fuel costs.
                   </p>
-                  <p className="text mb-20">
+                  <p className="textFonts mb-20">
                     The autopilot is much more fuel efficient and relieves the pilot of a huge burden,
                     thereby increasing safety and range.
                   </p>
-                  <p className="text mb-20">Automation is your autopilot system.</p>
-                  <p className="text mb-20">
+                  <p className="textFonts mb-20">Automation is your autopilot system.</p>
+                  <p className="textFonts mb-20">
                     It allows you to have your business processes run automatically just like an
                     autopiloted plane.
                   </p>
-                  <p className="text mb-20">
+                  <p className="textFonts mb-20">
                     So instead of sending each and every customer a separate email about current
                     promotions/supplies of a new type of bread - you can press a couple of buttons to
                     send it all at once.
                   </p>
-                  <p className="text mb-40">
+                  <p className="textFonts mb-40">
                     You save time, and as a result, money - the main goal of automating any process.
                   </p>
                 </div>
@@ -196,12 +196,27 @@ export default function analytics() {
           </div>
         </section>
         
-        <section className="section section--title-right-img3 mb-40 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 mb-60 mb-md-0 order-md-1 d-flex offset-xl-1 aligin-center">
-                <div className="section__title-box section__title-box--img3 p-20 pt-80 pb-80 pt-md-100">
-                  <h2 className="section__title ta-left section__title--large">
+        <section className="section section--title-right mt-136 mb-68">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 mr-120">
+                  <p className="textFonts mb-20">
+                    Automation is basically a set up of automated performance of certain actions
+                    within a developed scenario that can streamline a business for simplicity, achieve
+                    digital transformation, increase service quality, improve service delivery or
+                    contain costs.
+                  </p>
+                  <p className="textFonts mb-20">
+                    Let&apos;s say you want to send emails to your customers, instead of hiring a
+                    manager who sends those emails manually we can set up a system that sends emails
+                    itself when your customers perform certain actions.
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title mt-22 mb-22">
                     HOW
                     <br/>
                     IT
@@ -211,27 +226,13 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1">
-                <div className="ph-20 pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
-                  <p className="text mb-20">
-                    Automation is basically a set up of automated performance of certain actions
-                    within a developed scenario that can streamline a business for simplicity, achieve
-                    digital transformation, increase service quality, improve service delivery or
-                    contain costs.
-                  </p>
-                  <p className="text mb-20">
-                    Let&apos;s say you want to send emails to your customers, instead of hiring a
-                    manager who sends those emails manually we can set up a system that sends emails
-                    itself when your customers perform certain actions.
-                  </p>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
         
-        <div className="pb-40 pt-md-100 pb-md-100 pt-xl-190 pb-xl-190">
-          <div className="container ph-20">
+        <div className="pt-68 pb-68">
+          <div className="container">
             <div className="row">
               <div className="col-12 col-xl-8 m-auto">
                 <p className="section__text ta-left ta-md-center">
@@ -243,12 +244,12 @@ export default function analytics() {
           </div>
         </div>
         
-        <section className="section section--title-left-img8 mb-40 mb-md-0">
-          <div className="container p-0">
+        <section className="section section--title-left mt-68 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 mb-40 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box section__title-box--img8 pl-70 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left ta-md-right">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right mt-22 mb-22">
                     WHAT CAN
                     <br/>
                     AUTOMATION
@@ -257,14 +258,14 @@ export default function analytics() {
                   </h2>
                 </div>
               </div>
-              
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50">
-                <div className="ph-20">
+
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 ml-120 mt-22 mb-22">
                   <div className="count-block w-100 mb-40 mb-md-0">
                     <span className="count">1</span>
                     <div className="text-large mb-40">
-                      <h3 className="h3 mb-10">You save money</h3>
-                      <p>
+                      <h3 className="h3 mb-10 mt-22">You save money</h3>
+                      <p className="textFonts">
                         {' '}
                         Any no/low-code automation has a lower cost than hiring a programmer to solve
                         the same problem or hiring a person to do the work
@@ -274,8 +275,8 @@ export default function analytics() {
                   <div className="count-block w-100 mb-40 mb-md-0">
                     <span className="count">2</span>
                     <div className="text-large mb-40">
-                      <h3 className="h3 mb-10">You save time</h3>
-                      <p>
+                      <h3 className="h3 mb-10 mt-22">You save time</h3>
+                      <p className="textFonts">
                         {' '}
                         Setting up an automated process takes less time than hiring a person.
                         Performing the automated process is always faster than that person doing the
@@ -283,11 +284,11 @@ export default function analytics() {
                       </p>
                     </div>
                   </div>
-                  <div className="count-block w-100 mb-40 mb-md-0">
+                  <div className="count-block w-100">
                     <span className="count">3</span>
-                    <div className="text-large mb-40">
+                    <div className="text-large">
                       <h3 className="h3 mb-10">You get healthier nervous system</h3>
-                      <p>
+                      <p className="textFonts">
                         {' '}
                         Automated system doesn&apos;t have days off, it doesn&apos;t fall sick and it
                         certainly doesn&apos;t need medical insurance.
@@ -300,12 +301,17 @@ export default function analytics() {
           </div>
         </section>
         
-        <section className="section section--title-right mb-60 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 offset-xl-2 order-md-1 mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box  pl-70 pl-md-20 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left">
+        <section className="section section--title-right mt-136 mb-68">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6">
+                <div className="ph-20 w-70 mr-120 mt-22 mb-22" style={{marginLeft:'auto'}}>
+                  <ListWithIcon arr={arr1}/>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left mt-22 mb-22">
                     YOUR
                     <br/>
                     BUSINESS
@@ -317,21 +323,17 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
-                  <ListWithIcon arr={arr1}/>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
         
-        <section className="section section--title-left-img7 mb-60 mb-md-0">
-          <div className="container p-0">
+        <section className="section section--title-left mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box section__title-box--img7 pl-70 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left ta-md-right">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right mt-22 mb-22">
                     YOUR
                     <br/>
                     BUSINESS
@@ -343,8 +345,8 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 w-70 ml-120 mt-22 mb-22">
                   <ListWithIcon arr={arr2}/>
                 </div>
               </div>
@@ -352,12 +354,15 @@ export default function analytics() {
           </div>
         </section>
         
-        <section className="section section--title-right-img9 mb-60 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 offset-xl-1 mb-60 mb-md-0 pb-xl-50 order-md-1">
-                <div className="section__title-box section__title-box--img9  p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left">
+        <section className="section section--title-right mt-136 mb-136">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <Steps stepsArr={stepsArr}/>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left mt-22 mb-22">
                     HOW WE
                     <br/>
                     AUTOMATE
@@ -368,10 +373,8 @@ export default function analytics() {
                   </h2>
                 </div>
               </div>
-              
-              <div className="col-12 col-md-6 col-xl-6 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <Steps stepsArr={stepsArr}/>
-              </div>
+
+
             </div>
           </div>
         </section>
