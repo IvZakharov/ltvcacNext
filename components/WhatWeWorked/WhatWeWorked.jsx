@@ -12,11 +12,11 @@ function WhatWeWorked({itemsArr, contentSide}) {
   const router = useRouter()
   const text = 'WHAT \n WE \n WORKED \n ON'
   return (
-      <section className={`section section--title-${contentSide === 'left' ? 'left ': 'right1'} ${router.pathname == '/' ? 'mt-68 mb-68': ''}`}>
+      <section className={`section section--title-${contentSide === 'left' ? 'left ': 'right1'} mt-68 mb-68`}>
         <div className="container">
           <div className={`row ${styles.mob} ${contentSide === 'left' ? styles.left : ''}`}>
-            <div className={ router.pathname == '/' ? "col-12 col-md-6 col-xl-6": 'col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100'}>
-              <div className={`${styles.whatWeWorked} mr-120`}>
+            <div className="col-12 col-md-6 col-xl-6">
+              <div className={`${styles.whatWeWorked} ${contentSide === 'left' ? 'ml-120 '.concat(styles.left) : 'mr-120'}`}>
                 <ul className={styles.list}>
                   {itemsArr.map((obj, i) => (
                       <li key={i} className={styles.item}>
@@ -36,9 +36,9 @@ function WhatWeWorked({itemsArr, contentSide}) {
                 </ul>
               </div>
             </div>
-            <div className={router.pathname == '/' ? `col-12 col-md-6 col-xl-6 my-auto` : 'col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50 offsetr-xl-2'}>
-              <div className= {router.pathname == '/' ? 'marginHomeRight': 'section__title-box p-20 pt-120 pb-120'}>
-                <h2 className={router.pathname == '/' ? 'h1title' : 'section__title section__title--small ta-left ta-md-right'}>
+            <div className="col-12 col-md-6 col-xl-6 my-auto">
+              <div className= {contentSide === 'left' ? 'marginHomeLeft': 'marginHomeRight'}>
+                <h2 className={`h1title ${contentSide === 'left' ? 'ta-right': 'ta-left'}`}>
                   {text}
                 </h2>
               </div>

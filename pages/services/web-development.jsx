@@ -428,17 +428,6 @@ const WebDevelopment = () => {
             <section className={`pt-68 pb-68 ${style.OurToolkit}`}>
                 <div className="container">
                     <div className="row">
-                        <div className={`${style.sectionH2} mrw-120 p-0`}>
-                            <h2 className="title">Our toolkit</h2>
-                            <p>
-                                Our specialists work with the most advanced web development technologies on the market
-                                to make your site look and work according to modern quality standards.
-                            </p>
-                            <p>
-                                Also, using the most popular development tools makes it easy
-                                to find specialists when they are needed.
-                            </p>
-                        </div>
                         <div className={`${style.clouds} p-0`}>
                             <div className={style.cloud}>
                                 <div className={`${style.items} ${style.nextjs}`}>
@@ -550,18 +539,24 @@ const WebDevelopment = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className={`${style.sectionH2} mlw-120 p-0`}>
+                            <h2 className="title">Our toolkit</h2>
+                            <p>
+                                Our specialists work with the most advanced web development technologies on the market
+                                to make your site look and work according to modern quality standards.
+                            </p>
+                            <p>
+                                Also, using the most popular development tools makes it easy
+                                to find specialists when they are needed.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section className={`pt-68 pb-68 ${style.indust}`}>
                 <div className="container">
                     <div className={`row ${style.mob}`}>
-                        <div className={`${style.imgBlock} mrw-120`}>
-                            <Image src="/img/adaptive.png"
-                                width={642}
-                                height={370}
-                            />
-                        </div>
+
                         <div className={style.sectionH2}>
                             <h2 className="title">industries<br />
                                 we work with</h2>
@@ -569,6 +564,12 @@ const WebDevelopment = () => {
                                 your project or business in its entirety, whether it&apos;s a land sale in Indonesia, a
                                 service for LGBTQ+ dating or a marketing agency in the UAE, without sacrificing
                                 loading speed or user experience.</p>
+                        </div>
+                        <div className={`${style.imgBlock} mlw-120`}>
+                            <Image src="/img/adaptive.png"
+                                   width={642}
+                                   height={370}
+                            />
                         </div>
                     </div>
                 </div>

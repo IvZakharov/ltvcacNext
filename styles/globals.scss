@@ -46,6 +46,13 @@ body {
     margin-right: auto;
   }
 }
+.mob-flex{
+  &--column-revers{
+    @media (max-width: 767px) {
+      flex-direction: column-reverse!important;
+    }
+  }
+}
 .lineHome{
   @media (max-width: 767px){
     border-top: 0.5px solid rgba(0, 0, 0, 0.15);
@@ -264,7 +271,7 @@ mbh-10{
   }
 
   &--large {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -274,10 +281,16 @@ mbh-10{
 
 .w-80 {
   width: 80% !important;
+  @media (max-width: 767px) {
+    width: 100% !important;
+  }
 }
 
 .w-70 {
   width: 70% !important;
+  @media (max-width: 767px) {
+    width: 100% !important;
+  }
 }
 .w-60{
   width: 60%;
@@ -400,6 +413,9 @@ mbh-10{
 .mb-20 {
   margin-bottom: 20px;
 }
+.mt-20 {
+  margin-top: 20px;
+}
 .mb-22 {
   margin-bottom: 22px;
 }
@@ -441,10 +457,13 @@ mbh-10{
 .mlw-120 {
   margin-left: 120px;
   @media (max-width: 1399px) {
-    margin-right: 10.5%;
+    margin-left: 10.5%;
+  }
+  @media (max-width: 1199px) {
+    margin-left: 9%;
   }
   @media (max-width: 1023px) {
-    margin-left: 12%;
+    margin-left: 1%;
   }
 }
 .mr-120 {
@@ -471,6 +490,7 @@ mbh-10{
     margin-right: 1%;
   }
 }
+
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -495,13 +515,13 @@ mbh-10{
 .mt-136 {
   margin-top: 136px;
   @media (max-width: 767px) {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
 .mb-136 {
   margin-bottom: 136px;
   @media (max-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }
 .mb-80 {
@@ -686,16 +706,16 @@ mbh-10{
 
   span {
     display: block;
-    min-width: 50px;
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 80px;
-    line-height: 80px;
-    /* identical to box height, or 170% */
-
-    letter-spacing: -0.055em;
-
-    color: rgba(35, 166, 240, 0.5);
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 70px;
+    letter-spacing: 0.005em;
+    color: #4361EE;
+    margin-right: 14px;
+  }
+  .textAlingCenter{
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -970,6 +990,7 @@ mbh-10{
         z-index: -1;
         top: 0;
         left: 0;
+        border-radius: 0px 40px 40px 0px;
       }
     }
     &--title-left1{

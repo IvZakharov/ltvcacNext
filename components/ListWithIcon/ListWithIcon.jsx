@@ -17,7 +17,7 @@ function ListWithIcon({arr}) {
               </i>
               <div>
                 {obj.title && <h4 className={styles.title}>{obj.title}</h4>}
-                <p className={styles.text}>{obj.text}</p>
+                <p className="textFonts">{obj.text}</p>
               </div>
             </li>
         ))}
