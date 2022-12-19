@@ -4,11 +4,11 @@ import LetsTalk from '../../components/LetsTalk/LetsTalk';
 import ListWithIcon from '../../components/ListWithIcon/ListWithIcon';
 import {MainLayout} from '../../layouts/MainLayout';
 import WhatWeWorked from '../../components/WhatWeWorked/WhatWeWorked';
-import icon1 from '../../components/WhatWeWorked/img/1.svg';
-import icon2 from '../../components/WhatWeWorked/img/2.svg';
+import icon1 from '../../components/WhatWeWorked/img/1.png';
+import icon2 from '../../components/WhatWeWorked/img/2.png';
 import icon3 from '../../components/WhatWeWorked/img/3.svg';
-import icon4 from '../../components/WhatWeWorked/img/4.svg';
-import icon5 from '../../components/WhatWeWorked/img/5.svg';
+import icon4 from '../../components/WhatWeWorked/img/4.png';
+import icon5 from '../../components/WhatWeWorked/img/5.png';
 import styles from '../../components/MustHaveEvents/MustHaveEvents.module.scss';
 import Image from 'next/image';
 import React from 'react';
@@ -114,7 +114,7 @@ export default function analytics() {
     {
       title: `Mobile Apps & Mobile Games`,
       links: [''],
-      svgIcon: icon3,
+      svgIcon: icon1,
     },
     {
       title: 'B2B & SaaS Website & Mobile Apps',
@@ -159,12 +159,35 @@ export default function analytics() {
         />
         <Ticker/>
         
-        <section className="section section--title-right-img3">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 mb-40 mb-xl-0 offset-xl-1 order-md-1">
-                <div className="section__title-box section__title-box--img11 pt-160 pb-160 pt-md-120 p-25">
-                  <h2 className="section__title  section__title--small section__title-img3 ta-left">
+        <section className="section section--title-right mt-68 mb-136">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 mr-120 w-60" style={{marginLeft:'auto'}}>
+                  <h3 className="h3 mb-20">Why does your company need tracking?</h3>
+                  <p className="textFonts mb-20">
+                    Tracking report is your dashboard that shows where and how your business is
+                    flying.
+                  </p>
+                  <p className="textFonts mb-20">
+                    Imagine you just got a seat on a jet plane. It’s time to take off and the pilot
+                    says:
+                    <span className="d-block textFonts">
+                    - Sorry, our GPS is broken so I’m going to navigate using stars.
+                  </span>
+                    <span className="d-block textFonts">- WHAT?</span>
+                    <span className="d-block textFonts">
+                    - Yeah, it’s okay. We might miss the right city but I’ll get us…somewhere.
+                  </span>
+                  </p>
+                  <p className="textFonts">
+                    The jet plane is your business. It can get you to the destination or it can crash.
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left mt-22 mb-22">
                     TRACKING
                     <br/>
                     CLUSTER FOR
@@ -173,42 +196,43 @@ export default function analytics() {
                   </h2>
                 </div>
               </div>
-              <div
-                  className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
-                  <h3 className="h3 mb-20">Why does your company need tracking?</h3>
-                  <p className="text text-grey mb-20 fs-20">
-                    Tracking report is your dashboard that shows where and how your business is
-                    flying.
-                  </p>
-                  <p className="text text-grey mb-20 fs-20">
-                    Imagine you just got a seat on a jet plane. It’s time to take off and the pilot
-                    says:
-                    <span className="d-block">
-                    - Sorry, our GPS is broken so I’m going to navigate using stars.
-                  </span>
-                    <span className="d-block">- WHAT?</span>
-                    <span className="d-block">
-                    - Yeah, it’s okay. We might miss the right city but I’ll get us…somewhere.
-                  </span>
-                  </p>
-                  <p className="text text-grey mb-40 fs-20">
-                    The jet plane is your business. It can get you to the destination or it can crash.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
         
         <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
         
-        <section className="section section--title-right-img8 mb-40 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 mb-40 mb-md-0 pb-xl-50 order-md-1 offset-xl-2">
-                <div className="section__title-box section__title-box--img8 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left tt-upper ">
+        <section className="section section--title-right mt-136 mb-68">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 w-70 mr-120" style={{marginLeft:'auto'}}>
+                  <div className="count-block w-100 mb-40 mb-md-0">
+                    <span className="count">1</span>
+                    <div className="text-large mb-20">
+                      <h3 className="h3 mb-10 mt-22">Product / Service data:</h3>
+                      <p className="mb-10 textFonts">
+                        {' '}
+                        What feature should we implement first to get more money/traction?
+                      </p>
+                      <p className="mb-10 textFonts"> How do we reduce user/client churn?</p>
+                      <p className="textFonts"> What should we do to improve our service value?</p>
+                    </div>
+                  </div>
+                  <div className="count-block w-100 mb-40 mb-md-0">
+                    <span className="count">2</span>
+                    <div className="text-large mb-40">
+                      <h3 className="h3 mb-10 mt-22">Marketing/Sales data:</h3>
+                      <p className="mb-10 textFonts">Which channel did this client come from?</p>
+                      <p className="mb-10 textFonts"> How do we reduce user/client churn?</p>
+                      <p className="textFonts">What should we do to improve our service value?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left mt-22 mb-22">
                     MAIN QUESTIONS
                     <br/>
                     ANSWERED BY
@@ -219,42 +243,16 @@ export default function analytics() {
                   </h2>
                 </div>
               </div>
-              
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50">
-                <div className="ph-20">
-                  <div className="count-block w-100 mb-40 mb-md-0">
-                    <span className="count">1</span>
-                    <div className="text-large mb-20">
-                      <h3 className="h3 mb-10">Product / Service data:</h3>
-                      <p className="mb-10">
-                        {' '}
-                        What feature should we implement first to get more money/traction?
-                      </p>
-                      <p className="mb-10"> How do we reduce user/client churn?</p>
-                      <p> What should we do to improve our service value?</p>
-                    </div>
-                  </div>
-                  <div className="count-block w-100 mb-40 mb-md-0">
-                    <span className="count">2</span>
-                    <div className="text-large mb-40">
-                      <h3 className="h3 mb-10">Marketing/Sales data:</h3>
-                      <p className="mb-10">Which channel did this client come from?</p>
-                      <p className="mb-10"> How do we reduce user/client churn?</p>
-                      <p>What should we do to improve our service value?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
         
-        <section className="section section--title-left mb-60 mb-md-0">
-          <div className="container p-0">
+        <section className="section section--title-left mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-xl-5  mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left ta-md-right">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right">
                     YOUR
                     <br/>
                     BUSINESS
@@ -266,8 +264,8 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 ml-120 mt-22 mb-22">
                   <ListWithIcon arr={arr1}/>
                 </div>
               </div>
@@ -275,12 +273,17 @@ export default function analytics() {
           </div>
         </section>
         
-        <section className="section section--title-right-img10 mb-60 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 mb-60 offset-xl-2 order-md-1 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box section__title-box--img10 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left ">
+        <section className="section section--title-right mt-136 mb-68">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 mr-120 mt-22 mb-22">
+                  <ListWithIcon arr={arr2}/>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left">
                     YOUR
                     <br/>
                     BUSINESS
@@ -292,28 +295,24 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
-                  <ListWithIcon arr={arr2}/>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
         
-        <section className="section section--title-left mb-60 mb-md-0">
-          <div className="container p-0">
+        <section className="section section--title-left mt-136 mb-68">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-xl-5  mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box pl-md-20 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small tt-upper ta-left ta-md-right">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right mt-22 mb-22">
                     WHAT THE WEBSITE <br/> TRACKING FUNNEL <br/> LOOKS LIKE
                   </h2>
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ph-20 ml-120">
                   <div className={styles.events}>
                     <Image width={374} height={570} src={'/img/events/web.svg'} alt="events"/>
                   </div>
@@ -323,33 +322,34 @@ export default function analytics() {
           </div>
         </section>
         
-        <section className="section section--title-right mb-60 mb-md-0">
-          <div className="container p-0">
-            <div className="row">
-              <div className="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-2 mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box pl-md-20 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small tt-upper ">
+        <section className="section section--title-right mt-136 mb-68">
+          <div className="container">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="p-0 mr-120" style={{marginLeft:'auto'}}>
+                  <div className={styles.events} style={{marginLeft: 'auto'}}>
+                    <Image width={374} height={570} src={'/img/events/app.svg'} alt="events"/>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h1title ta-left mt-22 mb-22">
                     WHAT THE MOBILE APP <br/> TRACKING FUNNEL <br/> LOOKS LIKE
                   </h2>
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-1 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
-                  <div className={styles.events}>
-                    <Image width={374} height={570} src={'/img/events/app.svg'} alt="events"/>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
-        <section className="section section--title-left-img8 mb-60 mb-md-0">
-          <div className="container p-0">
+        <section className="section section--title-left mt-136 mb-136">
+          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-xl-5  mb-60 mb-md-0 pb-xl-50 ">
-                <div className="section__title-box section__title-box--img8 pl-md-20 p-20 pt-120 pb-120">
-                  <h2 className="section__title section__title--small ta-left ta-md-right">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h1title ta-right mt-22 mb-22">
                     HOW WE
                     <br/>
                     MAKE YOUR
@@ -361,8 +361,8 @@ export default function analytics() {
                 </div>
               </div>
               
-              <div className="col-12 col-md-6 col-xl-4 offset-xl-2  pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-                <div className="ph-20">
+              <div className="col-12 col-md-6 my-auto mt-22 mb-22">
+                <div className="ph-20 ml-120">
                   <ListWithIcon arr={arr3}/>
                 </div>
               </div>

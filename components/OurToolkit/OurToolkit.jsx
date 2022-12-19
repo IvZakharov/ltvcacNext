@@ -5,13 +5,13 @@ function OurToolkit({arr, imagePosition}) {
   const router=useRouter()
   
   return (
-      <section className={`section section--title-${imagePosition}-img2 mb-68 mt-68`}>
+      <section className={`section section--title-${imagePosition} mb-68 mt-68`}>
         <div className="container">
           <div className="row">
             <div
-                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2 offset-xl-1' : 'order-md-1 '} my-auto`}>
-                <div className={`${imagePosition === 'left' ? 'marginHomeLeft' : ''}`}>
-                    <h2 className={` ${imagePosition === 'left' ? 'ta-md-right h1title' : ''} ta-left`}>
+                className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2' : 'order-md-1 '} my-auto`}>
+                <div className={`${imagePosition === 'left' ? 'marginHomeLeft' : 'marginHomeRight'}`}>
+                    <h2 className={` ${imagePosition === 'left' ? 'ta-md-right h1title' : 'h1title'} ta-left`}>
                         OUR
                         <br/>
                         TOOLKIT
@@ -20,8 +20,8 @@ function OurToolkit({arr, imagePosition}) {
 
             </div>
             <div
-                className={`col-12 col-md-6 col-xl-6  ${imagePosition === 'left' ? '' : 'offset-xl-1 pt-5 pb-3'}  order-md-1 `}>
-              <div className={`${styles.ourToolkit} ml-120`}>
+                className={`col-12 col-md-6 col-xl-6 order-md-1 `}>
+              <div className={`${styles.ourToolkit} ${imagePosition === 'left' ? 'ml-120' : 'mr-120 ml-auto'}`}>
                 {arr.map((obj, i) => (
                     <div key={i} className={`${styles.item}`}>
                       <i className={styles.icon}>

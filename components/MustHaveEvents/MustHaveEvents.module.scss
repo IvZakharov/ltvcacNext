@@ -1,6 +1,10 @@
 @import '/styles/variables';
 
 .events {
+  width: fit-content;
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
   img {
     margin: 0 auto;
     display: block;

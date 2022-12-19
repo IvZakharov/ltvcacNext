@@ -171,6 +171,31 @@ body {
     white-space: normal;
   }
 }
+.h2title{
+  font-size: 70px;
+  line-height: 91px;
+  font-weight: 500;
+  width: fit-content;
+  color: #ffffff;
+  white-space: pre-line;
+  @media (max-width: 1279px) {
+    font-size: 60px;
+    line-height: 81px;
+  }
+  @media (max-width: 820px) {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.005em;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 51px;
+    letter-spacing: 0.005em;
+    width: 309px;
+    text-align: center!important;
+    white-space: normal;
+  }
+}
 
 .textFonts{
   font-weight: 400;
