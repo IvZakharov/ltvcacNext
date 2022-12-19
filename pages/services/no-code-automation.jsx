@@ -147,7 +147,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right mt-22 mb-22">
+                  <h2 className="h2title ta-right mt-22 mb-22">
                     WHY YOU NEED
                     <br/>
                     BUSINESS
@@ -160,7 +160,7 @@ export default function analytics() {
               </div>
               <div
                   className="col-12 col-md-6 my-auto">
-                <div className="ph-20 ml-120">
+                <div className="ph-20 ml-120 mt-22 mb-22">
                   <p className="textFonts mb-20">
                     Airplane autopilot is quite a familiar thing these days but it didn&apos;t exist
                     once.
@@ -187,7 +187,7 @@ export default function analytics() {
                     promotions/supplies of a new type of bread - you can press a couple of buttons to
                     send it all at once.
                   </p>
-                  <p className="textFonts mb-40">
+                  <p className="textFonts">
                     You save time, and as a result, money - the main goal of automating any process.
                   </p>
                 </div>
@@ -216,7 +216,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title mt-22 mb-22">
+                  <h2 className="h2title mt-22 mb-22">
                     HOW
                     <br/>
                     IT
@@ -249,7 +249,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right mt-22 mb-22">
+                  <h2 className="h2title ta-right mt-22 mb-22">
                     WHAT CAN
                     <br/>
                     AUTOMATION
@@ -311,7 +311,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left mt-22 mb-22">
+                  <h2 className="h2title ta-left mt-22 mb-22">
                     YOUR
                     <br/>
                     BUSINESS
@@ -333,7 +333,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right mt-22 mb-22">
+                  <h2 className="h2title ta-right mt-22 mb-22">
                     YOUR
                     <br/>
                     BUSINESS
@@ -362,7 +362,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left mt-22 mb-22">
+                  <h2 className="h2title ta-left mt-22 mb-22">
                     HOW WE
                     <br/>
                     AUTOMATE
@@ -383,9 +383,10 @@ export default function analytics() {
             arr={ourToolkitArr}
             
             imagePosition={'left'}
+            font={'2'}
         />
         
-        <LetsTalk contentSide={'right'}/>
+        <LetsTalk contentSide={'right'} font={'2'}/>
       </MainLayout>
   );
 }

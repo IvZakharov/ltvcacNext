@@ -1,8 +1,18 @@
 import styles from './OurToolkit.module.scss';
 import {useRouter} from "next/router";
 
-function OurToolkit({arr, imagePosition}) {
+function OurToolkit({arr, imagePosition, font}) {
   const router=useRouter()
+    let title;
+    if(font == null && imagePosition === 'left'){
+        title = 'ta-md-right h1title'
+    }else if(font == null && imagePosition === 'right'){
+        title = 'h1title';
+    }else if(imagePosition === 'left' && font == '2'){
+        title = 'ta-md-right h2title';
+    }else if(imagePosition === 'right' && font == '2'){
+        title = 'h2title'
+    }
   
   return (
       <section className={`section section--title-${imagePosition} mb-68 mt-68`}>
@@ -11,7 +21,7 @@ function OurToolkit({arr, imagePosition}) {
             <div
                 className={`col-12 col-md-6 col-xl-6 ${imagePosition === 'right' ? 'order-md-2' : 'order-md-1 '} my-auto`}>
                 <div className={`${imagePosition === 'left' ? 'marginHomeLeft' : 'marginHomeRight'}`}>
-                    <h2 className={` ${imagePosition === 'left' ? 'ta-md-right h1title' : 'h1title'} ta-left`}>
+                    <h2 className={`${title} ta-left`}>
                         OUR
                         <br/>
                         TOOLKIT

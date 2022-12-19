@@ -6,7 +6,7 @@ import CalendlyDialog from '../CalendlyDialog/CalendlyDialog';
 import telMask from '../../utils/telMask';
 import {useRouter} from "next/router";
 
-function Form() {
+function Form({ contentSide }) {
   const router = useRouter()
   const {
     register,
@@ -58,7 +58,7 @@ function Form() {
   }, [calendlyOpen]);
   
   return (
-      <div className={`${styles.form} ml-120`}>
+      <div className={`${styles.form} ${ contentSide === 'left' ? ' ml-120': 'mr-120'}`}>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
           <div className={`${styles.field} ${errors.Name && styles.error}`}>
