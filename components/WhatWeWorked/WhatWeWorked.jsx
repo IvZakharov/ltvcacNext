@@ -8,8 +8,15 @@ import icon5 from './img/5.svg';
 import icon6 from './img/6.svg';
 import {useRouter} from "next/router";
 
-function WhatWeWorked({itemsArr, contentSide}) {
+function WhatWeWorked({itemsArr, contentSide, font}) {
   const router = useRouter()
+  let title;
+
+  if(font == null){
+    title = 'h1title'
+  }else if(font == '2'){
+    title = 'h2title';
+  }
   const text = 'WHAT \n WE \n WORKED \n ON'
   return (
       <section className={`section section--title-${contentSide === 'left' ? 'left ': 'right1'} mt-68 mb-68`}>
@@ -38,7 +45,7 @@ function WhatWeWorked({itemsArr, contentSide}) {
             </div>
             <div className="col-12 col-md-6 col-xl-6 my-auto">
               <div className= {contentSide === 'left' ? 'marginHomeLeft': 'marginHomeRight'}>
-                <h2 className={`h1title ${contentSide === 'left' ? 'ta-right': 'ta-left'}`}>
+                <h2 className={`${title} ${contentSide === 'left' ? 'ta-right': 'ta-left'}`}>
                   {text}
                 </h2>
               </div>

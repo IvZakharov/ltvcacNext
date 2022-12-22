@@ -5,6 +5,12 @@
   @media (max-width: 767px) {
     margin-left: unset;
   }
+  .FloatRight{
+    float:right;
+    @media (max-width: 767px) {
+      float: unset;
+    }
+  }
 
   form{
     width: 333px;

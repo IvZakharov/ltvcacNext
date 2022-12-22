@@ -28,8 +28,8 @@ function LetsTalk({ contentSide, font }) {
             className={`col-12 col-md-6 ${
               contentSide === 'left' ? 'order-md-1' : ''
             } `}>
-            <div className={`${styles.letsTalk}  ${ contentSide === 'left' ? ' ml-120': 'mr-120'}`}>
-              <div className={styles.block}>
+            <div className={`${styles.letsTalk}  ${ contentSide === 'left' ? ' ml-120': ' mr-120'}`}>
+              <div className={`${styles.block} ${ contentSide === 'right' ? styles.FloatRight: ''}`}>
                 <span className={styles.label}>FREE!
                 <Image src="/img/contacts/emojione-monotone_fire.svg"
                        width={28}

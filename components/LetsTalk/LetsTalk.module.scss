@@ -69,6 +69,13 @@
       }
     }
   }
+  .FloatRight{
+    margin-bottom: 22px;
+    float:right;
+    @media (max-width: 767px) {
+      float: unset;
+    }
+  }
 
 
 

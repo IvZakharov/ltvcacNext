@@ -59,7 +59,7 @@ function Form({ contentSide }) {
   
   return (
       <div className={`${styles.form} ${ contentSide === 'left' ? ' ml-120': 'mr-120'}`}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className={ contentSide === 'right' ? styles.FloatRight: ''}>
           {/* register your input into the hook by invoking the "register" function */}
           <div className={`${styles.field} ${errors.Name && styles.error}`}>
             <input placeholder="Your Name:" {...register('Name')} />

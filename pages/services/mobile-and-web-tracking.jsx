@@ -163,7 +163,7 @@ export default function analytics() {
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6 my-auto">
-                <div className="ph-20 mr-120 w-60" style={{marginLeft:'auto'}}>
+                <div className="mr-120 w-60 mt-22 mb-22">
                   <h3 className="h3 mb-20">Why does your company need tracking?</h3>
                   <p className="textFonts mb-20">
                     Tracking report is your dashboard that shows where and how your business is
@@ -187,7 +187,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left mt-22 mb-22">
+                  <h2 className="h2title ta-left mt-22 mb-22">
                     TRACKING
                     <br/>
                     CLUSTER FOR
@@ -200,7 +200,7 @@ export default function analytics() {
           </div>
         </section>
         
-        <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
+        <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
         
         <section className="section section--title-right mt-136 mb-68">
           <div className="container">
@@ -232,7 +232,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left mt-22 mb-22">
+                  <h2 className="h2title ta-left mt-22 mb-22">
                     MAIN QUESTIONS
                     <br/>
                     ANSWERED BY
@@ -252,7 +252,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right">
+                  <h2 className="h2title ta-right">
                     YOUR
                     <br/>
                     BUSINESS
@@ -283,7 +283,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left">
+                  <h2 className="h2title ta-left">
                     YOUR
                     <br/>
                     BUSINESS
@@ -305,7 +305,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right mt-22 mb-22">
+                  <h2 className="h2title ta-right mt-22 mb-22">
                     WHAT THE WEBSITE <br/> TRACKING FUNNEL <br/> LOOKS LIKE
                   </h2>
                 </div>
@@ -326,7 +326,7 @@ export default function analytics() {
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6 my-auto">
-                <div className="p-0 mr-120" style={{marginLeft:'auto'}}>
+                <div className="p-0 mr-120">
                   <div className={styles.events} style={{marginLeft: 'auto'}}>
                     <Image width={374} height={570} src={'/img/events/app.svg'} alt="events"/>
                   </div>
@@ -334,7 +334,7 @@ export default function analytics() {
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title ta-left mt-22 mb-22">
+                  <h2 className="h2title ta-left mt-22 mb-22">
                     WHAT THE MOBILE APP <br/> TRACKING FUNNEL <br/> LOOKS LIKE
                   </h2>
                 </div>
@@ -349,7 +349,7 @@ export default function analytics() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft">
-                  <h2 className="h1title ta-right mt-22 mb-22">
+                  <h2 className="h2title ta-right mt-22 mb-22">
                     HOW WE
                     <br/>
                     MAKE YOUR
@@ -373,10 +373,10 @@ export default function analytics() {
         <OurToolkit
             imagePosition={'right'}
             arr={ourToolkitArr}
-        
+        font={'2'}
         />
         
-        <LetsTalk contentSide={'left'}/>
+        <LetsTalk contentSide={'left'} font={'2'}/>
       </MainLayout>
   );
 }

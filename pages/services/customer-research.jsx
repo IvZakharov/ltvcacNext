@@ -145,7 +145,7 @@ export default function customer() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft ta-right">
-                <h2 className="h1title tt-upper mt-22 mb-22">
+                <h2 className="h2title tt-upper mt-22 mb-22">
                   CUSTOMER <br />
                   RESEARCH FOR <br /> OPTIMAL
                   <br /> BUSINESS <br /> DECISIONS
@@ -188,7 +188,7 @@ export default function customer() {
         </div>
       </div>
 
-      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
+      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
 
       <section className="section section--title-right mt-136 mb-68">
         <div className="container">
@@ -243,7 +243,7 @@ export default function customer() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
-                <h2 className="h1title tt-upper ">
+                <h2 className="h2title tt-upper ">
                   Main benefits
                   <br />
                   of your
@@ -263,7 +263,7 @@ export default function customer() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft">
-                <h2 className="h1title tt-upper ta-right mt-22 mb-22">
+                <h2 className="h2title tt-upper ta-right mt-22 mb-22">
                   What you are
                   <br />
                   getting after
@@ -311,7 +311,7 @@ export default function customer() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
-                <h2 className="h1title tt-upper mt-22 mb-22">
+                <h2 className="h2title tt-upper mt-22 mb-22">
                   how <br />we do
                   <br />
                   qualitative <br />
@@ -328,7 +328,7 @@ export default function customer() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft">
-                <h2 className="h1title tt-upper ta-right mt-22 mb-22">
+                <h2 className="h2title tt-upper ta-right mt-22 mb-22">
                   how<br /> we do
                   <br />
                   qualitative <br />
@@ -417,7 +417,7 @@ export default function customer() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
-                <h2 className="h1title tt-upper mt-22 mb-22">
+                <h2 className="h2title tt-upper mt-22 mb-22">
                   How the final
                   <br />
                   rating of <br />
@@ -435,7 +435,7 @@ export default function customer() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft">
-                <h2 className="h1title ta-right">
+                <h2 className="h2title ta-right">
                   WHAT<br /> WE
                   <br />
                   DELIVERED?
@@ -476,7 +476,7 @@ export default function customer() {
           </div>
         </div>
       </section>
-      <LetsTalk contentSide={'right'} />
+      <LetsTalk contentSide={'right'} font={'2'}/>
     </MainLayout>
   );
 }

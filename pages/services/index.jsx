@@ -24,7 +24,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft ta-right">
-                  <h2 className="h1title tt-upper">
+                  <h2 className="h2title tt-upper">
                     Paid Marketing
                     <br/>
                     Channels
@@ -64,7 +64,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 order-md-1 my-auto">
                 <div className="marginHomeRight ta-center">
-                  <h2 className="h1title tt-upper ta-left">
+                  <h2 className="h2title tt-upper ta-left">
                     MOBILE &
                     <br/>
                     WEBSITE
@@ -111,7 +111,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft ta-right">
-                  <h2 className="h1title tt-upper">
+                  <h2 className="h2title tt-upper">
                     NO-CODE
                     <br/>
                     AUTOMATION
@@ -152,7 +152,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 order-md-1 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h1title tt-upper">
+                  <h2 className="h2title tt-upper">
                     CUSTOMER
                     <br/>
                     RESEARCH
@@ -182,7 +182,7 @@ export default function services() {
             <div className="row">
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeLeft ta-right">
-                  <h2 className="h1title tt-upper">
+                  <h2 className="h2title tt-upper">
                     App Store
                     <br/>
                     Optimization
@@ -206,7 +206,7 @@ export default function services() {
             </div>
           </div>
         </section>
-        <LetsTalk contentSide={'right'}/>
+        <LetsTalk contentSide={'right'} font={'2'}/>
       </MainLayout>
   );
 }
