@@ -37,20 +37,11 @@ export default function services() {
                     Data-driven digital marketing for your customer’s base growing
                   </h3>
                   <p className="textFonts mb-20">
-                    Despite the COVID‑19 pandemic, all digital ad channels demonstrate strong growth
-                    in the world market this year.
+                    As the name suggests, marketing channels that you pay to use for your advertising purposes are called paid marketing channels. Paid ads in Google, social networks like Facebook and Instagram are some of the examples of marketing channels.
                   </p>
-                  <ul className="textFonts mb-20">
-                    <li>Google Ads +29%</li>
-                    <li>Apple Search Ads +87%</li>
-                    <li>Instagram-Facebook +23%</li>
-                    <li>Pinterest +35%</li>
-                    <li>Twitter +34%</li>
-                    <li>Amazon+40%</li>
-                    <li>LinkedIn +25%</li>
-                    <li>YouTube +33%</li>
-                    <li>Snapchat +8%</li>
-                  </ul>
+                  <p className="textFonts mb-20">
+                    Paid marketing channels are used for almost any purpose, but the main one is to increase revenue through the advertising budget spent on promoting a product/service or building a brand identity.
+                  </p>
                   <Link href="/services/paid-marketing-channels">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
@@ -77,26 +68,11 @@ export default function services() {
                 <div className="mt-22 mb-22 mr-120 w-60" style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">Why does your company need tracking?</h3>
                   <p className="textFonts mb-20">
-                    Tracking report is your dashboard that shows where and how your business is
-                    flying.
+                    Website tracking is the process of gathering and analyzing data about what people do while they are on your website. It is an extremely important tool that allows you to determine how many users visit your website, where they come from, what pages they go to and how long they stay. Having this kind of information on your hands lets you identify your strengths, weaknesses and points that need improvement.
                   </p>
                   <p className="textFonts mb-20">
-                  <span className="textFonts d-block">
-                    Imagine you just got a seat on a jet plane. I&apos;s time to take off and the
-                    pilot says:
-                  </span>
-                    <span className="textFonts d-block">
-                    - Sorry, our GPS is broken so I’m going to navigate using stars.
-                  </span>
-                    <span className="textFonts d-block">- WHAT?</span>
-                    <span className="textFonts d-block">
-                    - Yeah, it’s okay. We might miss the right city but I’ll get us…somewhere.
-                  </span>
+                    Mobile tracking follows the same principles but tracks users that come to your website using their mobile phones. Taking into account the fact that almost all the users on the internet use their phones to find information, it is essential to have mobile tracking to analyze their behavior on your website and make data-driven decisions.
                   </p>
-                  <p className="textFonts mb-20">
-                    The jet plane is your business. It can get you to the destination or it can crash.
-                  </p>
-                  
                   <Link href="/services/mobile-and-web-tracking">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
@@ -122,22 +98,15 @@ export default function services() {
                 <div className="mb-22 mt-22 ml-120 w-60">
                   <h3 className="h3 mb-20 ta-left">Why does your company need automation?</h3>
                   <p className="textFonts mb-20">
-                    Airplane autopilot quite a familiar thing these days but it didn&apos;t exist
-                    once.
+                    Automation implies using advanced software to ensure that repetitive tasks of your business are
+                    completed with no human involvement, which in turn allows you to prioritize key tasks over dull,
+                    repetitive, and oftentimes annoying ones. And since it’s a no-code automation it doesn’t require a
+                    coder to make it work.
                   </p>
                   <p className="textFonts mb-20">
-                    Nonetheless people successfully crossed oceans and flew around the globe without
-                    it.
+                    Generally speaking, jobs that are high volume, recurrent, time-sensitive, involve several people,
+                    require compliance, and require audit trails are strongly recommended to get automation.
                   </p>
-                  <p className="textFonts mb-20">
-                    Over time, the autopilot system was invented, which greatly facilitated the life
-                    of line pilots and reduced airline fuel costs.
-                  </p>
-                  <p className="textFonts mb-20">
-                    The autopilot is much more fuel efficient and relieves the pilot of a huge burden,
-                    thereby increasing safety and range.
-                  </p>
-                  <p className="textFonts mb-20">Automation is your autopilot system.</p>
                   <Link href="/services/no-code-automation">
                     <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
@@ -153,6 +122,43 @@ export default function services() {
               <div className="col-12 col-md-6 order-md-1 my-auto">
                 <div className="marginHomeRight">
                   <h2 className="h2title tt-upper">
+                    Web
+                    <br/>
+                    development
+                  </h2>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 ">
+                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
+                  <h3 className="h3 mb-20 ta-left">
+                    Web Development
+                  </h3>
+                  <p className="textFonts mb-20">
+                    Web Development is a general term that describes creating, building and maintaining websites and
+                    web applications. Among all the other tasks, web development includes designing a website,
+                    developing contents of it, scripting client-side and server-side work and configuring network
+                    security.
+                  </p>
+                  <p className="textFonts mb-20">
+                    Web development, in a general way, refers to all of the actions, changes, and operations necessary
+                    to design, maintain, and manage a website to guarantee optimal performance, user experience,
+                    and speed.
+                  </p>
+                  <Link href="/services/web-development">
+                    <a className="button button--secondary d-block ">FIND OUT MORE</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section section--title-left mt-136 mb-68">
+          <div className="container">
+            <div className="row">
+
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h2title tt-upper">
                     CUSTOMER
                     <br/>
                     RESEARCH
@@ -165,9 +171,10 @@ export default function services() {
                     Why does your company need customer research?
                   </h3>
                   <p className="textFonts mb-20">
-                    Misidentifying your customers’ pains or their priorities to perform JBTD results
-                    in your team working for weeks/months on problems that your customers aren’t
-                    willing to pay for, which is $xxx.xx spent in vain.
+                    Customer Development is the framework that helps in identifying potential customers and determining the ways of satisfying their needs. Whenever businesses launch a new product, enter new markets or pivot their strategy, they need to apply customer development methodology if they want to validate their assumptions and see if the offered solution is in demand.
+                  </p>
+                  <p className="textFonts mb-20">
+                    One of the main goals of Customer Development is to discover a successful sales and marketing strategy and the steps to be used by the marketing team later.
                   </p>
                   <Link href="/services/customer-research">
                     <a className="button button--secondary d-block ">FIND OUT MORE</a>
@@ -177,11 +184,31 @@ export default function services() {
             </div>
           </div>
         </section>
-        <section className="section section--title-left-img7 mt-136 mb-68">
+        <section className="section section--title-right mt-136 mb-68">
           <div className="container">
-            <div className="row">
+            <div className="row mob-flex--column-revers">
+              <div className="col-12 col-md-6">
+                <div className="mt-22 mb-22 mr-120 w-60">
+                  <h3 className="h3 mb-20 ta-left">
+                    Site and app Tracking system setup services
+                  </h3>
+                  <p className="textFonts mb-20">
+                    ASO stands for App Store Optimization and represents a set of actions aimed at optimizing your
+                    mobile application’s page in both AppStore and Google Play Market in order to be more visible
+                    to the target audience.
+                  </p>
+                  <p className="textFonts mb-20">
+                    ASO includes usage of optimized keywords, useful images and correctly indexed app descriptions
+                    to get higher rankings in the top and thus improve your app’s visibility. If utilized correctly,
+                    quality ASO can boost reach and drive more organic downloads.
+                  </p>
+                  <Link href="/services/app-store-optimization">
+                    <a className="button button--secondary d-block ">FIND OUT MORE</a>
+                  </Link>
+                </div>
+              </div>
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft ta-right">
+                <div className="marginHomeRight">
                   <h2 className="h2title tt-upper">
                     App Store
                     <br/>
@@ -189,24 +216,10 @@ export default function services() {
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6">
-                <div className="mt-22 mb-22 ml-120 w-60">
-                  <h3 className="h3 mb-20 ta-left">
-                    Site and app Tracking system setup services
-                  </h3>
-                  <p className="textFonts mb-20">
-                    We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside
-                    sales funnel.
-                  </p>
-                  <Link href="/services/app-store-optimization">
-                    <a className="button button--secondary d-block ">FIND OUT MORE</a>
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-        <LetsTalk contentSide={'right'} font={'2'}/>
+        <LetsTalk contentSide={'left'} font={'2'}/>
       </MainLayout>
   );
 }
