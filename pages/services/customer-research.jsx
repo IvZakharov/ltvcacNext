@@ -140,21 +140,13 @@ export default function customer() {
         imageUrls={{ desktop: '/img/hero/4.jpg', mobile: '/img/hero/4mob.jpg' }}
       />
       <Ticker />
-      <section className="section focus section--title-left mt-68 mb-68">
+      <section className="section focus section--title-right mt-68 mb-68">
         <div className="container">
           <div className="row">
+
             <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeLeft ta-right">
-                <h2 className="h2title tt-upper mt-22 mb-22">
-                  CUSTOMER <br />
-                  RESEARCH FOR <br /> OPTIMAL
-                  <br /> BUSINESS <br /> DECISIONS
-                </h2>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 my-auto">
-              <h3 className="h3 mb-40 ml-120 mt-22">Why does your company need customer research?</h3>
-              <div className="ml-120">
+              <h3 className="h3 mb-40 mr-120 mt-22 w-70">Why does your company need customer research?</h3>
+              <div className="mr-120 w-70">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <p className="textFonts textAlingCenter">
@@ -168,6 +160,15 @@ export default function customer() {
                     To create a unique data-driven value proposition to attract your target audience
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h2title tt-upper mt-22 mb-22">
+                  CUSTOMER <br />
+                  RESEARCH FOR <br /> OPTIMAL
+                  <br /> BUSINESS <br /> DECISIONS
+                </h2>
               </div>
             </div>
           </div>
