@@ -7,11 +7,12 @@ import { MainLayout } from "../../layouts/MainLayout";
 import OurToolkit from "../../components/OurToolkit/OurToolkit";
 import React from "react";
 import Steps from "../../components/Steps/Steps";
-import icon6 from "../../components/WhatWeWorked/img/6.svg";
-import icon2 from "../../components/WhatWeWorked/img/2.svg";
-import icon3 from "../../components/WhatWeWorked/img/3.svg";
-import icon4 from "../../components/WhatWeWorked/img/4.svg";
-import icon5 from "../../components/WhatWeWorked/img/5.svg";
+
+import icon2 from '../../components/WhatWeWorked/img/2.png';
+import icon3 from '../../components/WhatWeWorked/img/1.png';
+import icon4 from '../../components/WhatWeWorked/img/4.png';
+import icon5 from '../../components/WhatWeWorked/img/5.png';
+import icon6 from '../../components/WhatWeWorked/img/6.png';
 import WhatWeWorked from "../../components/WhatWeWorked/WhatWeWorked";
 
 export default function analytics() {
@@ -165,12 +166,12 @@ export default function analytics() {
       />
       <Ticker />
 
-      <section className="section section--title-left-img7">
-        <div className="container p-0">
+      <section className="section section--title-left mt-68 mb-68">
+        <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 mb-40 mb-xl-0">
-              <div className="section__title-box section__title-box--img7 pt-80 pb-80 pt-md-120 pb-160 p-25">
-                <h2 className="section__title section__title--small ta-left">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title mt-22 mb-22 ta-right">
                   SEARCH ENGINE
                   <br />
                   OPTIMIZATION
@@ -181,15 +182,15 @@ export default function analytics() {
                 </h2>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
-              <div className="ph-20">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="mt-22 mb-22 ml-120 w-70">
                 <h3 className="h3 mb-40 ph-20">
                   Why does your company need <br /> App Store Optimization?
                 </h3>
                 <div className="count-block w-100 mb-40 mb-md-0">
                   <span className="count">1</span>
-                  <div className="text-large mb-40">
-                    <p>
+                  <div className="text-large mb-40 mt-22">
+                    <p className="textFonts">
                       {" "}
                       The number of apps on Google Play and the App Store has
                       exceeded 3 million, so reaching the top is not easy.
@@ -198,8 +199,8 @@ export default function analytics() {
                 </div>
                 <div className="count-block w-100 mb-40 mb-md-0">
                   <span className="count">2</span>
-                  <div className="text-large mb-40">
-                    <p>
+                  <div className="text-large mb-40 mt-22">
+                    <p className="textFonts">
                       {" "}
                       The application needs regular optimization, attracting new
                       users and retaining old ones.
@@ -212,8 +213,8 @@ export default function analytics() {
         </div>
       </section>
 
-      <div className="pb-40 pt-md-100 pb-md-100 pt-xl-190 pb-xl-190">
-        <div className="container ph-20">
+      <div className="pt-68 pb-68">
+        <div className="container">
           <div className="row">
             <div className="col-12 col-xl-8 m-auto">
               <p className="section__text ta-left ta-md-center">
@@ -227,34 +228,20 @@ export default function analytics() {
         </div>
       </div>
 
-      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'}/>
+      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
 
-      <section className="section section--title-right-img8 mb-40 mb-md-0">
+      <section className="section section--title-right mt-136 mb-68">
         <div className="container p-0">
-          <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 mb-40 mb-md-0 pb-xl-50 order-md-1 offset-xl-2">
-              <div className="section__title-box section__title-box--img8 p-20 pt-120 pb-120">
-                <h2 className="section__title section__title--small ta-left tt-upper ">
-                  Main benefits
-                  <br />
-                  of your app
-                  <br />
-                  store
-                  <br />
-                  optimization
-                </h2>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-5 offset-xl-0 pt-md-50 pb-md-50">
-              <div className="ph-20">
+          <div className="row mob-flex--column-revers">
+            <div className="col-12 col-md-6 ">
+              <div className="mr-120 w-70 mt-22 mb-22">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <div className="text-large mb-20">
                     <h3 className="h3 mb-20">
                       Gaining impression-to-install conversions.
                     </h3>
-                    <p className="mb-10">
+                    <p className="textFonts">
                       {" "}
                       Users get to the app page from all sorts of sources:
                       search, charts, picks, ads, or a direct link, but
@@ -269,7 +256,7 @@ export default function analytics() {
                     <h3 className="h3 mb-20">
                       Raising app visibility in the store:
                     </h3>
-                    <p className="mb-10">
+                    <p className="textFonts">
                       {" "}
                       Comprehensive work on its category in the AppStore and
                       GooglePlay allows you to increase the position of the
@@ -279,18 +266,18 @@ export default function analytics() {
                   </div>
                 </div>
 
-                <div className="count-block w-100 mb-40">
+                <div className="count-block w-100">
                   <span className="count">3</span>
-                  <div className="text-large mb-20">
+                  <div className="text-large">
                     <h3 className="h3 mb-20">
                       App rating and visibility in the store:
                     </h3>
-                    <p className="mb-40">
+                    <p className="textFonts mb-40">
                       The higher the rating, the more relevant the app is
                       considered in the stores, and this is reflected in the
                       app&lsquo;s position in search results.
                     </p>
-                    <p className="mb-40">
+                    <p className="textFonts">
                       80% of mobile users read at least one review before
                       downloading the app. That is why it is very important to
                       respond to reviews, thereby maintaining feedback.
@@ -299,23 +286,36 @@ export default function analytics() {
                 </div>
               </div>
             </div>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h2title tt-upper">
+                  Main benefits
+                  <br />
+                  of your app
+                  <br />
+                  store
+                  <br />
+                  optimization
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section section--title-left-img3 mb-40 mb-md-0">
-        <div className="container p-0">
+      <section className="section section--title-left mt-136 mb-68">
+        <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img3 p-20 pt-120 pb-120">
-                <h2 className="section__title section__title--small ta-left tt-upper ta-md-right">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right mt-22 mb-22">
                   WHAT WE DO TO MAKE YOUR ASO EFFECTIVE
                 </h2>
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-xl-4 offset-xl-2 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100">
-              <div className="ph-20 mb-40">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="mt-22 mb-22 ml-120 w-70">
                 <ListWithIcon arr={arr1} />
               </div>
             </div>
@@ -323,32 +323,33 @@ export default function analytics() {
         </div>
       </section>
 
-      <section className="section section--title-right mb-60 mb-md-0">
-        <div className="container p-0">
-          <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-3 mb-60 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box pl-md-20 p-20 pt-120 pb-120">
-                <h2 className="section__title section__title--small tt-upper ">
+      <section className="section section--title-right mt-136 mb-68">
+        <div className="container">
+          <div className="row mob-flex--column-revers">
+            <div className="col-12 col-md-6 ">
+              <div className="mt-22 mb-22 mr-120 w-70">
+                <ListWithIcon arr={arr2} />
+              </div>
+            </div>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h2title mt-22 mb-22 tt-upper ">
                   how we PERFORM your app store optimization
                 </h2>
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-xl-4 pt-md-50 pb-md-50">
-              <div className="ph-20">
-                <ListWithIcon arr={arr2} />
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
 
-      <section className="section section--title-left-img7 mb-60 mb-md-0">
-        <div className="container p-0">
+      <section className="section section--title-left mt-136 mb-68">
+        <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50">
-              <div className="section__title-box section__title-box--img7  p-20 pt-120 pb-120">
-                <h2 className="section__title section__title--small ta-left">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right mt-22 mb-22">
                   HOW WE
                   <br />
                   AUTOMATE
@@ -360,14 +361,14 @@ export default function analytics() {
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-xl-6 pt-md-50 pb-md-50 pt-xl-100 pb-xl-100 offset-xl-1">
-              <Steps stepsArr={stepsArr} />
+            <div className="col-12 col-md-6 ">
+                <Steps stepsArr={stepsArr} left/>
             </div>
           </div>
         </div>
       </section>
 
-      <LetsTalk contentSide={"right"} />
+      <LetsTalk contentSide={"right"} font={'2'}/>
     </MainLayout>
   );
 }

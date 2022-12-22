@@ -17,6 +17,7 @@ import icon3 from '../../components/WhatWeWorked/img/3.svg';
 import icon4 from '../../components/WhatWeWorked/img/4.png';
 import icon5 from '../../components/WhatWeWorked/img/5.png';
 
+
 export default function paid() {
   const stepsArr = [
     {

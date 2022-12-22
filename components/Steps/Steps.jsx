@@ -1,10 +1,10 @@
 import styles from './Steps.module.scss';
 
-function Steps({stepsArr, center}) {
+function Steps({stepsArr, center, left}) {
   
   
   return (
-      <section className={`${styles.steps} sectiin mr-120 ${center ? 'mx-auto': ''}`}>
+      <section className={`${styles.steps} sectiin ${left ? 'ml-120' : 'mr-120'} ${center ? 'mx-auto': ''}`}>
         <div className="container ph-20 mt-22 mb-22">
           <div className="row align-items-stretch">
             {stepsArr.map((obj, index) => (
