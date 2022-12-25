@@ -13,7 +13,7 @@ import Image from 'next/image';
 import WhatWeWorked from '../../components/WhatWeWorked/WhatWeWorked';
 import icon1 from '../../components/WhatWeWorked/img/1.png';
 import icon2 from '../../components/WhatWeWorked/img/2.png';
-import icon3 from '../../components/WhatWeWorked/img/3.svg';
+import icon3 from '../../components/WhatWeWorked/img/3.png';
 import icon4 from '../../components/WhatWeWorked/img/4.png';
 import icon5 from '../../components/WhatWeWorked/img/5.png';
 
@@ -60,7 +60,7 @@ export default function paid() {
     {
       title: `Mobile Apps & Mobile Games`,
       links: [''],
-      svgIcon: icon1,
+      svgIcon: icon3,
     },
     {
       title: 'B2B & SaaS Website & Mobile Apps',
@@ -156,7 +156,7 @@ export default function paid() {
               </div>
               <div
                   className="col-12 col-md-6 my-auto">
-                <div className="ph-20 ml-120 mt-22 mb-22">
+                <div className=" ml-120 mt-22 mb-22">
                   <h3 className="h3 mb-20">Why does your company need digital channels?</h3>
                   <p className="textFonts">
                     Today&apos;s world moves at breakneck speed, so to stay on top of the game
@@ -173,11 +173,11 @@ export default function paid() {
           </div>
         </section>
         
-        <div className="pb-68 pt-68">
+        <div className="pb-68 pt-68 lineHome">
           <div className="container">
             <div className="row">
               <div className="col-12 col-xl-8 m-auto">
-                <p className="section__text ta-left ta-md-center">
+                <p className="section__text1 ta-left ta-md-center">
                   Use our 10+ years expertise in digital channels and market trends to drive more
                   customers to your products and bring your old clients back to buy again. We&apos;ll
                   help you grow your revenue in no time!
@@ -187,19 +187,15 @@ export default function paid() {
           </div>
         </div>
         
-        <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
+        <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'right'} font={'2'}/>
         
-        <section className="section section--title-right mt-136 mb-68">
+        <section className="section section--title-left mt-136 mb-68">
           <div className="container">
-            <div className="row mob-flex--column-revers">
+            <div className="row">
+
               <div className="col-12 col-md-6 my-auto">
-                <div className="ph-20 mr-120 mt-22">
-                  <ListWithIcon arr={arr1}/>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeRight mt-22 mb-22">
-                  <h2 className="h2title">
+                <div className="marginHomeLeft mt-22 mb-22">
+                  <h2 className="h2title ta-right">
                     TOP 6 BENEFITS
                     <br/>
                     OF DIGITAL
@@ -211,29 +207,21 @@ export default function paid() {
                   </h2>
                 </div>
               </div>
-              
+              <div className="col-12 col-md-6 my-auto">
+                <div className="ml-120 mt-22">
+                  <ListWithIcon arr={arr1}/>
+                </div>
+              </div>
 
             </div>
           </div>
         </section>
         
-        <section className="section section--title-left mt-136 mb-68">
+        <section className="section section--title-right mt-136 mb-68">
           <div className="container">
-            <div className="row">
+            <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft">
-                  <h2 className="h2title ta-right">
-                    HOW
-                    <br/>
-                    IT
-                    <br/>
-                    WORKS
-                  </h2>
-                </div>
-              </div>
-              
-              <div className="col-12 col-md-6 my-auto">
-                <div className="mt-22 mb-22 ml-120">
+                <div className="mt-22 mb-22 mr-120">
                   <div className="count-block w-100 mb-40 mb-md-0">
                     <span className="count">1</span>
                     <div className="textFonts mb-20 mt-22">
@@ -272,15 +260,28 @@ export default function paid() {
                   </p>
                 </div>
               </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeRight">
+                  <h2 className="h2title ta-left">
+                    HOW
+                    <br/>
+                    IT
+                    <br/>
+                    WORKS
+                  </h2>
+                </div>
+              </div>
+              
+
             </div>
           </div>
         </section>
         
-        <div className="pt-68 pb-68">
+        <div className="pt-68 pb-68 lineHome">
           <div className="container ph-20">
             <div className="row">
               <div className="col-12 col-xl-8 m-auto">
-                <p className="section__text ta-left ta-md-center">
+                <p className="section__text1 ta-left ta-md-center">
                   In-depth analysis and a smart strategy are required to get high relevance for your
                   product, save acquisition costs and increase conversions.
                 </p>
@@ -293,43 +294,43 @@ export default function paid() {
           <Steps stepsArr={stepsArr} center={'1'}/>
         </div>
         
-        <section className="section section--title-right mt-68 mb-68">
+        <section className="section section--title-left mt-68 mb-68">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft">
+                  <h2 className="h2title ta-right mt-22 mb-22">
+                    WHAT THE <br/> MARKETING <br/> FUNNEL OF A <br/> WEBSITE <br/> LOOKS LIKE
+                  </h2>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 my-auto">
+                <div className="p-0 ml-120 mt-22 mb-22">
+                  <div className={styles.events}>
+                    <Image width={374} height={570} src={'/img/events/web.svg'} alt="events"/>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+        <section className="section section--title-right mt-136 mb-68">
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6 my-auto">
-                <div className="p-0 mr-120 mt-22 mb-22">
+                <div className="p-0 mt-22 mb-22 mr-120">
                   <div className={styles.events} style={{marginLeft: 'auto'}}>
-                    <Image width={374} height={570} src={'/img/events/web.svg'} alt="events"/>
+                    <Image width={374} height={570} src={'/img/events/app.svg'} alt="events"/>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-6 my-auto">
                 <div className="marginHomeRight">
-                  <h2 className="h2title mt-22 mb-22">
-                    WHAT THE <br/> MARKETING <br/> FUNNEL OF A <br/> WEBSITE <br/> LOOKS LIKE
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section className="section section--title-left mt-136 mb-68">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft">
-                  <h2 className="h2title ta-right tt-upper mt-22 mb-22">
+                  <h2 className="h2title ta-left tt-upper mt-22 mb-22">
                     WHAT THE <br/> MARKETING <br/> funnel for a <br/> mobile app <br/> LOOKS LIKE
                   </h2>
-                </div>
-              </div>
-              
-              <div className="col-12 col-md-6 my-auto">
-                <div className="p-0 mt-22 mb-22 ml-120">
-                  <div className={styles.events}>
-                    <Image width={374} height={570} src={'/img/events/app.svg'} alt="events"/>
-                  </div>
                 </div>
               </div>
             </div>
@@ -337,12 +338,12 @@ export default function paid() {
         </section>
         
         <OurToolkit
-            imagePosition={'right'}
+            imagePosition={'left'}
             arr={ourToolkitArr}
             font={'2'}
         />
         
-        <LetsTalk contentSide={'left'} font={'2'}/>
+        <LetsTalk contentSide={'right'} font={'2'}/>
       </MainLayout>
   );
 }

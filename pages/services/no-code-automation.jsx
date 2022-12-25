@@ -160,7 +160,7 @@ export default function analytics() {
               </div>
               <div
                   className="col-12 col-md-6 my-auto">
-                <div className="ph-20 ml-120 mt-22 mb-22">
+                <div className="ml-120 mt-22 mb-22">
                   <p className="textFonts mb-20">
                     Airplane autopilot is quite a familiar thing these days but it didn&apos;t exist
                     once.
@@ -200,7 +200,7 @@ export default function analytics() {
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6 my-auto">
-                <div className="ph-20 mr-120">
+                <div className="mr-120">
                   <p className="textFonts mb-20">
                     Automation is basically a set up of automated performance of certain actions
                     within a developed scenario that can streamline a business for simplicity, achieve
@@ -231,11 +231,11 @@ export default function analytics() {
           </div>
         </section>
         
-        <div className="pt-68 pb-68">
+        <div className="pt-68 pb-68 lineHome">
           <div className="container">
             <div className="row">
               <div className="col-12 col-xl-8 m-auto">
-                <p className="section__text ta-left ta-md-center">
+                <p className="section__text1 ta-left ta-md-center">
                   During the past decade we have worked on more than 50 projects in industries like
                   SaaS, Ecommerce, Online Gaming etc.
                 </p>
@@ -260,7 +260,7 @@ export default function analytics() {
               </div>
 
               <div className="col-12 col-md-6 my-auto">
-                <div className="ph-20 ml-120 mt-22 mb-22">
+                <div className="ml-120 mt-22 mb-22">
                   <div className="count-block w-100 mb-40 mb-md-0">
                     <span className="count">1</span>
                     <div className="text-large mb-40">
@@ -305,7 +305,7 @@ export default function analytics() {
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6">
-                <div className="ph-20 w-70 mr-120 mt-22 mb-22" style={{marginLeft:'auto'}}>
+                <div className="w-70 mr-120 mt-22 mb-22" style={{marginLeft:'auto'}}>
                   <ListWithIcon arr={arr1}/>
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function analytics() {
               </div>
               
               <div className="col-12 col-md-6 my-auto">
-                <div className="ph-20 w-70 ml-120 mt-22 mb-22">
+                <div className="w-70 ml-120 mt-22 mb-22">
                   <ListWithIcon arr={arr2}/>
                 </div>
               </div>

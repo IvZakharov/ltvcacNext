@@ -1,11 +1,5 @@
 import styles from './WhatWeWorked.module.scss';
 import Image from "next/image";
-import icon1 from './img/1.svg';
-import icon2 from './img/2.svg';
-import icon3 from './img/3.svg';
-import icon4 from './img/4.svg';
-import icon5 from './img/5.svg';
-import icon6 from './img/6.svg';
 import {useRouter} from "next/router";
 
 function WhatWeWorked({itemsArr, contentSide, font}) {
@@ -28,7 +22,7 @@ function WhatWeWorked({itemsArr, contentSide, font}) {
                   {itemsArr.map((obj, i) => (
                       <li key={i} className={styles.item}>
                         <i className={styles.icon}>
-                          <Image src={obj.svgIcon} alt={obj.title} width={48} height={48}/>
+                          <img src={obj.svgIcon.src} alt={obj.title}/>
                         </i>
                         <div className={styles.info}>
                           <h4 className={styles.title}>{obj.title}</h4>

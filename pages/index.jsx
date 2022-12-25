@@ -11,7 +11,7 @@ import React from 'react';
 import OurServices from '../components/OurServices/OurServices';
 import icon1 from '../components/WhatWeWorked/img/1.png';
 import icon2 from '../components/WhatWeWorked/img/2.png';
-import icon3 from '../components/WhatWeWorked/img/3.svg';
+import icon3 from '../components/WhatWeWorked/img/3.png';
 import icon4 from '../components/WhatWeWorked/img/4.png';
 import icon5 from '../components/WhatWeWorked/img/5.png';
 import icon6 from '../components/WhatWeWorked/img/6.png';
@@ -60,7 +60,7 @@ export default function Home() {
         'GO Keyboard,',
         'UC Browser',
       ],
-      svgIcon: icon1,
+      svgIcon: icon3,
     },
     {
       title: 'Video Games',

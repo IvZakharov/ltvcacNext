@@ -184,7 +184,7 @@ export default function analytics() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="mt-22 mb-22 ml-120 w-70">
-                <h3 className="h3 mb-40 ph-20">
+                <h3 className="h3 mb-40">
                   Why does your company need <br /> App Store Optimization?
                 </h3>
                 <div className="count-block w-100 mb-40 mb-md-0">
@@ -213,11 +213,11 @@ export default function analytics() {
         </div>
       </section>
 
-      <div className="pt-68 pb-68">
+      <div className="pt-68 pb-68 lineHome">
         <div className="container">
           <div className="row">
             <div className="col-12 col-xl-8 m-auto">
-              <p className="section__text ta-left ta-md-center">
+              <p className="section__text1 ta-left ta-md-center">
                 Efficient optimization relies on working on every element of the
                 app store page. It should be performed on a regular basis - once
                 every quarter or half a year. Therefore, you receive more
@@ -228,13 +228,26 @@ export default function analytics() {
         </div>
       </div>
 
-      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
+      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'right'} font={'2'}/>
 
-      <section className="section section--title-right mt-136 mb-68">
-        <div className="container p-0">
-          <div className="row mob-flex--column-revers">
+      <section className="section section--title-left mt-136 mb-68">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right tt-upper">
+                  Main benefits
+                  <br />
+                  of your app
+                  <br />
+                  store
+                  <br />
+                  optimization
+                </h2>
+              </div>
+            </div>
             <div className="col-12 col-md-6 ">
-              <div className="mr-120 w-70 mt-22 mb-22">
+              <div className="ml-120 w-70 mt-22 mb-22">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <div className="text-large mb-20">
@@ -286,16 +299,23 @@ export default function analytics() {
                 </div>
               </div>
             </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--title-right mt-136 mb-68">
+        <div className="container">
+          <div className="row mob-flex--column-revers">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="mt-22 mb-22 mr-120 w-70">
+                <ListWithIcon arr={arr1} />
+              </div>
+            </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
-                <h2 className="h2title tt-upper">
-                  Main benefits
-                  <br />
-                  of your app
-                  <br />
-                  store
-                  <br />
-                  optimization
+                <h2 className="h2title ta-left mt-22 mb-22">
+                  WHAT WE DO TO MAKE YOUR ASO EFFECTIVE
                 </h2>
               </div>
             </div>
@@ -308,15 +328,14 @@ export default function analytics() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft">
-                <h2 className="h2title ta-right mt-22 mb-22">
-                  WHAT WE DO TO MAKE YOUR ASO EFFECTIVE
+                <h2 className="h2title ta-right mt-22 mb-22 tt-upper ">
+                  how we PERFORM your app store optimization
                 </h2>
               </div>
             </div>
-
-            <div className="col-12 col-md-6 my-auto">
+            <div className="col-12 col-md-6 ">
               <div className="mt-22 mb-22 ml-120 w-70">
-                <ListWithIcon arr={arr1} />
+                <ListWithIcon arr={arr2} />
               </div>
             </div>
           </div>
@@ -327,29 +346,11 @@ export default function analytics() {
         <div className="container">
           <div className="row mob-flex--column-revers">
             <div className="col-12 col-md-6 ">
-              <div className="mt-22 mb-22 mr-120 w-70">
-                <ListWithIcon arr={arr2} />
-              </div>
+              <Steps stepsArr={stepsArr}/>
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
-                <h2 className="h2title mt-22 mb-22 tt-upper ">
-                  how we PERFORM your app store optimization
-                </h2>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--title-left mt-136 mb-68">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeLeft">
-                <h2 className="h2title ta-right mt-22 mb-22">
+                <h2 className="h2title ta-left mt-22 mb-22">
                   HOW WE
                   <br />
                   AUTOMATE
@@ -360,15 +361,11 @@ export default function analytics() {
                 </h2>
               </div>
             </div>
-
-            <div className="col-12 col-md-6 ">
-                <Steps stepsArr={stepsArr} left/>
-            </div>
           </div>
         </div>
       </section>
 
-      <LetsTalk contentSide={"right"} font={'2'}/>
+      <LetsTalk contentSide={"left"} font={'2'}/>
     </MainLayout>
   );
 }

@@ -140,13 +140,21 @@ export default function customer() {
         imageUrls={{ desktop: '/img/hero/4.jpg', mobile: '/img/hero/4mob.jpg' }}
       />
       <Ticker />
-      <section className="section focus section--title-right mt-68 mb-68">
+      <section className="section focus section--title-left mt-68 mb-68">
         <div className="container">
           <div className="row">
-
             <div className="col-12 col-md-6 my-auto">
-              <h3 className="h3 mb-40 mr-120 mt-22 w-70">Why does your company need customer research?</h3>
-              <div className="mr-120 w-70">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right tt-upper mt-22 mb-22">
+                  CUSTOMER <br />
+                  RESEARCH FOR <br /> OPTIMAL
+                  <br /> BUSINESS <br /> DECISIONS
+                </h2>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 my-auto">
+              <h3 className="h3 mb-40 ml-120 mt-22 w-70">Why does your company need customer research?</h3>
+              <div className="ml-120 w-70">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <p className="textFonts textAlingCenter">
@@ -162,24 +170,16 @@ export default function customer() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeRight">
-                <h2 className="h2title tt-upper mt-22 mb-22">
-                  CUSTOMER <br />
-                  RESEARCH FOR <br /> OPTIMAL
-                  <br /> BUSINESS <br /> DECISIONS
-                </h2>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
 
-      <div className="pt-68 pb-68">
+      <div className="pt-68 pb-68 lineHome">
         <div className="container ph-20">
           <div className="row">
             <div className="col-12 col-xl-8 m-auto">
-              <p className="section__text ta-left ta-md-center">
+              <p className="section__text1 ta-left ta-md-center">
                 Misidentifying your customers’ pains or their priorities to perform JBTD results in
                 your team working for weeks/months on problems that your customers aren’t willing to
                 pay for, which is $xxx.xx spent in vain.
@@ -189,13 +189,26 @@ export default function customer() {
         </div>
       </div>
 
-      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'left'} font={'2'}/>
+      <WhatWeWorked itemsArr={whatWeWorkedArr} contentSide={'right'} font={'2'}/>
 
-      <section className="section section--title-right mt-136 mb-68">
+      <section className="section section--title-left mt-136 mb-68">
         <div className="container">
-          <div className="row mob-flex--column-revers">
+          <div className="row">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right tt-upper ">
+                  Main benefits
+                  <br />
+                  of your
+                  <br />
+                  customer
+                  <br />
+                  research
+                </h2>
+              </div>
+            </div>
             <div className="col-12 col-md-6">
-              <div className="mt-22 mb-22 w-60 mr-120" style={{marginLeft:'auto'}}>
+              <div className="mt-22 mb-22 w-60 ml-120">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <div className="textFonts mb-20">
@@ -242,29 +255,22 @@ export default function customer() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeRight">
-                <h2 className="h2title tt-upper ">
-                  Main benefits
-                  <br />
-                  of your
-                  <br />
-                  customer
-                  <br />
-                  research
-                </h2>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
 
-      <section className="section section--title-left mt-136 mb-68">
+      <section className="section section--title-right mt-136 mb-68">
         <div className="container">
-          <div className="row">
+          <div className="row mob-flex--column-revers">
+            <div className="col-12 col-md-6 mt-22 mb-22 ">
+              <div className="mr-120 w-70 my-auto">
+                <ListWithIcon arr={arr1} />
+              </div>
+            </div>
             <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeLeft">
-                <h2 className="h2title tt-upper ta-right mt-22 mb-22">
+              <div className="marginHomeRight">
+                <h2 className="h2title tt-upper ta-left mt-22 mb-22">
                   What you are
                   <br />
                   getting after
@@ -273,53 +279,6 @@ export default function customer() {
                 </h2>
               </div>
             </div>
-
-            <div className="col-12 col-md-6 mt-22 mb-22 ">
-              <div className="ph-20 ml-120 w-80 my-auto">
-                <ListWithIcon arr={arr1} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--title-right mt-136 mb-68">
-        <div className="container">
-          <div className="row mob-flex--column-revers">
-            <div className="col-12 col-md-6 my-auto">
-              <div className="ph-20 pl-70 w-60 mr-120" style={{marginLeft:'auto'}}>
-                <p className="text text--large text--primary text--fw-500 text--lighten tt-upper">
-                  STEP 1
-                </p>
-                <p className="text text--large text--primary text--fw-500">QUALITATIVE RESEARCH</p>
-                <p className="text text--fw-500 text--black mb-20">7-21 days</p>
-              </div>
-              <div className="ph-20 mb-40 w-60 mr-120" style={{marginLeft:'auto'}}>
-                <ListWithIcon arr={arr2} />
-              </div>
-
-              <div className="ph-20 w-60 mr-120" style={{marginLeft:'auto'}}>
-                <span className="line mb-20"></span>
-                <p className="textFonts text--black italic mb-20">
-                  All interviews are recorded and shared with you.
-                </p>
-                <p className="textFonts text--black italic mb-40">
-                  Phone interviews usually last 30-60 mins.
-                  <br />
-                  We never compensate the respondents to avoid biased responses.
-                </p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeRight">
-                <h2 className="h2title tt-upper mt-22 mb-22">
-                  how <br />we do
-                  <br />
-                  qualitative <br />
-                  research
-                </h2>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -329,24 +288,36 @@ export default function customer() {
           <div className="row">
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeLeft">
-                <h2 className="h2title tt-upper ta-right mt-22 mb-22">
-                  how<br /> we do
+                <h2 className="h2title ta-right tt-upper mt-22 mb-22">
+                  how <br />we do
                   <br />
                   qualitative <br />
                   research
                 </h2>
               </div>
             </div>
-            <div className="col-12 col-md-6">
-              <div className="ph-20 pl-70 w-60 ml-120 mt-22">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="w-70 ml-120 mt-22">
                 <p className="text text--large text--primary text--fw-500 text--lighten tt-upper">
-                  STEP 2
+                  STEP 1
                 </p>
-                <p className="text text--large text--primary text--fw-500">QUANTITATIVE RESEARCH</p>
-                <p className="text text--fw-500 text--black mb-20">14-21 days</p>
+                <p className="text text--large text--primary text--fw-500">QUALITATIVE RESEARCH</p>
+                <p className="text text--fw-500 text--black mb-20">7-21 days</p>
               </div>
-              <div className="ph-20 mb-40 w-60 ml-120 mb-22">
-                <ListWithIcon arr={arr3} />
+              <div className="mb-40 w-70 ml-120">
+                <ListWithIcon arr={arr2} />
+              </div>
+
+              <div className="w-70 ml-120 mb-22">
+                <span className="line mb-20"></span>
+                <p className="textFonts text--black italic mb-20">
+                  All interviews are recorded and shared with you.
+                </p>
+                <p className="textFonts text--black italic">
+                  Phone interviews usually last 30-60 mins.
+                  <br />
+                  We never compensate the respondents to avoid biased responses.
+                </p>
               </div>
             </div>
           </div>
@@ -356,18 +327,59 @@ export default function customer() {
       <section className="section section--title-right mt-136 mb-68">
         <div className="container">
           <div className="row mob-flex--column-revers">
+            <div className="col-12 col-md-6">
+              <div className="w-70 mr-120 mt-22">
+                <p className="text text--large text--primary text--fw-500 text--lighten tt-upper">
+                  STEP 2
+                </p>
+                <p className="text text--large text--primary text--fw-500">QUANTITATIVE RESEARCH</p>
+                <p className="text text--fw-500 text--black mb-20">14-21 days</p>
+              </div>
+              <div className="w-70 mr-120 mb-22">
+                <ListWithIcon arr={arr3} />
+              </div>
+            </div>
             <div className="col-12 col-md-6 my-auto">
-              <div className="ph-20 w-70 mr-120" style={{marginLeft:'auto'}}>
+              <div className="marginHomeRight">
+                <h2 className="h2title tt-upper ta-left mt-22 mb-22">
+                  how<br /> we do
+                  <br />
+                  qualitative <br />
+                  research
+                </h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--title-left mt-136 mb-68">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeLeft">
+                <h2 className="h2title ta-right tt-upper mt-22 mb-22">
+                  How the final
+                  <br />
+                  rating of <br />
+                  customer pains <br />
+                  looks like
+                </h2>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="w-70 ml-120 mt-22">
                 <span className="line mb-30"></span>
               </div>
 
-              <div className="ph-20 mb-30 w-70 mr-120" style={{marginLeft:'auto'}}>
+              <div className="mb-30 w-70 ml-120">
                 <p className="text text--large text--primary text--fw-500 text--lighten ta-left tt-upper">
                   PROBLEM DISTRIBUTION <br />
                   FOR TARGET AUDIENCE
                 </p>
               </div>
-              <div className="ph-20 mb-40 w-70 mr-120" style={{marginLeft:'auto'}}>
+              <div className="mb-22 w-70 ml-120">
                 <div className="problems">
                   <div className="history">
                     <div className="history__item mb-20">
@@ -416,38 +428,17 @@ export default function customer() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeRight">
-                <h2 className="h2title tt-upper mt-22 mb-22">
-                  How the final
-                  <br />
-                  rating of <br />
-                  customer pains <br />
-                  looks like
-                </h2>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="section section--title-left mt-136 mb-68">
+      <section className="section section--title-right mt-136 mb-68">
         <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-6 my-auto">
-              <div className="marginHomeLeft">
-                <h2 className="h2title ta-right">
-                  WHAT<br /> WE
-                  <br />
-                  DELIVERED?
-                </h2>
-              </div>
-            </div>
-
+          <div className="row mob-flex--column-revers">
             <div className="col-12 col-md-6">
-              <div className="ph-20 w-60 ml-120">
+              <div className="w-70 mr-120 mt-22 mb-22">
                 <h3 className="h3 ph-20 mb-40 tt-upper ta-left">CONCLUSIONS & RECOMMENDATIONS</h3>
-                <div className="ph-20">
+                <div>
                   <div className="count-block w-100 mb-40">
                     <span className="count">1</span>
                     <p className="textFonts textAlingCenter">
@@ -474,10 +465,19 @@ export default function customer() {
                 </div>
               </div>
             </div>
+            <div className="col-12 col-md-6 my-auto">
+              <div className="marginHomeRight">
+                <h2 className="h2title ta-left mt-22 mb-22">
+                  WHAT<br /> WE
+                  <br />
+                  DELIVERED?
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <LetsTalk contentSide={'right'} font={'2'}/>
+      <LetsTalk contentSide={'left'} font={'2'}/>
     </MainLayout>
   );
 }
