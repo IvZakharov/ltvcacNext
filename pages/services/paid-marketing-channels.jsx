@@ -50,27 +50,27 @@ export default function paid() {
     {
       title: 'Real Estate Website',
       links: [''],
-      svgIcon: icon1,
+      svgIcon: '/img/WWWO/1.svg',
     },
     {
       title: 'E-Commerce Website & Mobile Apps',
       links: [''],
-      svgIcon: icon2,
+      svgIcon: '/img/WWWO/2.svg',
     },
     {
       title: `Mobile Apps & Mobile Games`,
       links: [''],
-      svgIcon: icon3,
+      svgIcon: '/img/WWWO/3.svg',
     },
     {
       title: 'B2B & SaaS Website & Mobile Apps',
       links: [''],
-      svgIcon: icon4,
+      svgIcon: '/img/WWWO/4.svg',
     },
     {
       title: 'Fintech Website & Mobile Apps',
       links: [''],
-      svgIcon: icon5,
+      svgIcon: '/img/WWWO/5.svg',
     },
   ];
   

@@ -98,27 +98,27 @@ export default function analytics() {
     {
       title: "Mobile Games",
       links: [""],
-      svgIcon: icon4,
+      svgIcon: '/img/WWWO/4.svg',
     },
     {
       title: "E-Commerce Mobile Apps",
       links: [""],
-      svgIcon: icon2,
+      svgIcon: '/img/WWWO/2.svg',
     },
     {
       title: `Dating Mobile Apps`,
       links: [""],
-      svgIcon: icon3,
+      svgIcon: '/img/WWWO/3.svg',
     },
     {
       title: "B2B & SaaS Mobile Apps",
       links: [""],
-      svgIcon: icon5,
+      svgIcon: '/img/WWWO/5.svg',
     },
     {
       title: "Fintech Mobile Apps",
       links: [""],
-      svgIcon: icon6,
+      svgIcon: '/img/WWWO/6.svg',
     },
   ];
 

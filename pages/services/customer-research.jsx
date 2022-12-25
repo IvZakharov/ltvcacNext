@@ -104,27 +104,27 @@ export default function customer() {
     {
       title: 'Real Estate Projects',
       links: [''],
-      svgIcon: icon1,
+      svgIcon: '/img/WWWO/1.svg',
     },
     {
       title: 'E-Commerce Projects',
       links: [''],
-      svgIcon: icon2,
+      svgIcon: '/img/WWWO/2.svg',
     },
     {
       title: `Mobile Apps Projects`,
       links: [''],
-      svgIcon: icon1,
+      svgIcon: '/img/WWWO/3.svg',
     },
     {
       title: 'B2B & SaaS Projects',
       links: [''],
-      svgIcon: icon4,
+      svgIcon: '/img/WWWO/4.svg',
     },
     {
       title: 'Fintech Projects',
       links: [''],
-      svgIcon: icon5,
+      svgIcon: '/img/WWWO/5.svg',
     },
   ];
 
