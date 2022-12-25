@@ -22,7 +22,7 @@ function WhatWeWorked({itemsArr, contentSide, font}) {
                   {itemsArr.map((obj, i) => (
                       <li key={i} className={styles.item}>
                         <i className={styles.icon}>
-                          <img src={obj.svgIcon.src} alt={obj.title}/>
+                          <img src={obj.svgIcon} alt={obj.title}/>
                         </i>
                         <div className={styles.info}>
                           <h4 className={styles.title}>{obj.title}</h4>

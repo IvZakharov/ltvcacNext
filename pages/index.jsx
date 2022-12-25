@@ -42,12 +42,12 @@ export default function Home() {
     {
       title: 'Real Estate',
       links: ['Matahari Hills'],
-      svgIcon: icon1,
+      svgIcon: '/img/WWWO/1.png',
     },
     {
       title: 'E-Commerce',
       links: ['AliExpress,', 'LepreStore'],
-      svgIcon: icon2,
+      svgIcon: '/img/WWWO/2.png',
     },
     {
       title: `Mobile Apps (non-gaming)`,
@@ -60,23 +60,23 @@ export default function Home() {
         'GO Keyboard,',
         'UC Browser',
       ],
-      svgIcon: icon3,
+      svgIcon: '/img/WWWO/3.png',
     },
     {
       title: 'Video Games',
       links: ['Cradle of Empires,', 'World of Tanks Blitz,', 'War Thunder,', 'Dragon Soul'],
-      svgIcon: icon4,
+      svgIcon: '/img/WWWO/4.png',
     },
     {
       title: 'SaaS',
       links: ['Togezzer,', 'Mix Cart,', 'Grabbly,', 'DDHA'],
-      svgIcon: icon5,
+      svgIcon: '/img/WWWO/5.png',
     },
     
     {
       title: 'Platforms',
       links: ['Uber,', 'Chummy App,', 'Guvera,', 'City Life'],
-      svgIcon: icon6,
+      svgIcon: '/img/WWWO/6.png',
     },
   ];
   
