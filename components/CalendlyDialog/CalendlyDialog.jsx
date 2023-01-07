@@ -9,7 +9,7 @@ function CalendlyDialog({ closeModal }) {
         <button onClick={closeModal} className={styles.close}>
           X
         </button>
-        <InlineWidget url="https://calendly.com/ltvcac_agency/60min?text_color=514e4e&primary_color=3725a2" />
+        <InlineWidget url="https://calendly.com/ltvcac/demo-call-with-ltvcac?text_color=514e4e&primary_color=3725a2" />
       </div>
     </div>
   );
