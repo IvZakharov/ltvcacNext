@@ -19,103 +19,39 @@ export default function services() {
             imageUrls={{desktop: '/img/hero/2.jpg', mobile: '/img/hero/2mob.jpg'}}
         />
         <Ticker/>
-        <section className="section section--title-left-img4 mt-68 mb-68">
+        <section className="section section--title-left mt-68 mb-68">
           <div className="container">
             <div className="row">
+
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft ta-right">
+                <div className="marginHomeRight">
                   <h2 className="h2title tt-upper">
-                    Paid Marketing
+                    CUSTOMER
                     <br/>
-                    Channels
+                    RESEARCH
                   </h2>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-xl-6">
-                <div className="ml-120 mt-22 mb-22 w-60">
-                  <h3 className="h3 mb-20">
-                    Data-driven digital marketing for your customer’s base growing
+              <div className="col-12 col-md-6 ">
+                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
+                  <h3 className="h3 mb-20 ta-left">
+                    Learn your audience and its needs
                   </h3>
                   <p className="textFonts mb-20">
-                    As the name suggests, marketing channels that you pay to use for your advertising purposes are called paid marketing channels. Paid ads in Google, social networks like Facebook and Instagram are some of the examples of marketing channels.
+                    Customer Development is the framework that helps in identifying potential customers and determining the ways of satisfying their needs. Whenever businesses launch a new product, enter new markets or pivot their strategy, they need to apply customer development methodology if they want to validate their assumptions and see if the offered solution is in demand.
                   </p>
                   <p className="textFonts mb-20">
-                    Paid marketing channels are used for almost any purpose, but the main one is to increase revenue through the advertising budget spent on promoting a product/service or building a brand identity.
+                    One of the main goals of Customer Development is to discover a successful sales and marketing strategy and the steps to be used by the marketing team later.
                   </p>
-                  <Link href="/services/paid-marketing-channels">
-                    <a className="button button--secondary d-block">FIND OUT MORE</a>
+                  <Link href="/services/customer-research">
+                    <a className="button button--secondary d-block ">FIND OUT MORE</a>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="section section--title-right-img5 mt-136 mb-68">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 order-md-1 my-auto">
-                <div className="marginHomeRight ta-center">
-                  <h2 className="h2title tt-upper ta-left">
-                    MOBILE &
-                    <br/>
-                    WEBSITE
-                    <br/>
-                    TRACKING
-                  </h2>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120 w-60" style={{marginLeft: "auto"}}>
-                  <h3 className="h3 mb-20 ta-left">Why does your company need tracking?</h3>
-                  <p className="textFonts mb-20">
-                    Website tracking is the process of gathering and analyzing data about what people do while they are on your website. It is an extremely important tool that allows you to determine how many users visit your website, where they come from, what pages they go to and how long they stay. Having this kind of information on your hands lets you identify your strengths, weaknesses and points that need improvement.
-                  </p>
-                  <p className="textFonts mb-20">
-                    Mobile tracking follows the same principles but tracks users that come to your website using their mobile phones. Taking into account the fact that almost all the users on the internet use their phones to find information, it is essential to have mobile tracking to analyze their behavior on your website and make data-driven decisions.
-                  </p>
-                  <Link href="/services/mobile-and-web-tracking">
-                    <a className="button button--secondary d-block">FIND OUT MORE</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section className="section section--title-left-img12 mt-136 mb-68">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeLeft ta-right">
-                  <h2 className="h2title tt-upper">
-                    NO-CODE
-                    <br/>
-                    AUTOMATION
-                  </h2>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 ">
-                <div className="mb-22 mt-22 ml-120 w-60">
-                  <h3 className="h3 mb-20 ta-left">Why does your company need automation?</h3>
-                  <p className="textFonts mb-20">
-                    Automation implies using advanced software to ensure that repetitive tasks of your business are
-                    completed with no human involvement, which in turn allows you to prioritize key tasks over dull,
-                    repetitive, and oftentimes annoying ones. And since it’s a no-code automation it doesn’t require a
-                    coder to make it work.
-                  </p>
-                  <p className="textFonts mb-20">
-                    Generally speaking, jobs that are high volume, recurrent, time-sensitive, involve several people,
-                    require compliance, and require audit trails are strongly recommended to get automation.
-                  </p>
-                  <Link href="/services/no-code-automation">
-                    <a className="button button--secondary d-block">FIND OUT MORE</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
+
         <section className="section section--title-right-img6 mt-136 mb-68">
           <div className="container">
             <div className="row">
@@ -131,7 +67,7 @@ export default function services() {
               <div className="col-12 col-md-6 ">
                 <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">
-                    Web Development
+                    Take your brand’s internet presence to the next level
                   </h3>
                   <p className="textFonts mb-20">
                     Web Development is a general term that describes creating, building and maintaining websites and
@@ -152,45 +88,111 @@ export default function services() {
             </div>
           </div>
         </section>
-        <section className="section section--title-left mt-136 mb-68">
+
+        <section className="section section--title-left-img12 mt-136 mb-68">
           <div className="container">
             <div className="row">
-
               <div className="col-12 col-md-6 my-auto">
-                <div className="marginHomeRight">
+                <div className="marginHomeLeft ta-right">
                   <h2 className="h2title tt-upper">
-                    CUSTOMER
+                    NO-CODE
                     <br/>
-                    RESEARCH
+                    AUTOMATION
                   </h2>
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
-                  <h3 className="h3 mb-20 ta-left">
-                    Why does your company need customer research?
-                  </h3>
+                <div className="mb-22 mt-22 ml-120 w-60">
+                  <h3 className="h3 mb-20 ta-left">Let automation handle recurring tasks</h3>
                   <p className="textFonts mb-20">
-                    Customer Development is the framework that helps in identifying potential customers and determining the ways of satisfying their needs. Whenever businesses launch a new product, enter new markets or pivot their strategy, they need to apply customer development methodology if they want to validate their assumptions and see if the offered solution is in demand.
+                    Automation implies using advanced software to ensure that repetitive tasks of your business are
+                    completed with no human involvement, which in turn allows you to prioritize key tasks over dull,
+                    repetitive, and oftentimes annoying ones. And since it’s a no-code automation it doesn’t require a
+                    coder to make it work.
                   </p>
                   <p className="textFonts mb-20">
-                    One of the main goals of Customer Development is to discover a successful sales and marketing strategy and the steps to be used by the marketing team later.
+                    Generally speaking, jobs that are high volume, recurrent, time-sensitive, involve several people,
+                    require compliance, and require audit trails are strongly recommended to get automation.
                   </p>
-                  <Link href="/services/customer-research">
-                    <a className="button button--secondary d-block ">FIND OUT MORE</a>
+                  <Link href="/services/no-code-automation">
+                    <a className="button button--secondary d-block">FIND OUT MORE</a>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section className="section section--title-right-img5 mt-136 mb-68">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6 order-md-1 my-auto">
+                <div className="marginHomeRight ta-center">
+                  <h2 className="h2title tt-upper ta-left">
+                    MOBILE &
+                    <br/>
+                    WEBSITE
+                    <br/>
+                    TRACKING
+                  </h2>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 ">
+                <div className="mt-22 mb-22 mr-120 w-60" style={{marginLeft: "auto"}}>
+                  <h3 className="h3 mb-20 ta-left">Quality analytics for your business decisions</h3>
+                  <p className="textFonts mb-20">
+                    Website tracking is the process of gathering and analyzing data about what people do while they are on your website. It is an extremely important tool that allows you to determine how many users visit your website, where they come from, what pages they go to and how long they stay. Having this kind of information on your hands lets you identify your strengths, weaknesses and points that need improvement.
+                  </p>
+                  <p className="textFonts mb-20">
+                    Mobile tracking follows the same principles but tracks users that come to your website using their mobile phones. Taking into account the fact that almost all the users on the internet use their phones to find information, it is essential to have mobile tracking to analyze their behavior on your website and make data-driven decisions.
+                  </p>
+                  <Link href="/services/mobile-and-web-tracking">
+                    <a className="button button--secondary d-block">FIND OUT MORE</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section section--title-left-img4 mt-136 mb-68">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6 my-auto">
+                <div className="marginHomeLeft ta-right">
+                  <h2 className="h2title tt-upper">
+                    Paid Marketing
+                    <br/>
+                    Channels
+                  </h2>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-xl-6">
+                <div className="ml-120 mt-22 mb-22 w-60">
+                  <h3 className="h3 mb-20">
+                    Traffic to promote your products and services
+                  </h3>
+                  <p className="textFonts mb-20">
+                    As the name suggests, marketing channels that you pay to use for your advertising purposes are called paid marketing channels. Paid ads in Google, social networks like Facebook and Instagram are some of the examples of marketing channels.
+                  </p>
+                  <p className="textFonts mb-20">
+                    Paid marketing channels are used for almost any purpose, but the main one is to increase revenue through the advertising budget spent on promoting a product/service or building a brand identity.
+                  </p>
+                  <Link href="/services/paid-marketing-channels">
+                    <a className="button button--secondary d-block">FIND OUT MORE</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section section--title-right mt-136 mb-68">
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6">
                 <div className="mt-22 mb-22 mr-120 w-60">
                   <h3 className="h3 mb-20 ta-left">
-                    Site and app Tracking system setup services
+                    Get more traction and visibility with quality optimization of your app’s page
                   </h3>
                   <p className="textFonts mb-20">
                     ASO stands for App Store Optimization and represents a set of actions aimed at optimizing your

@@ -11,7 +11,7 @@ function WhatWeWorked({itemsArr, contentSide, font}) {
   }else if(font == '2'){
     title = 'h2title';
   }
-  const text = 'WHAT \n WE \n WORKED \n ON'
+  const text = 'WHAT WE \n WORKED ON'
   return (
       <section className={`section section--title-${contentSide === 'left' ? 'left ': 'right1'} mt-68 mb-68`}>
         <div className="container">

@@ -147,7 +147,7 @@ export default function customer() {
               <div className="marginHomeLeft">
                 <h2 className="h2title ta-right tt-upper mt-22 mb-22">
                   CUSTOMER <br />
-                  RESEARCH FOR <br /> OPTIMAL
+                  RESEARCH <br />FOR OPTIMAL
                   <br /> BUSINESS <br /> DECISIONS
                 </h2>
               </div>
@@ -208,7 +208,7 @@ export default function customer() {
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="mt-22 mb-22 w-60 ml-120">
+              <div className="mt-22 mb-22 w-70 ml-120">
                 <div className="count-block w-100 mb-40">
                   <span className="count">1</span>
                   <div className="textFonts mb-20">
@@ -369,11 +369,7 @@ export default function customer() {
               </div>
             </div>
             <div className="col-12 col-md-6 my-auto">
-              <div className="w-70 ml-120 mt-22">
-                <span className="line mb-30"></span>
-              </div>
-
-              <div className="mb-30 w-70 ml-120">
+              <div className="mb-30 w-70 ml-120 mt-22">
                 <p className="text text--large text--primary text--fw-500 text--lighten ta-left tt-upper">
                   PROBLEM DISTRIBUTION <br />
                   FOR TARGET AUDIENCE
@@ -416,7 +412,7 @@ export default function customer() {
                         <li className="w-10 color color--secondary ta-center">10%</li>
                       </ul>
                     </div>
-                    <div className="problems__item mb-50">
+                    <div className="problems__item">
                       <p className="textFonts mb-20">Problem # 3</p>
                       <ul className="diagram">
                         <li className="w-35 color color--pink pl-30">35%</li>
@@ -468,7 +464,7 @@ export default function customer() {
             <div className="col-12 col-md-6 my-auto">
               <div className="marginHomeRight">
                 <h2 className="h2title ta-left mt-22 mb-22">
-                  WHAT<br /> WE
+                  WHAT WE
                   <br />
                   DELIVERED?
                 </h2>
