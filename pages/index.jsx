@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </div>
         
-        <WhatWeWorked itemsArr={whatWeWorkedArr}/>
+        <WhatWeWorked itemsArr={whatWeWorkedArr} space/>
         
         <div className="section pb-20 pt-20 lineHome">
           <div className="container">

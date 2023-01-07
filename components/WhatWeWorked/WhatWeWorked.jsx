@@ -2,16 +2,17 @@ import styles from './WhatWeWorked.module.scss';
 import Image from "next/image";
 import {useRouter} from "next/router";
 
-function WhatWeWorked({itemsArr, contentSide, font}) {
+function WhatWeWorked({itemsArr, contentSide, font, space}) {
   const router = useRouter()
   let title;
+  let text;
 
   if(font == null){
     title = 'h1title'
   }else if(font == '2'){
     title = 'h2title';
   }
-  const text = 'WHAT WE \n WORKED ON'
+  space == null ? text= 'WHAT WE \n WORKED ON' : text='WHAT \nWE \n WORKED \nON'
   return (
       <section className={`section section--title-${contentSide === 'left' ? 'left ': 'right1'} mt-68 mb-68`}>
         <div className="container">
