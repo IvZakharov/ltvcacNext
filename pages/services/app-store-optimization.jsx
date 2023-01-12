@@ -98,27 +98,27 @@ export default function analytics() {
     {
       title: "Mobile Games",
       links: [""],
-      svgIcon: '/img/WWWO/4.svg',
+      svgIcon: '/img/WWWO/4.png',
     },
     {
       title: "E-Commerce Mobile Apps",
       links: [""],
-      svgIcon: '/img/WWWO/2.svg',
+      svgIcon: '/img/WWWO/2.png',
     },
     {
       title: `Dating Mobile Apps`,
       links: [""],
-      svgIcon: '/img/WWWO/3.svg',
+      svgIcon: '/img/WWWO/3.png',
     },
     {
       title: "B2B & SaaS Mobile Apps",
       links: [""],
-      svgIcon: '/img/WWWO/5.svg',
+      svgIcon: '/img/WWWO/5.png',
     },
     {
       title: "Fintech Mobile Apps",
       links: [""],
-      svgIcon: '/img/WWWO/6.svg',
+      svgIcon: '/img/WWWO/6.png',
     },
   ];
 
@@ -189,7 +189,7 @@ export default function analytics() {
                 </h3>
                 <div className="count-block w-100 mb-40 mb-md-0">
                   <span className="count">1</span>
-                  <div className="text-large mb-40 mt-22">
+                  <div className="text-large mb-40 mt-10">
                     <p className="textFonts">
                       {" "}
                       The number of apps on Google Play and the App Store has

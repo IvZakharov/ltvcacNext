@@ -104,27 +104,27 @@ export default function analytics() {
     {
       title: 'Real Estate Website',
       links: [''],
-      svgIcon: '/img/WWWO/1.svg',
+      svgIcon: '/img/WWWO/1.png',
     },
     {
       title: 'E-Commerce Website & Mobile Apps',
       links: [''],
-      svgIcon: '/img/WWWO/2.svg',
+      svgIcon: '/img/WWWO/2.png',
     },
     {
       title: `Mobile Apps & Mobile Games`,
       links: [''],
-      svgIcon: '/img/WWWO/3.svg',
+      svgIcon: '/img/WWWO/3.png',
     },
     {
       title: 'B2B & SaaS Website & Mobile Apps',
       links: [''],
-      svgIcon: '/img/WWWO/4.svg',
+      svgIcon: '/img/WWWO/4.png',
     },
     {
       title: 'Fintech Website & Mobile Apps',
       links: [''],
-      svgIcon: '/img/WWWO/5.svg',
+      svgIcon: '/img/WWWO/5.png',
     },
   ];
   
