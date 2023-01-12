@@ -73,16 +73,16 @@ export const MobileMenu = ({ onClickClose }) => {
               <a className={router.pathname == '/' ? styles.active : ''}> Home</a>
             </Link>
           </li>
-          <li>
-            <Link href="/portfolio">
-              <a className={router.pathname == '/portfolio' ? styles.active : ''}>Portfolio</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/posts">
-              <a className={router.pathname == '/posts' ? styles.active : ''}>Blog</a>
-            </Link>
-          </li>
+          {/*<li>*/}
+          {/*  <Link href="/portfolio">*/}
+          {/*    <a className={router.pathname == '/portfolio' ? styles.active : ''}>Portfolio</a>*/}
+          {/*  </Link>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <Link href="/posts">*/}
+          {/*    <a className={router.pathname == '/posts' ? styles.active : ''}>Blog</a>*/}
+          {/*  </Link>*/}
+          {/*</li>*/}
           <li>
             <Link className={styles.submenuLink} href="/services">
               <a>

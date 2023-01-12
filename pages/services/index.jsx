@@ -33,7 +33,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
+                <div className="mt-22 mb-22 mr-120 w-70"  style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">
                     Learn your audience and its needs
                   </h3>
@@ -65,7 +65,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120 w-60"  style={{marginLeft: "auto"}}>
+                <div className="mt-22 mb-22 mr-120 w-70"  style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">
                     Take your brand’s internet presence to the next level
                   </h3>
@@ -102,7 +102,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mb-22 mt-22 ml-120 w-60">
+                <div className="mb-22 mt-22 ml-120 w-70">
                   <h3 className="h3 mb-20 ta-left">Let automation handle recurring tasks</h3>
                   <p className="textFonts mb-20">
                     Automation implies using advanced software to ensure that repetitive tasks of your business are
@@ -138,7 +138,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 ">
-                <div className="mt-22 mb-22 mr-120 w-60" style={{marginLeft: "auto"}}>
+                <div className="mt-22 mb-22 mr-120 w-70" style={{marginLeft: "auto"}}>
                   <h3 className="h3 mb-20 ta-left">Quality analytics for your business decisions</h3>
                   <p className="textFonts mb-20">
                     Website tracking is the process of gathering and analyzing data about what people do while they are on your website. It is an extremely important tool that allows you to determine how many users visit your website, where they come from, what pages they go to and how long they stay. Having this kind of information on your hands lets you identify your strengths, weaknesses and points that need improvement.
@@ -167,7 +167,7 @@ export default function services() {
                 </div>
               </div>
               <div className="col-12 col-md-6 col-xl-6">
-                <div className="ml-120 mt-22 mb-22 w-60">
+                <div className="ml-120 mt-22 mb-22 w-70">
                   <h3 className="h3 mb-20">
                     Traffic to promote your products and services
                   </h3>
@@ -190,7 +190,7 @@ export default function services() {
           <div className="container">
             <div className="row mob-flex--column-revers">
               <div className="col-12 col-md-6">
-                <div className="mt-22 mb-22 mr-120 w-60">
+                <div className="mt-22 mb-22 mr-120 w-70">
                   <h3 className="h3 mb-20 ta-left">
                     Get more traction and visibility with quality optimization of your app’s page
                   </h3>

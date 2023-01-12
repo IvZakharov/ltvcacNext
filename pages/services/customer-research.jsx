@@ -104,27 +104,27 @@ export default function customer() {
     {
       title: 'Real Estate Projects',
       links: [''],
-      svgIcon: '/img/WWWO/1.svg',
+      svgIcon: '/img/WWWO/1.png',
     },
     {
       title: 'E-Commerce Projects',
       links: [''],
-      svgIcon: '/img/WWWO/2.svg',
+      svgIcon: '/img/WWWO/2.png',
     },
     {
       title: `Mobile Apps Projects`,
       links: [''],
-      svgIcon: '/img/WWWO/3.svg',
+      svgIcon: '/img/WWWO/3.png',
     },
     {
       title: 'B2B & SaaS Projects',
       links: [''],
-      svgIcon: '/img/WWWO/4.svg',
+      svgIcon: '/img/WWWO/4.png',
     },
     {
       title: 'Fintech Projects',
       links: [''],
-      svgIcon: '/img/WWWO/5.svg',
+      svgIcon: '/img/WWWO/5.png',
     },
   ];
 
@@ -225,7 +225,7 @@ export default function customer() {
                 <div className="count-block w-100 mb-40">
                   <span className="count">2</span>
                   <div className="textFonts mb-20">
-                    <h3 className="h3 mb-20">Enhancement of economy</h3>
+                    <h3 className="h3 mb-20 mt-20">Enhancement of economy</h3>
                     <p className="mb-10 textFonts"> How to boost revenue for existing products/services?</p>
                     <p className="mb-10 textFonts">
                       {' '}
@@ -244,7 +244,7 @@ export default function customer() {
                 <div className="count-block w-100">
                   <span className="count">3</span>
                   <div className="textFonts mb-20">
-                    <h3 className="h3 mb-20">Expansion to new territories</h3>
+                    <h3 className="h3 mb-20 mt-20">Expansion to new territories</h3>
                     <p className="mb-10 textFonts">
                       How to minimize the risks of ineffective spending and avoid negative ROI?
                     </p>
@@ -298,10 +298,10 @@ export default function customer() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="w-70 ml-120 mt-22">
-                <p className="text text--large text--primary text--fw-500 text--lighten tt-upper">
+                <p className="h3 text--primary text--fw-500 text--lighten tt-upper">
                   STEP 1
                 </p>
-                <p className="text text--large text--primary text--fw-500">QUALITATIVE RESEARCH</p>
+                <p className="h3 text--primary text--fw-500">QUALITATIVE RESEARCH</p>
                 <p className="text text--fw-500 text--black mb-20">7-21 days</p>
               </div>
               <div className="mb-40 w-70 ml-120">
@@ -329,10 +329,10 @@ export default function customer() {
           <div className="row mob-flex--column-revers">
             <div className="col-12 col-md-6">
               <div className="w-70 mr-120 mt-22">
-                <p className="text text--large text--primary text--fw-500 text--lighten tt-upper">
+                <p className="h3 text--primary text--fw-500 text--lighten tt-upper">
                   STEP 2
                 </p>
-                <p className="text text--large text--primary text--fw-500">QUANTITATIVE RESEARCH</p>
+                <p className="h3 text--primary text--fw-500">QUANTITATIVE RESEARCH</p>
                 <p className="text text--fw-500 text--black mb-20">14-21 days</p>
               </div>
               <div className="w-70 mr-120 mb-22">
@@ -370,7 +370,7 @@ export default function customer() {
             </div>
             <div className="col-12 col-md-6 my-auto">
               <div className="mb-30 w-70 ml-120 mt-22">
-                <p className="text text--large text--primary text--fw-500 text--lighten ta-left tt-upper">
+                <p className="h3 text--primary text--fw-500 text--lighten ta-left tt-upper">
                   PROBLEM DISTRIBUTION <br />
                   FOR TARGET AUDIENCE
                 </p>
@@ -387,7 +387,7 @@ export default function customer() {
                     <div className="history__item mb-20">
                       <i className="color color--primary"></i>
                       <p className="textFonts">
-                        Aware of the problem but do not consider it necessary to solve it
+                        Aware of the problem but do not consider<br /> it necessary to solve it
                       </p>
                     </div>
                     <div className="history__item mb-50">
